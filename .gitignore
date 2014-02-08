@@ -16,3 +16,7 @@ _site/
 ## Environment normalisation:
 /.bundle/
 /lib/bundler/man/
+
+#Submlime
+bestinclass.sublime-project
+bestinclass.sublime-workspace
