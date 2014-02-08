@@ -1,0 +1,750 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"zoomtime",
+				"zoomtimeSVG"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"namebo",
+				"nameboxnav"
+			],
+			[
+				"link",
+				"link-artworks"
+			],
+			[
+				"link-",
+				"link-influences"
+			],
+			[
+				"countI",
+				"countInventions"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"timeLin",
+				"timelineData"
+			],
+			[
+				"que",
+				"queue"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"tick",
+				"tickFormat"
+			],
+			[
+				"timeline",
+				"timelineArray"
+			],
+			[
+				"in",
+				"infld"
+			],
+			[
+				"map",
+				"mapSVG"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"dom",
+				"document"
+			],
+			[
+				"top",
+				"top"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"name",
+				"nameboxes"
+			],
+			[
+				"selec",
+				"selectAll"
+			],
+			[
+				"stroke",
+				"stroke-width"
+			],
+			[
+				"rec",
+				"recur_limit"
+			],
+			[
+				"this",
+				"thisyear"
+			],
+			[
+				"dob",
+				"dob"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"svg",
+				"svg_timeline"
+			],
+			[
+				"time",
+				"timeline"
+			],
+			[
+				"get",
+				"getPersonInfo"
+			],
+			[
+				"person",
+				"person_name"
+			],
+			[
+				"pla",
+				"place_of_birth"
+			],
+			[
+				"node",
+				"node_person"
+			],
+			[
+				"l",
+				"latitude"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"align",
+				"text-align"
+			],
+			[
+				"wo",
+				"world"
+			],
+			[
+				"world",
+				"world-110m"
+			],
+			[
+				"str",
+				"str"
+			],
+			[
+				"sort",
+				"sorted_word"
+			],
+			[
+				"ca",
+				"calories"
+			],
+			[
+				"anagr",
+				"anagram_group"
+			],
+			[
+				"rps",
+				"rps_tournament_winner"
+			],
+			[
+				"rps_",
+				"rps_tournament_winner"
+			],
+			[
+				"inter",
+				"intersectLineSegment"
+			],
+			[
+				"intersectL",
+				"intersectLineSegment"
+			],
+			[
+				"E",
+				"Epsilon"
+			],
+			[
+				"No",
+				"NoPoints"
+			],
+			[
+				"real",
+				"real_close"
+			],
+			[
+				"eval",
+				"eval_prog"
+			],
+			[
+				"shift",
+				"shift_exp"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"Line",
+				"LineSegment"
+			],
+			[
+				"Intersect",
+				"Intersect"
+			],
+			[
+				"prepo",
+				"preprocess_prog"
+			],
+			[
+				"prep",
+				"preprocess_prog"
+			],
+			[
+				"is",
+				"is_running"
+			],
+			[
+				"current_",
+				"current_block"
+			],
+			[
+				"balance",
+				"balance"
+			],
+			[
+				"m",
+				"m"
+			],
+			[
+				"mon",
+				"monthlyUnpaidBalance"
+			],
+			[
+				"month",
+				"monthlyPaymentRate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"repl",
+				"SublimeREPL: Ruby"
+			],
+			[
+				"oack",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pro",
+				"Package Control: List Packages"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"oacka",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"repl sett",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"pref",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"repe",
+				"Preferences: Browse Packages"
+			],
+			[
+				"repl pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 195.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/michaelkelly/Documents/Dev/bestinclass/sass/_variables.scss",
+		"/Users/michaelkelly/Documents/Dev/bestinclass/Gemfile",
+		"/Users/michaelkelly/Documents/Dev/bc/bower_components/bootstrap/js/.jshintrc",
+		"/Users/michaelkelly/Documents/Dev/bc/bower_components/bootstrap/js/.jscs.json",
+		"/Users/michaelkelly/Documents/Dev/bestinclass/package.json",
+		"/Users/michaelkelly/Documents/dev/visiwiki/views/layout.jade",
+		"/Users/michaelkelly/Documents/dev/visiwiki/views/index.jade",
+		"/Users/michaelkelly/Downloads/fontello-29ba2e73/demo.html",
+		"/Users/michaelkelly/Downloads/fontello-29ba2e73/test.html",
+		"/Users/michaelkelly/Documents/List of Articles.bib",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/main.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/stylesheets/style.css",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/Racket/hw4.rkt",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/stylesheets/bootstrap.css",
+		"/Users/michaelkelly/Documents/dev/visiwiki/routes/index.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/app.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/stylesheets/bootstrap.min.css",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/timeline.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/timeline-min.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/bootstrap.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/README.md",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/stylesheets/fbsuggest.css",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/vwdata.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/package.json",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/topojson.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/queue.v1.min.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/jquery-migrate-1.1.0.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/d3.v3.min.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/d3.v3.js",
+		"/Users/michaelkelly/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/michaelkelly/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/data/philosophers.csv",
+		"/Users/michaelkelly/Documents/dev/visiwiki/public/javascripts/vwmap.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/routes/user.js",
+		"/Users/michaelkelly/Documents/dev/visiwiki/views/user.jade",
+		"/Users/michaelkelly/Documents/visiwiki/public/data/cities.json",
+		"/Users/michaelkelly/Documents/visiwiki/routes/index.js",
+		"/Users/michaelkelly/Documents/visiwiki/views/index.html",
+		"/Users/michaelkelly/Documents/visiwiki/app.js",
+		"/Users/michaelkelly/Documents/MOOC/Startup Engineering/grader_output",
+		"/Users/michaelkelly/Documents/MOOC/Startup Engineering/grader.js",
+		"/Users/michaelkelly/Documents/visiwiki/public/stylesheets/style.css",
+		"/Users/michaelkelly/Documents/visiwiki/Procfile",
+		"/Users/michaelkelly/Documents/visiwiki/package.json",
+		"/Users/michaelkelly/Documents/visiwiki/views/index.jade",
+		"/Users/michaelkelly/Documents/visiwiki/js/vwmap.js",
+		"/Users/michaelkelly/Documents/visiwiki/data/cities.json",
+		"/Users/michaelkelly/Documents/visiwiki/web.js",
+		"/Users/michaelkelly/Documents/visiwiki/data/package.json",
+		"/Users/michaelkelly/Documents/visiwiki/world-110m.json",
+		"/Users/michaelkelly/Documents/visiwiki/index-simple.html",
+		"/Users/michaelkelly/Documents/visiwiki/data/uk.json",
+		"/Users/michaelkelly/Documents/visiwiki/uk.json",
+		"/Users/michaelkelly/Documents/MOOC/Data Science/datasci_course_materials/assignment3/data/matrix.json",
+		"/Users/michaelkelly/Documents/MOOC/Data Science/datasci_course_materials/assignment3/solutions/multiply.json",
+		"/Users/michaelkelly/Documents/MOOC/600x/ProblemSet10/ps10-orig.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/ProblemSet10/graph.py",
+		"/Users/michaelkelly/Library/Application Support/Sublime Text 2/Packages/User/Python Terminal.sublime-build",
+		"/Users/michaelkelly/Documents/Tweaks/SublimePython.sh",
+		"/Users/michaelkelly/Documents/MOOC/600x/ProblemSet10/graph.pyc",
+		"/Users/michaelkelly/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/michaelkelly/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/michaelkelly/Documents/MOOC/600x/ProblemSet8/ps8b.py",
+		"/Applications/Enthought/PyLab.app/Contents/Info.plist",
+		"/Users/michaelkelly/Downloads/hw1/part6.rb",
+		"/Users/michaelkelly/Documents/MOOC/169x/hw2-1-link.txt",
+		"/Users/michaelkelly/Documents/MOOC/169x/hw1/part7.rb",
+		"/Users/michaelkelly/Downloads/hw1/part5.rb",
+		"/Users/michaelkelly/Downloads/hw1/part4.rb",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/Ruby/hw6assignment.rb",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/Ruby/hw7.rb",
+		"/Users/michaelkelly/Downloads/hw1/part1.rb",
+		"/Users/michaelkelly/Downloads/hw1/part2.rb",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/Ruby/hw6graphics.rb",
+		"/Users/michaelkelly/Downloads/hw1/part3.rb",
+		"/Users/michaelkelly/Downloads/student1.rb",
+		"/Users/michaelkelly/Downloads/student3.rb",
+		"/Users/michaelkelly/Downloads/student2.rb",
+		"/Applications/Racket v5.3.3/collects/math/private/number-theory/fibonacci.rkt",
+		"/Users/michaelkelly/Downloads/student3.txt",
+		"/Users/michaelkelly/Downloads/student2.txt",
+		"/Users/michaelkelly/Downloads/student1.txt",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/hw7testsprovided.sml",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/hw7testsprovided.rb",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/Ruby/hw6provided.rb",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/hw7.sml",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/hw7.rb",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/SML/hw2provided.sml",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/SML/hw3provided.sml",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/SML/assignment1.sml",
+		"/Users/michaelkelly/Documents/MOOC/Proglang/Racket/hw5.rkt",
+		"/Users/michaelkelly/Documents/MOOC/Programming Languages/hw7testsprovided.sml",
+		"/Users/michaelkelly/Documents/MOOC/Programming Languages/hw7testsprovided.rb",
+		"/Users/michaelkelly/Documents/MOOC/Programming Languages/hw7.rb",
+		"/Users/michaelkelly/Documents/MOOC/Programming Languages/hw7.sml",
+		"/Users/michaelkelly/Downloads/appForm_2013-03-17.dat",
+		"/Users/michaelkelly/Downloads/hw6tests.rb",
+		"/Users/michaelkelly/Downloads/hw6runner.rb",
+		"/Users/michaelkelly/Documents/MOOC/Emacs Files/assignment1.sml",
+		"/Users/michaelkelly/Library/Application Support/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
+		"/Users/michaelkelly/Documents/MOOC/Databases/Scripts/ViewsModAuto.sql",
+		"/Users/michaelkelly/Documents/MOOC/Databases/Scripts/ViewsModTriggers.sql",
+		"/Users/michaelkelly/Documents/MOOC/Databases/Scripts/Views.sql",
+		"/Users/michaelkelly/Documents/MOOC/Programming Languages/Racket Files/hw4.txt",
+		"/Users/michaelkelly/Documents/MOOC/Databases/Scripts/countries.xml",
+		"/Users/michaelkelly/Documents/MOOC/Databases/Scripts/courses-noID.xml",
+		"/Users/michaelkelly/Documents/MOOC/Databases/XQuery.xq",
+		"/Users/michaelkelly/Documents/MOOC/Databases/XSLT.txt",
+		"/Users/michaelkelly/Documents/MOOC/Databases/dbclass-script-files/XQuery.xq",
+		"/Users/michaelkelly/Documents/MOOC/600x/Lec4-roots.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/W2P2.3.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/W2P2.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/W2P2.2.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/circle.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/lowhighguess.py",
+		"/Users/michaelkelly/Documents/MOOC/600x/notes.txt",
+		"/Users/michaelkelly/Documents/MOOC/600x/600x.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@import \"foundation\";",
+			"getwiki",
+			"newPeop",
+			"getPeer",
+			"getInfl",
+			"getPeers",
+			"colors",
+			"infotip",
+			"info",
+			"infor",
+			"maphover",
+			"findrowpos",
+			"mapho",
+			"trans",
+			"mapho",
+			"maphover",
+			"mapho",
+			"pointer",
+			".events",
+			".select",
+			"event",
+			"events",
+			"\n		",
+			".on\\('click",
+			"scroll",
+			"fbs-pane",
+			"pane",
+			"z-index",
+			"z-in",
+			"fb",
+			"f5f5f5",
+			"background",
+			"aside",
+			"name",
+			"zoomtime",
+			"namebox",
+			"getwiki",
+			"wiki",
+			"fa-",
+			"colors",
+			"info",
+			"relative",
+			"Timeline",
+			"zoom",
+			"hover",
+			"ul",
+			"getWiki",
+			"scroll",
+			"var trans",
+			"centerTime",
+			"trans\\[",
+			"trans[",
+			"zoomtime.x",
+			"zoomtime",
+			"zoomtime.x",
+			"toggle",
+			"getPerson",
+			"infotip",
+			"itemh",
+			"40px",
+			"h1",
+			"jumbo",
+			"height",
+			"marginbottom",
+			"popover",
+			".navbar",
+			".container",
+			".body",
+			"body",
+			"container",
+			"movements",
+			"artist",
+			"eventlabel",
+			"/g",
+			"zoomtime.zoom",
+			"zoomtime.zoom.scale",
+			"clear",
+			"console",
+			"Year",
+			"getYear",
+			".start",
+			"center ",
+			"namnav",
+			"\\/i",
+			"remove ",
+			"zoomtime",
+			"\\.x",
+			"timeline.x",
+			"xScale",
+			"zoomScale",
+			"path",
+			"select\\(",
+			"select(",
+			"zoomtime",
+			"zoom",
+			"width()",
+			"document.wid",
+			"zoometim",
+			"')\n",
+			"transf",
+			"(\"g\")",
+			"zoomtime",
+			"getXPos",
+			"display",
+			".rect",
+			"\"",
+			".width",
+			".active",
+			"console",
+			"\"",
+			"artwork",
+			"append",
+			"color",
+			"zoom",
+			"h3",
+			"namebox",
+			"random",
+			"transform",
+			"mapSVG",
+			"left: 10",
+			"pane",
+			"person",
+			"getPer",
+			"get",
+			"create",
+			"-10",
+			"getperson",
+			"getPer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"'",
+			"people[i]",
+			"end",
+			"start",
+			"end",
+			"start",
+			"",
+			"end",
+			"start",
+			"",
+			"start",
+			"timeline",
+			"timelineSVG",
+			"degree-",
+			"fbCall",
+			"fbURL",
+			"fbKey",
+			"mapSVG",
+			"mapH",
+			"mapW",
+			"\\t",
+			"response",
+			"puts",
+			"print"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 199.0
+	},
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"how does this look"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,18 @@
+### Ruby ###
+Gemfile.lock
+.ruby-version
+.ruby-gemset
+.rvmrc
+
+### Jekyll ###
+_site/
+
+### SASS ###
+*.sass-cache
+
+### Compass ###
+.sass-cache
+
+## Environment normalisation:
+/.bundle/
+/lib/bundler/man/
