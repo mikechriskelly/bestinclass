@@ -1,3 +1,4 @@
+@import url("http://fonts.googleapis.com/css?family=Happy+Monkey");
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /* line 9, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -7588,14 +7589,24 @@ button.close {
     display: none !important;
   }
 }
-/* line 5, ../sass/styles.scss */
+/* line 7, ../sass/styles.scss */
 body {
-  margin-top: 70px;
-  padding-top: 0px;
+  margin-top: 0px;
+  padding-top: 70px;
   padding-bottom: 20px;
 }
 
-/* line 10, ../sass/styles.scss */
+/* line 12, ../sass/styles.scss */
 .navbar-brand {
   padding: 5px;
+}
+
+/* line 15, ../sass/styles.scss */
+h1, h2, .navbar-nav > li > a {
+  font-family: 'Happy Monkey', Helvetica, Arial, sans-serif;
+}
+
+/* line 18, ../sass/styles.scss */
+.navbar-nav > li > a {
+  font-size: 18px;
 }
