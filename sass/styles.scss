@@ -1,3 +1,12 @@
 // customize bootstrap variables here:
 @import "variables";
 @import "bootstrap";
+
+body {
+	margin-top: 70px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+}
+.navbar-brand {
+	padding: 5px;
+}
