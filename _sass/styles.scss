@@ -1,0 +1,20 @@
+// customize bootstrap variables here:
+@import url("http://fonts.googleapis.com/css?family=Happy+Monkey");
+@import "variables";
+@import "bootstrap";
+
+
+body {
+	margin-top: 0px;
+	padding-top: 70px;
+	padding-bottom: 20px;
+}
+.navbar-brand {
+	padding: 15px;
+}
+h1, h2, .navbar-nav > li > a {
+	font-family: 'Happy Monkey', Helvetica, Arial, sans-serif;
+}
+.navbar-nav > li > a {
+	font-size: $font-size-large;
+}

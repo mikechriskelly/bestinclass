@@ -1,3 +1,4 @@
 name: Best in Class Education
 markdown: redcarpet
 pygments: true
+exclude: [node_modules,Gruntfile.js,Gemfile,Gemfile.lock,package.json,config.rb,.gitignore]
