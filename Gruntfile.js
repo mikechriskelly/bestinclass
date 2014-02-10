@@ -35,11 +35,21 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '_sass/*.scss',
-        tasks: ['compass']
+        tasks: ['compass','shell:build'],
+        options: {
+          interrupt: true,
+          atBegin: true,
+          livereload: true
+        }
       },
       js: {
         files: '_javascripts/**/*.js',
-        tasks: ['uglify:javascripts']
+        tasks: ['uglify:javascripts','shell:build'],
+        options: {
+          interrupt: true,
+          atBegin: true,
+          livereload: true
+        }
       },
       html: {
         files: [
@@ -52,7 +62,8 @@ module.exports = function(grunt) {
         tasks: ['shell:build','shell:serve'],
         options: {
           interrupt: true,
-          atBegin: true
+          atBegin: true,
+          livereload: true
         }
       }
     }

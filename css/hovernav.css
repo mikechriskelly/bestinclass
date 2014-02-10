@@ -4,12 +4,17 @@ The Bootstrap CSS is unchanged. If you don't want this, delete this segment of t
 and delete the corresponding segment of bst.js
 */
 @media (min-width: 768px) {
+  /* line 7, ../_sass/hovernav.scss */
   .navbar-nav .caret {
     display: none;
   }
+
+  /* line 10, ../_sass/hovernav.scss */
   .navbar-nav .open ul {
     display: none;
-	}
+  }
+
+  /* line 18, ../_sass/hovernav.scss */
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus,
@@ -19,6 +24,8 @@ and delete the corresponding segment of bst.js
     color: #555;
     background: none;
   }
+
+  /* line 27, ../_sass/hovernav.scss */
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
   .navbar-inverse .navbar-nav > .open > a:focus,
@@ -28,31 +35,45 @@ and delete the corresponding segment of bst.js
     color: #969696;
     background: none;
   }
+
+  /* line 31, ../_sass/hovernav.scss */
   .navbar-default .navbar-nav > .hovernav > a {
-		color: #555;
-	}
+    color: #555;
+  }
+
+  /* line 34, ../_sass/hovernav.scss */
   .navbar-inverse .navbar-nav > .hovernav > a {
-		color: #969696;
-	}
+    color: #969696;
+  }
+
+  /* line 39, ../_sass/hovernav.scss */
   .navbar-default .navbar-nav > .hovernav:hover > a,
   .navbar-default .navbar-nav > .hovernav:hover > a:hover,
   .navbar-default .navbar-nav > .hovernav:hover > a:focus {
     color: #333;
     background: transparent;
   }
+
+  /* line 45, ../_sass/hovernav.scss */
   .navbar-inverse .navbar-nav > .hovernav:hover > a,
   .navbar-inverse .navbar-nav > .hovernav:hover > a:hover,
   .navbar-inverse .navbar-nav > .hovernav:hover > a:focus {
     color: #fff;
     background: transparent;
   }
-	.navbar-default .navbar-nav > li:hover {
-    background: #e7e7e7;
+
+  /* line 49, ../_sass/hovernav.scss */
+  .navbar-default .navbar-nav > li:hover {
+    background: #fff;
   }
+
+  /* line 52, ../_sass/hovernav.scss */
   .navbar-inverse .navbar-nav > li:hover {
     background: #080808;
   }
+
+  /* line 55, ../_sass/hovernav.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
-	}
+  }
 }

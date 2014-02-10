@@ -2,6 +2,7 @@
 @import url("http://fonts.googleapis.com/css?family=Happy+Monkey");
 @import "variables";
 @import "bootstrap";
+@import "hovernav";
 
 
 body {
@@ -10,7 +11,7 @@ body {
 	padding-bottom: 20px;
 }
 .navbar-brand {
-	padding: 15px;
+	padding: 10px;
 }
 h1, h2, .navbar-nav > li > a {
 	font-family: 'Happy Monkey', Helvetica, Arial, sans-serif;
