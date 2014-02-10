@@ -2,3 +2,27 @@ name: Best in Class Education
 markdown: redcarpet
 pygments: true
 exclude: [node_modules,Gruntfile.js,Gemfile,Gemfile.lock,package.json,config.rb,.gitignore]
+
+# prose.io configuration
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://mikechriskelly.github.io'
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "category"
+        field:
+          element: "select"
+          label: "Add Categories"
+          placeholder: "Choose Tags"
+          options:
+            - name: "News & Announcements"
+              value: "news"
+            - name: "Student Achievements"
+              value: "achievements"
+            - name: "Press & Media"
+              value: "press"
