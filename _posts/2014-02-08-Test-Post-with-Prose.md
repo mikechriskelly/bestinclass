@@ -1,5 +1,7 @@
 ---
+layout: post
 published: true
+category: news
 ---
 
 ## Bold Title!
