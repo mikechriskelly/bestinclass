@@ -7668,56 +7668,66 @@ and delete the corresponding segment of bst.js
     display: block;
   }
 }
-/* line 8, ../_sass/styles.scss */
+/* line 9, ../_sass/styles.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 10, ../_sass/styles.scss */
 body {
   margin-top: 0px;
   padding-top: 70px;
   padding-bottom: 20px;
 }
 
-/* line 13, ../_sass/styles.scss */
+/* line 15, ../_sass/styles.scss */
 .jumbotron {
   margin-bottom: 0px;
+  height: 80%;
+}
+/* line 18, ../_sass/styles.scss */
+.jumbotron h1 {
+  font-size: 3.5em;
 }
 
-/* line 16, ../_sass/styles.scss */
+/* line 22, ../_sass/styles.scss */
 .navbar-brand {
   padding: 10px;
 }
 
-/* line 19, ../_sass/styles.scss */
+/* line 25, ../_sass/styles.scss */
 h1, h2, .navbar-nav > li > a {
   font-family: 'Happy Monkey', Helvetica, Arial, sans-serif;
 }
 
-/* line 22, ../_sass/styles.scss */
+/* line 28, ../_sass/styles.scss */
 .navbar-nav > li > a {
   font-size: 18px;
 }
 
-/* line 25, ../_sass/styles.scss */
+/* line 31, ../_sass/styles.scss */
 .promobox > h2 {
   color: #fff;
   text-align: center;
-  padding: 6px;
+  padding: 10px;
 }
 
-/* line 30, ../_sass/styles.scss */
+/* line 36, ../_sass/styles.scss */
 .promobox1 > h2 {
   background: #3385CE;
 }
 
-/* line 33, ../_sass/styles.scss */
+/* line 39, ../_sass/styles.scss */
 .promobox2 > h2 {
   background: #77E83A;
 }
 
-/* line 36, ../_sass/styles.scss */
+/* line 42, ../_sass/styles.scss */
 .promobox3 > h2 {
   background: #EF3C62;
 }
 
-/* line 39, ../_sass/styles.scss */
+/* line 45, ../_sass/styles.scss */
 .pomobox > img {
   display: block;
   margin: auto;
