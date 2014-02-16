@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           sourceMapName: 'js/sourcemap.map'
         },
         files: {
-          'js/main.min.js': ['_javascripts/bootstrap.min.js', '_javascripts/hovernav.js']
+          'js/main.min.js': ['_javascripts/bootstrap/dropdown.js', '_javascripts/hovernav.js']
         }
       }
     },
