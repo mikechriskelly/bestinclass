@@ -8,13 +8,8 @@
         <meta name="description" content="English and Math Tutoring Services">
         <meta name="author" content="Best in Class Education Center">
         <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-
-        <!-- CSS -->
-        <!-- <link rel="stylesheet" href="/css/main.css"> -->
         <link rel="stylesheet" href="/css/styles.css">
-
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -22,50 +17,106 @@
         <![endif]-->
     </head>
     <body>
-      <!-- Navbar -->
-      <div class="navbar navbar-default navbar-fixed-top hovernav" role="navigation">
+      <!-- Mobile Navbar -->
+      <nav class="navbar navbar-default navbar-static-top hovernav visible-sm visible-xs" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile-collapse">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand logo-nav" href="/">
-                <img src="/images/logo.png">
+                <img src="/images/bclogo.svg" class="logo-sm" onerror="this.onerror=null; this.src='/images/bclogo.png'">
             </a>
           </div>
-          <div class="collapse navbar-collapse">
+          <div class="collapse navbar-collapse" id="navbar-mobile-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#">Programs</a></li>
+              <li><a href="/programs.html">Programs</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Locations</a></li>
-              <li class="dropdown hidden-sm">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nearest Locations<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Redmond Ridge</a></li>
-                  <li><a href="#">Bellevue</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Other</a></li>
+              <li class="hidden-sm" id="nearest-location"><a href="#">Redmond Ridge Center</a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fullsize Navbar -->
+      <nav class="navbar navbar-default navbar-static-top hovernav hidden-sm hidden-xs" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand logo-nav" href="/">
+                <img src="/images/bclogo.svg" onerror="this.onerror=null; this.src='/images/bclogo.png'">
+            </a>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="/programs.html" class="dropdown-toggle disabled" data-toggle="dropdown">Programs</a>
+                <ul class="dropdown-menu columns">
+                  <li><a href="#">Math</a></li>
+                  <li><a href="#">Reading and Writing</a></li>
+                  <li><a href="#">Private Tutoring</a></li>
+                  <li><a href="#">Beginners in Class</a></li>
+                  <li><a href="#">Gifted Test Prep</a></li>
+                  <li><a href="#">SAT Test Prep</a></li>
                 </ul>
               </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu columns">
+                  <li><a href="#">How We Teach</a></li>
+                  <li><a href="#">Meet Our Teachers</a></li>
+                  <li><a href="#">History of Best in Class</a></li>
+                  <li><a href="#">Announcements</a></li>
+                  <li><a href="#">Student Spotlight</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations</a>
+                <ul class="dropdown-menu columns">
+                  <li><a href="#">California</a></li>
+                  <li><a href="#">Maryland</a></li>
+                  <li><a href="#">Ohio</a></li>
+                  <li><a href="#">Oregon</a></li>
+                  <li><a href="#">Texas</a></li>
+                  <li><a href="#">Washington</a></li>
+                </ul>
+              </li>
+              <li id="nearest-location"><a href="#">Redmond Ridge Center</a></li>
             </ul>
-          </div><!--/.navbar-collapse -->
+          </div>
         </div>
-      </div>
+      </nav>
 
       <!-- Content -->
       {{ content }}
 
       <!-- Footer -->
       <footer>
-        <div class="circle"><i class="fa fa-facebook fa-lg"></i></div>
-        <div class="circle"><i class="fa fa-google-plus fa-lg"></i></div>
-        <div class="circle"><i class="fa fa-twitter fa-lg"></i></div>
-        <div class="circle"><i class="fa fa-linkedin fa-lg"></i></div>
-        <div class="circle"><i class="fa fa-pinterest fa-lg"></i></div>
-        <p class="footer-legal">© 2014 Best in Class Education Center, BC Education Center, BrainChild. All rights reserved.<br>SAT, ACT, ITBS and CogAT are registered trademarks of the respective owners.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="footer-links">
+                <a href="#">News</a>
+                <a href="#">Programs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact Us</a>
+              </p>
+              <p class="footer-legal">© 2014 Best in Class Education Center, BC Education Center, BrainChild. All rights reserved.<br>SAT, ACT, ITBS and CogAT are registered trademarks of the respective owners.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="circle"><a href=="#"><i class="fa fa-lg fa-fw fa-facebook"></i></a></div>
+              <div class="circle"><a href=="#"><i class="fa fa-lg fa-fw fa-google-plus"></i></a></div>
+              <div class="circle"><a href=="#"><i class="fa fa-lg fa-fw fa-twitter"></i></a></div>
+              <div class="circle"><a href=="#"><i class="fa fa-lg fa-fw fa-linkedin"></i></a></div>
+              <div class="circle"><a href=="#"><i class="fa fa-lg fa-fw fa-pinterest"></i></a></div>
+              <div class="footer-buttons"> 
+                <button type="button" class="btn btn-default">Find a Center</button>
+                <button type="button" class="btn btn-default">Own a Franchise</button>
+              </div>
+            </div>       
+          </div>
+        </div>
       </footer>
 
       <!-- Compiled Javascript -->

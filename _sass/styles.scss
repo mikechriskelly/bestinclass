@@ -1,31 +1,115 @@
-// customize bootstrap variables here:
 @import url("http://fonts.googleapis.com/css?family=Happy+Monkey");
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 @import "variables";
 @import "bootstrap";
-@import "hovernav";
 
-$color1: #00529C;
-$color2: #49D200;
-$color3: #DF0030;
-$color4: #F18D00;
-$color1-lighter: lighten($color1, 15%);
-$color2-lighter: lighten($color2, 15%);
-$color3-lighter: lighten($color3, 15%);
-$color4-lighter: lighten($color4, 15%);
-$color1-darker: darken($color1, 15%);
-$color2-darker: darken($color2, 15%);
-$color3-darker: darken($color3, 15%);
-$color4-darker: darken($color4, 15%);
+@font-face {
+    font-family: 'bubblegum_sansregular';
+    src: url('/css/fonts/bubblegumsans-regular-webfont.eot');
+    src: url('/css/fonts/bubblegumsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/bubblegumsans-regular-webfont.woff') format('woff'),
+         url('/css/fonts/bubblegumsans-regular-webfont.ttf') format('truetype'),
+         url('/css/fonts/bubblegumsans-regular-webfont.svg#bubblegum_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 html,body {height: 100%;}
 body {
   margin-top: 0px;
-  padding-top: 70px;
   padding-bottom: 20px;
 }
+.navbar-brand {
+  padding: 10px 10px 0 0;
+}
+h1, h2, .navbar-nav > li > a {
+  font-family: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
+}
+.navbar-nav > li > a {
+  font-size: $font-size-large;
+}
+.navbar {
+  margin-bottom: 0px;
+  border-bottom: 1px solid $color2;
+}
+@media (max-width: 767px) {
+  #navbar-mobile-collapse {
+    border: none;
+    padding-top: 15px;
+  }
+}
+/* Reduce logo size on extra-small screens */
+@media (max-width: 480px) {
+  .logo-sm {
+    max-width: 250px;
+    height: auto;
+  }
+}
+/* Make navbar dropdown on hover. Works only on screen sizes larger than phones */
+@media (min-width: 768px) {
+  .navbar-nav .caret {
+    display: none;
+  }
+  .navbar-nav .open ul {
+    display: none;
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: $color1;
+    background: none;
+  }
+  .navbar-default .navbar-nav > .hovernav > a {
+    color: $gray-dark;
+  }
+  .navbar-default .navbar-nav > .hovernav:hover > a,
+  .navbar-default .navbar-nav > .hovernav:hover > a:hover,
+  .navbar-default .navbar-nav > .hovernav:hover > a:focus {
+    color: $gray-darker;
+  }
+  .navbar-default .navbar-nav > li:hover {
+    background: none;
+  }
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block;
+    padding: 20px 0 3px 0;
+    left: 10px;
+    min-width: 200px;
+    border: 1px solid $color2;
+    li a {
+      font-size: $font-size-small;
+    }
+  }
+  .columns {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    width: 350px;
+  }
+  /* Show slanted green box on navbar hover */
+  .navbar-default .navbar-nav > li:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    display: block;
+    width: 100%;
+    height: 23px;
+    background: $color2;
+    -webkit-transform: skewX(-8deg);
+    -ms-transform: skewX(-8deg);
+    transform: skewX(-8deg);
+    z-index: 1001;
+  }
+}
+#nearest-location > a {
+  color: $gray-light;
+}
+ 
 .jumbotron {
-  background: url('http://placehold.it/1500x500') no-repeat center center;
+  // background: url('http://placehold.it/1500x500') no-repeat center center;
   min-height: 450px;
   margin-bottom: 0px;
   h1 {font-size: 2.8em;}
@@ -34,46 +118,58 @@ body {
   max-width: 400px;
 }
 
-.navbar-brand {
-  padding: 10px;
-}
-h1, h2, .navbar-nav > li > a {
-  font-family: 'Happy Monkey', Helvetica, Arial, sans-serif;
-}
-.navbar-nav > li > a {
-  font-size: $font-size-large;
-}
 .promobox {
   img {
+    padding: 10px;
     display: block;
     margin: 0px auto 10px auto;
   }
   h2 {
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
+    margin-bottom: 4px;
+  }
+  button {
+    margin: 0 auto; ;
   }
 }
 .promobox1 > h2 {color: $color1;}
 .promobox2 > h2 {color: $color2;}
 .promobox3 > h2 {color: $color3;}
+.promobox4 > h2 {color: $color4;}
+.promobox5 > h2 {color: $color1-lighter;}
+.promobox6 > h2 {color: $color2-lighter;}
+.learnmore {text-align: center;}
 
 .circle {
   margin: 10px 4px;
-  padding: 8px 0 0 0;
+  padding: 6px 0 0 2px;
   display: inline-block;
   background: #fff;
+  border: 1px solid $color2;
   border-radius: 50%;
-  width: 40px;
-  height: 40px; 
+  width: 34px;
+  height: 34px;
+  a {color: $color2;}
 }
+.circle:hover {background: $gray-lighter;}
 
 footer {
-  .footer-legal {
-    font-size: $font-size-tiny;
-  }
   text-align: center;
-  background: $gray-lighter;
+  border-top: 1px solid $color2;
   margin-top: 50px;
-  padding: 50px 0px 5px 0px;
+  padding: 15px 0px 15px 0px;
+  
 }
+.footer-legal {
+  text-align: center;
+  font-size: $font-size-tiny;
+}
+.footer-links {
+  font-size: $font-size-small;
+  text-align: center;
+  padding: 15px 0 5px 0;
+  a {padding: 0 8px 0 0;}
+}
+.footer-buttons {margin: auto;}

@@ -27,7 +27,7 @@ module.exports = function(grunt) {
           sourceMapName: 'js/sourcemap.map'
         },
         files: {
-          'js/main.min.js': ['_javascripts/bootstrap/dropdown.js', '_javascripts/hovernav.js']
+          'js/main.min.js': ['_javascripts/bootstrap.min.js', '_javascripts/hovernav.js']
         }
       }
     },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '_sass/*.scss',
-        tasks: ['compass','shell:build'],
+        tasks: ['compass','shell:build','shell:serve'],
         options: {
           interrupt: true,
           atBegin: true,
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: '_javascripts/**/*.js',
-        tasks: ['uglify:javascripts','shell:build'],
+        tasks: ['uglify:javascripts','shell:build','shell:serve'],
         options: {
           interrupt: true,
           atBegin: true,
