@@ -7621,19 +7621,20 @@ h1, h2, .navbar-nav > li > a {
 
 /* line 28, ../_sass/styles.scss */
 .navbar-nav > li > a {
+  line-height: 24px;
   padding-top: 24px;
   padding-bottom: 14px;
   font-size: 21px;
 }
 
-/* line 33, ../_sass/styles.scss */
+/* line 34, ../_sass/styles.scss */
 .navbar {
   margin-bottom: 0px;
   border-bottom: 1px solid #006838;
 }
 
 @media (max-width: 767px) {
-  /* line 38, ../_sass/styles.scss */
+  /* line 39, ../_sass/styles.scss */
   #navbar-mobile-collapse {
     border: none;
     padding-top: 15px;
@@ -7641,7 +7642,7 @@ h1, h2, .navbar-nav > li > a {
 }
 /* Reduce logo size on extra-small screens */
 @media (max-width: 480px) {
-  /* line 45, ../_sass/styles.scss */
+  /* line 46, ../_sass/styles.scss */
   .logo-sm {
     max-width: 250px;
     height: auto;
@@ -7649,17 +7650,17 @@ h1, h2, .navbar-nav > li > a {
 }
 /* Make navbar dropdown on hover. Works only on screen sizes larger than phones */
 @media (min-width: 768px) {
-  /* line 52, ../_sass/styles.scss */
+  /* line 53, ../_sass/styles.scss */
   .navbar-nav .caret {
     display: none;
   }
 
-  /* line 55, ../_sass/styles.scss */
+  /* line 56, ../_sass/styles.scss */
   .navbar-nav .open ul {
     display: none;
   }
 
-  /* line 63, ../_sass/styles.scss */
+  /* line 64, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus,
@@ -7670,24 +7671,24 @@ h1, h2, .navbar-nav > li > a {
     background: none;
   }
 
-  /* line 67, ../_sass/styles.scss */
+  /* line 68, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav > a {
     color: #333333;
   }
 
-  /* line 72, ../_sass/styles.scss */
+  /* line 73, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav:hover > a,
   .navbar-default .navbar-nav > .hovernav:hover > a:hover,
   .navbar-default .navbar-nav > .hovernav:hover > a:focus {
     color: #222222;
   }
 
-  /* line 75, ../_sass/styles.scss */
+  /* line 76, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li:hover {
     background: none;
   }
 
-  /* line 78, ../_sass/styles.scss */
+  /* line 79, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
     padding: 20px 0 3px 0;
@@ -7695,12 +7696,12 @@ h1, h2, .navbar-nav > li > a {
     min-width: 200px;
     border: 1px solid #006838;
   }
-  /* line 84, ../_sass/styles.scss */
+  /* line 85, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu li a {
     font-size: 14px;
   }
 
-  /* line 88, ../_sass/styles.scss */
+  /* line 89, ../_sass/styles.scss */
   .columns {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -7709,7 +7710,7 @@ h1, h2, .navbar-nav > li > a {
   }
 
   /* Show slanted green box on navbar hover */
-  /* line 95, ../_sass/styles.scss */
+  /* line 96, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li:hover:after {
     content: "";
     position: absolute;
@@ -7724,81 +7725,81 @@ h1, h2, .navbar-nav > li > a {
     z-index: 1001;
   }
 }
-/* line 109, ../_sass/styles.scss */
-#nearest-location > a {
+/* line 110, ../_sass/styles.scss */
+#nearest-location a {
   margin-left: 10px;
   color: #f18d00;
 }
 
-/* line 114, ../_sass/styles.scss */
+/* line 115, ../_sass/styles.scss */
 .jumbotron {
   min-height: 450px;
   margin-bottom: 0px;
 }
-/* line 118, ../_sass/styles.scss */
+/* line 119, ../_sass/styles.scss */
 .jumbotron h1 {
   font-size: 2.8em;
 }
 
-/* line 120, ../_sass/styles.scss */
+/* line 121, ../_sass/styles.scss */
 .jumbotron-message {
   max-width: 400px;
 }
 
-/* line 125, ../_sass/styles.scss */
+/* line 126, ../_sass/styles.scss */
 .promobox img {
   padding: 10px;
   display: block;
   margin: 0px auto 10px auto;
 }
-/* line 130, ../_sass/styles.scss */
+/* line 131, ../_sass/styles.scss */
 .promobox h2 {
   color: #fff;
   text-align: center;
   padding: 0px;
   margin-bottom: 4px;
 }
-/* line 136, ../_sass/styles.scss */
+/* line 137, ../_sass/styles.scss */
 .promobox button {
   margin: 0 auto;
 }
 
-/* line 140, ../_sass/styles.scss */
+/* line 141, ../_sass/styles.scss */
 .promobox1 > h2 {
   color: #00529c;
 }
 
-/* line 141, ../_sass/styles.scss */
+/* line 142, ../_sass/styles.scss */
 .promobox2 > h2 {
   color: #006838;
 }
 
-/* line 142, ../_sass/styles.scss */
+/* line 143, ../_sass/styles.scss */
 .promobox3 > h2 {
   color: #df0030;
 }
 
-/* line 143, ../_sass/styles.scss */
+/* line 144, ../_sass/styles.scss */
 .promobox4 > h2 {
   color: #f18d00;
 }
 
-/* line 144, ../_sass/styles.scss */
+/* line 145, ../_sass/styles.scss */
 .promobox5 > h2 {
   color: #007ae9;
 }
 
-/* line 145, ../_sass/styles.scss */
+/* line 146, ../_sass/styles.scss */
 .promobox6 > h2 {
   color: #00b461;
 }
 
-/* line 146, ../_sass/styles.scss */
+/* line 147, ../_sass/styles.scss */
 .learnmore {
   text-align: center;
 }
 
-/* line 148, ../_sass/styles.scss */
+/* line 149, ../_sass/styles.scss */
 .circle {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
@@ -7809,17 +7810,17 @@ h1, h2, .navbar-nav > li > a {
   width: 34px;
   height: 34px;
 }
-/* line 157, ../_sass/styles.scss */
+/* line 158, ../_sass/styles.scss */
 .circle a {
   color: #006838;
 }
 
-/* line 159, ../_sass/styles.scss */
+/* line 160, ../_sass/styles.scss */
 .circle:hover {
   background: #eeeeee;
 }
 
-/* line 161, ../_sass/styles.scss */
+/* line 162, ../_sass/styles.scss */
 footer {
   text-align: center;
   border-top: 1px solid #006838;
@@ -7827,24 +7828,24 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 168, ../_sass/styles.scss */
+/* line 169, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 172, ../_sass/styles.scss */
+/* line 173, ../_sass/styles.scss */
 .footer-links {
   font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
 }
-/* line 176, ../_sass/styles.scss */
+/* line 177, ../_sass/styles.scss */
 .footer-links a {
   padding: 0 8px 0 0;
 }
 
-/* line 178, ../_sass/styles.scss */
+/* line 179, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
 }

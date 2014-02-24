@@ -26,6 +26,7 @@ h1, h2, .navbar-nav > li > a {
   font-family: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
 }
 .navbar-nav > li > a {
+  line-height: 24px;
   padding-top: 24px;
   padding-bottom: 14px;
   font-size: $font-size-large;
@@ -106,7 +107,7 @@ h1, h2, .navbar-nav > li > a {
     z-index: 1001;
   }
 }
-#nearest-location > a {
+#nearest-location a {
   margin-left: 10px;
   color: $color4;
 }
