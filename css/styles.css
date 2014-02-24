@@ -5113,7 +5113,7 @@ input[type="button"].btn-block {
 /* line 153, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 19px 15px;
+  padding: 0px 15px;
   font-size: 21px;
   line-height: 22px;
   height: 60px;
@@ -5166,7 +5166,7 @@ input[type="button"].btn-block {
 
 /* line 218, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 9.5px -15px;
+  margin: 0px -15px;
 }
 /* line 221, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
@@ -5211,8 +5211,8 @@ input[type="button"].btn-block {
   }
   /* line 258, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   /* line 264, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav.navbar-right:last-child {
@@ -7621,74 +7621,84 @@ h1, h2, .navbar-nav > li > a {
 
 /* line 28, ../_sass/styles.scss */
 .navbar-nav > li > a {
-  line-height: 24px;
-  padding-top: 24px;
-  padding-bottom: 14px;
   font-size: 21px;
 }
 
-/* line 34, ../_sass/styles.scss */
+/* line 30, ../_sass/styles.scss */
 .navbar {
   margin-bottom: 0px;
   border-bottom: 1px solid #006838;
 }
 
-@media (max-width: 767px) {
-  /* line 39, ../_sass/styles.scss */
-  #navbar-mobile-collapse {
-    border: none;
-    padding-top: 15px;
-  }
-}
 /* Reduce logo size on extra-small screens */
 @media (max-width: 480px) {
-  /* line 46, ../_sass/styles.scss */
+  /* line 36, ../_sass/styles.scss */
   .logo-sm {
     max-width: 250px;
     height: auto;
   }
 }
+@media (max-width: 767px) {
+  /* line 43, ../_sass/styles.scss */
+  #navbar-mobile-collapse {
+    text-align: center;
+    border: none;
+    padding: 15px 0 0 0;
+  }
+
+  /* line 48, ../_sass/styles.scss */
+  .navbar-brand, .navbar-brand img {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+}
 /* Make navbar dropdown on hover. Works only on screen sizes larger than phones */
 @media (min-width: 768px) {
-  /* line 53, ../_sass/styles.scss */
+  /* line 57, ../_sass/styles.scss */
+  .navbar-nav > li {
+    padding: 26px 0 12px 0;
+  }
+
+  /* line 60, ../_sass/styles.scss */
   .navbar-nav .caret {
     display: none;
   }
 
-  /* line 56, ../_sass/styles.scss */
+  /* line 63, ../_sass/styles.scss */
   .navbar-nav .open ul {
     display: none;
   }
 
-  /* line 64, ../_sass/styles.scss */
+  /* line 71, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus,
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,
   .navbar-default .navbar-nav > .active > a:focus {
-    color: #00529c;
+    color: #333333;
     background: none;
   }
 
-  /* line 68, ../_sass/styles.scss */
+  /* line 75, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav > a {
     color: #333333;
   }
 
-  /* line 73, ../_sass/styles.scss */
+  /* line 80, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav:hover > a,
   .navbar-default .navbar-nav > .hovernav:hover > a:hover,
   .navbar-default .navbar-nav > .hovernav:hover > a:focus {
-    color: #222222;
+    color: #333333;
   }
 
-  /* line 76, ../_sass/styles.scss */
+  /* line 83, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li:hover {
     background: none;
   }
 
-  /* line 79, ../_sass/styles.scss */
+  /* line 86, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
     padding: 20px 0 3px 0;
@@ -7696,12 +7706,12 @@ h1, h2, .navbar-nav > li > a {
     min-width: 200px;
     border: 1px solid #006838;
   }
-  /* line 85, ../_sass/styles.scss */
+  /* line 92, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu li a {
     font-size: 14px;
   }
 
-  /* line 89, ../_sass/styles.scss */
+  /* line 96, ../_sass/styles.scss */
   .columns {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -7710,11 +7720,11 @@ h1, h2, .navbar-nav > li > a {
   }
 
   /* Show slanted green box on navbar hover */
-  /* line 96, ../_sass/styles.scss */
-  .navbar-default .navbar-nav > li:hover:after {
+  /* line 103, ../_sass/styles.scss */
+  .navbar-default .navbar-nav > li.dropdown:hover:after {
     content: "";
     position: absolute;
-    bottom: -15px;
+    bottom: -14px;
     display: block;
     width: 100%;
     height: 23px;
@@ -7725,81 +7735,81 @@ h1, h2, .navbar-nav > li > a {
     z-index: 1001;
   }
 }
-/* line 110, ../_sass/styles.scss */
+/* line 117, ../_sass/styles.scss */
 #nearest-location a {
   margin-left: 10px;
   color: #f18d00;
 }
 
-/* line 115, ../_sass/styles.scss */
+/* line 122, ../_sass/styles.scss */
 .jumbotron {
   min-height: 450px;
   margin-bottom: 0px;
 }
-/* line 119, ../_sass/styles.scss */
+/* line 126, ../_sass/styles.scss */
 .jumbotron h1 {
   font-size: 2.8em;
 }
 
-/* line 121, ../_sass/styles.scss */
+/* line 128, ../_sass/styles.scss */
 .jumbotron-message {
   max-width: 400px;
 }
 
-/* line 126, ../_sass/styles.scss */
+/* line 133, ../_sass/styles.scss */
 .promobox img {
   padding: 10px;
   display: block;
   margin: 0px auto 10px auto;
 }
-/* line 131, ../_sass/styles.scss */
+/* line 138, ../_sass/styles.scss */
 .promobox h2 {
   color: #fff;
   text-align: center;
   padding: 0px;
   margin-bottom: 4px;
 }
-/* line 137, ../_sass/styles.scss */
+/* line 144, ../_sass/styles.scss */
 .promobox button {
   margin: 0 auto;
 }
 
-/* line 141, ../_sass/styles.scss */
+/* line 148, ../_sass/styles.scss */
 .promobox1 > h2 {
   color: #00529c;
 }
 
-/* line 142, ../_sass/styles.scss */
+/* line 149, ../_sass/styles.scss */
 .promobox2 > h2 {
   color: #006838;
 }
 
-/* line 143, ../_sass/styles.scss */
+/* line 150, ../_sass/styles.scss */
 .promobox3 > h2 {
   color: #df0030;
 }
 
-/* line 144, ../_sass/styles.scss */
+/* line 151, ../_sass/styles.scss */
 .promobox4 > h2 {
   color: #f18d00;
 }
 
-/* line 145, ../_sass/styles.scss */
+/* line 152, ../_sass/styles.scss */
 .promobox5 > h2 {
   color: #007ae9;
 }
 
-/* line 146, ../_sass/styles.scss */
+/* line 153, ../_sass/styles.scss */
 .promobox6 > h2 {
   color: #00b461;
 }
 
-/* line 147, ../_sass/styles.scss */
+/* line 154, ../_sass/styles.scss */
 .learnmore {
   text-align: center;
 }
 
-/* line 149, ../_sass/styles.scss */
+/* line 156, ../_sass/styles.scss */
 .circle {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
@@ -7810,17 +7820,17 @@ h1, h2, .navbar-nav > li > a {
   width: 34px;
   height: 34px;
 }
-/* line 158, ../_sass/styles.scss */
+/* line 165, ../_sass/styles.scss */
 .circle a {
   color: #006838;
 }
 
-/* line 160, ../_sass/styles.scss */
+/* line 167, ../_sass/styles.scss */
 .circle:hover {
   background: #eeeeee;
 }
 
-/* line 162, ../_sass/styles.scss */
+/* line 169, ../_sass/styles.scss */
 footer {
   text-align: center;
   border-top: 1px solid #006838;
@@ -7828,24 +7838,24 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 169, ../_sass/styles.scss */
+/* line 176, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 173, ../_sass/styles.scss */
+/* line 180, ../_sass/styles.scss */
 .footer-links {
   font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
 }
-/* line 177, ../_sass/styles.scss */
+/* line 184, ../_sass/styles.scss */
 .footer-links a {
   padding: 0 8px 0 0;
 }
 
-/* line 179, ../_sass/styles.scss */
+/* line 186, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
 }
