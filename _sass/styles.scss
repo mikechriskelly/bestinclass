@@ -26,6 +26,8 @@ h1, h2, .navbar-nav > li > a {
   font-family: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
 }
 .navbar-nav > li > a {
+  padding-top: 24px;
+  padding-bottom: 14px;
   font-size: $font-size-large;
 }
 .navbar {
@@ -105,7 +107,8 @@ h1, h2, .navbar-nav > li > a {
   }
 }
 #nearest-location > a {
-  color: $gray-light;
+  margin-left: 10px;
+  color: $color4;
 }
  
 .jumbotron {
