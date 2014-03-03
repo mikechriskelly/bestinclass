@@ -1,45 +1,55 @@
-@import url("http://fonts.googleapis.com/css?family=Happy+Monkey");
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-@import "variables";
-@import "bootstrap";
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+@import 'variables';
+@import 'bootstrap';
 
+/* Playful Font for Headers */
 @font-face {
-    font-family: 'bubblegum_sansregular';
-    src: url('/css/fonts/bubblegumsans-regular-webfont.eot');
-    src: url('/css/fonts/bubblegumsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/css/fonts/bubblegumsans-regular-webfont.woff') format('woff'),
-         url('/css/fonts/bubblegumsans-regular-webfont.ttf') format('truetype'),
-         url('/css/fonts/bubblegumsans-regular-webfont.svg#bubblegum_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'bubblegum_sansregular';
+  src: url('/css/fonts/bubblegumsans-regular-webfont.eot');
+  src: url('/css/fonts/bubblegumsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/css/fonts/bubblegumsans-regular-webfont.woff') format('woff'),
+       url('/css/fonts/bubblegumsans-regular-webfont.ttf') format('truetype'),
+       url('/css/fonts/bubblegumsans-regular-webfont.svg#bubblegum_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+$header-font: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
 
 html,body {height: 100%;}
 body {
   margin-top: 0px;
   padding-bottom: 20px;
 }
+/* General Navigation and Heading */
 .navbar-brand {
   padding: 10px 10px 0 0;
 }
-h1, h2, .navbar-nav > li > a {
-  font-family: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
+h1, h2, h3, .navbar-nav > li > a {
+  font-family: $header-font;
 }
 .navbar-nav > li > a {font-size: $font-size-large;}
-
 .navbar {
   margin-bottom: 0px;
   border-bottom: 1px solid $color2;
 }
-/* Reduce logo size on extra-small screens */
+#nearest-location a {
+  margin-left: 10px;
+  color: $color4;
+}
+
+
+/* Navigation menu */
+/* Only for extra small screens */
 @media (max-width: 480px) {
+  /* Reduce logo size on extra-small screens */
   .logo-sm {
     max-width: 250px;
     height: auto;
   }
 }
-
+/* Only for small screens */
 @media (max-width: 767px) {
+  /* Collapse the navigation menu into hamburger button */
   #navbar-mobile-collapse {
     text-align: center;
     border: none;
@@ -51,9 +61,9 @@ h1, h2, .navbar-nav > li > a {
     margin: 0 auto;
   }
 }
-
-/* Make navbar dropdown on hover. Works only on screen sizes larger than phones */
+/* Only for larger screens */
 @media (min-width: 768px) {
+  /* Make navbar dropdown on hover */
   .navbar-nav > li {
     padding: 26px 0 12px 0;
   }
@@ -93,6 +103,7 @@ h1, h2, .navbar-nav > li > a {
       font-size: $font-size-small;
     }
   }
+  /* Give dropdown menu 2 columns */
   .columns {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -114,11 +125,8 @@ h1, h2, .navbar-nav > li > a {
     z-index: 1001;
   }
 }
-#nearest-location a {
-  margin-left: 10px;
-  color: $color4;
-}
- 
+
+/* Jumbotron screen on homepage */
 .jumbotron {
   // background: url('http://placehold.it/1500x500') no-repeat center center;
   min-height: 450px;
@@ -126,9 +134,10 @@ h1, h2, .navbar-nav > li > a {
   h1 {font-size: 2.8em;}
 }
 .jumbotron-message {
-  max-width: 400px;
+  max-width: 475px;
 }
 
+/* Promotional boxes on homepage */
 .promobox {
   img {
     padding: 10px;
@@ -152,7 +161,7 @@ h1, h2, .navbar-nav > li > a {
 .promobox5 > h2 {color: $color1-lighter;}
 .promobox6 > h2 {color: $color2-lighter;}
 .learnmore {text-align: center;}
-
+.rowspace {margin-top: 25px;};
 .circle {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
@@ -166,6 +175,86 @@ h1, h2, .navbar-nav > li > a {
 }
 .circle:hover {background: $gray-lighter;}
 
+
+/* Table for program comparison chart */
+.program-list {
+  .details {
+    font-size: $font-size-small;
+  }
+  .program {
+    margin-bottom: 10px;
+    h3 {
+      color: $color1;
+      margin: 0;
+    }
+  }
+  th.details {
+    text-transform: uppercase;
+    color: $gray; 
+    font-size: $font-size-tiny; 
+    font-weight: bold;
+  }
+  td.details {
+    color: $gray-darker; 
+    font-size: $font-size-small; 
+  }
+}
+@media (max-width: 767px) {
+  /* Collapse tables into stackable blocks */
+  .program-list table, thead, tbody, th, td, tr { 
+    display: block;
+  }
+  .program-list {
+    margin-top: 40px;
+    
+    /* Hide table headers */
+    thead tr {display: none;}
+
+    tr {margin-bottom: 30px;}
+
+    td.details { 
+      border: none;
+      position: relative;
+      padding-left: 20%; 
+    }
+    /* Prepend column labels */
+    td.details:before { 
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 15%;
+      white-space: nowrap;
+      text-transform: uppercase;
+      color: $gray; 
+      font-size: $font-size-tiny; 
+      font-weight: bold;
+    }
+    /*  Label the data (excluding title and description) */
+    td.details:nth-of-type(2):before { content: 'GRADES';}
+    td.details:nth-of-type(3):before { content: 'SUBJECTS'; }
+    td.details:nth-of-type(4):before { content: 'SCHEDULE'; }
+    td.details:nth-of-type(5):before { content: 'LOCATIONS'; } 
+  }
+}
+@media (min-width: 768px) {
+  .program-list {
+    margin-top: 60px;
+    border: none;
+    width: 100%; 
+    border-collapse: separate;
+    border-spacing: 0;
+    .program {
+      width: 50%;
+      padding: 0 50px 50px 0;
+    }
+    .details {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}
+
+/* Footer */
 footer {
   text-align: center;
   border-top: 1px solid $color2;
