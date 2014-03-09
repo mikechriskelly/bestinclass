@@ -1,0 +1,43 @@
+---
+layout: default
+title: Best in Class Education
+---
+
+<div class="program-header">
+  <div class="container">
+    <h1>Enrichment Program</h1>
+  </div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs program-tabs">
+    <li class="active"><a href="#english" data-toggle="tab">English Enrichment</a></li>
+    <li><a href="#math" data-toggle="tab">Math Enrichment</a></li>
+  </ul>
+</div>
+
+<!-- Tab panes -->
+<div class="container">  
+  <div class="tab-content">
+    <div class="tab-pane active" id="english">
+      <p>Your child will thrive in these small group classes designed to engage students in critical thinking and application of skills and knowledge. Enrichment classes can be used for supplemental or remedial purposes, or for gifted students who need extra challenges. Our college-educated instructors actively teach and monitor progress to ensure that your child has the best possible experience.</p>
+      <div class="row">
+        <img src="http://placehold.it/700x300" alt="Cycle Diagram of Enrichment Program" class="img-responsive">
+      </div>
+    </div>
+    <div class="tab-pane" id="math">
+      Math
+    </div>
+  </div>
+</div>
+
+<!-- Event handlers for clicking on tabs -->
+<script>
+  $('#english a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
+  $('#math a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  });
+</script>

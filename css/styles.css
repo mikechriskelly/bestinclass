@@ -7609,39 +7609,43 @@ body {
   padding-bottom: 20px;
 }
 
+/* ---------------------------------- */
 /* General Navigation and Heading */
-/* line 24, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* line 26, ../_sass/styles.scss */
 .navbar-brand {
   padding: 10px 10px 0 0;
 }
 
-/* line 27, ../_sass/styles.scss */
+/* line 29, ../_sass/styles.scss */
 h1, h2, h3, .navbar-nav > li > a {
   font-family: "bubblegum_sansregular", Helvetica, Arial, sans-serif;
 }
 
-/* line 30, ../_sass/styles.scss */
+/* line 32, ../_sass/styles.scss */
 .navbar-nav > li > a {
   font-size: 21px;
 }
 
-/* line 31, ../_sass/styles.scss */
+/* line 33, ../_sass/styles.scss */
 .navbar {
   margin-bottom: 0px;
   border-bottom: 1px solid #006838;
 }
 
-/* line 35, ../_sass/styles.scss */
+/* line 37, ../_sass/styles.scss */
 #nearest-location a {
   margin-left: 10px;
   color: #f18d00;
 }
 
+/* ---------------------------------- */
 /* Navigation menu */
+/* ---------------------------------- */
 /* Only for extra small screens */
 @media (max-width: 480px) {
   /* Reduce logo size on extra-small screens */
-  /* line 45, ../_sass/styles.scss */
+  /* line 49, ../_sass/styles.scss */
   .logo-sm {
     max-width: 250px;
     height: auto;
@@ -7650,14 +7654,14 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Only for small screens */
 @media (max-width: 767px) {
   /* Collapse the navigation menu into hamburger button */
-  /* line 53, ../_sass/styles.scss */
+  /* line 57, ../_sass/styles.scss */
   #navbar-mobile-collapse {
     text-align: center;
     border: none;
     padding: 15px 0 0 0;
   }
 
-  /* line 58, ../_sass/styles.scss */
+  /* line 62, ../_sass/styles.scss */
   .navbar-brand, .navbar-brand img {
     display: block;
     float: none;
@@ -7667,22 +7671,22 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Only for larger screens */
 @media (min-width: 768px) {
   /* Make navbar dropdown on hover */
-  /* line 67, ../_sass/styles.scss */
+  /* line 71, ../_sass/styles.scss */
   .navbar-nav > li {
     padding: 26px 0 12px 0;
   }
 
-  /* line 70, ../_sass/styles.scss */
+  /* line 74, ../_sass/styles.scss */
   .navbar-nav .caret {
     display: none;
   }
 
-  /* line 73, ../_sass/styles.scss */
+  /* line 77, ../_sass/styles.scss */
   .navbar-nav .open ul {
     display: none;
   }
 
-  /* line 81, ../_sass/styles.scss */
+  /* line 85, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus,
@@ -7693,24 +7697,24 @@ h1, h2, h3, .navbar-nav > li > a {
     background: none;
   }
 
-  /* line 85, ../_sass/styles.scss */
+  /* line 89, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav > a {
     color: #333333;
   }
 
-  /* line 90, ../_sass/styles.scss */
+  /* line 94, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav:hover > a,
   .navbar-default .navbar-nav > .hovernav:hover > a:hover,
   .navbar-default .navbar-nav > .hovernav:hover > a:focus {
     color: #333333;
   }
 
-  /* line 93, ../_sass/styles.scss */
+  /* line 97, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li:hover {
     background: none;
   }
 
-  /* line 96, ../_sass/styles.scss */
+  /* line 100, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
     padding: 20px 0 3px 0;
@@ -7718,13 +7722,13 @@ h1, h2, h3, .navbar-nav > li > a {
     min-width: 200px;
     border: 1px solid #006838;
   }
-  /* line 102, ../_sass/styles.scss */
+  /* line 106, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu li a {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   /* Give dropdown menu 2 columns */
-  /* line 107, ../_sass/styles.scss */
+  /* line 111, ../_sass/styles.scss */
   .columns {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -7733,7 +7737,7 @@ h1, h2, h3, .navbar-nav > li > a {
   }
 
   /* Show slanted green box on navbar hover */
-  /* line 114, ../_sass/styles.scss */
+  /* line 118, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li.dropdown:hover:after {
     content: "";
     position: absolute;
@@ -7748,82 +7752,86 @@ h1, h2, h3, .navbar-nav > li > a {
     z-index: 1001;
   }
 }
+/* ---------------------------------- */
 /* Jumbotron screen on homepage */
-/* line 130, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* line 136, ../_sass/styles.scss */
 .jumbotron {
   min-height: 450px;
   margin-bottom: 0px;
 }
-/* line 134, ../_sass/styles.scss */
+/* line 140, ../_sass/styles.scss */
 .jumbotron h1 {
   font-size: 2.8em;
 }
 
-/* line 136, ../_sass/styles.scss */
+/* line 142, ../_sass/styles.scss */
 .jumbotron-message {
   max-width: 475px;
 }
 
+/* ---------------------------------- */
 /* Promotional boxes on homepage */
-/* line 142, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* line 150, ../_sass/styles.scss */
 .promobox img {
   padding: 10px;
   display: block;
   margin: 0px auto 10px auto;
 }
-/* line 147, ../_sass/styles.scss */
+/* line 155, ../_sass/styles.scss */
 .promobox h2 {
   color: #fff;
   text-align: center;
   padding: 0px;
   margin-bottom: 4px;
 }
-/* line 153, ../_sass/styles.scss */
+/* line 161, ../_sass/styles.scss */
 .promobox button {
   margin: 0 auto;
 }
 
-/* line 157, ../_sass/styles.scss */
+/* line 165, ../_sass/styles.scss */
 .promobox1 > h2 {
   color: #00529c;
 }
 
-/* line 158, ../_sass/styles.scss */
+/* line 166, ../_sass/styles.scss */
 .promobox2 > h2 {
   color: #006838;
 }
 
-/* line 159, ../_sass/styles.scss */
+/* line 167, ../_sass/styles.scss */
 .promobox3 > h2 {
   color: #df0030;
 }
 
-/* line 160, ../_sass/styles.scss */
+/* line 168, ../_sass/styles.scss */
 .promobox4 > h2 {
   color: #f18d00;
 }
 
-/* line 161, ../_sass/styles.scss */
+/* line 169, ../_sass/styles.scss */
 .promobox5 > h2 {
   color: #007ae9;
 }
 
-/* line 162, ../_sass/styles.scss */
+/* line 170, ../_sass/styles.scss */
 .promobox6 > h2 {
   color: #00b461;
 }
 
-/* line 163, ../_sass/styles.scss */
+/* line 171, ../_sass/styles.scss */
 .learnmore {
   text-align: center;
 }
 
-/* line 164, ../_sass/styles.scss */
+/* line 172, ../_sass/styles.scss */
 .rowspace {
   margin-top: 25px;
 }
 
-/* line 165, ../_sass/styles.scss */
+/* line 173, ../_sass/styles.scss */
 .circle {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
@@ -7834,38 +7842,40 @@ h1, h2, h3, .navbar-nav > li > a {
   width: 34px;
   height: 34px;
 }
-/* line 174, ../_sass/styles.scss */
+/* line 182, ../_sass/styles.scss */
 .circle a {
   color: #006838;
 }
 
-/* line 176, ../_sass/styles.scss */
+/* line 184, ../_sass/styles.scss */
 .circle:hover {
   background: #eeeeee;
 }
 
+/* ---------------------------------- */
 /* Table for program comparison chart */
-/* line 181, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* line 190, ../_sass/styles.scss */
 .program-list .details {
   font-size: 13px;
 }
-/* line 184, ../_sass/styles.scss */
+/* line 193, ../_sass/styles.scss */
 .program-list .program {
   margin-bottom: 10px;
 }
-/* line 186, ../_sass/styles.scss */
+/* line 195, ../_sass/styles.scss */
 .program-list .program h3 {
   color: #00529c;
   margin: 0;
 }
-/* line 191, ../_sass/styles.scss */
+/* line 200, ../_sass/styles.scss */
 .program-list th.details {
   text-transform: uppercase;
   color: #555555;
   font-size: 9px;
   font-weight: bold;
 }
-/* line 197, ../_sass/styles.scss */
+/* line 206, ../_sass/styles.scss */
 .program-list td.details {
   color: #222222;
   font-size: 13px;
@@ -7873,33 +7883,33 @@ h1, h2, h3, .navbar-nav > li > a {
 
 @media (max-width: 767px) {
   /* Collapse tables into stackable blocks */
-  /* line 204, ../_sass/styles.scss */
+  /* line 213, ../_sass/styles.scss */
   .program-list table, thead, tbody, th, td, tr {
     display: block;
   }
 
-  /* line 207, ../_sass/styles.scss */
+  /* line 216, ../_sass/styles.scss */
   .program-list {
     margin-top: 40px;
     /* Hide table headers */
     /* Prepend column labels */
     /*  Label the data (excluding title and description) */
   }
-  /* line 211, ../_sass/styles.scss */
+  /* line 220, ../_sass/styles.scss */
   .program-list thead tr {
     display: none;
   }
-  /* line 213, ../_sass/styles.scss */
+  /* line 222, ../_sass/styles.scss */
   .program-list tr {
     margin-bottom: 30px;
   }
-  /* line 215, ../_sass/styles.scss */
+  /* line 224, ../_sass/styles.scss */
   .program-list td.details {
     border: none;
     position: relative;
     padding-left: 20%;
   }
-  /* line 221, ../_sass/styles.scss */
+  /* line 230, ../_sass/styles.scss */
   .program-list td.details:before {
     position: absolute;
     top: 5px;
@@ -7911,25 +7921,25 @@ h1, h2, h3, .navbar-nav > li > a {
     font-size: 9px;
     font-weight: bold;
   }
-  /* line 233, ../_sass/styles.scss */
+  /* line 242, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(2):before {
     content: 'GRADES';
   }
-  /* line 234, ../_sass/styles.scss */
+  /* line 243, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(3):before {
     content: 'SUBJECTS';
   }
-  /* line 235, ../_sass/styles.scss */
+  /* line 244, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(4):before {
     content: 'SCHEDULE';
   }
-  /* line 236, ../_sass/styles.scss */
+  /* line 245, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(5):before {
     content: 'LOCATIONS';
   }
 }
 @media (min-width: 768px) {
-  /* line 240, ../_sass/styles.scss */
+  /* line 249, ../_sass/styles.scss */
   .program-list {
     margin-top: 60px;
     border: none;
@@ -7937,19 +7947,55 @@ h1, h2, h3, .navbar-nav > li > a {
     border-collapse: separate;
     border-spacing: 0;
   }
-  /* line 246, ../_sass/styles.scss */
+  /* line 255, ../_sass/styles.scss */
   .program-list .program {
     width: 50%;
     padding: 0 50px 50px 0;
   }
-  /* line 250, ../_sass/styles.scss */
+  /* line 259, ../_sass/styles.scss */
   .program-list .details {
     text-align: center;
     vertical-align: middle;
   }
 }
+/* ---------------------------------- */
+/* Section Header */
+/* ---------------------------------- */
+/* line 269, ../_sass/styles.scss */
+.program-header {
+  position: relative;
+  height: 250px;
+  background: #eeeeee;
+}
+
+/* line 274, ../_sass/styles.scss */
+.program-tabs > li {
+  float: none;
+  display: inline-block;
+  *display: inline;
+  /* ie7 fix */
+  zoom: 1;
+  /* hasLayout ie7 trigger */
+}
+
+/* line 280, ../_sass/styles.scss */
+.program-tabs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* line 287, ../_sass/styles.scss */
+.tab-pane {
+  padding-top: 25px;
+}
+
+/* ---------------------------------- */
 /* Footer */
-/* line 258, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* line 292, ../_sass/styles.scss */
 footer {
   text-align: center;
   border-top: 1px solid #006838;
@@ -7957,24 +8003,24 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 265, ../_sass/styles.scss */
+/* line 299, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 269, ../_sass/styles.scss */
+/* line 303, ../_sass/styles.scss */
 .footer-links {
   font-size: 13px;
   text-align: center;
   padding: 15px 0 5px 0;
 }
-/* line 273, ../_sass/styles.scss */
+/* line 307, ../_sass/styles.scss */
 .footer-links a {
   padding: 0 8px 0 0;
 }
 
-/* line 275, ../_sass/styles.scss */
+/* line 309, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
 }
