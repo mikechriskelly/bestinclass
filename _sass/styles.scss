@@ -174,14 +174,14 @@ h1, h2, h3, .navbar-nav > li > a {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
   display: inline-block;
-  background: #fff;
-  border: 1px solid $color2;
+  background: $color2;
+  border: none;
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  a {color: $color2;}
+  a {color: #fff;}
 }
-.circle:hover {background: $gray-lighter;}
+.circle:hover {background: $color2-lighter;}
 
 /* ---------------------------------- */
 /* Table for program comparison chart */
@@ -267,9 +267,11 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Section Header */
 /* ---------------------------------- */
 .program-header {
+  background: $gray-lighter;
+  text-align: center;
   position: relative;
   height: 250px;
-  background: $gray-lighter;
+  h1 {margin-top: 50px;}
 }
 .program-tabs > li {
     float: none;
@@ -285,6 +287,38 @@ h1, h2, h3, .navbar-nav > li > a {
   text-align:center;
 }
 .tab-pane {padding-top: 25px;}
+
+.testimonial {
+  background: url('/images/pattern-atlb.png') repeat center center;
+  color: #fff;
+  margin: 60px 0 0 0;
+  padding: 20px 10px;
+}
+.testimonial-quote {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px 0;
+}
+.location-finder {
+  text-align: center;
+  margin: 30px 0 10px 0;
+  input {margin: 10px auto;}
+}
+#zipCode {
+  width: 100px;
+}
+
+
+
+button {
+  color: #fff;
+  background: $color2;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
 
 /* ---------------------------------- */
 /* Footer */
