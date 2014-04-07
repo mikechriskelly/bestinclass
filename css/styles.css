@@ -5320,11 +5320,11 @@ input[type="button"].btn-block {
 }
 /* line 387, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #333333;
+  color: #777777;
 }
 /* line 390, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #1a1a1a;
+  color: #5e5e5e;
   background-color: transparent;
 }
 /* line 396, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5333,7 +5333,7 @@ input[type="button"].btn-block {
 }
 /* line 401, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #333333;
+  color: #777777;
 }
 /* line 405, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -5375,7 +5375,7 @@ input[type="button"].btn-block {
 @media (max-width: 767px) {
   /* line 459, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #333333;
+    color: #777777;
   }
   /* line 462, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5395,7 +5395,7 @@ input[type="button"].btn-block {
 }
 /* line 492, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #333333;
+  color: #777777;
 }
 /* line 494, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.0.2/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
@@ -7624,7 +7624,7 @@ h1, h2, h3, .navbar-nav > li > a {
 
 /* line 32, ../_sass/styles.scss */
 .navbar-nav > li > a {
-  font-size: 21px;
+  font-size: 18px;
 }
 
 /* line 33, ../_sass/styles.scss */
@@ -7635,7 +7635,7 @@ h1, h2, h3, .navbar-nav > li > a {
 
 /* line 37, ../_sass/styles.scss */
 #nearest-location a {
-  margin-left: 10px;
+  margin-left: 0px;
   color: #f18d00;
 }
 
@@ -7836,7 +7836,7 @@ h1, h2, h3, .navbar-nav > li > a {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
   display: inline-block;
-  background: #006838;
+  background: #fff;
   border: none;
   border-radius: 50%;
   width: 34px;
@@ -7844,12 +7844,7 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 /* line 182, ../_sass/styles.scss */
 .circle a {
-  color: #fff;
-}
-
-/* line 184, ../_sass/styles.scss */
-.circle:hover {
-  background: #00b461;
+  color: #006838;
 }
 
 /* ---------------------------------- */
@@ -8003,31 +7998,41 @@ h1, h2, h3, .navbar-nav > li > a {
   color: #fff;
   margin: 60px 0 0 0;
   padding: 20px 10px;
+  border-top: 1px solid #555555;
+  border-bottom: 1px solid #555555;
 }
 
-/* line 297, ../_sass/styles.scss */
+/* line 299, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
   padding: 20px 0;
 }
 
-/* line 302, ../_sass/styles.scss */
-.location-finder {
-  text-align: center;
-  margin: 30px 0 10px 0;
+/* line 304, ../_sass/styles.scss */
+.shaded {
+  padding: 10px 0;
+  background: #f5f7f9;
+  border-top: 1px solid #e2e3e6;
+  border-bottom: 1px solid #e2e3e6;
 }
-/* line 305, ../_sass/styles.scss */
+
+/* line 310, ../_sass/styles.scss */
+.location-finder {
+  margin: 5em 0;
+  text-align: center;
+}
+/* line 313, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 307, ../_sass/styles.scss */
+/* line 315, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
 
-/* line 312, ../_sass/styles.scss */
+/* line 320, ../_sass/styles.scss */
 .fluid-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -8035,7 +8040,7 @@ h1, h2, h3, .navbar-nav > li > a {
   height: 0;
 }
 
-/* line 317, ../_sass/styles.scss */
+/* line 325, ../_sass/styles.scss */
 .fluid-wrapper iframe {
   position: absolute;
   top: 0;
@@ -8045,7 +8050,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border: none;
 }
 
-/* line 327, ../_sass/styles.scss */
+/* line 335, ../_sass/styles.scss */
 button {
   color: #fff;
   background: #006838;
@@ -8059,32 +8064,34 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 340, ../_sass/styles.scss */
+/* line 348, ../_sass/styles.scss */
 footer {
+  color: #fff;
+  background: #006838;
   text-align: center;
-  border-top: 1px solid #006838;
   margin-top: 50px;
   padding: 15px 0px 15px 0px;
 }
 
-/* line 347, ../_sass/styles.scss */
+/* line 355, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 351, ../_sass/styles.scss */
+/* line 359, ../_sass/styles.scss */
 .footer-links {
   font-size: 13px;
   text-align: center;
   padding: 15px 0 5px 0;
 }
-/* line 355, ../_sass/styles.scss */
+/* line 363, ../_sass/styles.scss */
 .footer-links a {
+  color: #fff;
   padding: 0 8px 0 0;
 }
 
-/* line 357, ../_sass/styles.scss */
+/* line 368, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
 }

@@ -19,17 +19,21 @@ title: Best in Class Education
 <div class="container">  
   <div class="tab-content">
     <div class="tab-pane active" id="english">
-      <h2>Areas of Focus</h2>
-      <ul>
-        <li>Reading Comprehension</li>
-        <li>Essay and Creative Writing</li>
-        <li>Vocabulary</li>
-        <li>Grammar & Spelling</li>
-        <li>Sentence and Paragraph Structure</li>
-        <li>Standardized Test Preparation</li>
-      </ul>
       <div class="row">
-        <img src="http://placehold.it/700x300" alt="Cycle Diagram of Enrichment Program" class="img-responsive center-block">
+        <div class="col-md-4">
+          <h2>Areas of Focus</h2>
+          <ul>
+            <li>Reading Comprehension</li>
+            <li>Essay and Creative Writing</li>
+            <li>Vocabulary</li>
+            <li>Grammar & Spelling</li>
+            <li>Sentence and Paragraph Structure</li>
+            <li>Standardized Test Preparation</li>
+          </ul>
+        </div>
+        <div class="col-md-8">
+          <img src="http://placehold.it/700x300" alt="Cycle Diagram of Enrichment Program" class="img-responsive center-block">
+        </div>
       </div>
       <hr>
       <div class="row">
@@ -46,7 +50,6 @@ title: Best in Class Education
             <li>Matches students’ abilities to the learning level most appropriate for them, and groups them with classmates at the same level so they can learn collaboratively together</li>
         </div>
       </div>
-      <hr>
     </div>
     <div class="tab-pane" id="math">
       Math
@@ -80,7 +83,7 @@ title: Best in Class Education
     </div>
   </div>
 </div>
-<div class="container location-finder">
+<div class="container-fluid location-finder">
   <h1>Find a Center Near You</h1>
   <form class="form-inline" role="form">
     <div class="form-group">
@@ -95,11 +98,11 @@ title: Best in Class Education
 <!-- Event handlers for clicking on tabs -->
 <script>
   $('#english a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
+    e.preventDefault();
+    $(this).tab('show');
   });
   $('#math a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
+    e.preventDefault();
+    $(this).tab('show');
   });
 </script>
