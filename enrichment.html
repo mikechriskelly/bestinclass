@@ -9,7 +9,7 @@ title: Best in Class Education
     <p>Small group classes build foundational skills and critical thinking. Enrichment classes can be used for supplemental or remedial purposes, or for gifted students who need extra challenges. Our college-educated instructors actively teach and monitor progress to ensure that your child has the best possible experience.</p>
   </div>
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs program-tabs">
+  <ul class="nav nav-tabs" id="program-tabs">
     <li class="active"><a href="#english" data-toggle="tab">English Enrichment</a></li>
     <li><a href="#math" data-toggle="tab">Math Enrichment</a></li>
   </ul>
@@ -97,6 +97,7 @@ title: Best in Class Education
 
 <!-- Event handlers for clicking on tabs -->
 <script>
+  $('#program-tabs').tabCollapse();
   $('#english a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');

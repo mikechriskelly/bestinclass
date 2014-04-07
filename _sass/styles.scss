@@ -273,13 +273,13 @@ h1, h2, h3, .navbar-nav > li > a {
   height: 250px;
   h1 {margin-top: 50px;}
 }
-.program-tabs > li {
+.nav-tabs > li {
     float: none;
     display: inline-block;
     *display:inline; /* ie7 fix */
     zoom:1; /* hasLayout ie7 trigger */
 }
-.program-tabs {
+.nav-tabs {
   position: absolute;
   bottom: 0;
   left: 0;

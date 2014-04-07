@@ -7,7 +7,7 @@ title: Best in Class Education
   <div class="container">
     <h1>About Us</h1>  </div>
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs program-tabs">
+  <ul class="nav nav-tabs" id="about-tabs">
     <li class="active"><a href="#approach" data-toggle="tab">Our Approach</a></li>
     <li><a href="#teachers" data-toggle="tab">Our Teachers</a></li>
     <li><a href="#students" data-toggle="tab">Our Students</a></li>
@@ -49,6 +49,7 @@ title: Best in Class Education
 
 <!-- Event handlers for clicking on tabs -->
 <script>
+  $('#about-tabs').tabCollapse();
   $('#english a').click(function (e) {
     e.preventDefault();
     $(this).tab('show');

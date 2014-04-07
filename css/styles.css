@@ -7969,7 +7969,7 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 
 /* line 276, ../_sass/styles.scss */
-.program-tabs > li {
+.nav-tabs > li {
   float: none;
   display: inline-block;
   *display: inline;
@@ -7979,7 +7979,7 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 
 /* line 282, ../_sass/styles.scss */
-.program-tabs {
+.nav-tabs {
   position: absolute;
   bottom: 0;
   left: 0;
