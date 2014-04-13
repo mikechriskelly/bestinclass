@@ -1,7 +1,10 @@
 name: Best in Class Education
 markdown: redcarpet
-pygments: true
+pygments: false
 exclude: [node_modules,Gruntfile.js,Gemfile,Gemfile.lock,package.json,config.rb,.gitignore]
+
+# Jekyll plugins
+gems: [jekyll-contentblocks]
 
 # prose.io configuration
 prose:
