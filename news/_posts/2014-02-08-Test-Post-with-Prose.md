@@ -1,5 +1,6 @@
 ---
 layout: post
+blog: news
 published: true
 category: news
 ---
