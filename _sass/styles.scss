@@ -15,6 +15,7 @@
 }
 $header-font: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
 
+* {margin: 0;}
 html,body {height: 100%;}
 body {
   margin-top: 0px;
@@ -349,24 +350,37 @@ footer {
   margin-top: 50px;
   padding: 15px 0px 15px 0px;
 }
+footer .col-md-6 {
+  padding: 0;
+}
 .footer-legal {
   text-align: center;
   font-size: $font-size-tiny;
 }
 .footer-links {
-  font-size: $font-size-base;
+  font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
   a {
     color: #fff;
-    padding: 0 10px 0 0;
+    padding: 0 8px 0 0;
   }
   a:hover { text-decoration: none; }
 }
 .footer-buttons {
   margin: auto;
+  margin-bottom: 20px;
   button:hover { 
     border-color: $color2;
     background: #fff; 
   }
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -8em; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+  height: 8em; /* '.push' must be the same height as 'footer' */
 }

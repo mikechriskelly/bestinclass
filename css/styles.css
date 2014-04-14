@@ -7605,11 +7605,16 @@ button.close {
 }
 
 /* line 18, ../_sass/styles.scss */
+* {
+  margin: 0;
+}
+
+/* line 19, ../_sass/styles.scss */
 html, body {
   height: 100%;
 }
 
-/* line 19, ../_sass/styles.scss */
+/* line 20, ../_sass/styles.scss */
 body {
   margin-top: 0px;
   padding-bottom: 20px;
@@ -7618,28 +7623,28 @@ body {
 /* ---------------------------------- */
 /* General Navigation and Heading */
 /* ---------------------------------- */
-/* line 26, ../_sass/styles.scss */
+/* line 27, ../_sass/styles.scss */
 .navbar-brand {
   padding: 10px 10px 0 0;
 }
 
-/* line 29, ../_sass/styles.scss */
+/* line 30, ../_sass/styles.scss */
 h1, h2, h3, .navbar-nav > li > a {
   font-family: "bubblegum_sansregular", Helvetica, Arial, sans-serif;
 }
 
-/* line 32, ../_sass/styles.scss */
+/* line 33, ../_sass/styles.scss */
 .navbar-nav > li > a {
   font-size: 18px;
 }
 
-/* line 33, ../_sass/styles.scss */
+/* line 34, ../_sass/styles.scss */
 .navbar {
   margin-bottom: 0px;
   border-bottom: 1px solid #006838;
 }
 
-/* line 37, ../_sass/styles.scss */
+/* line 38, ../_sass/styles.scss */
 #nearest-location a {
   margin-left: 0px;
   color: #f18d00;
@@ -7651,7 +7656,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Only for extra small screens */
 @media (max-width: 480px) {
   /* Reduce logo size on extra-small screens */
-  /* line 49, ../_sass/styles.scss */
+  /* line 50, ../_sass/styles.scss */
   .logo-sm {
     max-width: 250px;
     height: auto;
@@ -7660,14 +7665,14 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Only for small screens */
 @media (max-width: 767px) {
   /* Collapse the navigation menu into hamburger button */
-  /* line 57, ../_sass/styles.scss */
+  /* line 58, ../_sass/styles.scss */
   #navbar-mobile-collapse {
     text-align: center;
     border: none;
     padding: 15px 0 0 0;
   }
 
-  /* line 62, ../_sass/styles.scss */
+  /* line 63, ../_sass/styles.scss */
   .navbar-brand, .navbar-brand img {
     display: block;
     float: none;
@@ -7677,22 +7682,22 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Only for larger screens */
 @media (min-width: 768px) {
   /* Make navbar dropdown on hover */
-  /* line 71, ../_sass/styles.scss */
+  /* line 72, ../_sass/styles.scss */
   .navbar-nav > li {
     padding: 26px 0 12px 0;
   }
 
-  /* line 74, ../_sass/styles.scss */
+  /* line 75, ../_sass/styles.scss */
   .navbar-nav .caret {
     display: none;
   }
 
-  /* line 77, ../_sass/styles.scss */
+  /* line 78, ../_sass/styles.scss */
   .navbar-nav .open ul {
     display: none;
   }
 
-  /* line 85, ../_sass/styles.scss */
+  /* line 86, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus,
@@ -7703,24 +7708,24 @@ h1, h2, h3, .navbar-nav > li > a {
     background: none;
   }
 
-  /* line 89, ../_sass/styles.scss */
+  /* line 90, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav > a {
     color: #333333;
   }
 
-  /* line 94, ../_sass/styles.scss */
+  /* line 95, ../_sass/styles.scss */
   .navbar-default .navbar-nav > .hovernav:hover > a,
   .navbar-default .navbar-nav > .hovernav:hover > a:hover,
   .navbar-default .navbar-nav > .hovernav:hover > a:focus {
     color: #333333;
   }
 
-  /* line 97, ../_sass/styles.scss */
+  /* line 98, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li:hover {
     background: none;
   }
 
-  /* line 100, ../_sass/styles.scss */
+  /* line 101, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
     padding: 20px 0 3px 0;
@@ -7728,13 +7733,13 @@ h1, h2, h3, .navbar-nav > li > a {
     min-width: 200px;
     border: 1px solid #006838;
   }
-  /* line 106, ../_sass/styles.scss */
+  /* line 107, ../_sass/styles.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu li a {
     font-size: 16px;
   }
 
   /* Give dropdown menu 2 columns */
-  /* line 111, ../_sass/styles.scss */
+  /* line 112, ../_sass/styles.scss */
   .columns {
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -7743,7 +7748,7 @@ h1, h2, h3, .navbar-nav > li > a {
   }
 
   /* Show slanted green box on navbar hover */
-  /* line 118, ../_sass/styles.scss */
+  /* line 119, ../_sass/styles.scss */
   .navbar-default .navbar-nav > li.dropdown:hover:after {
     content: "";
     position: absolute;
@@ -7761,17 +7766,17 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Jumbotron screen on homepage */
 /* ---------------------------------- */
-/* line 136, ../_sass/styles.scss */
+/* line 137, ../_sass/styles.scss */
 .jumbotron {
   min-height: 450px;
   margin-bottom: 0px;
 }
-/* line 140, ../_sass/styles.scss */
+/* line 141, ../_sass/styles.scss */
 .jumbotron h1 {
   font-size: 2.8em;
 }
 
-/* line 142, ../_sass/styles.scss */
+/* line 143, ../_sass/styles.scss */
 .jumbotron-message {
   max-width: 475px;
 }
@@ -7779,65 +7784,65 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Promotional boxes on homepage */
 /* ---------------------------------- */
-/* line 150, ../_sass/styles.scss */
+/* line 151, ../_sass/styles.scss */
 .promobox img {
   padding: 10px;
   display: block;
   margin: 0px auto 10px auto;
 }
-/* line 155, ../_sass/styles.scss */
+/* line 156, ../_sass/styles.scss */
 .promobox h2 {
   color: #fff;
   text-align: center;
   padding: 0px;
   margin-bottom: 4px;
 }
-/* line 161, ../_sass/styles.scss */
+/* line 162, ../_sass/styles.scss */
 .promobox button {
   margin: 0 auto;
 }
 
-/* line 165, ../_sass/styles.scss */
+/* line 166, ../_sass/styles.scss */
 .promobox1 > h2 {
   color: #00529c;
 }
 
-/* line 166, ../_sass/styles.scss */
+/* line 167, ../_sass/styles.scss */
 .promobox2 > h2 {
   color: #006838;
 }
 
-/* line 167, ../_sass/styles.scss */
+/* line 168, ../_sass/styles.scss */
 .promobox3 > h2 {
   color: #df0030;
 }
 
-/* line 168, ../_sass/styles.scss */
+/* line 169, ../_sass/styles.scss */
 .promobox4 > h2 {
   color: #f18d00;
 }
 
-/* line 169, ../_sass/styles.scss */
+/* line 170, ../_sass/styles.scss */
 .promobox5 > h2 {
   color: #007ae9;
 }
 
-/* line 170, ../_sass/styles.scss */
+/* line 171, ../_sass/styles.scss */
 .promobox6 > h2 {
   color: #00b461;
 }
 
-/* line 171, ../_sass/styles.scss */
+/* line 172, ../_sass/styles.scss */
 .learnmore {
   text-align: center;
 }
 
-/* line 172, ../_sass/styles.scss */
+/* line 173, ../_sass/styles.scss */
 .rowspace {
   margin-top: 25px;
 }
 
-/* line 173, ../_sass/styles.scss */
+/* line 174, ../_sass/styles.scss */
 .circle {
   margin: 10px 4px;
   padding: 6px 0 0 2px;
@@ -7848,7 +7853,7 @@ h1, h2, h3, .navbar-nav > li > a {
   width: 34px;
   height: 34px;
 }
-/* line 182, ../_sass/styles.scss */
+/* line 183, ../_sass/styles.scss */
 .circle a {
   color: #006838;
 }
@@ -7856,27 +7861,27 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Table for program comparison chart */
 /* ---------------------------------- */
-/* line 190, ../_sass/styles.scss */
+/* line 191, ../_sass/styles.scss */
 .program-list .details {
   font-size: 13px;
 }
-/* line 193, ../_sass/styles.scss */
+/* line 194, ../_sass/styles.scss */
 .program-list .program {
   margin-bottom: 10px;
 }
-/* line 195, ../_sass/styles.scss */
+/* line 196, ../_sass/styles.scss */
 .program-list .program h3 {
   color: #00529c;
   margin: 0;
 }
-/* line 200, ../_sass/styles.scss */
+/* line 201, ../_sass/styles.scss */
 .program-list th.details {
   text-transform: uppercase;
   color: #555555;
   font-size: 9px;
   font-weight: bold;
 }
-/* line 206, ../_sass/styles.scss */
+/* line 207, ../_sass/styles.scss */
 .program-list td.details {
   color: #222222;
   font-size: 13px;
@@ -7884,33 +7889,33 @@ h1, h2, h3, .navbar-nav > li > a {
 
 @media (max-width: 767px) {
   /* Collapse tables into stackable blocks */
-  /* line 213, ../_sass/styles.scss */
+  /* line 214, ../_sass/styles.scss */
   .program-list table, thead, tbody, th, td, tr {
     display: block;
   }
 
-  /* line 216, ../_sass/styles.scss */
+  /* line 217, ../_sass/styles.scss */
   .program-list {
     margin-top: 40px;
     /* Hide table headers */
     /* Prepend column labels */
     /*  Label the data (excluding title and description) */
   }
-  /* line 220, ../_sass/styles.scss */
+  /* line 221, ../_sass/styles.scss */
   .program-list thead tr {
     display: none;
   }
-  /* line 222, ../_sass/styles.scss */
+  /* line 223, ../_sass/styles.scss */
   .program-list tr {
     margin-bottom: 30px;
   }
-  /* line 224, ../_sass/styles.scss */
+  /* line 225, ../_sass/styles.scss */
   .program-list td.details {
     border: none;
     position: relative;
     padding-left: 20%;
   }
-  /* line 230, ../_sass/styles.scss */
+  /* line 231, ../_sass/styles.scss */
   .program-list td.details:before {
     position: absolute;
     top: 5px;
@@ -7922,25 +7927,25 @@ h1, h2, h3, .navbar-nav > li > a {
     font-size: 9px;
     font-weight: bold;
   }
-  /* line 242, ../_sass/styles.scss */
+  /* line 243, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(2):before {
     content: 'GRADES';
   }
-  /* line 243, ../_sass/styles.scss */
+  /* line 244, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(3):before {
     content: 'SUBJECTS';
   }
-  /* line 244, ../_sass/styles.scss */
+  /* line 245, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(4):before {
     content: 'SCHEDULE';
   }
-  /* line 245, ../_sass/styles.scss */
+  /* line 246, ../_sass/styles.scss */
   .program-list td.details:nth-of-type(5):before {
     content: 'LOCATIONS';
   }
 }
 @media (min-width: 768px) {
-  /* line 249, ../_sass/styles.scss */
+  /* line 250, ../_sass/styles.scss */
   .program-list {
     margin-top: 60px;
     border: none;
@@ -7948,12 +7953,12 @@ h1, h2, h3, .navbar-nav > li > a {
     border-collapse: separate;
     border-spacing: 0;
   }
-  /* line 255, ../_sass/styles.scss */
+  /* line 256, ../_sass/styles.scss */
   .program-list .program {
     width: 50%;
     padding: 0 50px 50px 0;
   }
-  /* line 259, ../_sass/styles.scss */
+  /* line 260, ../_sass/styles.scss */
   .program-list .details {
     text-align: center;
     vertical-align: middle;
@@ -7962,19 +7967,19 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Section Header */
 /* ---------------------------------- */
-/* line 269, ../_sass/styles.scss */
+/* line 270, ../_sass/styles.scss */
 .program-header {
   background: #eeeeee;
   text-align: center;
   position: relative;
   height: 250px;
 }
-/* line 274, ../_sass/styles.scss */
+/* line 275, ../_sass/styles.scss */
 .program-header h1 {
   margin-top: 50px;
 }
 
-/* line 276, ../_sass/styles.scss */
+/* line 277, ../_sass/styles.scss */
 .nav-tabs > li {
   float: none;
   display: inline-block;
@@ -7984,7 +7989,7 @@ h1, h2, h3, .navbar-nav > li > a {
   /* hasLayout ie7 trigger */
 }
 
-/* line 282, ../_sass/styles.scss */
+/* line 283, ../_sass/styles.scss */
 .nav-tabs {
   position: absolute;
   bottom: 0;
@@ -7993,12 +7998,12 @@ h1, h2, h3, .navbar-nav > li > a {
   text-align: center;
 }
 
-/* line 289, ../_sass/styles.scss */
+/* line 290, ../_sass/styles.scss */
 .tab-pane {
   padding-top: 25px;
 }
 
-/* line 291, ../_sass/styles.scss */
+/* line 292, ../_sass/styles.scss */
 .testimonial {
   background: url("/images/pattern-atlb.png") repeat center center;
   color: #fff;
@@ -8008,14 +8013,14 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #555555;
 }
 
-/* line 299, ../_sass/styles.scss */
+/* line 300, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
   padding: 20px 0;
 }
 
-/* line 304, ../_sass/styles.scss */
+/* line 305, ../_sass/styles.scss */
 .shaded {
   padding: 10px 0;
   background: #f5f7f9;
@@ -8023,22 +8028,22 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #e2e3e6;
 }
 
-/* line 310, ../_sass/styles.scss */
+/* line 311, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 313, ../_sass/styles.scss */
+/* line 314, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 315, ../_sass/styles.scss */
+/* line 316, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
 
-/* line 320, ../_sass/styles.scss */
+/* line 321, ../_sass/styles.scss */
 .fluid-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -8046,7 +8051,7 @@ h1, h2, h3, .navbar-nav > li > a {
   height: 0;
 }
 
-/* line 325, ../_sass/styles.scss */
+/* line 326, ../_sass/styles.scss */
 .fluid-wrapper iframe {
   position: absolute;
   top: 0;
@@ -8056,7 +8061,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border: none;
 }
 
-/* line 334, ../_sass/styles.scss */
+/* line 335, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8068,7 +8073,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 345, ../_sass/styles.scss */
+/* line 346, ../_sass/styles.scss */
 footer {
   color: #fff;
   background: #006838;
@@ -8077,34 +8082,55 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 352, ../_sass/styles.scss */
+/* line 353, ../_sass/styles.scss */
+footer .col-md-6 {
+  padding: 0;
+}
+
+/* line 356, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 356, ../_sass/styles.scss */
+/* line 360, ../_sass/styles.scss */
 .footer-links {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
 }
-/* line 360, ../_sass/styles.scss */
+/* line 364, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
-  padding: 0 10px 0 0;
+  padding: 0 8px 0 0;
 }
-/* line 364, ../_sass/styles.scss */
+/* line 368, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 366, ../_sass/styles.scss */
+/* line 370, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
+  margin-bottom: 20px;
 }
-/* line 368, ../_sass/styles.scss */
+/* line 373, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
+}
+
+/* line 378, ../_sass/styles.scss */
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -8em;
+  /* the bottom margin is the negative value of the footer's height */
+}
+
+/* line 384, ../_sass/styles.scss */
+footer, .push {
+  height: 8em;
+  /* '.push' must be the same height as 'footer' */
 }
