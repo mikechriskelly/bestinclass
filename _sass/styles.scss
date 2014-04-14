@@ -331,10 +331,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border: none;
 }
 
-
 button {
-  color: #fff;
-  background: $color2;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -357,14 +354,19 @@ footer {
   font-size: $font-size-tiny;
 }
 .footer-links {
-  font-size: $font-size-small;
+  font-size: $font-size-base;
   text-align: center;
   padding: 15px 0 5px 0;
   a {
     color: #fff;
-    padding: 0 8px 0 0;
+    padding: 0 10px 0 0;
   }
+  a:hover { text-decoration: none; }
 }
 .footer-buttons {
   margin: auto;
+  button:hover { 
+    border-color: $color2;
+    background: #fff; 
+  }
 }
