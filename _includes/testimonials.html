@@ -1,0 +1,13 @@
+<!-- Testimonials -->
+<div class="container-fluid testimonial">
+	{% for testimonial in page.testimonials %}
+	  <div class="container testimonial-quote">
+	    <div class="media">
+	      <img src="http://placehold.it/100x100" alt="Testimonial" class="media-object img-circle {% cycle 'pull-left', 'pull-right' %}">
+	      <div class="media-body">
+	        <p>{{ testimonial.quote }}</p>
+	      </div>
+	    </div>
+	  </div>
+  {% endfor %}
+</div>

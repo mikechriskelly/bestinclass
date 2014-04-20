@@ -1,0 +1,46 @@
+{% include header.html %}
+
+<div class="container-fluid program-header">
+  <div class="container">
+    <h1>{{ page.program.title }}</h1>
+    <p>{{ page.program.description }}</p>
+  </div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="program-tabs">
+  	<li class="active"><a href="#english" data-toggle="tab">English</a></li>
+    <li><a href="#math" data-toggle="tab">Math</a></li>
+  </ul>
+</div>
+
+<!-- Tab panes -->
+<div class="container">  
+  <div class="tab-content">
+    <div class="tab-pane active" id="english">
+      {% contentblock english %}
+    </div>
+    <div class="tab-pane" id="math">
+      {% contentblock math %}
+    </div>
+  </div>
+</div>
+
+<!-- Testimonials -->
+{% include testimonials.html %}
+
+<!-- Location Finder -->
+{% include zipsearch.html %}
+
+<!-- Event handlers for clicking on tabs -->
+<script>
+  $('#program-tabs').tabCollapse();
+  $('#english a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  $('#math a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+</script>
+
+{% include footer.html %}

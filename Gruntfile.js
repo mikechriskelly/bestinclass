@@ -55,9 +55,17 @@ module.exports = function(grunt) {
         files: [
           '_includes/*.html',
           '_layouts/*.html',
-          '_posts/*.markdown',
           '_config.yml',
-          '*.html'
+          'index.html',
+          'about/*.html',
+          'locations/*.html',
+          'locations/*/*.html',
+          'news/*.html',
+          'news/_posts/*.md',
+          'programs/*.html',
+          'programs/*/*.html',
+          'spotlight/*.html',
+          'spotlight/_posts/*.md'
         ],
         tasks: ['shell:build','shell:serve'],
         options: {
