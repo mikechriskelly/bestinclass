@@ -5,11 +5,11 @@
 /* Playful Font for Headers */
 @font-face {
   font-family: 'bubblegum_sansregular';
-  src: url('/css/fonts/bubblegumsans-regular-webfont.eot');
-  src: url('/css/fonts/bubblegumsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/css/fonts/bubblegumsans-regular-webfont.woff') format('woff'),
-       url('/css/fonts/bubblegumsans-regular-webfont.ttf') format('truetype'),
-       url('/css/fonts/bubblegumsans-regular-webfont.svg#bubblegum_sansregular') format('svg');
+  src: url('fonts/bubblegumsans-regular-webfont.eot');
+  src: url('fonts/bubblegumsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/bubblegumsans-regular-webfont.woff') format('woff'),
+       url('fonts/bubblegumsans-regular-webfont.ttf') format('truetype'),
+       url('fonts/bubblegumsans-regular-webfont.svg#bubblegum_sansregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +20,20 @@ html,body {height: 100%;}
 body {
   margin-top: 0px;
   padding-bottom: 20px;
+
+  background-color: #2ecc71;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAAeBAMAAACmpnrQAAAAGFBMVEX///////////////////////////8AAAAplebaAAAACHRSTlMcJi42EQUKADfYSZgAAAGmSURBVHhe7VXBbcMwDKQLD2C5XSDyBLEW0IPIBpIXkLRB0PVLKinc5mQ0jz5aQPwEIczTnXnyUdHKIbxDXYt/dacxb9+7kQfr1omLjDxfofCwyNgF4PzszuNla4yEUotmK2UMjSxEkeQsJMuGx1lnp1HPe6KuMXmz3GXhWzjLATBR2JOp3E5ktGa7OGcNIUZUkigyJK/v0jwIwwqxMM1OHy0BQZa6JnwDs/Bx1hotyiEITBHW2rcTIEWeF1kQEImKdBcmPDfwicAmJj3sNIkSIJ8GIcj5kZ8f6sTIF4EVdpm+QJbkm36JAqbdhsFSFbZaMxFz2SslpsFYVw+73FUjJmfwuaDViZ0CNVyN9osJu7swJmOVjVvVOmqg5fbPEH/SQ49X0dhFw1JDn86/PWw2pGps7bbvXmJPZG41EdU9hfbTafc3dnFX1LyB/OLckcjjWxxuts76ux3e7sM1ATZQhBEliV1Q+lPhhpq40EWK7Qs3ZlwSfECerChrqArxk6G0DxF/JV16uvR0Gf5+uqz/Ol16uvR06enS06WnS0+Xni49XXq6fAC2thzXDkyaawAAAABJRU5ErkJggg==);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAAeBAMAAACmpnrQAAAAGFBMVEX///////////////////////////8AAAAplebaAAAACHRSTlMcJi42EQUKADfYSZgAAAGmSURBVHhe7VXBbcMwDKQLD2C5XSDyBLEW0IPIBpIXkLRB0PVLKinc5mQ0jz5aQPwEIczTnXnyUdHKIbxDXYt/dacxb9+7kQfr1omLjDxfofCwyNgF4PzszuNla4yEUotmK2UMjSxEkeQsJMuGx1lnp1HPe6KuMXmz3GXhWzjLATBR2JOp3E5ktGa7OGcNIUZUkigyJK/v0jwIwwqxMM1OHy0BQZa6JnwDs/Bx1hotyiEITBHW2rcTIEWeF1kQEImKdBcmPDfwicAmJj3sNIkSIJ8GIcj5kZ8f6sTIF4EVdpm+QJbkm36JAqbdhsFSFbZaMxFz2SslpsFYVw+73FUjJmfwuaDViZ0CNVyN9osJu7swJmOVjVvVOmqg5fbPEH/SQ49X0dhFw1JDn86/PWw2pGps7bbvXmJPZG41EdU9hfbTafc3dnFX1LyB/OLckcjjWxxuts76ux3e7sM1ATZQhBEliV1Q+lPhhpq40EWK7Qs3ZlwSfECerChrqArxk6G0DxF/JV16uvR0Gf5+uqz/Ol16uvR06enS06WnS0+Xni49XXq6fAC2thzXDkyaawAAAABJRU5ErkJggg==);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-size: 162px 15px;
 }
 /* ---------------------------------- */
 /* General Navigation and Heading */
@@ -136,7 +150,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 .jumbotron {
   // background: url('/images/triangles.svg') repeat-x center center;
-  background-color: #ccc;
+  background-color: $gray-lighter;
   min-height: 450px;
   margin-bottom: 0px;
   h1 {font-size: 2.8em;}
@@ -363,6 +377,7 @@ footer .col-md-6 {
   font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
+  text-shadow: 0 1px 1px rgba(80,102,117,0.25);
   a {
     color: #fff;
     padding: 0 8px 0 0;

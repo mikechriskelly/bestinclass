@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         command: 'jekyll build'
       },
       serve: {
-        command: 'jekyll serve'
+        command: 'jekyll serve --baseurl ""'
       },
     },
     // Compass compilation task.

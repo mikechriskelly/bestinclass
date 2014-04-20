@@ -3,6 +3,7 @@ markdown: kramdown
 pygments: false
 exclude: [node_modules,Gruntfile.js,Gemfile,Gemfile.lock,package.json,config.rb,.gitignore]
 relative_permalinks: false
+baseurl: /bestinclass
 
 # prose.io configuration
 prose:
