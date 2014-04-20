@@ -20,20 +20,6 @@ html,body {height: 100%;}
 body {
   margin-top: 0px;
   padding-bottom: 20px;
-
-  background-color: #2ecc71;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAAeBAMAAACmpnrQAAAAGFBMVEX///////////////////////////8AAAAplebaAAAACHRSTlMcJi42EQUKADfYSZgAAAGmSURBVHhe7VXBbcMwDKQLD2C5XSDyBLEW0IPIBpIXkLRB0PVLKinc5mQ0jz5aQPwEIczTnXnyUdHKIbxDXYt/dacxb9+7kQfr1omLjDxfofCwyNgF4PzszuNla4yEUotmK2UMjSxEkeQsJMuGx1lnp1HPe6KuMXmz3GXhWzjLATBR2JOp3E5ktGa7OGcNIUZUkigyJK/v0jwIwwqxMM1OHy0BQZa6JnwDs/Bx1hotyiEITBHW2rcTIEWeF1kQEImKdBcmPDfwicAmJj3sNIkSIJ8GIcj5kZ8f6sTIF4EVdpm+QJbkm36JAqbdhsFSFbZaMxFz2SslpsFYVw+73FUjJmfwuaDViZ0CNVyN9osJu7swJmOVjVvVOmqg5fbPEH/SQ49X0dhFw1JDn86/PWw2pGps7bbvXmJPZG41EdU9hfbTafc3dnFX1LyB/OLckcjjWxxuts76ux3e7sM1ATZQhBEliV1Q+lPhhpq40EWK7Qs3ZlwSfECerChrqArxk6G0DxF/JV16uvR0Gf5+uqz/Ol16uvR06enS06WnS0+Xni49XXq6fAC2thzXDkyaawAAAABJRU5ErkJggg==);
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUQAAAAeBAMAAACmpnrQAAAAGFBMVEX///////////////////////////8AAAAplebaAAAACHRSTlMcJi42EQUKADfYSZgAAAGmSURBVHhe7VXBbcMwDKQLD2C5XSDyBLEW0IPIBpIXkLRB0PVLKinc5mQ0jz5aQPwEIczTnXnyUdHKIbxDXYt/dacxb9+7kQfr1omLjDxfofCwyNgF4PzszuNla4yEUotmK2UMjSxEkeQsJMuGx1lnp1HPe6KuMXmz3GXhWzjLATBR2JOp3E5ktGa7OGcNIUZUkigyJK/v0jwIwwqxMM1OHy0BQZa6JnwDs/Bx1hotyiEITBHW2rcTIEWeF1kQEImKdBcmPDfwicAmJj3sNIkSIJ8GIcj5kZ8f6sTIF4EVdpm+QJbkm36JAqbdhsFSFbZaMxFz2SslpsFYVw+73FUjJmfwuaDViZ0CNVyN9osJu7swJmOVjVvVOmqg5fbPEH/SQ49X0dhFw1JDn86/PWw2pGps7bbvXmJPZG41EdU9hfbTafc3dnFX1LyB/OLckcjjWxxuts76ux3e7sM1ATZQhBEliV1Q+lPhhpq40EWK7Qs3ZlwSfECerChrqArxk6G0DxF/JV16uvR0Gf5+uqz/Ol16uvR06enS06WnS0+Xni49XXq6fAC2thzXDkyaawAAAABJRU5ErkJggg==);
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: initial;
-  background-size: 162px 15px;
 }
 /* ---------------------------------- */
 /* General Navigation and Heading */
@@ -306,8 +292,10 @@ h1, h2, h3, .navbar-nav > li > a {
 .tab-pane {padding-top: 25px;}
 
 .testimonial {
-  background: url('/images/pattern-atlb.png') repeat center center;
+  background-color: #00529c;
+  background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==');
   color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   margin: 60px 0 0 0;
   padding: 20px 10px;
   border-top: 1px solid $gray;
@@ -377,7 +365,7 @@ footer .col-md-6 {
   font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
-  text-shadow: 0 1px 1px rgba(80,102,117,0.25);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   a {
     color: #fff;
     padding: 0 8px 0 0;
