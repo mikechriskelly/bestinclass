@@ -7768,25 +7768,25 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* line 137, ../_sass/styles.scss */
 .jumbotron {
-  height: 400px;
-  height: 80vh;
-  background: url("../images/girlwriting.jpg") no-repeat right top fixed;
-  background-size: 100%;
-  background-color: #eeeeee;
+  background-color: #005fb6;
+  background: url("../images/girlwriting.jpg") center center no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 425px;
   margin-bottom: 0px;
 }
 /* line 144, ../_sass/styles.scss */
 .jumbotron h1 {
   color: #fff;
   font-size: 2.8em;
-  text-shadow: 0 1px 1px black;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 /* line 150, ../_sass/styles.scss */
 .jumbotron-message {
   max-width: 475px;
   color: #fff;
-  text-shadow: 0 1px 1px black;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 /* ---------------------------------- */
@@ -7836,12 +7836,12 @@ h1, h2, h3, .navbar-nav > li > a {
 
 /* line 180, ../_sass/styles.scss */
 .promobox5 > h2 {
-  color: #007ae9;
+  color: #005fb6;
 }
 
 /* line 181, ../_sass/styles.scss */
 .promobox6 > h2 {
-  color: #00b461;
+  color: #008246;
 }
 
 /* line 182, ../_sass/styles.scss */
@@ -8021,7 +8021,7 @@ h1, h2, h3, .navbar-nav > li > a {
   background-color: #00529c;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==");
   color: #fff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   margin: 60px 0 0 0;
   padding: 20px 10px;
   border-top: 1px solid #555555;
@@ -8080,46 +8080,47 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 352, ../_sass/styles.scss */
+/* line 354, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
+  min-height: 75px;
 }
 
-/* line 355, ../_sass/styles.scss */
+/* line 358, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 359, ../_sass/styles.scss */
+/* line 362, ../_sass/styles.scss */
 .footer-links {
   font-size: 14px;
   text-align: center;
   padding: 15px 0 5px 0;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 364, ../_sass/styles.scss */
+/* line 367, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 368, ../_sass/styles.scss */
+/* line 371, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 370, ../_sass/styles.scss */
+/* line 373, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 373, ../_sass/styles.scss */
+/* line 376, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
 }
 
-/* line 378, ../_sass/styles.scss */
+/* line 381, ../_sass/styles.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -8128,7 +8129,7 @@ footer .col-md-6 {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 384, ../_sass/styles.scss */
+/* line 387, ../_sass/styles.scss */
 footer, .push {
   height: 8em;
   /* '.push' must be the same height as 'footer' */

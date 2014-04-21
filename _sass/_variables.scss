@@ -13,14 +13,14 @@ $color1: #00529C; // blue
 $color2: #006838; //#49D200; // green
 $color3: #DF0030; // red
 $color4: #F18D00; // orange
-$color1-lighter: lighten($color1, 15%);
-$color2-lighter: lighten($color2, 15%);
-$color3-lighter: lighten($color3, 15%);
-$color4-lighter: lighten($color4, 15%);
-$color1-darker: darken($color1, 15%);
-$color2-darker: darken($color2, 15%);
-$color3-darker: darken($color3, 15%);
-$color4-darker: darken($color4, 15%);
+$color1-lighter: lighten($color1, 5%);
+$color2-lighter: lighten($color2, 5%);
+$color3-lighter: lighten($color3, 5%);
+$color4-lighter: lighten($color4, 5%);
+$color1-darker: darken($color1, 5%);
+$color2-darker: darken($color2, 5%);
+$color3-darker: darken($color3, 5%);
+$color4-darker: darken($color4, 5%);
 
 //## Gray and brand colors for use across Bootstrap.
 
