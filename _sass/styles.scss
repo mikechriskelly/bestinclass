@@ -135,14 +135,22 @@ h1, h2, h3, .navbar-nav > li > a {
 /* Jumbotron screen on homepage */
 /* ---------------------------------- */
 .jumbotron {
-  // background: url('/images/triangles.svg') repeat-x center center;
+  height: 400px;
+  height: 80vh;
+  background: url('../images/girlwriting.jpg') no-repeat right top fixed;
+  background-size: 100%;
   background-color: $gray-lighter;
-  min-height: 450px;
   margin-bottom: 0px;
-  h1 {font-size: 2.8em;}
+  h1 {
+    color: #fff;
+    font-size: 2.8em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+  }
 }
 .jumbotron-message {
   max-width: 475px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
 }
 
 /* ---------------------------------- */
@@ -163,6 +171,7 @@ h1, h2, h3, .navbar-nav > li > a {
   button {
     margin: 0 auto; ;
   }
+  margin-bottom: 20px;
 }
 .promobox1 > h2 {color: $color1;}
 .promobox2 > h2 {color: $color2;}
@@ -307,10 +316,11 @@ h1, h2, h3, .navbar-nav > li > a {
   padding: 20px 0;
 }
 .shaded {
-  padding: 10px 0;
+  padding: 50px 0;
   background: #f5f7f9;
   border-top: 1px solid #e2e3e6;
   border-bottom: 1px solid #e2e3e6;
+  text-align: center;
 }
 .location-finder {
   margin: 5em 0;
@@ -319,21 +329,6 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 #zipCode {
   width: 100px;
-}
-
-
-.fluid-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-}
-.fluid-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 button {
