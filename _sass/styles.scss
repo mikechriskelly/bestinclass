@@ -320,7 +320,6 @@ h1, h2, h3, .navbar-nav > li > a {
   background: #f5f7f9;
   border-top: 1px solid #e2e3e6;
   border-bottom: 1px solid #e2e3e6;
-  text-align: center;
 }
 .location-finder {
   margin: 5em 0;
@@ -345,8 +344,6 @@ button {
 footer {
   color: #fff;
   background: $color2;
-  //background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color2-lighter), to($color2));
-  //background: -moz-linear-gradient(top, $color2-lighter 0%, $color2 100%);
   text-align: center;
   margin-top: 50px;
   padding: 15px 0px 15px 0px;
@@ -360,7 +357,7 @@ footer .col-md-6 {
   font-size: $font-size-tiny;
 }
 .footer-links {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);

@@ -8041,25 +8041,24 @@ h1, h2, h3, .navbar-nav > li > a {
   background: #f5f7f9;
   border-top: 1px solid #e2e3e6;
   border-bottom: 1px solid #e2e3e6;
-  text-align: center;
 }
 
-/* line 325, ../_sass/styles.scss */
+/* line 324, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 328, ../_sass/styles.scss */
+/* line 327, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 330, ../_sass/styles.scss */
+/* line 329, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
 
-/* line 334, ../_sass/styles.scss */
+/* line 333, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8071,7 +8070,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 345, ../_sass/styles.scss */
+/* line 344, ../_sass/styles.scss */
 footer {
   color: #fff;
   background: #006838;
@@ -8080,47 +8079,47 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 354, ../_sass/styles.scss */
+/* line 351, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 358, ../_sass/styles.scss */
+/* line 355, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 362, ../_sass/styles.scss */
+/* line 359, ../_sass/styles.scss */
 .footer-links {
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 367, ../_sass/styles.scss */
+/* line 364, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 371, ../_sass/styles.scss */
+/* line 368, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 373, ../_sass/styles.scss */
+/* line 370, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 376, ../_sass/styles.scss */
+/* line 373, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
 }
 
-/* line 381, ../_sass/styles.scss */
+/* line 378, ../_sass/styles.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -8129,7 +8128,7 @@ footer .col-md-6 {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 387, ../_sass/styles.scss */
+/* line 384, ../_sass/styles.scss */
 footer, .push {
   height: 8em;
   /* '.push' must be the same height as 'footer' */
