@@ -8016,7 +8016,21 @@ h1, h2, h3, .navbar-nav > li > a {
   padding-top: 25px;
 }
 
-/* line 303, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* Google Map on top of locations page */
+/* ---------------------------------- */
+/* line 306, ../_sass/styles.scss */
+#map-canvas {
+  background: #eeeeee;
+  position: relative;
+  height: 425px;
+  margin-bottom: 25px;
+}
+
+/* ---------------------------------- */
+/* Testimonial Section on multiple pages */
+/* ---------------------------------- */
+/* line 316, ../_sass/styles.scss */
 .testimonial {
   background-color: #00529c;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==");
@@ -8028,14 +8042,17 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #555555;
 }
 
-/* line 313, ../_sass/styles.scss */
+/* line 326, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
   padding: 20px 0;
 }
 
-/* line 318, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* Shaded section for differentiating rows */
+/* ---------------------------------- */
+/* line 335, ../_sass/styles.scss */
 .shaded {
   padding: 50px 0;
   background: #f5f7f9;
@@ -8043,22 +8060,28 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #e2e3e6;
 }
 
-/* line 324, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* Find a location section on multiple pages */
+/* ---------------------------------- */
+/* line 345, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 327, ../_sass/styles.scss */
+/* line 348, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 329, ../_sass/styles.scss */
+/* line 350, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
 
-/* line 333, ../_sass/styles.scss */
+/* ---------------------------------- */
+/* General Button Styling */
+/* ---------------------------------- */
+/* line 357, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8070,7 +8093,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 344, ../_sass/styles.scss */
+/* line 368, ../_sass/styles.scss */
 footer {
   color: #fff;
   background: #006838;
@@ -8079,47 +8102,47 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 351, ../_sass/styles.scss */
+/* line 375, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 355, ../_sass/styles.scss */
+/* line 379, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 359, ../_sass/styles.scss */
+/* line 383, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 364, ../_sass/styles.scss */
+/* line 388, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 368, ../_sass/styles.scss */
+/* line 392, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 370, ../_sass/styles.scss */
+/* line 394, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 373, ../_sass/styles.scss */
+/* line 397, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
 }
 
-/* line 378, ../_sass/styles.scss */
+/* line 402, ../_sass/styles.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -8128,7 +8151,7 @@ footer .col-md-6 {
   /* the bottom margin is the negative value of the footer's height */
 }
 
-/* line 384, ../_sass/styles.scss */
+/* line 408, ../_sass/styles.scss */
 footer, .push {
   height: 8em;
   /* '.push' must be the same height as 'footer' */

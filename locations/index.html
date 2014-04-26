@@ -3,18 +3,52 @@ layout: locations
 title: Best in Class Education
 ---
 
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkle0NnqmA1_SRl0tfj4MOEQbTigNZkdY&sensor=true">
-</script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkle0NnqmA1_SRl0tfj4MOEQbTigNZkdY&sensor=true"></script>
+<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
+<script src="locationdata.json"></script>
 <script>
-  var map;
+
   function initialize() {
+    var infowindow = new google.maps.InfoWindow();
+
+    // Disable panning on mobile
+    var isDraggable = $(document).width() > 480 ? true : false;
+
     var mapOptions = {
-      zoom: 8,
-      center: new google.maps.LatLng(-34.397, 150.644)
+      zoom: 4,
+      center: new google.maps.LatLng(40, -100),
+      draggable: isDraggable,
+      scrollwheel: false
     };
-    map = new google.maps.Map(document.getElementById('map-canvas'),
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
+    var markers = [];
+    
+    // Convert location data to markers
+    for (var i in LocationData) {
+      var p = LocationData[i];
+      var latlng = new google.maps.LatLng(p[0], p[1]);
+       
+      var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title: p[2]
+      });
+      markers.push(marker);
+   
+      // Event handler for infowindow on click
+      google.maps.event.addListener(marker, 'click', function() {
+        infowindow.setContent(this.title);
+        infowindow.open(map, this);
+      });
+    }
+    // Cluster nearby markers
+    var mc = new MarkerClusterer(map, markers);
+
   }
   google.maps.event.addDomListener(window, 'load', initialize);
+
 </script>
-<div id="map-canvas" style="width: 100%; height: 25%"></div>
+<div id="map-canvas" class="container-fluid">
+</div>

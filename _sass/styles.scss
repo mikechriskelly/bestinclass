@@ -300,6 +300,19 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 .tab-pane {padding-top: 25px;}
 
+/* ---------------------------------- */
+/* Google Map on top of locations page */
+/* ---------------------------------- */
+#map-canvas {
+  background: $gray-lighter;
+  position: relative;
+  height: 425px; 
+  margin-bottom: 25px;
+}
+
+/* ---------------------------------- */
+/* Testimonial Section on multiple pages */
+/* ---------------------------------- */
 .testimonial {
   background-color: #00529c;
   background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==');
@@ -315,12 +328,20 @@ h1, h2, h3, .navbar-nav > li > a {
   max-width: 600px;
   padding: 20px 0;
 }
+
+/* ---------------------------------- */
+/* Shaded section for differentiating rows */
+/* ---------------------------------- */
 .shaded {
   padding: 50px 0;
   background: #f5f7f9;
   border-top: 1px solid #e2e3e6;
   border-bottom: 1px solid #e2e3e6;
 }
+
+/* ---------------------------------- */
+/* Find a location section on multiple pages */
+/* ---------------------------------- */
 .location-finder {
   margin: 5em 0;
   text-align: center;
@@ -330,6 +351,9 @@ h1, h2, h3, .navbar-nav > li > a {
   width: 100px;
 }
 
+/* ---------------------------------- */
+/* General Button Styling */
+/* ---------------------------------- */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;

@@ -1,0 +1,7 @@
+var LocationData = [
+  [49.2812668, -123.1035942, "26 E Hastings St, Vancouver" ], 
+  [49.2814064, -123.1025187, "71 E Hastings St, Vancouver" ], 
+  [49.2812336, -123.1020622, "122 E Hastings St, Vancouver" ], 
+  [49.2813564, -123.1012253, "138 E Hastings St, Vancouver" ], 
+  [49.2811625, -123.0985032, "242 E Hastings St, Vancouver" ]
+];
