@@ -308,6 +308,7 @@ h1, h2, h3, .navbar-nav > li > a {
   position: relative;
   height: 425px; 
   margin-bottom: 25px;
+  border-bottom: 1px solid $color2;
 }
 .marker-labels p {
   color: $color1;

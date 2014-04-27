@@ -11,6 +11,8 @@ title: Best in Class Education
   function initialize() {
     var infowindow = new google.maps.InfoWindow();
 
+    // To Do: Check Browser for SVG compatibility
+
     // Disable panning on mobile
     var isDraggable = $(document).width() > 480 ? true : false;
     var initialZoom = $(document).width() > 480 ? 4 : 3;
@@ -26,29 +28,25 @@ title: Best in Class Education
       gridsize: 40,
       labelClass: "marker-labels",
       styles: [{
-        height: 44,
-        url: "../images/maps-icon-green.svg",
-        width: 44
+        height: 34,
+        url: "../images/map-cluster-circle-1.svg",
+        width: 34,
+        textColor: "#006838",
+        textSize: 14
         },
         {
         height: 44,
-        url: "../images/maps-icon-green.svg",
-        width: 44
+        url: "../images/map-cluster-circle-2.svg",
+        width: 44,
+        textColor: "#006838",
+        textSize: 14
         },
         {
-        height: 44,
-        url: "../images/maps-icon-green.svg",
-        width: 44
-        },
-        {
-        height: 44,
-        url: "../images/maps-icon-green.svg",
-        width: 44
-        },
-        {
-        height: 44,
-        url: "../images/maps-icon-green.svg",
-        width: 44
+        height: 54,
+        url: "../images/map-cluster-circle-3.svg",
+        width: 54,
+        textColor: "#006838",
+        textSize: 14
       }],
   };
 
@@ -64,7 +62,8 @@ title: Best in Class Education
       var marker = new google.maps.Marker({
         position: latlng,
         map: map,
-        title: p.Name
+        title: p.Name,
+        icon: "../images/map-icon-green.svg"
       });
       markers.push(marker);
    
@@ -82,4 +81,22 @@ title: Best in Class Education
 
 </script>
 <div id="map-canvas" class="container-fluid">
+</div>
+<div class="container">
+  <div class="row">
+    <h3>Redmond Ridge Center</h3>
+    <p>10735 Cedar Park Crescent NE<br>Redmond, WA 98053<br>(425) 292-1838</p>
+  </div>
+  <div class="row">
+    <h3>Redmond Ridge Center</h3>
+    <p>10735 Cedar Park Crescent NE<br>Redmond, WA 98053<br>(425) 292-1838</p>
+  </div>
+  <div class="row">
+    <h3>Redmond Ridge Center</h3>
+    <p>10735 Cedar Park Crescent NE<br>Redmond, WA 98053<br>(425) 292-1838</p>
+  </div>
+  <div class="row">
+    <h3>Redmond Ridge Center</h3>
+    <p>10735 Cedar Park Crescent NE<br>Redmond, WA 98053<br>(425) 292-1838</p>
+  </div>
 </div>
