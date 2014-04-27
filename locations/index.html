@@ -3,9 +3,9 @@ layout: locations
 title: Best in Class Education
 ---
 
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkle0NnqmA1_SRl0tfj4MOEQbTigNZkdY&sensor=true"></script>
-<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
-<script src="locationdata.json"></script>
+<script  type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkle0NnqmA1_SRl0tfj4MOEQbTigNZkdY&sensor=true"></script>
+<script  type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
+<script  type="text/javascript" src="locationdata.json"></script>
 <script>
 
   function initialize() {
@@ -13,13 +13,44 @@ title: Best in Class Education
 
     // Disable panning on mobile
     var isDraggable = $(document).width() > 480 ? true : false;
+    var initialZoom = $(document).width() > 480 ? 4 : 3;
 
     var mapOptions = {
-      zoom: 4,
+      zoom: initialZoom,
       center: new google.maps.LatLng(40, -100),
       draggable: isDraggable,
       scrollwheel: false
     };
+
+    var mcOptions = {
+      gridsize: 40,
+      labelClass: "marker-labels",
+      styles: [{
+        height: 44,
+        url: "../images/maps-icon-green.svg",
+        width: 44
+        },
+        {
+        height: 44,
+        url: "../images/maps-icon-green.svg",
+        width: 44
+        },
+        {
+        height: 44,
+        url: "../images/maps-icon-green.svg",
+        width: 44
+        },
+        {
+        height: 44,
+        url: "../images/maps-icon-green.svg",
+        width: 44
+        },
+        {
+        height: 44,
+        url: "../images/maps-icon-green.svg",
+        width: 44
+      }],
+  };
 
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
@@ -28,12 +59,12 @@ title: Best in Class Education
     // Convert location data to markers
     for (var i in LocationData) {
       var p = LocationData[i];
-      var latlng = new google.maps.LatLng(p[0], p[1]);
-       
+      var latlng = new google.maps.LatLng(p.Lat, p.Lon);
+      console.log(p.Lat);
       var marker = new google.maps.Marker({
         position: latlng,
         map: map,
-        title: p[2]
+        title: p.Name
       });
       markers.push(marker);
    
@@ -44,7 +75,7 @@ title: Best in Class Education
       });
     }
     // Cluster nearby markers
-    var mc = new MarkerClusterer(map, markers);
+    var mc = new MarkerClusterer(map, markers, mcOptions);
 
   }
   google.maps.event.addDomListener(window, 'load', initialize);
