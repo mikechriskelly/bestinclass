@@ -1,7 +1,11 @@
 # Best in Class Education
 
-## Local Develop
-grunt
+## Dev Setup
+git clone [this repository]
+npm install
+bundle install
 
-## Build and Publish
-bundle exec rake blog:publish
+## Dev Workflow
+grunt serve
+grunt build
+grunt publish or bundle exec rake blog:publish
