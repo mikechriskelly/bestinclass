@@ -1,6 +1,6 @@
 ---
   - 
-    Name: "Bellevue"
+    Name: "Bellevue Center"
     Address: "13427 NE 20th  St. Ste 150"
     City: "Bellevue"
     State: "WA"
@@ -11,7 +11,7 @@
     Email: "bellevue@bicedu.com"
     Phone: "425-453-9532"
   - 
-    Name: "Bothell"
+    Name: "Bothell Center"
     Address: "20806 Bothell-Everett Hwy, Ste 101"
     City: "Bothell"
     State: "WA"
@@ -22,7 +22,7 @@
     Email: "bothell@bicedu.com"
     Phone: "425-368-3069"
   - 
-    Name: "Issaquah"
+    Name: "Issaquah Center"
     Address: "1505 NW Gilman Blvd, Ste 6"
     City: "Issaquah"
     State: "WA"
@@ -33,7 +33,7 @@
     Email: "issaquah@bicedu.com"
     Phone: "425-272-1328"
   - 
-    Name: "Northgate"
+    Name: "Northgate Center"
     Address: "11030 5th Ave NE, Ste A"
     City: "Northgate"
     State: "WA"
@@ -44,7 +44,7 @@
     Email: "northgate@bicedu.com"
     Phone: "206-801-6688"
   - 
-    Name: "Redmond"
+    Name: "Redmond Center"
     Address: "16701 Cleveland St. Ste B"
     City: "Redmond"
     State: "WA"
@@ -55,7 +55,7 @@
     Email: "redmond@bicedu.com"
     Phone: "425-292-1818"
   - 
-    Name: "Redmond Ridge"
+    Name: "Redmond Ridge Center"
     Address: "10735 Cedar Park Crescent NE"
     City: "Redmond"
     State: "WA"
@@ -66,7 +66,7 @@
     Email: "redridge@bicedu.com"
     Phone: "425-292-1838"
   - 
-    Name: "Renton"
+    Name: "Renton Center"
     Address: "4820 NE 4th St, A107"
     City: "Renton"
     State: "WA"
@@ -77,7 +77,7 @@
     Email: "renton@bicedu.com"
     Phone: "425-333-7333"
   - 
-    Name: "Sammamish"
+    Name: "Sammamish Center"
     Address: "825 228th Ave NE"
     City: "Sammamish"
     State: "WA"
@@ -88,7 +88,7 @@
     Email: "sammamish@bicedu.com"
     Phone: "425-880-3788"
   - 
-    Name: "Seattle"
+    Name: "Seattle Center"
     Address: "2100 E Spruce St"
     City: "Seattle"
     State: "WA"
@@ -99,7 +99,7 @@
     Email: "seattle@bicedu.com"
     Phone: "206-341-9914"
   - 
-    Name: "Woodinville"
+    Name: "Woodinville Center"
     Address: "13317 NE 175th St. Ste G"
     City: "Woodinville"
     State: "WA"
@@ -110,7 +110,7 @@
     Email: "woodinville@bicedu.com"
     Phone: "425-368-3008"
   - 
-    Name: "Allen"
+    Name: "Allen center"
     Address: "2023 McDermott Dr, Suite 130"
     City: "Allen"
     State: "TX"
@@ -121,7 +121,7 @@
     Email: "allen-plano@bicedu.com"
     Phone: "972-656-9242"
   - 
-    Name: "Katy"
+    Name: "Katy Center"
     Address: "3750 S. Mason Rd."
     City: "Katy"
     State: "TX"
@@ -132,7 +132,7 @@
     Email: "katy@bicedu.com"
     Phone: "832-617-0491"
   - 
-    Name: "Lake Oswego"
+    Name: "Lake Oswego Center"
     Address: "16318 Bryant Rd."
     City: "Lake Oswego"
     State: "OR"
@@ -143,7 +143,7 @@
     Email: "lakeoswego@bicedu.com"
     Phone: "503-734-7467"
   - 
-    Name: "Portland Centra"
+    Name: "Portland Central Center"
     Address: "15188 NW Central Dr, Suite 202"
     City: "Portland"
     State: "OR"
@@ -154,7 +154,7 @@
     Email: "lakeoswego@bicedu.com"
     Phone: "503-734-7467"
   - 
-    Name: "Portland"
+    Name: "Portland Center"
     Address: "8733 SE Division St, Suite 209"
     City: "Portland"
     State: "OR"
@@ -165,7 +165,7 @@
     Email: "lakeoswego@bicedu.com"
     Phone: "503-734-7467"
   - 
-    Name: "Mason"
+    Name: "Mason Center"
     Address: "5142 Cedar  Village Dr."
     City: "Mason"
     State: "OH"
@@ -176,7 +176,7 @@
     Email: "mason@bicedu.com"
     Phone: "513-445-9876"
   - 
-    Name: "Gaithersburg"
+    Name: "Gaithersburg Center"
     Address: "364 Main Street, #200"
     City: "Gaithersburg"
     State: "MD"
@@ -187,7 +187,7 @@
     Email: "gaithersburg@bicedu.com"
     Phone: "301-887-7337"
   - 
-    Name: "Sunnyvale"
+    Name: "Sunnyvale Center"
     Address: "448 East El Camino Real"
     City: "Sunnyvale"
     State: "CA"
@@ -198,7 +198,7 @@
     Email: "sunnyvale@bicedu.com"
     Phone: "408-768-1335"
   - 
-    Name: "Cupertino"
+    Name: "Cupertino Center"
     Address: "20432 Silverado Ave, #215"
     City: "Cupertino"
     State: "CA"
@@ -209,7 +209,7 @@
     Email: "cupertino@bicedu.com"
     Phone: "408-253-3980"
   - 
-    Name: "Fremont"
+    Name: "Fremont Center"
     Address: "46356 Warm Springs Blvd, Ste 824"
     City: "Fremont"
     State: "CA"
@@ -220,7 +220,7 @@
     Email: "fremont@bicedu.com"
     Phone: "510-400-8081"
   - 
-    Name: "Oakland"
+    Name: "Oakland Center"
     Address: "919 Harrison St, Suite B"
     City: "Oakland"
     State: "CA"
@@ -231,7 +231,7 @@
     Email: "oakland@bicedu.com"
     Phone: "510-899-9668"
   - 
-    Name: "San Francisco"
+    Name: "San Francisco Center"
     Address: "1419 Powell St."
     City: "San Francisco"
     State: "CA"
@@ -242,7 +242,7 @@
     Email: "sfchinatown@bicedu.com"
     Phone: "415-398-3266"
   - 
-    Name: "San Jose"
+    Name: "San Jose Center"
     Address: "1701 Lundy Ave, Suite 201"
     City: "San Jose"
     State: "CA"
@@ -253,7 +253,7 @@
     Email: "sanjose@bicedu.com"
     Phone: "408-441-8462"
   - 
-    Name: "San Ramon"
+    Name: "San Ramon Center"
     Address: "9260 Alcosta Blvd, Bldg C 15A"
     City: "San Ramon"
     State: "CA"
@@ -264,7 +264,7 @@
     Email: "sanramon@bicedu.com"
     Phone: "925-302-6188"
   - 
-    Name: "Elk Grove"
+    Name: "Elk Grove Center"
     Address: "7811 Laguna Blvd, Suite 165"
     City: "Elk Grove"
     State: "CA"
@@ -275,7 +275,7 @@
     Email: "elkgrove@bicedu.com"
     Phone: "916-525-7274"
   - 
-    Name: "Reno"
+    Name: "Reno Center"
     Address: "748 S. Meadows Pkwy Suite A3"
     City: "Reno"
     State: "NV"
