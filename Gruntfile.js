@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         },
         files: {
           // Compile scripts used across the site 
-          'js/main.min.js': ['_javascripts/bootstrap.min.js', '_javascripts/hovernav.js', '_javascripts/bootstrap-tabcollapse.js'],
+          'js/main.min.js': ['_javascripts/bootstrap.min.js', '_javascripts/hovernav.js', '_javascripts/responsive-tabs.js'],
           // Special script just for the embedded Google map
           'js/locationsmap.min.js': ['_javascripts/locationsmap.js']
         }
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
           'spotlight/*.html',
           'spotlight/_posts/*.md'
         ],
-        tasks: ['shell:serve'],
+        tasks: ['shell:build', 'shell:serve'],
         options: {
           interrupt: true,
           atBegin: true,
