@@ -21,6 +21,9 @@ body {
   margin-top: 0px;
   padding-bottom: 20px;
 }
+
+.full-height {height: 100%;};
+
 /* ---------------------------------- */
 /* General Navigation and Heading */
 /* ---------------------------------- */
@@ -306,9 +309,10 @@ h1, h2, h3, .navbar-nav > li > a {
 #map-canvas {
   background: $gray-lighter;
   position: relative;
-  height: 425px; 
+  height: 100%; 
+  min-height: 100%;
   margin-bottom: 25px;
-  border-bottom: 1px solid $color2;
+  //border-bottom: 1px solid $color2;
 }
 .marker-labels p {
   color: $color1;
@@ -316,6 +320,10 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 .infowindow-link:hover {
   text-decoration: none;
+}
+#location-list {
+  height: 100%;
+  overflow: scroll;
 }
 
 /* ---------------------------------- */
@@ -406,13 +414,4 @@ footer .col-md-6 {
     border-color: $color2;
     background: #fff; 
   }
-}
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -8em; /* the bottom margin is the negative value of the footer's height */
-}
-footer, .push {
-  height: 8em; /* '.push' must be the same height as 'footer' */
 }

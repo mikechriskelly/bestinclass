@@ -37,75 +37,74 @@
         <script src="{{ site.baseurl }}/js/main.min.js"></script>
     </head>
     <body>
-      <div class="wrapper">
-        <!-- Mobile Navbar -->
-        <nav class="navbar navbar-default navbar-static-top hovernav visible-sm visible-xs" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand logo-nav" href="{{ site.baseurl }}/">
-                  <img src="{{ site.baseurl }}/images/bclogo.svg" class="logo-sm" onerror="this.onerror=null; this.src='{{ site.baseurl }}/images/bclogo.png'">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-mobile-collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="{{ site.baseurl }}/programs">Programs</a></li>
-                <li><a href="{{ site.baseurl }}/spotlight">Students</a></li>
-                <li><a href="{{ site.baseurl }}/about">About Us</a></li>
-                <li><a href="{{ site.baseurl }}/locations">Locations</a></li>
-                <li class="hidden-sm" id="nearest-location"><a href="#">Redmond Ridge Center</a>
-              </ul>
-            </div>
+      <!-- Mobile Navbar -->
+      <nav class="navbar navbar-default navbar-static-top hovernav visible-sm visible-xs" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-mobile-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo-nav" href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/images/bclogo.svg" class="logo-sm" onerror="this.onerror=null; this.src='{{ site.baseurl }}/images/bclogo.png'">
+            </a>
           </div>
-        </nav>
-        <!-- Fullsize Navbar -->
-        <nav class="navbar navbar-default navbar-static-top hovernav hidden-sm hidden-xs" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand logo-nav" href="{{ site.baseurl }}/">
-                  <img src="{{ site.baseurl }}/images/bclogo.svg" onerror="this.onerror=null; this.src='/images/bclogo.png'">
-              </a>
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a href="{{ site.baseurl }}/programs" class="dropdown-toggle disabled" data-toggle="dropdown">Programs</a>
-                  <ul class="dropdown-menu columns">
-                    <li><a href="{{ site.baseurl }}/programs/enrichment#math">Math</a></li>
-                    <li><a href="{{ site.baseurl }}/programs/enrichment#english">Reading and Writing</a></li>
-                    <li><a href="{{ site.baseurl }}/programs/privatetutoring">Private Tutoring</a></li>
-                    <li><a href="{{ site.baseurl }}/programs/beginnersinclass">Beginners in Class</a></li>
-                    <li><a href="{{ site.baseurl }}/programs/giftedprep">Gifted Test Prep</a></li>
-                    <li><a href="{{ site.baseurl }}/programs/satprep">SAT Test Prep</a></li>
-                  </ul>
-                </li>
-                <li><a href="{{ site.baseurl }}/spotlight">Students</a></li>
-                <li class="dropdown">
-                  <a href="{{ site.baseurl }}/about" class="dropdown-toggle disabled" data-toggle="dropdown">About Us</a>
-                  <ul class="dropdown-menu columns">
-                    <li><a href="{{ site.baseurl }}/about#approach">How We Teach</a></li>
-                    <li><a href="{{ site.baseurl }}/about#teachers">Meet Our Teachers</a></li>
-                    <li><a href="{{ site.baseurl }}/about#students">Meet Our Students</a></li>
-                    <li><a href="{{ site.baseurl }}/about#history">Our History</a></li>
-                    <li><a href="{{ site.baseurl }}/spotlight">Student Spotlight</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="{{ site.baseurl }}/locations" class="dropdown-toggle disabled" data-toggle="dropdown">Locations</a>
-                  <ul class="dropdown-menu columns">
-                    <li><a href="{{ site.baseurl }}/locations">California</a></li>
-                    <li><a href="{{ site.baseurl }}/locations">Maryland</a></li>
-                    <li><a href="{{ site.baseurl }}/locations">Ohio</a></li>
-                    <li><a href="{{ site.baseurl }}/locations">Oregon</a></li>
-                    <li><a href="{{ site.baseurl }}/locations">Texas</a></li>
-                    <li><a href="{{ site.baseurl }}/locations">Washington</a></li>
-                  </ul>
-                </li>
-                <li id="nearest-location"><a href="#"><i class="fa fa-map-marker fa-lg"></i> Redmond Ridge Center</a></li>
-              </ul>
-            </div>
+          <div class="collapse navbar-collapse" id="navbar-mobile-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="{{ site.baseurl }}/programs">Programs</a></li>
+              <li><a href="{{ site.baseurl }}/spotlight">Students</a></li>
+              <li><a href="{{ site.baseurl }}/about">About Us</a></li>
+              <li><a href="{{ site.baseurl }}/locations">Locations</a></li>
+              <li class="hidden-sm" id="nearest-location"><a href="#">Redmond Ridge Center</a>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
+      <!-- Fullsize Navbar -->
+      <nav class="navbar navbar-default navbar-static-top hovernav hidden-sm hidden-xs" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand logo-nav" href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/images/bclogo.svg" onerror="this.onerror=null; this.src='/images/bclogo.png'">
+            </a>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="{{ site.baseurl }}/programs" class="dropdown-toggle disabled" data-toggle="dropdown">Programs</a>
+                <ul class="dropdown-menu columns">
+                  <li><a href="{{ site.baseurl }}/programs/enrichment#math">Math</a></li>
+                  <li><a href="{{ site.baseurl }}/programs/enrichment#english">Reading and Writing</a></li>
+                  <li><a href="{{ site.baseurl }}/programs/privatetutoring">Private Tutoring</a></li>
+                  <li><a href="{{ site.baseurl }}/programs/beginnersinclass">Beginners in Class</a></li>
+                  <li><a href="{{ site.baseurl }}/programs/giftedprep">Gifted Test Prep</a></li>
+                  <li><a href="{{ site.baseurl }}/programs/satprep">SAT Test Prep</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ site.baseurl }}/spotlight">Students</a></li>
+              <li class="dropdown">
+                <a href="{{ site.baseurl }}/about" class="dropdown-toggle disabled" data-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu columns">
+                  <li><a href="{{ site.baseurl }}/about#approach">How We Teach</a></li>
+                  <li><a href="{{ site.baseurl }}/about#teachers">Meet Our Teachers</a></li>
+                  <li><a href="{{ site.baseurl }}/about#students">Meet Our Students</a></li>
+                  <li><a href="{{ site.baseurl }}/about#history">Our History</a></li>
+                  <li><a href="{{ site.baseurl }}/spotlight">Student Spotlight</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="{{ site.baseurl }}/locations" class="dropdown-toggle disabled" data-toggle="dropdown">Locations</a>
+                <ul class="dropdown-menu columns">
+                  <li><a href="{{ site.baseurl }}/locations">California</a></li>
+                  <li><a href="{{ site.baseurl }}/locations">Maryland</a></li>
+                  <li><a href="{{ site.baseurl }}/locations">Ohio</a></li>
+                  <li><a href="{{ site.baseurl }}/locations">Oregon</a></li>
+                  <li><a href="{{ site.baseurl }}/locations">Texas</a></li>
+                  <li><a href="{{ site.baseurl }}/locations">Washington</a></li>
+                </ul>
+              </li>
+              <li id="nearest-location"><a href="#"><i class="fa fa-map-marker fa-lg"></i> Redmond Ridge Center</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
