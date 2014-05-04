@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       serve: {
         command: 'jekyll serve --baseurl ""'
       },
-      publish: {
+      deploy: {
         command: 'bundle exec rake blog:publish'
       }
     },
@@ -65,15 +65,27 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '_sass/*.scss',
-        tasks: ['compass']
+        tasks: ['compass'],
+        options: {
+          atBegin: true,
+          livereload: true
+        }
       },
       js: {
         files: '_javascripts/**/*.js',
-        tasks: ['uglify:javascripts']
+        tasks: ['uglify'],
+        options: {
+          atBegin: true,
+          livereload: true
+        }
       },
       data: {
         files: '_data/**/*.yml',
-        tasks: ['yaml:locationdata']
+        tasks: ['yaml'],
+        options: {
+          atBegin: true,
+          livereload: true
+        }
       },
       jekyll: {
         files: [
@@ -81,11 +93,6 @@ module.exports = function(grunt) {
           '_layouts/*.html',
           '_data/*.yml',
           '_config.yml',
-          'js/*.js',
-          'css/*.css',
-          'images/**/*.png',
-          'images/**/*.svg',
-          'images/**/*.jpg',
           'index.html',
           'about/*.html',
           'locations/*.html',
@@ -94,11 +101,12 @@ module.exports = function(grunt) {
           'news/_posts/*.md',
           'programs/*.html',
           'spotlight/*.html',
-          'spotlight/_posts/*.md'
+          'spotlight/_posts/*.md',
+          'css/*.css',
+          'js/*.js'
         ],
-        tasks: ['shell:build', 'shell:serve'],
+        tasks: ['shell:serve'],
         options: {
-          interrupt: true,
           atBegin: true,
           livereload: true
         }
@@ -118,8 +126,8 @@ module.exports = function(grunt) {
   // Load extension to convert YAML into JSON (used for location data)
   grunt.loadNpmTasks('grunt-yaml');
   // Register default task to watch for file changes.
-  grunt.registerTask('default',['shell:serve', 'watch']);
-  grunt.registerTask('serve',['shell:serve', 'watch']);
-  grunt.registerTask('build',['shell:build']);
-  grunt.registerTask('publish',['shell:publish']);
+  grunt.registerTask('default',['watch']);
+  grunt.registerTask('serve',['watch']);
+  grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
+  grunt.registerTask('deploy',['shell:deploy']);
 };

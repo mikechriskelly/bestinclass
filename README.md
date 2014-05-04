@@ -8,4 +8,4 @@ bundle install
 ## Dev Workflow
 grunt serve
 grunt build
-grunt publish or bundle exec rake blog:publish
+grunt deploy or bundle exec rake blog:publish
