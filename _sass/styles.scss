@@ -312,7 +312,7 @@ h1, h2, h3, .navbar-nav > li > a {
   height: 100%; 
   min-height: 100%;
   margin-bottom: 25px;
-  //border-bottom: 1px solid $color2;
+  border-bottom: 1px solid $color2;
 }
 .marker-labels p {
   color: $color1;
@@ -323,7 +323,9 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 #location-list {
   height: 100%;
+  min-height: 100%;
   overflow: scroll;
+  border-bottom: 1px solid $color2;
 }
 
 /* ---------------------------------- */

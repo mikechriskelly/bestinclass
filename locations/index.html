@@ -3,13 +3,13 @@ layout: locations
 title: Best in Class Education
 ---
 
-<div id="map-canvas" class="container-fluid">
-</div>
-<div class="container">
-  {% for location in site.data.locations %}
-    <div class="row">
+<div class="row full-height">
+  <div class="col-md-8" id="map-canvas">
+  </div>
+  <div class="col-md-4" id="location-list">
+    {% for location in site.data.locations %}
       <h3>{{ location.Name }}</h3>
       <p>{{ location.Address }}<br>{{ location.City }}, {{ location.State }} {{ location.Zip }}<br>{{ location.Phone }}</p>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
