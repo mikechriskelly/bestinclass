@@ -65,21 +65,15 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: '_sass/*.scss',
-        tasks: ['compass'],
-        options: {
-          interrupt: true,
-          atBegin: true,
-          livereload: true
-        }
+        tasks: ['compass']
       },
       js: {
         files: '_javascripts/**/*.js',
-        tasks: ['uglify:javascripts'],
-        options: {
-          interrupt: true,
-          atBegin: true,
-          livereload: true
-        }
+        tasks: ['uglify:javascripts']
+      },
+      data: {
+        files: '_data/**/*.yml',
+        tasks: ['yaml:locationdata']
       },
       jekyll: {
         files: [
@@ -87,6 +81,11 @@ module.exports = function(grunt) {
           '_layouts/*.html',
           '_data/*.yml',
           '_config.yml',
+          'js/*.js',
+          'css/*.css',
+          'images/**/*.png',
+          'images/**/*.svg',
+          'images/**/*.jpg',
           'index.html',
           'about/*.html',
           'locations/*.html',
@@ -103,16 +102,7 @@ module.exports = function(grunt) {
           atBegin: true,
           livereload: true
         }
-      },
-      data: {
-        files: '_data/**/*.yml',
-        tasks: ['yaml:locationdata'],
-        options: {
-          interrupt: true,
-          atBegin: true,
-          livereload: true
-        }
-      },
+      }
     }
   });
   // Load extension for running shell commands
