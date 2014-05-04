@@ -314,6 +314,9 @@ h1, h2, h3, .navbar-nav > li > a {
   color: $color1;
   font-size: 14px;
 }
+.infowindow-link:hover {
+  text-decoration: none;
+}
 
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
