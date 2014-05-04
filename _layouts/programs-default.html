@@ -1,6 +1,10 @@
 {% include header.html %}
 
-<div class="container-fluid program-header">
+<div class="container-fluid program-header" 
+  {% if page.program.photo %}
+    style="background-image: url({{ site.baseurl }}/images/photos/{{ page.program.photo }});"
+  {% endif %}
+>
   <div class="container">
     <h1>{{ page.program.title }}</h1>
     <p>{{ page.program.description }}</p>
