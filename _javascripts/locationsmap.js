@@ -1,6 +1,7 @@
 var LOCATIONDATA;
+var MAPISLODADED = false;
 
-function initialize() {
+function initializeMap() {
 
   var infowindow = new google.maps.InfoWindow();
 
@@ -75,10 +76,44 @@ function initialize() {
   var mc = new MarkerClusterer(map, markers, mcOptions);
 }
 
+function setDIVHeight(div) {
+  var theDiv = $(div);
+  var divTop = theDiv.offset().top;
+  var winHeight = $(window).height();
+  var divHeight = winHeight - divTop;
+  theDiv.height(divHeight);
+  theDiv.show();
+}
 
-// Async call loads location data from JSON file and then initializes map
-$.getJSON("locations.json", function(response) {
-  LOCATIONDATA = response;
-  google.maps.event.addDomListener(window, 'load', initialize);
+$(document).ready(function () {
+  // Async call loads location data from JSON file
+  $.getJSON("locations.json", function(response) {
+    LOCATIONDATA = response;
+    var winWidth = $(window).width();
+    if(winWidth >= 992) {
+      // Set 100% height
+      setDIVHeight('div#map-canvas');
+      setDIVHeight('div#location-list');
+      
+      // Init the map
+      MAPISLODADED = true;
+      initializeMap();
+    }
+  });
+});
+
+$(window).resize(function () {
+  var winWidth = $(window).width();
+  if(winWidth >= 992) {
+    if(MAPISLODADED) {
+      setDIVHeight('div#map-canvas');
+      setDIVHeight('div#location-list');
+    } else if(LOCATIONDATA) {
+      MAPISLODADED = true;
+      initializeMap();
+    }
+  } else if(MAPISLODADED) {
+    $('div#map-canvas').hide();
+  }
 });
 
