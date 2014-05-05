@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-news
 blog: news
 published: true
 category: news

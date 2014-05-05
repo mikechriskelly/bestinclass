@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-news
 blog: news
 title:  "Welcome to Jekyll!"
 date:   2014-02-03 18:44:14

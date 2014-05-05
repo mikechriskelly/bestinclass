@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-spotlight
 blog: spotlight
 published: true
 ---
