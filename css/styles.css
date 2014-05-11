@@ -8083,9 +8083,37 @@ h1, h2, h3, .navbar-nav > li > a {
   }
 }
 /* ---------------------------------- */
-/* Testimonial Section on multiple pages */
+/* Centers Pages */
 /* ---------------------------------- */
 /* line 351, ../_sass/styles.scss */
+#calendar {
+  margin-top: 50px;
+}
+
+/* line 354, ../_sass/styles.scss */
+.c-holder > .c-grid > .c-row > .have-events {
+  background-color: #555555;
+}
+
+/* line 357, ../_sass/styles.scss */
+.c-holder > .c-grid > .c-row > .have-events:hover {
+  background-color: #555555;
+}
+
+/* line 360, ../_sass/styles.scss */
+.c-holder > .c-grid > .c-row > .this-day {
+  background-color: inherit;
+}
+
+/* line 363, ../_sass/styles.scss */
+.c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
+  display: none;
+}
+
+/* ---------------------------------- */
+/* Testimonial Section on multiple pages */
+/* ---------------------------------- */
+/* line 369, ../_sass/styles.scss */
 .testimonial {
   background-color: #00529c;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==");
@@ -8097,7 +8125,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #555555;
 }
 
-/* line 361, ../_sass/styles.scss */
+/* line 379, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -8107,7 +8135,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Shaded section for differentiating rows */
 /* ---------------------------------- */
-/* line 370, ../_sass/styles.scss */
+/* line 388, ../_sass/styles.scss */
 .shaded {
   padding: 50px 0;
   background: #f5f7f9;
@@ -8118,17 +8146,17 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 380, ../_sass/styles.scss */
+/* line 398, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 383, ../_sass/styles.scss */
+/* line 401, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 385, ../_sass/styles.scss */
+/* line 403, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
@@ -8136,7 +8164,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 392, ../_sass/styles.scss */
+/* line 410, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8148,7 +8176,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 403, ../_sass/styles.scss */
+/* line 421, ../_sass/styles.scss */
 footer {
   color: #fff;
   background: #006838;
@@ -8157,41 +8185,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 410, ../_sass/styles.scss */
+/* line 428, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 414, ../_sass/styles.scss */
+/* line 432, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 418, ../_sass/styles.scss */
+/* line 436, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 423, ../_sass/styles.scss */
+/* line 441, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 427, ../_sass/styles.scss */
+/* line 445, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 429, ../_sass/styles.scss */
+/* line 447, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 432, ../_sass/styles.scss */
+/* line 450, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;

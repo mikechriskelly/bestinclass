@@ -98,6 +98,7 @@ module.exports = function(grunt) {
           'careers/*.html',
           'contact/*.html',
           'locations/*.html',
+          'locations/**/*.html',
           'locations/*.json',
           'news/*.html',
           'news/_posts/*.md',

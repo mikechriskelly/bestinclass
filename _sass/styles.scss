@@ -346,6 +346,24 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 
 /* ---------------------------------- */
+/* Centers Pages */
+/* ---------------------------------- */
+#calendar {
+  margin-top: 50px;
+}
+.c-holder > .c-grid > .c-row > .have-events {
+  background-color: $gray;
+}
+.c-holder > .c-grid > .c-row > .have-events:hover {
+  background-color: $gray;
+}
+.c-holder > .c-grid > .c-row > .this-day {
+  background-color: inherit;
+}
+.c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
+  display: none;
+}
+/* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
 .testimonial {

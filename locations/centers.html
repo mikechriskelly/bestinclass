@@ -1,0 +1,27 @@
+---
+layout: default
+title: Best in Class Education
+permalink: locations/centers/index.html
+---
+
+<script src="http://ericwenn.se/kalendar/free/"></script>
+
+<div class="container">
+  <div id="calendar"></div>
+</div>
+
+<script>
+var options = {
+  firstDayOfWeek: "Sunday",
+  showDays: true,
+  color: "green",
+  googleCal: [
+  {
+    calendar: "25irdlab0lpbb97fadr2gk7pcg@group.calendar.google.com",
+    apikey: "AIzaSyBHD4G7RLYjTVetS0XD7QrUeVe0HHedxmo"
+  }],
+  onDayClick: function() {}
+};
+
+$(calendar).kalendar(options);
+</script>
