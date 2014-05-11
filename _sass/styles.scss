@@ -348,6 +348,12 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Centers Pages */
 /* ---------------------------------- */
+.panel {
+  text-align: center;
+}
+.action-box {
+  text-align: center;
+}
 #calendar {
   margin-top: 50px;
 }
@@ -390,6 +396,9 @@ h1, h2, h3, .navbar-nav > li > a {
   background: #f5f7f9;
   border-top: 1px solid #e2e3e6;
   border-bottom: 1px solid #e2e3e6;
+}
+.vert-border {
+  border-right: 1px solid #e2e3e6;
 }
 
 /* ---------------------------------- */
