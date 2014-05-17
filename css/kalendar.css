@@ -1,0 +1,340 @@
+/* line 1, ../_sass/kalendar.scss */
+[ewcalendar] {
+  color: white;
+  font-weight: 300;
+  height: 20em;
+  line-height: 1.5;
+}
+
+/* line 8, ../_sass/kalendar.scss */
+[ewcalendar] * {
+  box-sizing: border-box;
+  moz-box-sizing: border-box;
+}
+
+/* line 13, ../_sass/kalendar.scss */
+[ewcalendar].small {
+  font-size: 0.8em;
+  font-weight: 100;
+}
+
+/* line 18, ../_sass/kalendar.scss */
+[ewcalendar] .c-month-view {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  height: 12.5%;
+  position: relative;
+  font-size: 1.6em;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+/* line 34, ../_sass/kalendar.scss */
+[ewcalendar] .c-month-view [class^=c-month-arrow] {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: transparent;
+  cursor: pointer;
+}
+
+/* line 43, ../_sass/kalendar.scss */
+[ewcalendar] .c-month-view [class^=c-month-arrow]:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* line 47, ../_sass/kalendar.scss */
+[ewcalendar] .c-month-view .c-month-arrow-left {
+  left: 0;
+}
+
+/* line 51, ../_sass/kalendar.scss */
+[ewcalendar] .c-month-view .c-month-arrow-right {
+  right: 0;
+}
+
+/* line 55, ../_sass/kalendar.scss */
+[ewcalendar] .c-holder {
+  height: 87.5%;
+  position: relative;
+}
+
+/* line 60, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 68, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row {
+  width: 100%;
+  margin-bottom: 0.2%;
+  margin-bottom: -moz-calc(0px + 1px);
+  margin-bottom: -o-calc(0px + 1px);
+  margin-bottom: -webkit-calc(0px + 1px);
+  margin-bottom: calc(0px + 1px);
+  height: 13.08571%;
+  height: -moz-calc(100%/7 - 7px/6);
+  height: -o-calc(100%/7 - 7px/6);
+  height: -webkit-calc(100%/7 - 7px/6);
+  height: calc(100%/7 - 7px/6);
+}
+
+/* line 82, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row:last-child {
+  margin-bottom: 0;
+}
+
+/* line 86, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day {
+  margin-right: 0.2%;
+  margin-right: -moz-calc(0px + 7px/6);
+  margin-right: -o-calc(0px + 7px/6);
+  margin-right: -webkit-calc(0px + 7px/6);
+  margin-right: calc(0px + 7px/6);
+  width: 14.11429%;
+  width: -moz-calc(100%/7 - 1px);
+  width: -o-calc(100%/7 - 1px);
+  width: -webkit-calc(100%/7 - 1px);
+  width: calc(100%/7 - 1px);
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 102, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.c-l .date-holder {
+  font-size: 1em;
+}
+
+/* line 106, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day:last-child {
+  margin-right: 0;
+}
+
+/* line 110, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.have-events {
+  cursor: pointer;
+}
+
+/* line 114, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.have-events:hover {
+  background-color: #232323;
+}
+
+/* line 118, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.other-month {
+  color: #CCC;
+}
+
+/* line 122, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.other-month.have-events:hover {
+  color: white;
+}
+
+/* line 126, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.this-day {
+  background: none;
+}
+
+/* line 130, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day .date-holder {
+  font-size: 1.3em;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+/* line 137, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day .event-n-holder {
+  height: 90%;
+  height: -moz-calc(100% - 10px);
+  height: -o-calc(100% - 10px);
+  height: -webkit-calc(100% - 10px);
+  height: calc(100% - 10px);
+  left: 5%;
+  left: -moz-calc(0px + 5px);
+  left: -o-calc(0px + 5px);
+  left: -webkit-calc(0px + 5px);
+  left: calc(0px + 5px);
+  top: 5%;
+  top: -moz-calc(0px + 5px);
+  top: -o-calc(0px + 5px);
+  top: -webkit-calc(0px + 5px);
+  top: calc(0px + 5px);
+  position: absolute;
+  width: 0.25em;
+}
+
+/* line 157, ../_sass/kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day .event-n-holder .event-n {
+  height: 0.5em;
+  background-color: white;
+  width: 100%;
+  margin: 1px 0;
+}
+
+/* line 164, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  padding: 1px;
+  padding-top: 0px;
+}
+
+/* line 175, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .specific-day {
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+  line-height: 1;
+  padding: 1em 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 185, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .specific-day:hover {
+  background: #232323;
+}
+
+/* line 189, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .specific-day [i=date] {
+  font-size: 3em;
+}
+
+/* line 193, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .specific-day [i=day] {
+  font-size: 1.5em;
+}
+
+/* line 197, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme {
+  display: inline-block;
+  height: 100%;
+  margin-left: 1px;
+  width: 60%;
+  width: -moz-calc(70% - 1px);
+  width: -o-calc(70% - 1px);
+  width: -webkit-calc(70% - 1px);
+  width: calc(70% - 1px);
+  overflow-y: auto;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 211, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* line 215, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* line 219, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme::-webkit-scrollbar-thumb {
+  background: #232323;
+}
+
+/* line 223, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event {
+  width: 100%;
+  padding: 0.5em;
+  margin: 1px 0;
+}
+
+/* line 229, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event:first-child {
+  margin-top: 0;
+}
+
+/* line 233, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event:last-child {
+  margin-bottom: 0;
+}
+
+/* line 237, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event h5 {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.3;
+  font-weight: 400;
+  color: white;
+}
+
+/* line 245, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.56);
+  line-height: 1.3;
+}
+
+/* line 251, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event a {
+  font-weight: normal;
+}
+
+/* line 255, ../_sass/kalendar.scss */
+[ewcalendar] .c-specific .s-scheme .s-event p[data-role=loc] {
+  line-height: 1;
+}
+
+/* line 259, ../_sass/kalendar.scss */
+[ewcalendar]:hover .c-month-view [class^=c-month-arrow] {
+  color: white;
+}
+
+/* line 263, ../_sass/kalendar.scss */
+[ewcalendar].spec-day .c-grid {
+  display: none;
+}
+
+/* line 267, ../_sass/kalendar.scss */
+[ewcalendar].spec-day .c-specific {
+  display: block;
+}
+
+/* line 271, ../_sass/kalendar.scss */
+[ewcalendar].spec-day [class^=c-month-arrow] {
+  display: none;
+}
+
+/* line 275, ../_sass/kalendar.scss */
+[ewcalendar][data-showdays=false] .c-holder .c-grid .c-row {
+  height: 15.66667%;
+  height: -moz-calc(100%/6 - 7px/6);
+  height: -o-calc(100%/6 - 7px/6);
+  height: -webkit-calc(100%/6 - 7px/6);
+  height: calc(100%/6 - 7px/6);
+}
+
+/* line 283, ../_sass/kalendar.scss */
+[color=green] {
+  background-color: #32865f;
+}
+
+/* line 287, ../_sass/kalendar.scss */
+[color=green] .c-month-view, [color=green] .c-day, [color=green] .specific-day, [color=green] .s-event {
+  background-color: #006838;
+}
+
+/* line 291, ../_sass/kalendar.scss */
+[color=green] .have-events {
+  background-color: #003e21;
+}
