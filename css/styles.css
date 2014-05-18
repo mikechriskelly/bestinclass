@@ -8434,71 +8434,76 @@ h1, h2, h3, .navbar-nav > li > a {
 
 /* line 359, ../_sass/styles.scss */
 .storelocator-panel .store-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 365, ../_sass/styles.scss */
+/* line 366, ../_sass/styles.scss */
 .storelocator-panel .store-list li,
 .storelocator-panel .directions-panel {
   padding: 5px;
 }
 
-/* line 368, ../_sass/styles.scss */
+/* line 369, ../_sass/styles.scss */
 .storelocator-panel .directions-panel {
   font-size: 0.8em;
 }
 
-/* line 372, ../_sass/styles.scss */
+/* line 373, ../_sass/styles.scss */
 .storelocator-panel .store-list li.store:hover {
   cursor: pointer;
   background: #eee;
 }
 
-/* line 378, ../_sass/styles.scss */
+/* line 379, ../_sass/styles.scss */
 .storelocator-panel .store-list li.highlighted,
 .storelocator-panel .store-list li.highlighted:hover {
-  background: #ccf;
+  background: #006838;
+  color: #fff;
 }
 
-/* line 382, ../_sass/styles.scss */
+/* line 384, ../_sass/styles.scss */
 .storelocator-panel .directions {
   display: none;
 }
 
-/* line 386, ../_sass/styles.scss */
+/* line 388, ../_sass/styles.scss */
 .storelocator-panel .location-search {
   padding: 5px;
 }
 
-/* line 390, ../_sass/styles.scss */
+/* line 392, ../_sass/styles.scss */
 .storelocator-panel .location-search input {
+  margin: 10px 0;
   width: 95%;
+  padding: 3px;
 }
 
-/* line 394, ../_sass/styles.scss */
+/* line 398, ../_sass/styles.scss */
 .storelocator-panel .location-search h4 {
-  font-size: 0.8em;
-  margin: 0;
+  font-family: "bubblegum_sansregular", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  margin: 5px 0 0 0;
   padding: 0;
 }
 
-/* line 400, ../_sass/styles.scss */
+/* line 405, ../_sass/styles.scss */
 .storelocator-panel .store-list .no-stores {
   color: grey;
 }
 
-/* line 404, ../_sass/styles.scss */
+/* line 409, ../_sass/styles.scss */
 .storelocator-panel .store .features {
   display: none;
 }
 
-/* line 408, ../_sass/styles.scss */
+/* line 413, ../_sass/styles.scss */
 .storelocator-panel .feature-filter {
   overflow: hidden;
 }
 
-/* line 412, ../_sass/styles.scss */
+/* line 417, ../_sass/styles.scss */
 .storelocator-panel .feature-filter label {
   display: block;
   font-size: 0.8em;
@@ -8506,12 +8511,12 @@ h1, h2, h3, .navbar-nav > li > a {
   float: left;
 }
 
-/* line 419, ../_sass/styles.scss */
+/* line 424, ../_sass/styles.scss */
 .store .title {
   font-weight: bold;
 }
 
-/* line 426, ../_sass/styles.scss */
+/* line 431, ../_sass/styles.scss */
 .store .address,
 .store .phone,
 .store .web,
@@ -8522,7 +8527,7 @@ h1, h2, h3, .navbar-nav > li > a {
   display: block;
 }
 
-/* line 433, ../_sass/styles.scss */
+/* line 438, ../_sass/styles.scss */
 .store .features {
   overflow: hidden;
   color: grey;
@@ -8532,19 +8537,19 @@ h1, h2, h3, .navbar-nav > li > a {
   max-width: 250px;
 }
 
-/* line 442, ../_sass/styles.scss */
+/* line 447, ../_sass/styles.scss */
 .store .features li {
   display: inline;
   float: left;
   padding-right: 0.8em;
 }
 
-/* line 448, ../_sass/styles.scss */
+/* line 453, ../_sass/styles.scss */
 .store .web a {
   color: green;
 }
 
-/* line 452, ../_sass/styles.scss */
+/* line 457, ../_sass/styles.scss */
 .store .action {
   font-size: 0.8em;
   color: green;
@@ -8554,37 +8559,37 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Centers Pages */
 /* ---------------------------------- */
-/* line 461, ../_sass/styles.scss */
+/* line 466, ../_sass/styles.scss */
 .panel {
   text-align: center;
 }
 
-/* line 464, ../_sass/styles.scss */
+/* line 469, ../_sass/styles.scss */
 .action-box {
   text-align: center;
 }
 
-/* line 467, ../_sass/styles.scss */
+/* line 472, ../_sass/styles.scss */
 #calendar {
   margin-top: 50px;
 }
 
-/* line 470, ../_sass/styles.scss */
+/* line 475, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .have-events {
   background-color: #555555;
 }
 
-/* line 473, ../_sass/styles.scss */
+/* line 478, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .have-events:hover {
   background-color: #555555;
 }
 
-/* line 476, ../_sass/styles.scss */
+/* line 481, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .this-day {
   background-color: inherit;
 }
 
-/* line 479, ../_sass/styles.scss */
+/* line 484, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
   display: none;
 }
@@ -8592,7 +8597,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
-/* line 485, ../_sass/styles.scss */
+/* line 490, ../_sass/styles.scss */
 .testimonial {
   background-color: #00529c;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==");
@@ -8604,7 +8609,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #555555;
 }
 
-/* line 495, ../_sass/styles.scss */
+/* line 500, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -8614,7 +8619,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Shaded section for differentiating rows */
 /* ---------------------------------- */
-/* line 504, ../_sass/styles.scss */
+/* line 509, ../_sass/styles.scss */
 .shaded {
   padding: 50px 0;
   background: #f5f7f9;
@@ -8622,7 +8627,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #e2e3e6;
 }
 
-/* line 510, ../_sass/styles.scss */
+/* line 515, ../_sass/styles.scss */
 .vert-border {
   border-right: 1px solid #e2e3e6;
 }
@@ -8630,17 +8635,17 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 517, ../_sass/styles.scss */
+/* line 522, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 520, ../_sass/styles.scss */
+/* line 525, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 522, ../_sass/styles.scss */
+/* line 527, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
@@ -8648,7 +8653,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 529, ../_sass/styles.scss */
+/* line 534, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8660,7 +8665,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 540, ../_sass/styles.scss */
+/* line 545, ../_sass/styles.scss */
 footer {
   color: #fff;
   background: #006838;
@@ -8669,41 +8674,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 547, ../_sass/styles.scss */
+/* line 552, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 551, ../_sass/styles.scss */
+/* line 556, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 555, ../_sass/styles.scss */
+/* line 560, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 560, ../_sass/styles.scss */
+/* line 565, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 564, ../_sass/styles.scss */
+/* line 569, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 566, ../_sass/styles.scss */
+/* line 571, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 569, ../_sass/styles.scss */
+/* line 574, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;

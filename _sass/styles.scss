@@ -357,6 +357,7 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 
 .storelocator-panel .store-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -376,7 +377,8 @@ h1, h2, h3, .navbar-nav > li > a {
 
 .storelocator-panel .store-list li.highlighted,
 .storelocator-panel .store-list li.highlighted:hover {
-  background: #ccf;
+  background: $color2;
+  color: #fff;
 }
 
 .storelocator-panel .directions {
@@ -388,12 +390,15 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 
 .storelocator-panel .location-search input {
+  margin: 10px 0;
   width: 95%;
+  padding: 3px;
 }
 
 .storelocator-panel .location-search h4 {
-  font-size: 0.8em;
-  margin: 0;
+  font-family: $header-font;
+  font-size: $font-size-large;
+  margin: 5px 0 0 0;
   padding: 0;
 }
 
