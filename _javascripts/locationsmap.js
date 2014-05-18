@@ -74,6 +74,18 @@ function initializeMap() {
   }
   // Cluster nearby markers
   var mc = new MarkerClusterer(map, markers, mcOptions);
+
+  var panelDiv = document.getElementById('location-list');
+
+  var dataFeed = new BCBranchesDataSource();
+  console.log(dataFeed);
+  
+  var view = new storeLocator.View(map, dataFeed, {
+    geolocation: false
+  });
+  new storeLocator.Panel(panelDiv, {
+    //view: view
+  });
 }
 
 function setDIVHeight(div) {
@@ -116,4 +128,72 @@ $(window).resize(function () {
     $('div#map-canvas').hide();
   }
 });
+
+
+// Implements constructor for storeLocator.DataFeed
+function BCBranchesDataSource() {
+}
+
+BCBranchesDataSource.prototype.getStores = function(bounds, features, callback) {
+  var that = this;
+  var center = bounds.getCenter();
+
+  var where = '(ST_INTERSECTS(geometry, ' + this.boundsToWkt_(bounds) + ')' +
+      ' OR ST_DISTANCE(geometry, ' + this.latLngToWkt_(center) + ') < 20000)';
+
+  $.getJSON("locations.json", function(response) {
+    var stores = that.parse_(response);
+    that.sortByDistance_(center, stores);
+    callback(stores);
+  });
+};
+
+BCBranchesDataSource.prototype.latLngToWkt_ = function(point) {
+  return 'ST_POINT(' + point.lng() + ', ' + point.lat() + ')';
+};
+
+BCBranchesDataSource.prototype.boundsToWkt_ = function(bounds) {
+  var ne = bounds.getNorthEast();
+  var sw = bounds.getSouthWest();
+  return [
+    "ST_GEOMFROMTEXT('POLYGON ((",
+    sw.lng(), ' ', sw.lat(), ', ',
+    ne.lng(), ' ', sw.lat(), ', ',
+    ne.lng(), ' ', ne.lat(), ', ',
+    sw.lng(), ' ', ne.lat(), ', ',
+    sw.lng(), ' ', sw.lat(),
+    "))')"
+  ].join('');
+};
+
+BCBranchesDataSource.prototype.parse_ = function(data) {
+  var stores = [];
+  for (var i = 0, branch; branch = data[i]; i++) {
+
+    var position = new google.maps.LatLng(branch.Lat, branch.Lon);
+
+    var title = branch.Name;
+    var address = branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip;
+
+    var store = new storeLocator.Store(i, position, null, {
+      title: title,
+      address: address
+    });
+    stores.push(store);
+  }
+  return stores;
+};
+
+/**
+ * Sorts a list of given stores by distance from a point in ascending order.
+ * Directly manipulates the given array (has side effects).
+ * @private
+ * @param {google.maps.LatLng} latLng the point to sort from.
+ * @param {!Array.<!storeLocator.Store>} stores  the stores to sort.
+ */
+BCBranchesDataSource.prototype.sortByDistance_ = function(latLng, stores) {
+  stores.sort(function(a, b) {
+    return a.distanceTo(latLng) - b.distanceTo(latLng);
+  });
+};
 
