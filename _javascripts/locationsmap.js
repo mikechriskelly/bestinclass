@@ -1,5 +1,4 @@
 var LOCATIONDATA;
-var MAPISLODADED = false;
 var HAVELOCATION = false;
 
 function initializeMap() {
@@ -73,14 +72,10 @@ function setDIVHeight(div) {
 $(window).resize(function () {
   var winWidth = $(window).width();
   if(winWidth >= 992) {
-    if(MAPISLODADED) {
-      setDIVHeight('div#map-canvas');
-      setDIVHeight('div#location-list');
-    } else if(LOCATIONDATA) {
-      MAPISLODADED = true;
-      initializeMap();
-    }
-  } else if(MAPISLODADED) {
+    $('div#map-canvas').show();
+    setDIVHeight('div#map-canvas');
+     setDIVHeight('div#location-list');
+  } else {
     $('div#map-canvas').hide();
   }
 });
@@ -94,11 +89,11 @@ $(document).ready(function () {
       // Set 100% height
       setDIVHeight('div#map-canvas');
       setDIVHeight('div#location-list');
-      
-      // Init the map
-      MAPISLODADED = true;
-      initializeMap();
+    } else {
+      $('div#map-canvas').hide();
     }
+
+    initializeMap();
   });
 });
 
