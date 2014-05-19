@@ -145,11 +145,12 @@ BCBranchesDataSource.prototype.parse_ = function(data) {
     var position = new google.maps.LatLng(branch.Lat, branch.Lon);
 
     var title = branch.Name;
-    var address = branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip;
+    var address = '<p>' + branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip + '</p>';
+    var url = '<p><a href="#" class="branch-title">View Center Details <i class="fa fa-chevron-right"></i></a></p>'
 
     var store = new storeLocator.Store(i, position, null, {
       title: title,
-      address: address
+      address: address + url
     });
     stores.push(store);
   }
