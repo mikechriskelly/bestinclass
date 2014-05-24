@@ -29,13 +29,11 @@ function initializeMap() {
   var panelDiv = document.getElementById('location-list');
 
   var dataFeed = new BCBranchesDataSource();
-  console.log(dataFeed);
   
   var view = new storeLocator.View(map, dataFeed, {
     markerIcon: '../images/map-icon-green.svg',
-    geolocation: false
+    geolocation: false // Set to true to use HTML5 geolocation (user will see location request in browser)
   });
-
 
   new storeLocator.Panel(panelDiv, {
     locationSearchLabel: 'Find a Center Near You',
@@ -46,7 +44,9 @@ function initializeMap() {
 }
 
 // Attempt to get approximate location of user by IP address
-// If attempt fails, return coordinates to center on USA and set flag to use HTML5 geolocation
+// If attempt fails, return coordinates to center on USA
+// Currently we are using  IP locating only. 
+// HTML5 geolacote can be used as a fallback or alternative by turning on geolocation option above.
 function getLocationByIP() {
   var lat, lon;
   if (google.loader.ClientLocation) {
