@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           // Compile scripts used across the site 
           'js/main.min.js': ['_javascripts/bootstrap.min.js', '_javascripts/hovernav.js', '_javascripts/responsive-tabs.js', '_javascripts/kalendar.js'],
           // Special script just for the embedded Google map
-          'js/locationsmap.min.js': ['_javascripts/locationsmap.js','_javascripts/store-locator.min.js']
+          'js/locationsmap.min.js': ['_javascripts/locationsmap.js','_javascripts/store-locator.js']
         }
       }
     },
