@@ -3,6 +3,9 @@
 .ruby-gemset
 .rvmrc
 
+### Node ###
+node_modules
+
 ### Jekyll ###
 _site/
 
@@ -16,6 +19,6 @@ _site/
 /.bundle/
 /lib/bundler/man/
 
-#Submlime
+#Sublime
 bestinclass.sublime-project
 bestinclass.sublime-workspace
