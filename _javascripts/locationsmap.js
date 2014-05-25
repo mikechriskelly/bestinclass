@@ -145,7 +145,7 @@ BCBranchesDataSource.prototype.parse_ = function(data) {
 
     var title = branch.Name;
     var address = '<p>' + branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip + '</p>';
-    var url = '<p><a href="#" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>'
+    var url = '<p><a href="' + branch.Slug + '" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>'
 
     var store = new storeLocator.Store(i, position, null, {
       title: title,

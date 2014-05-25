@@ -1,7 +1,8 @@
 (function ($) {
+  // THIS FILE HAS BEEN MODIFIED TO WORK WITH THE BEST IN CLASS LOCATIONS PAGE
+  // CUSTOM MODIFICATIONS ARE NOTED IN COMMENTS -MK
+  
   /*
-
-
  Copyright 2012 Google Inc.
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -303,12 +304,15 @@
       this.b[r]("#store-" + b[G]())[x]("highlighted");
       this.c.directions && this.a[r](".directions-to").val(b.getDetails().title);
       var c = a.get("view").getInfoWindow().getContent(),
+        // CUSTOM MODIFICATION
+        // Directions don't work in this implementation. So I removed the text from display
         //d = $("<a/>").text("Directions")[p]("href", "#")[x]("action")[x]("directions"),
+        d = $("<a/>").text("")[p]("href", "#")[x]("action")[x]("directions"),
         g = $("<a/>").text("Zoom here")[p]("href", "#")[x]("action")[x]("zoomhere"),
         m = $("<a/>").text("Street view")[p]("href", "#")[x]("action")[x]("streetview");
       d[A](function () {    
-        //a.showDirections();     
-        //return !1     
+        a.showDirections();     
+        return !1     
       }); 
       g[A](function () {
         a.get("view")[u]().setOptions({
@@ -592,9 +596,14 @@
   };
   N.getMap = M("g");
   N.highlight = function (a, b) {
-    var c = this.getInfoWindow(a);
-    a ? (c = this.getInfoWindow(a), a[H]() ? c.open(this[u](), a[H]()) : (c.setPosition(a[f]()), c.open(this[u]())), b && this[u]().panTo(a[f]()), this[u]().getStreetView().getVisible() && this[u]().getStreetView().setPosition(a[f]())) : c.close();
-    this.set("selectedStore", a)
+    // CUSTOM MODIFICTION
+    // Added IF statement around function calls so that store selection functions are only called if map is displayed
+    // This prevents buggy behavior on small screens in which panelView list items are rearranged when user clicks on a store
+    if($('div#map-canvas').is(":visible")) {
+      var c = this.getInfoWindow(a);
+      a ? (c = this.getInfoWindow(a), a[H]() ? c.open(this[u](), a[H]()) : (c.setPosition(a[f]()), c.open(this[u]())), b && this[u]().panTo(a[f]()), this[u]().getStreetView().getVisible() && this[u]().getStreetView().setPosition(a[f]())) : c.close();
+      this.set("selectedStore", a)
+    }
   };
   N.selectedStore_changed = function () {
     google[t][L][h](this, "selectedStore_changed", this.get("selectedStore"))
