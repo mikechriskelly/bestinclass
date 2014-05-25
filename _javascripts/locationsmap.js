@@ -7,6 +7,8 @@ function initializeMap() {
 
   // Disable panning on mobile
   var isDraggable = $(document).width() > 480 ? true : false;
+
+  // This fetches an array of 3 values: [latitude, longitude, city name]
   var position = getLocationByIP();
 
   if(HAVELOCATION) {
@@ -42,9 +44,8 @@ function initializeMap() {
     view: view
   });
 
-  // The store locator library shows a "no stores" message if the map is disabled. 
-  // Remove the message and replace with a "nearest stores" message
-  $('.no-stores').empty().append('The nearest centers to your location:');
+  // Optional. This fills in the input field with the city found from IP locator
+  // $('.location-search input').val(position[2]);
 }
 
 // Attempt to get approximate location of user by IP address
@@ -52,16 +53,17 @@ function initializeMap() {
 // Currently we are using  IP locating only. 
 // HTML5 geolacote can be used as a fallback or alternative by turning on geolocation option above.
 function getLocationByIP() {
-  var lat, lon;
+  var lat, lon, city;
   if (google.loader.ClientLocation) {
     lat = google.loader.ClientLocation.latitude;
     lon = google.loader.ClientLocation.longitude;
+    city = google.loader.ClientLocation.address.city;
     HAVELOCATION = true;
   } else {
     lat = 40;
     lon = -100;
   }
-  return([lat,lon]);
+  return([lat,lon, city]);
 }
 
 function setDIVHeight(div) {

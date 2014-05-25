@@ -176,7 +176,9 @@
     a.c.view && a.set("view", a.c.view);
     a.e = $('<form class="storelocator-filter"/>');
     a.g[J](a.e);
-    a.c.locationSearch && (a.i = $('<div class="location-search"><h2>' + a.c.locationSearchLabel + '</h2><input placeholder="Enter Zip Code or City"></div>'), a.e[J](a.i), "undefined" != typeof google[t].places ? ga(a) : a.e.submit(function () {
+    // CUSTOM MODIFICATION
+    // Set the content for the panel's heaader and input
+    a.c.locationSearch && (a.i = $('<div class="location-search"><h2>' + a.c.locationSearchLabel + '</h2><input type="text" class="form-control" placeholder="Enter Zip Code or City"><p class="footer-legal">Nearest Locations | <a href="all-locations">All Locations</a></p></div>'), a.e[J](a.i), "undefined" != typeof google[t].places ? ga(a) : a.e.submit(function () {
       var b = $("input", a.i).val();
       a.searchPosition(b)
     }), a.e.submit(function () {
@@ -282,7 +284,10 @@
         c = this.get("stores"),
         d = this.get("selectedStore");
       this.b.empty();
-      c[E] ? b && !b[v](c[0][f]()) && this.b[J]('<li class="no-stores">There are no BC centers in this area. However, the centers closest to you are listed below.</li>') : this.b[J]('<li class="no-stores">There are no BC centers in this area.</li>');
+      // CUSTOM MODIFICATION
+      // Set the display message for when there are no nearby locations
+      // c[E] ? b && !b[v](c[0][f]()) && this.b[J]('<li class="no-stores">The centers closest to you are listed below.</li>') : this.b[J]('<li class="no-stores">There are no BC centers in this area.</li>');
+      c[E] ? b && !b[v](c[0][f]()) && this.b[J]('') : this.b[J]('');
       for (var b = function () {
         a[C](this.store, !0)
       }, g = 0, m = e.min(10, c[E]); g < m; g++) {
