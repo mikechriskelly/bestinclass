@@ -41,6 +41,10 @@ function initializeMap() {
     directions: false,
     view: view
   });
+
+  // The store locator library shows a "no stores" message if the map is disabled. 
+  // Remove the message and replace with a "nearest stores" message
+  $('.no-stores').empty().append('The nearest centers to your location:');
 }
 
 // Attempt to get approximate location of user by IP address
@@ -74,7 +78,7 @@ $(window).resize(function () {
   if(winWidth >= 992) {
     $('div#map-canvas').show();
     setDIVHeight('div#map-canvas');
-     setDIVHeight('div#location-list');
+    setDIVHeight('div#location-list');
   } else {
     $('div#map-canvas').hide();
   }
@@ -141,7 +145,7 @@ BCBranchesDataSource.prototype.parse_ = function(data) {
 
     var title = branch.Name;
     var address = '<p>' + branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip + '</p>';
-    var url = '<p><a href="#" class="branch-title">View Center Details <i class="fa fa-chevron-right"></i></a></p>'
+    var url = '<p><a href="#" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>'
 
     var store = new storeLocator.Store(i, position, null, {
       title: title,

@@ -395,15 +395,16 @@ h1, h2, h3, .navbar-nav > li > a {
   padding: 3px;
 }
 
-.storelocator-panel .location-search h4 {
+.storelocator-panel .location-search h2 {
   font-family: $header-font;
   font-size: $font-size-large;
-  margin: 5px 0 0 0;
+  text-align: center;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 
 .storelocator-panel .store-list .no-stores {
-  color: grey;
+  margin: 0 0 5px 0;
 }
 
 .storelocator-panel .store .features {
@@ -458,6 +459,14 @@ h1, h2, h3, .navbar-nav > li > a {
   font-size: 0.8em;
   color: green;
   margin-right: 0.5em;
+}
+
+// To Do -- select link and turn white
+.store .highlighted a.branch-link {
+  color: #fff;
+}
+.store .highlighted a.branch-link:hover {
+  color: #fff;
 }
 
 /* ---------------------------------- */
