@@ -115,6 +115,14 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
+    },
+    concurrent: {
+      target: {
+          tasks: ['shell:serve', 'watch'],
+          options: {
+              logConcurrentOutput: true
+          }
+      }
     }
   });
   // Load extension for running shell commands
@@ -130,8 +138,11 @@ module.exports = function(grunt) {
   // Load extension to convert YAML into JSON (used for location data)
   grunt.loadNpmTasks('grunt-yaml');
   // Register default task to watch for file changes.
-  grunt.registerTask('default',['watch']);
-  grunt.registerTask('serve',['watch']);
+  grunt.loadNpmTasks('grunt-concurrent');
+  
+  grunt.registerTask('default', ['concurrent:target']);
+  //grunt.registerTask('default',['watch']);
+  grunt.registerTask('serve',['defualt']);
   grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
   grunt.registerTask('deploy',['shell:deploy']);
 };
