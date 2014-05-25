@@ -2,19 +2,144 @@
 layout: default
 title: Best in Class Education
 permalink: locations/bellevue/index.html
-
-Name: "Bellevue Center"
-Address: "13427 NE 20th  St. Ste 150"
-City: "Bellevue"
-State: "WA"
-Zip: 98005
-Lat: 47.6265619
-Lon: -122.1596305
-Manager: "Company owned"
-Email: "bellevue@bicedu.com"
-Phone: "425-453-9532"
 ---
 
-{{ page.Name }}
+<div class="container space-above">
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <h3>Bellevue Center</h3>
+      <p>Located across from Acura of Bellevue</p>
+      <p>13427 NE 20th Street, Ste 150
+      	<br>Bellevue, WA 98005
+      	<br>(425) 453-9532
+      	<br>bellevue@bestinclasseducation.com
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <img src="http://placehold.it/375x375" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="container-fluid shaded space-above action-box">
+  <div class="row">
+    <div class="col-sm-6 vert-border">
+      <h3>New Students</h3>
+      <a href="#" class="btn btn-info btn-lg">Get Started</a>
+    </div>
+    <div class="col-sm-6">
+      <h3>Current Students</h3>
+      <a href="#" class="btn btn-info btn-lg">Reschedule Class</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h3>Programs Offered at Bellevue</h3>
+    <ul>
+      <li>Enrichment Math and English</li>
+      <li>Private Tutoring</li>
+      <li>Beginners in Class</li>
+      <li>SAT Prep</li>
+      <li>Gifted Test Prep</li>
+      <li>After School Program</li>
+      <li>Art Program</li>
+      <li>Summer Camp</li>
+      <li>College Admission</li>
+    </ul>
+  </div>
+  <div class="row">
+    <h3>Class Schedule</h3>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Wednesday
+        </div>
+        <div class="panel-body">
+          3:00 PM - 4:15 PM<br>
+          4:15 PM - 5:30 PM<br>
+          5:30 PM - 6:45 PM<br>
+          6:45 PM - 8:00 PM
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Thursday
+        </div>
+        <div class="panel-body">
+          3:00 PM - 4:15 PM<br>
+          4:15 PM - 5:30 PM<br>
+          5:30 PM - 6:45 PM<br>
+          6:45 PM - 8:00 PM
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Friday
+        </div>
+        <div class="panel-body">
+          3:00 PM - 4:15 PM<br>
+          4:15 PM - 5:30 PM<br>
+          5:30 PM - 6:45 PM<br>
+          6:45 PM - 8:00 PM
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Saturday
+        </div>
+        <div class="panel-body">
+          3:00 PM - 4:15 PM<br>
+          4:15 PM - 5:30 PM<br>
+          5:30 PM - 6:45 PM<br>
+          6:45 PM - 8:00 PM
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div id="calendar"></div>
+</div>
+<div class="container-fluid shaded space-above">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="http://placehold.it/150x200" class="img-responsive">
+      </div>
+      <div class="col-sm-9">
+        <h3>Bauhinia Yeung</h3>
+        <p>Bellevue Manager</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laore.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid location-finder">
+  <h3>Get Your Child Started at Best in Class in Bellevue</h3>
+  <a href="#" class="btn btn-default">Get Started</a>
+</div>
 
-assds
+<script>
+var options = {
+  events: [],
+  firstDayOfWeek: "Sunday",
+  showDays: true,
+  color: "green",
+  googleCal: [
+  {
+    calendar: "25irdlab0lpbb97fadr2gk7pcg@group.calendar.google.com",
+    apikey: "AIzaSyBHD4G7RLYjTVetS0XD7QrUeVe0HHedxmo"
+  }],
+  onDayClick: function() {}
+};
+
+$(calendar).kalendar(options);
+</script>
