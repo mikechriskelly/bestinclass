@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 #ruby=ruby-2.1.0@bestinclass
 ruby '2.1.0'
-gem 'jekyll', '~>1.5.1'
+gem 'jekyll', '~>2.0.3'
 gem 'kramdown', '~>1.3.3'
 gem 'jekyll-contentblocks', '~>0.0.2'
 gem 'compass', '~>0.12.5'

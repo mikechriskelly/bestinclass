@@ -1,6 +1,6 @@
 name: Best in Class Education
 markdown: kramdown
-pygments: false
+highlighter: null
 exclude: [node_modules,Gruntfile.js,Gemfile,Gemfile.lock,package.json,config.rb,.gitignore]
 relative_permalinks: false
 baseurl: /bestinclass
