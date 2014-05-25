@@ -323,36 +323,33 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 #map-canvas {
   background: $gray-lighter;
-  margin-bottom: 25px;
-  border-bottom: 1px solid $color2;
-}
-.marker-labels p {
-  color: $color1;
-  font-size: 14px;
-}
-.infowindow-link:hover {
-  text-decoration: none;
-}
-
-@media (max-width: 767px) { 
-  #location-list {
-    overflow: none;
-    border-bottom: none;
-  }
-}
-@media (min-width: 768px) {
-  #location-list {
-    overflow: scroll;
-    border-bottom: 1px solid $color2;
-  }
+  margin: 0;
 }
 
 /* ---------------------------------- */
 /* Store Locator on locations page */
 /* ---------------------------------- */
 
+@media (max-width: 767px) { 
+  #location-list {
+    margin-bottom: 10px;
+  }
+  .storelocator-panel .store-list li.store:hover {
+    cursor: default;
+    background: inherit;
+  }
+}
+@media (min-width: 768px) {
+  #location-list {
+    margin-bottom: none;
+  }
+  .storelocator-panel .store-list li.store:hover {
+    cursor: pointer;
+    background: #eee;
+  }
+}
+
 .storelocator-panel {
-  border: 1px solid #ccc;
   overflow: auto;
 }
 
@@ -370,15 +367,20 @@ h1, h2, h3, .navbar-nav > li > a {
   font-size: 0.8em;
 }
 
-.storelocator-panel .store-list li.store:hover {
-  cursor: pointer;
-  background: #eee;
-}
-
 .storelocator-panel .store-list li.highlighted,
 .storelocator-panel .store-list li.highlighted:hover {
-  background: $color2;
+  background: $color1-lighter;
   color: #fff;
+}
+
+.highlighted a.branch-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.highlighted a.branch-link:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .storelocator-panel .directions {
@@ -459,14 +461,6 @@ h1, h2, h3, .navbar-nav > li > a {
   font-size: 0.8em;
   color: green;
   margin-right: 0.5em;
-}
-
-// To Do -- select link and turn white
-.store .highlighted a.branch-link {
-  color: #fff;
-}
-.store .highlighted a.branch-link:hover {
-  color: #fff;
 }
 
 /* ---------------------------------- */
@@ -555,7 +549,7 @@ footer {
   color: #fff;
   background: $color2;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 15px 0px 15px 0px;
 }
 footer .col-md-6 {

@@ -8691,93 +8691,96 @@ h1, h2, h3, .navbar-nav > li > a {
 /* line 324, ../_sass/styles.scss */
 #map-canvas {
   background: #eeeeee;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #006838;
+  margin: 0;
 }
 
-/* line 329, ../_sass/styles.scss */
-.marker-labels p {
-  color: #00529c;
-  font-size: 14px;
-}
-
-/* line 333, ../_sass/styles.scss */
-.infowindow-link:hover {
-  text-decoration: none;
-}
-
-@media (max-width: 767px) {
-  /* line 338, ../_sass/styles.scss */
-  #location-list {
-    overflow: none;
-    border-bottom: none;
-  }
-}
-@media (min-width: 768px) {
-  /* line 344, ../_sass/styles.scss */
-  #location-list {
-    overflow: scroll;
-    border-bottom: 1px solid #006838;
-  }
-}
 /* ---------------------------------- */
 /* Store Locator on locations page */
 /* ---------------------------------- */
-/* line 354, ../_sass/styles.scss */
+@media (max-width: 767px) {
+  /* line 334, ../_sass/styles.scss */
+  #location-list {
+    margin-bottom: 10px;
+  }
+
+  /* line 337, ../_sass/styles.scss */
+  .storelocator-panel .store-list li.store:hover {
+    cursor: default;
+    background: inherit;
+  }
+}
+@media (min-width: 768px) {
+  /* line 343, ../_sass/styles.scss */
+  #location-list {
+    margin-bottom: none;
+  }
+
+  /* line 346, ../_sass/styles.scss */
+  .storelocator-panel .store-list li.store:hover {
+    cursor: pointer;
+    background: #eee;
+  }
+}
+/* line 352, ../_sass/styles.scss */
 .storelocator-panel {
-  border: 1px solid #ccc;
   overflow: auto;
 }
 
-/* line 359, ../_sass/styles.scss */
+/* line 356, ../_sass/styles.scss */
 .storelocator-panel .store-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 366, ../_sass/styles.scss */
+/* line 363, ../_sass/styles.scss */
 .storelocator-panel .store-list li,
 .storelocator-panel .directions-panel {
   padding: 5px;
 }
 
-/* line 369, ../_sass/styles.scss */
+/* line 366, ../_sass/styles.scss */
 .storelocator-panel .directions-panel {
   font-size: 0.8em;
 }
 
-/* line 373, ../_sass/styles.scss */
-.storelocator-panel .store-list li.store:hover {
-  cursor: pointer;
-  background: #eee;
-}
-
-/* line 379, ../_sass/styles.scss */
+/* line 371, ../_sass/styles.scss */
 .storelocator-panel .store-list li.highlighted,
 .storelocator-panel .store-list li.highlighted:hover {
-  background: #006838;
+  background: #265ea6;
   color: #fff;
 }
 
-/* line 384, ../_sass/styles.scss */
+/* line 376, ../_sass/styles.scss */
+.highlighted a.branch-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 381, ../_sass/styles.scss */
+.highlighted a.branch-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 386, ../_sass/styles.scss */
 .storelocator-panel .directions {
   display: none;
 }
 
-/* line 388, ../_sass/styles.scss */
+/* line 390, ../_sass/styles.scss */
 .storelocator-panel .location-search {
   padding: 5px;
 }
 
-/* line 392, ../_sass/styles.scss */
+/* line 394, ../_sass/styles.scss */
 .storelocator-panel .location-search input {
   margin: 10px 0;
   width: 95%;
   padding: 3px;
 }
 
-/* line 398, ../_sass/styles.scss */
+/* line 400, ../_sass/styles.scss */
 .storelocator-panel .location-search h2 {
   font-family: "bubblegum_sansregular", Helvetica, Arial, sans-serif;
   font-size: 21px;
@@ -8786,22 +8789,22 @@ h1, h2, h3, .navbar-nav > li > a {
   padding: 0;
 }
 
-/* line 406, ../_sass/styles.scss */
+/* line 408, ../_sass/styles.scss */
 .storelocator-panel .store-list .no-stores {
   margin: 0 0 5px 0;
 }
 
-/* line 410, ../_sass/styles.scss */
+/* line 412, ../_sass/styles.scss */
 .storelocator-panel .store .features {
   display: none;
 }
 
-/* line 414, ../_sass/styles.scss */
+/* line 416, ../_sass/styles.scss */
 .storelocator-panel .feature-filter {
   overflow: hidden;
 }
 
-/* line 418, ../_sass/styles.scss */
+/* line 420, ../_sass/styles.scss */
 .storelocator-panel .feature-filter label {
   display: block;
   font-size: 0.8em;
@@ -8809,12 +8812,12 @@ h1, h2, h3, .navbar-nav > li > a {
   float: left;
 }
 
-/* line 425, ../_sass/styles.scss */
+/* line 427, ../_sass/styles.scss */
 .store .title {
   font-weight: bold;
 }
 
-/* line 432, ../_sass/styles.scss */
+/* line 434, ../_sass/styles.scss */
 .store .address,
 .store .phone,
 .store .web,
@@ -8825,7 +8828,7 @@ h1, h2, h3, .navbar-nav > li > a {
   display: block;
 }
 
-/* line 439, ../_sass/styles.scss */
+/* line 441, ../_sass/styles.scss */
 .store .features {
   overflow: hidden;
   color: grey;
@@ -8835,69 +8838,59 @@ h1, h2, h3, .navbar-nav > li > a {
   max-width: 250px;
 }
 
-/* line 448, ../_sass/styles.scss */
+/* line 450, ../_sass/styles.scss */
 .store .features li {
   display: inline;
   float: left;
   padding-right: 0.8em;
 }
 
-/* line 454, ../_sass/styles.scss */
+/* line 456, ../_sass/styles.scss */
 .store .web a {
   color: green;
 }
 
-/* line 458, ../_sass/styles.scss */
+/* line 460, ../_sass/styles.scss */
 .store .action {
   font-size: 0.8em;
   color: green;
   margin-right: 0.5em;
 }
 
-/* line 465, ../_sass/styles.scss */
-.store .highlighted a.branch-link {
-  color: #fff;
-}
-
-/* line 468, ../_sass/styles.scss */
-.store .highlighted a.branch-link:hover {
-  color: #fff;
-}
-
 /* ---------------------------------- */
 /* Centers Pages */
 /* ---------------------------------- */
-/* line 475, ../_sass/styles.scss */
+/* line 469, ../_sass/styles.scss */
 .panel {
   text-align: center;
 }
 
-/* line 478, ../_sass/styles.scss */
+/* line 472, ../_sass/styles.scss */
 .action-box {
   text-align: center;
 }
 
-/* line 481, ../_sass/styles.scss */
+/* line 475, ../_sass/styles.scss */
 #calendar {
   margin-top: 50px;
 }
 
-/* line 484, ../_sass/styles.scss */
+/* line 478, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .have-events {
   background-color: #555555;
 }
 
-/* line 487, ../_sass/styles.scss */
+/* line 481, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .have-events:hover {
   background-color: #555555;
 }
 
-/* line 490, ../_sass/styles.scss */
+/* line 484, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .this-day {
   background-color: inherit;
 }
 
-/* line 493, ../_sass/styles.scss */
+/* line 487, ../_sass/styles.scss */
 .c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
   display: none;
 }
@@ -8905,7 +8898,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
-/* line 499, ../_sass/styles.scss */
+/* line 493, ../_sass/styles.scss */
 .testimonial {
   background-color: #00529c;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNycgaGVpZ2h0PSc3Jz4KCTxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnLz4KCTxlbGxpcHNlIGN4PSc1MCUnIGN5PScwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cgk8ZWxsaXBzZSBjeD0nMCUnIGN5PScxMDAlJyByeD0nNTAlJyByeT0nNTAlJyBmaWxsLW9wYWNpdHk9JzAuMTQnIGZpbGw9JyMwMzdiZWInLz4KCTxlbGxpcHNlIGN4PScxMDAlJyBjeT0nMTAwJScgcng9JzUwJScgcnk9JzUwJScgZmlsbC1vcGFjaXR5PScwLjE0JyBmaWxsPScjMDM3YmViJy8+Cjwvc3ZnPg==");
@@ -8917,7 +8910,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #555555;
 }
 
-/* line 509, ../_sass/styles.scss */
+/* line 503, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -8927,7 +8920,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Shaded section for differentiating rows */
 /* ---------------------------------- */
-/* line 518, ../_sass/styles.scss */
+/* line 512, ../_sass/styles.scss */
 .shaded {
   padding: 50px 0;
   background: #f5f7f9;
@@ -8935,7 +8928,7 @@ h1, h2, h3, .navbar-nav > li > a {
   border-bottom: 1px solid #e2e3e6;
 }
 
-/* line 524, ../_sass/styles.scss */
+/* line 518, ../_sass/styles.scss */
 .vert-border {
   border-right: 1px solid #e2e3e6;
 }
@@ -8943,17 +8936,17 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 531, ../_sass/styles.scss */
+/* line 525, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 534, ../_sass/styles.scss */
+/* line 528, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 536, ../_sass/styles.scss */
+/* line 530, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
@@ -8961,7 +8954,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 543, ../_sass/styles.scss */
+/* line 537, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8973,50 +8966,50 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 554, ../_sass/styles.scss */
+/* line 548, ../_sass/styles.scss */
 footer {
   color: #fff;
   background: #006838;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   padding: 15px 0px 15px 0px;
 }
 
-/* line 561, ../_sass/styles.scss */
+/* line 555, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 565, ../_sass/styles.scss */
+/* line 559, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 569, ../_sass/styles.scss */
+/* line 563, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 574, ../_sass/styles.scss */
+/* line 568, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 578, ../_sass/styles.scss */
+/* line 572, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 580, ../_sass/styles.scss */
+/* line 574, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 583, ../_sass/styles.scss */
+/* line 577, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
