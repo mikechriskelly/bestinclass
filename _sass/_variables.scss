@@ -14,7 +14,7 @@ $color2: #006838; //#49D200; // green
 $color3: #DF0030; // red
 $color4: #F18D00; // orange
 $color1-lighter: #265EA6; //lighten($color1, 5%);
-$color2-lighter: #2F8C2B; //lighten($color2, 5%);
+$color2-lighter: #00703e; //#2F8C2B; //lighten($color2, 5%);
 $color3-lighter: lighten($color3, 5%);
 $color4-lighter: lighten($color4, 5%);
 $color1-darker: darken($color1, 5%);
@@ -321,13 +321,13 @@ $navbar-height:                    60px;
 $navbar-padding-vertical:          0px; // (($navbar-height - $line-height-computed) / 2);
 //$navbar-collapse-max-height:       340px;
 
-//$navbar-default-color:             #777;
+$navbar-default-color:             #000;
 $navbar-default-bg:               #fff; //#f8f8f8;
 //$navbar-default-border:            darken($navbar-default-bg, 6.5%);
 
 // Navbar links
-//$navbar-default-link-color:                $gray-dark; //#777;
-//$navbar-default-link-hover-color:          #333;
+$navbar-default-link-color:                #000; //#777;
+$navbar-default-link-hover-color:          #000;
 //$navbar-default-link-hover-bg:             transparent;
 //$navbar-default-link-active-color:         #555;
 //$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);

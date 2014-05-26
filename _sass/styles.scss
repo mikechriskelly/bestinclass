@@ -35,11 +35,12 @@ h1, h2, h3, .navbar-nav > li > a {
   font-family: $header-font;
 }
 .navbar-nav > li > a {font-size: 18px;}
+
 .navbar {
   margin-bottom: 0px;
   border-bottom: 1px solid $color2;
 }
-#nearest-location a {
+#nearest-location a, #nearest-location-mobile a {
   margin-left: 0px;
   color: $color4;
 }
@@ -106,10 +107,10 @@ h1, h2, h3, .navbar-nav > li > a {
     display: block;
     padding: 20px 0 3px 0;
     left: 10px;
-    min-width: 200px;
+    min-width: 250px;
     border: 1px solid $color2;
     li a {
-      font-size: $font-size-base;
+      font-size: 14px;
     }
   }
   /* Give dropdown menu 2 columns */
@@ -120,7 +121,7 @@ h1, h2, h3, .navbar-nav > li > a {
     width: 350px;
   }
   /* Show slanted green box on navbar hover */
-  .navbar-default .navbar-nav > li.dropdown:hover:after {
+  .navbar-default .navbar-nav > li.hovergreen:hover:after {
     content: "";
     position: absolute;
     bottom: -14px;
@@ -172,6 +173,8 @@ h1, h2, h3, .navbar-nav > li > a {
     text-align: center;
     padding: 0px;
     margin-bottom: 4px;
+    a {text-decoration: none; color: inherit; }
+    a:hover {text-decoration: none; color: inherit;}
   }
   button {
     margin: 0 auto; ;
@@ -545,6 +548,23 @@ button {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+}
+.btn-success {
+  color: #ffffff;
+  background-color: $color2;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+  color: #ffffff;
+  background-color: $color2-lighter;
+  border-color: $color2-lighter;
+}
+.btn-success:active,
+.btn-success.active {
+  background: $color2-lighter;
+  border-color: $color2-lighter;
 }
 
 /* ---------------------------------- */
