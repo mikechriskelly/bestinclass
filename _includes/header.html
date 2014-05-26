@@ -36,9 +36,10 @@
         <![endif]-->
 
         <!-- Main Javascripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="{{ site.baseurl }}/js/main.min.js"></script>
-        <script src="http://localhost:35729/livereload.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/main.min.js"></script>
+        <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+        <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
     </head>
     <body>
       <!-- Mobile Navbar -->
@@ -61,7 +62,7 @@
               <li><a href="{{ site.baseurl }}/spotlight">Students</a></li>
               <li><a href="{{ site.baseurl }}/about">About Us</a></li>
               <li><a href="{{ site.baseurl }}/locations">Locations</a></li>
-              <li class="hidden-sm" id="nearest-location"><a href="#">Redmond Ridge Center</a>
+              <li class="hidden-sm" id="nearest-location-mobile"></li>
             </ul>
           </div>
         </div>
@@ -74,7 +75,7 @@
                 <img src="{{ site.baseurl }}/images/bclogo.svg" onerror="this.onerror=null; this.src='/images/bclogo.png'">
             </a>
             <ul class="nav navbar-nav">
-              <li class="dropdown">
+              <li class="dropdown hovergreen">
                 <a href="{{ site.baseurl }}/programs" class="dropdown-toggle disabled" data-toggle="dropdown">Programs</a>
                 <ul class="dropdown-menu columns">
                   <li><a href="{{ site.baseurl }}/programs/enrichment#math">Math</a></li>
@@ -85,8 +86,8 @@
                   <li><a href="{{ site.baseurl }}/programs/satprep">SAT Test Prep</a></li>
                 </ul>
               </li>
-              <li><a href="{{ site.baseurl }}/spotlight">Students</a></li>
-              <li class="dropdown">
+              <li class="hovergreen"><a href="{{ site.baseurl }}/spotlight">Students</a></li>
+              <li class="dropdown hovergreen">
                 <a href="{{ site.baseurl }}/about" class="dropdown-toggle disabled" data-toggle="dropdown">About Us</a>
                 <ul class="dropdown-menu columns">
                   <li><a href="{{ site.baseurl }}/about#approach">How We Teach</a></li>
@@ -96,8 +97,8 @@
                   <li><a href="{{ site.baseurl }}/spotlight">Student Spotlight</a></li>
                 </ul>
               </li>
-              <li><a href="{{ site.baseurl }}/locations" class="dropdown-toggle disabled" data-toggle="dropdown">Locations</a></li>
-              <li id="nearest-location"><a href="#"><i class="fa fa-map-marker fa-lg"></i> Redmond Ridge Center</a></li>
+              <li class="hovergreen"><a href="{{ site.baseurl }}/locations" class="dropdown-toggle disabled" data-toggle="dropdown">Locations</a></li>
+              <li id="nearest-location"></li>
             </ul>
           </div>
         </div>
