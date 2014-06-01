@@ -151,13 +151,13 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
 
 //$btn-font-weight:                normal;
 
-$btn-default-color:              #fff; //#333;
-$btn-default-bg:                 $color2;
+$btn-default-color:              $color2; //#333;
+$btn-default-bg:                 #fff; // $color2;
 $btn-default-border:             $color2; //#ccc;
 
-//$btn-primary-color:              #fff;
-//$btn-primary-bg:                 $brand-primary;
-//$btn-primary-border:             darken($btn-primary-bg, 5%);
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $color2; // $brand-primary;
+$btn-primary-border:             $color2; //darken($btn-primary-bg, 5%);
 
 //$btn-success-color:              #fff;
 //$btn-success-bg:                 $brand-success;

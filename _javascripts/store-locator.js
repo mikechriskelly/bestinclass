@@ -182,8 +182,8 @@
       '<div class="location-search">
         <h2>' + a.c.locationSearchLabel + '</h2>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Enter Zip Code or City">
-          <span class="input-group-btn"><button class="btn" type="button">Go!</button></span>
+          <input type="text" class="form-control btn-light" placeholder="Enter Zip Code or City">
+          <span class="input-group-btn"><button class="btn btn-light" type="button">Go!</button></span>
         </div>
         <p><a href="all-locations">or view all locations</a></p>
       </div>';

@@ -606,22 +606,39 @@ button {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-.btn-success {
-  color: #ffffff;
+.btn-grow {
+  -webkit-transform: scale(1);
+  -webkit-transition: all .2s ease-in-out;
+}
+.btn-grow:hover {
+  -webkit-transform: scale(1.05);
+  -webkit-transition: all .2s ease-in-out;
+}
+.btn-dark {
+  color: #fff;
   background-color: $color2;
+  border-color: transparent;
 }
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active,
-.btn-success.active {
-  color: #ffffff;
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active,
+.btn-dark.active {
+  color: #fff;
   background-color: $color2-lighter;
-  border-color: $color2-lighter;
+  border-color: transparent;
 }
-.btn-success:active,
-.btn-success.active {
-  background: $color2-lighter;
-  border-color: $color2-lighter;
+.btn-light {
+  color: $color2;
+  background-color: #fff;
+  border-color: $color2;
+}
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.active {
+  color: $color2;
+  background-color: #fff;
+  border-color: $color2;
 }
 
 /* ---------------------------------- */
