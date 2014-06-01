@@ -40,13 +40,13 @@
       return a[s];
     },
     urlText: "View on Web",
-    onInitiated: function() { console.log("initiated")},
-    onGoogleParsed: function() { console.log("googleparsed")},
-    onMonthChanged: function() {console.log('monthshow')},
-    onDayShow: function() { console.log('dayshow')},
-    onGridShow: function() { console.log("gridshow")},
-    onDayClick: function(e) { console.log(e.data.info)}
-  }
+    onInitiated: function() { console.log("initiated");},
+    onGoogleParsed: function() { console.log("googleparsed");},
+    onMonthChanged: function() {console.log('monthshow');},
+    onDayShow: function() { console.log('dayshow');},
+    onGridShow: function() { console.log("gridshow");},
+    onDayClick: function(e) { console.log(e.data.info);}
+  };
   function kalendar(element, options) {
     this.options = $.extend(true, {}, defaults, options);
     this.element = element;
@@ -73,7 +73,8 @@
           var it, allDayEvent, tstart, tend, dateOffset;
 
           for(var i=0;i<data.items.length;i++) {
-            var it = data.items[i];
+            it = data.items[i];
+            console.log(it);
             
             // Parse Date and Time or just date for all day events
             if(it.start.dateTime) { 
@@ -86,20 +87,21 @@
               tend = new Date(it.end.date);
 
               // Fix so all day event has same start and end day
-              var dateOffset = (24*60*60*1000) * 1; //1 day
+              dateOffset = (24*60*60*1000) * 1; //1 day
               tstart.setTime(tstart.getTime() + dateOffset); 
             }
             var t = {
                 title:it.summary,
                 location: it.location,
+                description: it.description,
                 start: {
                   date: dToFormat(tstart, "YYYYMMDD"),
-                  time: dToFormat(tstart, "HH.MM"),
+                  time: dToFormat(tstart, "HH:MM"),
                   d: tstart
                 },
                 end : {
                   date: dToFormat(tend, "YYYYMMDD"),
-                  time: dToFormat(tend, "HH.MM"),
+                  time: dToFormat(tend, "HH:MM"),
                   d: tend
                 },
                 allDay: allDayEvent
@@ -126,7 +128,7 @@
     this.options.eventsParsed = tempEvents;
     this.init();
     !!this.options.googleCal ? this.options.onGoogleParsed() : null;
-  }
+  };
   kalendar.prototype.init = function() {
     this.element.html(this.options.template);
     this.element.attr('ewcalendar','');
@@ -139,7 +141,7 @@
     this.elements.prevMonth.on('click', {"self": this, "dir": "prev"}, this.changeMonth);
     this.elements.nextMonth.on('click', {"self": this, "dir": "next"}, this.changeMonth);
     this.options.onInitiated();
-  }
+  };
   kalendar.prototype.changeMonth = function(e) {
     var self = e.data.self;
     var dir = e.data.dir;
@@ -148,7 +150,7 @@
     self.currentMonth = self.currentTimeSet.getMonth();
     self.currentYear = self.currentTimeSet.getFullYear();
     self.setMonth();
-  }
+  };
   kalendar.prototype.setMonth = function() {
     var $grid = this.elements.grid;
     $grid.html('');
@@ -169,8 +171,8 @@
     diffdays += diffdays < 1 ? 7 : 0;
     tempDate.setDate(tempDate.getDate() - diffdays);
 
-    for(var i=0;i<42;i++) {
-      if(i==0 || i%7==0) {
+    for(var j=0;j<42;j++) {
+      if(j===0 || j%7===0) {
         $row = $('<div class="c-row"></div>');
         $grid.append($row);
       }
@@ -186,19 +188,25 @@
       }
       var strtime = dToFormat(tempDate, "YYYYMMDD");
       if(this.options.eventsParsed[strtime] !== undefined) {
-        $day.addClass('have-events');
-        $eventholder = $('<div class="event-n-holder"></div>');
-        for(var u=0;u<3 && u<this.options.eventsParsed[strtime].length;u++) {
-          $eventholder.append('<div class="event-n"></div>')
+        
+        $day.on('click', { "day": this.options.eventsParsed[strtime], "self": this, "date": tempDate.getTime(), "strtime": strtime}, this.showDay);
+        
+        // If the event is titled "No Class" then display an icon
+        if(this.options.eventsParsed[strtime][0].title === 'No Class') {
+          var $noSchoolDay = $day.find('div.date-holder');
+          $day.addClass('no-school-day');
+          $noSchoolDay.prepend('<i class="fa fa-times-circle"></i> ');
+        } else {
+          var $eventDay = $day.find('div.date-holder');
+          $day.addClass('have-events');
+          $eventDay.prepend('<i class="fa fa fa-star"></i> ');
         }
-        //$day.on('click', { "day": this.options.eventsParsed[strtime], "self": this, "date": tempDate.getTime(), "strtime": strtime}, this.showDay);
-        $day.append($eventholder);
       }
       $row.append($day);
       tempDate.setDate(tempDate.getDate() + 1);
     }
     this.options.onMonthChanged();
-  }
+  };
   kalendar.prototype.showDay = function(e) {
     var events = e.data.day,
       self = e.data.self,
@@ -225,32 +233,24 @@
       }
       $event = $('<div class="s-event" '+ev_b+'></div>');
       $event.append('<h5 '+ev_h+'>'+events[i].title+'</h5>');
-      var start = {
-        date: ev.start.date == strtime ? "": ev.start.d.getDate(),
-        month: ev.start.date == strtime ? "": self.options.monthHuman[ev.start.d.getMonth()][1],
-        year: ev.start.d.getFullYear() == self.currentYear ? "": ev.start.d.getFullYear()
-      },
-      end = {
-        date: ev.end.date == strtime ? "": ev.end.d.getDate(),
-        month: ev.end.date == strtime ? "": self.options.monthHuman[ev.end.d.getMonth()][1],
-        year: ev.end.d.getFullYear() == self.currentYear ? "": ev.end.d.getFullYear()
-      };
 
-      var start = start.date +" "+start.month+" "+start.year+" "+ev.start.time,
-        end = end.date +" "+end.month+" "+end.year+" "+ev.end.time;
-      $event.append('<p '+ev_p+'>'+start+' - '+end+'</p>');
+      // Display time of event unless it's All Day
+      if(!ev.allDay) $event.append('<p '+ ev_p + '>' + ev.start.time + ' - ' + ev.end.time + '</p>');
+
+      // Show location and description if available
       !!events[i].location ? $event.append('<p '+ev_p+'>'+events[i].location+'</p>') : null;
-      !!events[i].url ? $event.append('<p><a '+ev_a+' href="'+events[i].url+'">'+self.options.urlText+'</a></p>') : null;
+      !!events[i].description ? $event.append('<p '+ev_p+'>'+events[i].description+'</p>') : null;
+
       self.elements.specday_scheme.append($event);
     }
     self.options.onDayShow();
-  }
+  };
   kalendar.prototype.hideDay = function(e) {
     var self = e.data.self;
     self.element.removeClass('spec-day');
     self.elements.specday_scheme.html('');
     self.options.onGridShow();
-  }
+  };
 
 
   $.fn.kalendar = function(options) {
@@ -259,7 +259,7 @@
         options.eventsParsed = [];
         for(var i=0;i<options.events.length;i++) {
           var thisevent = options.events[i];
-          thisevent.end.date = thisevent.end.date == undefined ? thisevent.start.date : thisevent.end.date;
+          thisevent.end.date = thisevent.end.date === undefined ? thisevent.start.date : thisevent.end.date;
           thisevent.start.d = formatToD([thisevent.start.date, thisevent.start.time], "YYYYMMDDHHMM");
           thisevent.end.d = formatToD([thisevent.end.date, thisevent.end.time], "YYYYMMDDHHMM");
           options.eventsParsed = pushToParsed(options.eventsParsed, thisevent);
@@ -269,7 +269,7 @@
       var kalendar_instance = new kalendar($(this), options);
       $(this).data('kalendar-instance', kalendar_instance);
     });
-  }
+  };
   function pushToParsed(o, e) {
     var pusher = function(o,e,d) {
       var d = !!d ? d: e.start.date;
@@ -287,6 +287,7 @@
           d: e.end.d
         },
         location: e.location,
+        description: e.description,
         allDay: e.allDay,
         color: e.color
       };
@@ -294,7 +295,7 @@
         o[d] = [];
       }
       o[d].push(t);
-    }
+    };
     e.start.date = parseInt(e.start.date);
     e.end.date = parseInt(e.end.date);
     if(e.start.date > e.end.date) {
@@ -312,7 +313,7 @@
           var tempEvent = $.extend(true,{}, e),
             tempDate = new Date(dstart.getTime() + 86400000*i),
             date = dToFormat(tempDate,"YYYYMMDD");
-          if(i==0) {
+          if(i===0) {
             pusher(o, tempEvent, date);
           } else if(i==diff) {
             pusher(o, tempEvent, date);
@@ -328,16 +329,25 @@
   function dToFormat(d,f) {
     var ff = function(d) {
       return d<10?0+''+d:d;
-    }
+    };
     if(f == "YYYYMMDD") {
       var year = d.getFullYear(),
       month = ff(d.getMonth()+1),
       date = ff(d.getDate());
       return year+''+month+''+date;
-    } else if(f == "HH.MM") {
-      var hr = ff(d.getHours()+1),
-        min = ff(d.getMinutes()+1)
-      return hr+'.'+min;
+    } else if(f == "HH:MM") {
+      var hr = ff(d.getHours());
+      var min = ff(d.getMinutes());
+      var AMorPM;
+      if(hr > 12) {
+        hr = hr-12;
+        AMorPM = 'pm';
+      } else if(hr === 12) {
+        AMorPM = 'pm';
+      } else {
+        AMorPM = 'am';
+      }
+      return hr+':'+min+AMorPM;
     }
   }
   function formatToD(s,f) {

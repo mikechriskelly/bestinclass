@@ -1,7 +1,7 @@
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 @import 'variables';
 @import 'bootstrap';
-@import '_kalendar';
+@import 'kalendar';
 
 
 /* Playful Font for Headers */
@@ -503,20 +503,22 @@ h1, h2, h3, .navbar-nav > li > a {
   text-align: center;
 }
 #calendar {
+  background-color: $color2-lighter;
+  overflow: hidden;
   margin-top: 50px;
+  -webkit-border-radius: 8px 8px;
+  border-radius: 8px 8px;
 }
-.c-holder > .c-grid > .c-row > .have-events {
-  background-color: $gray;
+.legend {
+  text-align: center;
+  font-size: $font-size-small;
+  font-weight: bold;
+  margin-top: 3px;
 }
-.c-holder > .c-grid > .c-row > .have-events:hover {
-  background-color: $gray;
+.legend-left {
+  margin-right: 25px;
 }
-.c-holder > .c-grid > .c-row > .this-day {
-  background-color: inherit;
-}
-.c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
-  display: none;
-}
+
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */

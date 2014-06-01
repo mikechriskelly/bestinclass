@@ -10,11 +10,11 @@
 //== Colors
 //
 $color1: #00529C; // blue
-$color2: #006838; //#49D200; // green
+$color2: #006838; // green (old green: #49D200;)
 $color3: #DF0030; // red
 $color4: #F18D00; // orange
-$color1-lighter: #265EA6; //lighten($color1, 5%);
-$color2-lighter: #00703e; //#2F8C2B; //lighten($color2, 5%);
+$color1-lighter: #265EA6; // lighten($color1, 5%);
+$color2-lighter: #00703e; // #2F8C2B; //lighten($color2, 5%);
 $color3-lighter: lighten($color3, 5%);
 $color4-lighter: lighten($color4, 5%);
 $color1-darker: darken($color1, 5%);

@@ -142,7 +142,7 @@ module.exports = function(grunt) {
   
   grunt.registerTask('default', ['concurrent:target']);
   //grunt.registerTask('default',['watch']);
-  grunt.registerTask('serve',['defualt']);
+  grunt.registerTask('serve',['default']);
   grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
   grunt.registerTask('deploy',['shell:deploy']);
 };

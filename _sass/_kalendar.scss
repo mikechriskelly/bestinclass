@@ -27,7 +27,6 @@
   height: 12.5%;
   position: relative;
   font-size: 1.6em;
-  margin-bottom: 1px;
   text-align: center;
 }
 
@@ -67,16 +66,11 @@
 
 [ewcalendar] .c-grid .c-row {
   width: 100%;
-  margin-bottom: 0.2%;
-  margin-bottom: -moz-calc(0px + 1px);
-  margin-bottom: -o-calc(0px + 1px);
-  margin-bottom: -webkit-calc(0px + 1px);
-  margin-bottom: calc(0px + 1px);
   height: 13.08571%;
-  height: -moz-calc(100%/7 - 7px/6);
-  height: -o-calc(100%/7 - 7px/6);
-  height: -webkit-calc(100%/7 - 7px/6);
-  height: calc(100%/7 - 7px/6);
+  height: -moz-calc(100%/7);
+  height: -o-calc(100%/7);
+  height: -webkit-calc(100%/7);
+  height: calc(100%/7);
 }
 
 [ewcalendar] .c-grid .c-row:last-child {
@@ -84,16 +78,11 @@
 }
 
 [ewcalendar] .c-grid .c-row .c-day {
-  margin-right: 0.2%;
-  margin-right: -moz-calc(0px + 7px/6);
-  margin-right: -o-calc(0px + 7px/6);
-  margin-right: -webkit-calc(0px + 7px/6);
-  margin-right: calc(0px + 7px/6);
-  width: 14.11429%;
-  width: -moz-calc(100%/7 - 1px);
-  width: -o-calc(100%/7 - 1px);
-  width: -webkit-calc(100%/7 - 1px);
-  width: calc(100%/7 - 1px);
+  width: 14.28571%;
+  width: -moz-calc(100%/7);
+  width: -o-calc(100%/7);
+  width: -webkit-calc(100%/7);
+  width: calc(100%/7);
   height: 100%;
   display: inline-block;
   position: relative;
@@ -108,11 +97,24 @@
 }
 
 [ewcalendar] .c-grid .c-row .c-day.have-events {
+  //background-color: $color2-darker;
   cursor: pointer;
 }
 
 [ewcalendar] .c-grid .c-row .c-day.have-events:hover {
-  background-color: #232323;
+  background: rgba(255,255,255,0.25);
+}
+
+[ewcalendar] .c-grid .c-row .c-day.no-school-day {
+  background-color: $gray;
+  color: #fff;
+  cursor: pointer;
+}
+
+[ewcalendar] .c-grid .c-row .c-day.no-school-day:hover {
+  background: $gray-light;
+  color: #fff;
+  cursor: pointer;
 }
 
 [ewcalendar] .c-grid .c-row .c-day.other-month {
@@ -120,6 +122,7 @@
 }
 
 [ewcalendar] .c-grid .c-row .c-day.other-month.have-events:hover {
+  background: rgba(255,255,255,0.25);
   color: white;
 }
 
@@ -132,6 +135,9 @@
   position: absolute;
   right: 5%;
   bottom: 5%;
+}
+.c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
+  //display: none;
 }
 
 [ewcalendar] .c-grid .c-row .c-day .event-n-holder {
@@ -151,14 +157,7 @@
   top: -webkit-calc(0px + 5px);
   top: calc(0px + 5px);
   position: absolute;
-  width: 0.25em;
-}
-
-[ewcalendar] .c-grid .c-row .c-day .event-n-holder .event-n {
-  height: 0.5em;
-  background-color: white;
-  width: 100%;
-  margin: 1px 0;
+  width: 50%;
 }
 
 [ewcalendar] .c-specific {
@@ -183,7 +182,7 @@
 }
 
 [ewcalendar] .c-specific .specific-day:hover {
-  background: #232323;
+  background: rgba(255,255,255,0.25);
 }
 
 [ewcalendar] .c-specific .specific-day [i=date] {
@@ -244,7 +243,7 @@
 
 [ewcalendar] .c-specific .s-scheme .s-event p {
   margin: 0;
-  color: rgba(255,255,255,0.56);
+  color: $gray-lighter;
   line-height: 1.3;
 }
 
@@ -280,14 +279,10 @@
   height: calc(100%/6 - 7px/6);
 }
 
-[color=green] {
-  background-color: #32865f;
+[color=green] .c-month-view, [color=green] .s-event {
+  background-color: $color2;
 }
 
-[color=green] .c-month-view,[color=green] .c-day,[color=green] .specific-day,[color=green] .s-event {
-  background-color: #006838;
-}
-
-[color=green] .have-events {
-	background-color: #003e21;
+[color=green] .c-day,[color=green] .specific-day {
+  background-color: none;
 }

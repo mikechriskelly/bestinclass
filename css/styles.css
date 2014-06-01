@@ -7925,11 +7925,10 @@ button.close {
   height: 12.5%;
   position: relative;
   font-size: 1.6em;
-  margin-bottom: 1px;
   text-align: center;
 }
 
-/* line 34, ../_sass/_kalendar.scss */
+/* line 33, ../_sass/_kalendar.scss */
 [ewcalendar] .c-month-view [class^=c-month-arrow] {
   width: 15%;
   height: 100%;
@@ -7939,28 +7938,28 @@ button.close {
   cursor: pointer;
 }
 
-/* line 43, ../_sass/_kalendar.scss */
+/* line 42, ../_sass/_kalendar.scss */
 [ewcalendar] .c-month-view [class^=c-month-arrow]:hover {
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* line 47, ../_sass/_kalendar.scss */
+/* line 46, ../_sass/_kalendar.scss */
 [ewcalendar] .c-month-view .c-month-arrow-left {
   left: 0;
 }
 
-/* line 51, ../_sass/_kalendar.scss */
+/* line 50, ../_sass/_kalendar.scss */
 [ewcalendar] .c-month-view .c-month-arrow-right {
   right: 0;
 }
 
-/* line 55, ../_sass/_kalendar.scss */
+/* line 54, ../_sass/_kalendar.scss */
 [ewcalendar] .c-holder {
   height: 87.5%;
   position: relative;
 }
 
-/* line 60, ../_sass/_kalendar.scss */
+/* line 59, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid {
   position: absolute;
   height: 100%;
@@ -7969,79 +7968,84 @@ button.close {
   left: 0;
 }
 
-/* line 68, ../_sass/_kalendar.scss */
+/* line 67, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row {
   width: 100%;
-  margin-bottom: 0.2%;
-  margin-bottom: -moz-calc(0px + 1px);
-  margin-bottom: -o-calc(0px + 1px);
-  margin-bottom: -webkit-calc(0px + 1px);
-  margin-bottom: calc(0px + 1px);
   height: 13.08571%;
-  height: -moz-calc(100%/7 - 7px/6);
-  height: -o-calc(100%/7 - 7px/6);
-  height: -webkit-calc(100%/7 - 7px/6);
-  height: calc(100%/7 - 7px/6);
+  height: -moz-calc(100%/7);
+  height: -o-calc(100%/7);
+  height: -webkit-calc(100%/7);
+  height: calc(100%/7);
 }
 
-/* line 82, ../_sass/_kalendar.scss */
+/* line 76, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row:last-child {
   margin-bottom: 0;
 }
 
-/* line 86, ../_sass/_kalendar.scss */
+/* line 80, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day {
-  margin-right: 0.2%;
-  margin-right: -moz-calc(0px + 7px/6);
-  margin-right: -o-calc(0px + 7px/6);
-  margin-right: -webkit-calc(0px + 7px/6);
-  margin-right: calc(0px + 7px/6);
-  width: 14.11429%;
-  width: -moz-calc(100%/7 - 1px);
-  width: -o-calc(100%/7 - 1px);
-  width: -webkit-calc(100%/7 - 1px);
-  width: calc(100%/7 - 1px);
+  width: 14.28571%;
+  width: -moz-calc(100%/7);
+  width: -o-calc(100%/7);
+  width: -webkit-calc(100%/7);
+  width: calc(100%/7);
   height: 100%;
   display: inline-block;
   position: relative;
 }
 
-/* line 102, ../_sass/_kalendar.scss */
+/* line 91, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day.c-l .date-holder {
   font-size: 1em;
 }
 
-/* line 106, ../_sass/_kalendar.scss */
+/* line 95, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day:last-child {
   margin-right: 0;
 }
 
-/* line 110, ../_sass/_kalendar.scss */
+/* line 99, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day.have-events {
   cursor: pointer;
 }
 
-/* line 114, ../_sass/_kalendar.scss */
+/* line 104, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day.have-events:hover {
-  background-color: #232323;
+  background: rgba(255, 255, 255, 0.25);
 }
 
-/* line 118, ../_sass/_kalendar.scss */
+/* line 108, ../_sass/_kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.no-school-day {
+  background-color: #555555;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 114, ../_sass/_kalendar.scss */
+[ewcalendar] .c-grid .c-row .c-day.no-school-day:hover {
+  background: #999999;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* line 120, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day.other-month {
   color: #CCC;
 }
 
-/* line 122, ../_sass/_kalendar.scss */
+/* line 124, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day.other-month.have-events:hover {
+  background: rgba(255, 255, 255, 0.25);
   color: white;
 }
 
-/* line 126, ../_sass/_kalendar.scss */
+/* line 129, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day.this-day {
   background: none;
 }
 
-/* line 130, ../_sass/_kalendar.scss */
+/* line 133, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day .date-holder {
   font-size: 1.3em;
   position: absolute;
@@ -8049,7 +8053,7 @@ button.close {
   bottom: 5%;
 }
 
-/* line 137, ../_sass/_kalendar.scss */
+/* line 143, ../_sass/_kalendar.scss */
 [ewcalendar] .c-grid .c-row .c-day .event-n-holder {
   height: 90%;
   height: -moz-calc(100% - 10px);
@@ -8067,18 +8071,10 @@ button.close {
   top: -webkit-calc(0px + 5px);
   top: calc(0px + 5px);
   position: absolute;
-  width: 0.25em;
+  width: 50%;
 }
 
-/* line 157, ../_sass/_kalendar.scss */
-[ewcalendar] .c-grid .c-row .c-day .event-n-holder .event-n {
-  height: 0.5em;
-  background-color: white;
-  width: 100%;
-  margin: 1px 0;
-}
-
-/* line 164, ../_sass/_kalendar.scss */
+/* line 163, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific {
   position: absolute;
   width: 100%;
@@ -8090,7 +8086,7 @@ button.close {
   padding-top: 0px;
 }
 
-/* line 175, ../_sass/_kalendar.scss */
+/* line 174, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .specific-day {
   vertical-align: top;
   width: 30%;
@@ -8101,22 +8097,22 @@ button.close {
   text-align: center;
 }
 
-/* line 185, ../_sass/_kalendar.scss */
+/* line 184, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .specific-day:hover {
-  background: #232323;
+  background: rgba(255, 255, 255, 0.25);
 }
 
-/* line 189, ../_sass/_kalendar.scss */
+/* line 188, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .specific-day [i=date] {
   font-size: 3em;
 }
 
-/* line 193, ../_sass/_kalendar.scss */
+/* line 192, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .specific-day [i=day] {
   font-size: 1.5em;
 }
 
-/* line 197, ../_sass/_kalendar.scss */
+/* line 196, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme {
   display: inline-block;
   height: 100%;
@@ -8131,39 +8127,39 @@ button.close {
   vertical-align: top;
 }
 
-/* line 211, ../_sass/_kalendar.scss */
+/* line 210, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme::-webkit-scrollbar {
   width: 10px;
 }
 
-/* line 215, ../_sass/_kalendar.scss */
+/* line 214, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* line 219, ../_sass/_kalendar.scss */
+/* line 218, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme::-webkit-scrollbar-thumb {
   background: #232323;
 }
 
-/* line 223, ../_sass/_kalendar.scss */
+/* line 222, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event {
   width: 100%;
   padding: 0.5em;
   margin: 1px 0;
 }
 
-/* line 229, ../_sass/_kalendar.scss */
+/* line 228, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event:first-child {
   margin-top: 0;
 }
 
-/* line 233, ../_sass/_kalendar.scss */
+/* line 232, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event:last-child {
   margin-bottom: 0;
 }
 
-/* line 237, ../_sass/_kalendar.scss */
+/* line 236, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event h5 {
   margin: 0;
   font-size: 1.1em;
@@ -8172,44 +8168,44 @@ button.close {
   color: white;
 }
 
-/* line 245, ../_sass/_kalendar.scss */
+/* line 244, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.56);
+  color: #eeeeee;
   line-height: 1.3;
 }
 
-/* line 251, ../_sass/_kalendar.scss */
+/* line 250, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event a {
   font-weight: normal;
 }
 
-/* line 255, ../_sass/_kalendar.scss */
+/* line 254, ../_sass/_kalendar.scss */
 [ewcalendar] .c-specific .s-scheme .s-event p[data-role=loc] {
   line-height: 1;
 }
 
-/* line 259, ../_sass/_kalendar.scss */
+/* line 258, ../_sass/_kalendar.scss */
 [ewcalendar]:hover .c-month-view [class^=c-month-arrow] {
   color: white;
 }
 
-/* line 263, ../_sass/_kalendar.scss */
+/* line 262, ../_sass/_kalendar.scss */
 [ewcalendar].spec-day .c-grid {
   display: none;
 }
 
-/* line 267, ../_sass/_kalendar.scss */
+/* line 266, ../_sass/_kalendar.scss */
 [ewcalendar].spec-day .c-specific {
   display: block;
 }
 
-/* line 271, ../_sass/_kalendar.scss */
+/* line 270, ../_sass/_kalendar.scss */
 [ewcalendar].spec-day [class^=c-month-arrow] {
   display: none;
 }
 
-/* line 275, ../_sass/_kalendar.scss */
+/* line 274, ../_sass/_kalendar.scss */
 [ewcalendar][data-showdays=false] .c-holder .c-grid .c-row {
   height: 15.66667%;
   height: -moz-calc(100%/6 - 7px/6);
@@ -8218,19 +8214,14 @@ button.close {
   height: calc(100%/6 - 7px/6);
 }
 
-/* line 283, ../_sass/_kalendar.scss */
-[color=green] {
-  background-color: #32865f;
-}
-
-/* line 287, ../_sass/_kalendar.scss */
-[color=green] .c-month-view, [color=green] .c-day, [color=green] .specific-day, [color=green] .s-event {
+/* line 282, ../_sass/_kalendar.scss */
+[color=green] .c-month-view, [color=green] .s-event {
   background-color: #006838;
 }
 
-/* line 291, ../_sass/_kalendar.scss */
-[color=green] .have-events {
-  background-color: #003e21;
+/* line 286, ../_sass/_kalendar.scss */
+[color=green] .c-day, [color=green] .specific-day {
+  background-color: none;
 }
 
 /* Playful Font for Headers */
@@ -8919,33 +8910,30 @@ h1, h2, h3, .navbar-nav > li > a {
 
 /* line 505, ../_sass/styles.scss */
 #calendar {
+  background-color: #00703e;
+  overflow: hidden;
   margin-top: 50px;
+  -webkit-border-radius: 8px 8px;
+  border-radius: 8px 8px;
 }
 
-/* line 508, ../_sass/styles.scss */
-.c-holder > .c-grid > .c-row > .have-events {
-  background-color: #555555;
+/* line 512, ../_sass/styles.scss */
+.legend {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 3px;
 }
 
-/* line 511, ../_sass/styles.scss */
-.c-holder > .c-grid > .c-row > .have-events:hover {
-  background-color: #555555;
-}
-
-/* line 514, ../_sass/styles.scss */
-.c-holder > .c-grid > .c-row > .this-day {
-  background-color: inherit;
-}
-
-/* line 517, ../_sass/styles.scss */
-.c-holder > .c-grid > .c-row > .c-day > .event-n-holder {
-  display: none;
+/* line 518, ../_sass/styles.scss */
+.legend-left {
+  margin-right: 25px;
 }
 
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
-/* line 524, ../_sass/styles.scss */
+/* line 526, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -8955,17 +8943,17 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 533, ../_sass/styles.scss */
+/* line 535, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
 }
-/* line 536, ../_sass/styles.scss */
+/* line 538, ../_sass/styles.scss */
 .location-finder input {
   margin: 10px auto;
 }
 
-/* line 538, ../_sass/styles.scss */
+/* line 540, ../_sass/styles.scss */
 #zipCode {
   width: 100px;
 }
@@ -8973,7 +8961,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 545, ../_sass/styles.scss */
+/* line 547, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -8982,13 +8970,13 @@ button {
   border-radius: 6px;
 }
 
-/* line 552, ../_sass/styles.scss */
+/* line 554, ../_sass/styles.scss */
 .btn-success {
   color: #ffffff;
   background-color: #006838;
 }
 
-/* line 559, ../_sass/styles.scss */
+/* line 561, ../_sass/styles.scss */
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
@@ -8998,7 +8986,7 @@ button {
   border-color: #00703e;
 }
 
-/* line 565, ../_sass/styles.scss */
+/* line 567, ../_sass/styles.scss */
 .btn-success:active,
 .btn-success.active {
   background: #00703e;
@@ -9008,7 +8996,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 573, ../_sass/styles.scss */
+/* line 575, ../_sass/styles.scss */
 footer {
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -9020,41 +9008,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 584, ../_sass/styles.scss */
+/* line 586, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 588, ../_sass/styles.scss */
+/* line 590, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 592, ../_sass/styles.scss */
+/* line 594, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 597, ../_sass/styles.scss */
+/* line 599, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 601, ../_sass/styles.scss */
+/* line 603, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 603, ../_sass/styles.scss */
+/* line 605, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 606, ../_sass/styles.scss */
+/* line 608, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
