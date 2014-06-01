@@ -36,10 +36,6 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 .navbar-nav > li > a {font-size: 18px;}
 
-.navbar {
-  margin-bottom: 0px;
-  border-bottom: 1px solid $color2;
-}
 #nearest-location a, #nearest-location-mobile a {
   margin-left: 0px;
   color: $color4;
@@ -59,6 +55,10 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 /* Only for small screens */
 @media (max-width: 767px) {
+  .navbar, .navbar-default {
+    margin-bottom: 0px;
+    border-bottom: 1px solid $color2;
+  }
   /* Collapse the navigation menu into hamburger button */
   #navbar-mobile-collapse {
     text-align: center;
@@ -73,6 +73,11 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 /* Only for larger screens */
 @media (min-width: 768px) {
+  .navbar, .navbar-default {
+    margin-bottom: 0px;
+    border: 0px;
+  }
+
   /* Make navbar dropdown on hover */
   .navbar-nav > li {
     padding: 26px 0 12px 0;
@@ -104,13 +109,17 @@ h1, h2, h3, .navbar-nav > li > a {
     background: none;
   }
   .navbar-nav .hovernav:hover > .dropdown-menu {
+    background: $color2-lighter;
     display: block;
     padding: 20px 0 3px 0;
     left: 10px;
     min-width: 250px;
-    border: 1px solid $color2;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
     li a {
       font-size: 14px;
+      color: #fff;
     }
   }
   /* Give dropdown menu 2 columns */
@@ -124,10 +133,10 @@ h1, h2, h3, .navbar-nav > li > a {
   .navbar-default .navbar-nav > li.hovergreen:hover:after {
     content: "";
     position: absolute;
-    bottom: -14px;
+    bottom: -6px;
     display: block;
     width: 100%;
-    height: 23px;
+    height: 13px;
     background: $color2;
     -webkit-transform: skewX(-8deg);
     -ms-transform: skewX(-8deg);
@@ -321,7 +330,14 @@ h1, h2, h3, .navbar-nav > li > a {
   padding: 20px 10px;
   img { border: 5px solid #fff;}
 }
-
+.simple-shaded {
+  background-color: #265ea6;
+  background-size:100% auto;
+  background-repeat:no-repeat;
+  background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICB2aWV3Qm94PScwIDAgMTAwIDEwMCc+Cgk8bGluZWFyR3JhZGllbnQgaWQ9J2cxJyB4MT0nMCUnIHkxPScwJScgeDI9JzUwJScgeTI9Jzc1JSc+CgkJPHN0b3Agb2Zmc2V0PSc1MCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMwMDBlMzM7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMjY1ZWE2O3N0b3Atb3BhY2l0eTowJyAvPgoJPC9saW5lYXJHcmFkaWVudD4KCTxsaW5lYXJHcmFkaWVudCBpZD0nZzInIHgxPScwJScgeTE9JzAlJyB4Mj0nMCUnIHkyPSc1MCUnPgoJCTxzdG9wIG9mZnNldD0nMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMwMDBlMzM7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMjY1ZWE2O3N0b3Atb3BhY2l0eTowJyAvPgoJPC9saW5lYXJHcmFkaWVudD4KCTxsaW5lYXJHcmFkaWVudCBpZD0nZzIxJyB4MT0nNTAlJyB5MT0nMCUnIHgyPScwJScgeTI9JzAlJz4KCQk8c3RvcCBvZmZzZXQ9JzAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMDAwZTMzO3N0b3Atb3BhY2l0eToxJyAvPgoJCTxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6IzI2NWVhNjtzdG9wLW9wYWNpdHk6MCcgLz4KCTwvbGluZWFyR3JhZGllbnQ+Cgk8cmFkaWFsR3JhZGllbnQgaWQ9J2czJyBjeD0nMCUnIGN5PScwJScgcj0nMTAwJSc+CgkJPHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6IzAwMGUzMztzdG9wLW9wYWNpdHk6MScgLz4KCQk8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMyNjVlYTY7c3RvcC1vcGFjaXR5OjAnIC8+Cgk8L3JhZGlhbEdyYWRpZW50PgoJPGcgdHJhbnNmb3JtPSdyb3RhdGUoMTMwKSB0cmFuc2xhdGUoMjEuMiAtNDkuNSknPgoJCTxyZWN0IHg9Jy01MCUnIHk9Jy01MCUnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnIC8+CgkJPHJlY3QgeD0nNTAlJyB5PSctNTAlJyB3aWR0aD0nMCUnIGhlaWdodD0nMTAwJScgZmlsbD0ndXJsKCNnMSknIC8+CgkJPHJlY3QgeD0nLTUwJScgeT0nNTAlJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMiknIC8+CgkJPHJlY3QgeD0nLTUwJScgeT0nNTAlJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMjEpJyAvPgoJPHJlY3QgeD0nNTAlJyB5PSc1MCUnIHdpZHRoPScwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMyknIC8+Cgk8L2c+Cjwvc3ZnPg==');
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
 .full-height {height: 100%;};
 .space-above {margin-top: 50px;}
 .vert-border {border-right: 1px solid #e2e3e6;}
@@ -376,7 +392,7 @@ h1, h2, h3, .navbar-nav > li > a {
   }
   .storelocator-panel .store-list li.store:hover {
     cursor: pointer;
-    background: #eee;
+    background-color:rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -400,16 +416,16 @@ h1, h2, h3, .navbar-nav > li > a {
 
 .storelocator-panel .store-list li.highlighted,
 .storelocator-panel .store-list li.highlighted:hover {
-  background: $color1-lighter;
+  background-color:rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
-.highlighted a.branch-link {
+a.branch-link {
   color: #fff;
   text-decoration: none;
 }
 
-.highlighted a.branch-link:hover {
+a.branch-link:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -458,6 +474,11 @@ h1, h2, h3, .navbar-nav > li > a {
   font-weight: bold;
 }
 
+.gm-style-iw {
+  background-color: #fff;
+  color: #000;
+  text-shadow: none;
+}
 .store .address,
 .store .phone,
 .store .web,
