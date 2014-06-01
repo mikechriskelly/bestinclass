@@ -145,13 +145,14 @@ BCBranchesDataSource.prototype.parse_ = function(data) {
 
     var position = new google.maps.LatLng(branch.Lat, branch.Lon);
 
-    var title = branch.Name;
-    var address = '<p>' + branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip + '</p>';
-    var url = '<p><a href="' + branch.Slug + '" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>'
+    var title = '<a class="branch-link" alt="Visit Center Webpage" href="' + branch.Slug + '">' + branch.Name + ' <i class="fa fa-chevron-circle-right"></i></a>';
+    var address = '<p class="branch-address">' + branch.Address + '<br>' + branch.City + ', ' + branch.State + ' ' + branch.Zip + '</p>';
+    //var url = '<a class="branch-link" href="' + branch.Slug + '">View Center Details</a></p>';
 
     var store = new storeLocator.Store(i, position, null, {
       title: title,
-      address: address + url
+      address: address,
+      slug: branch.Slug
     });
     stores.push(store);
   }

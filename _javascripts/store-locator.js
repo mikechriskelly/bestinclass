@@ -178,7 +178,17 @@
     a.g[J](a.e);
     // CUSTOM MODIFICATION
     // Set the content for the panel's heaader and input
-    a.c.locationSearch && (a.i = $('<div class="location-search"><h2>' + a.c.locationSearchLabel + '</h2><input type="text" class="form-control" placeholder="Enter Zip Code or City"><p class="footer-legal">Nearest Locations | <a href="all-locations">All Locations</a></p></div>'), a.e[J](a.i), "undefined" != typeof google[t].places ? ga(a) : a.e.submit(function () {
+    var htmlForm =  
+      '<div class="location-search">
+        <h2>' + a.c.locationSearchLabel + '</h2>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Enter Zip Code or City">
+          <span class="input-group-btn"><button class="btn" type="button">Go!</button></span>
+        </div>
+        <p><a href="all-locations">or view all locations</a></p>
+      </div>';
+
+    a.c.locationSearch && (a.i = $(htmlForm), a.e[J](a.i), "undefined" != typeof google[t].places ? ga(a) : a.e.submit(function () {
       var b = $("input", a.i).val();
       a.searchPosition(b)
     }), a.e.submit(function () {
@@ -310,15 +320,17 @@
       this.c.directions && this.a[r](".directions-to").val(b.getDetails().title);
       var c = a.get("view").getInfoWindow().getContent(),
         // CUSTOM MODIFICATION
-        // Directions don't work in this implementation. So I removed the text from display
+        // Directions don't work in this implementation.
+        // Replace directions with link to Center Webpage and disable action events so it is a plain link
         //d = $("<a/>").text("Directions")[p]("href", "#")[x]("action")[x]("directions"),
-        d = $("<a/>").text("")[p]("href", "#")[x]("action")[x]("directions"),
+        d = $("<a/>").text("Center Webpage")[p]("href",b.getDetails().slug)[x]("action"),
         g = $("<a/>").text("Zoom here")[p]("href", "#")[x]("action")[x]("zoomhere"),
         m = $("<a/>").text("Street view")[p]("href", "#")[x]("action")[x]("streetview");
-      d[A](function () {    
-        a.showDirections();     
-        return !1     
-      }); 
+
+      // d[A](function () {    
+      //   a.showDirections();     
+      //   return !1     
+      // }); 
       g[A](function () {
         a.get("view")[u]().setOptions({
           center: b[f](),
@@ -344,7 +356,7 @@
     var a = this.get("selectedStore");
     this.d.fadeOut();
     this.b.fadeOut();
-    this.a[r](".directions-to").val(a.getDetails().title);
+    this.a[r](".directions-to").val(a.getDetails().slug);
     this.a.fadeIn();
     W(this);
     this.h = !0
