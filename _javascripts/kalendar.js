@@ -195,11 +195,11 @@
         if(this.options.eventsParsed[strtime][0].title === 'No Class') {
           var $noSchoolDay = $day.find('div.date-holder');
           $day.addClass('no-school-day');
-          $noSchoolDay.prepend('<i class="fa fa-times-circle"></i> ');
+          $noSchoolDay.prepend('<i class="fa fa-times-circle"></i>');
         } else {
           var $eventDay = $day.find('div.date-holder');
           $day.addClass('have-events');
-          $eventDay.prepend('<i class="fa fa fa-star"></i> ');
+          $eventDay.prepend('<i class="fa fa fa-star"></i>');
         }
       }
       $row.append($day);

@@ -59,14 +59,3 @@ title: Best in Class Education
     </div>
   </div>
 </div>
-<script>
-  var jumboHeight = $('.jumbotron').outerHeight();
-  function parallax(){
-      var scrolled = $(window).scrollTop();
-      $('.jumbotron').css('height', (jumboHeight-scrolled*1.2) + 'px');
-  }
-
-  $(window).scroll(function(e){
-      parallax();
-  });
-</script>

@@ -153,12 +153,12 @@ h1, h2, h3, .navbar-nav > li > a {
 .jumbotron {
   background-color: $color1-lighter;
   background: url('../images/photos/DSC_2105.jpg') no-repeat;
-  background-position: right top;
+  background-position: center top;
   background-attachment: fixed;
   background-size: cover;
   height: 80%;
   margin-bottom: 0px;
-  z-index: -1;
+  position: relative;
   h1 {
     color: #fff;
     font-size: 2.8em;
@@ -169,6 +169,14 @@ h1, h2, h3, .navbar-nav > li > a {
   max-width: 475px;
   color: #fff;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 767px) {
+  .jumbotron-message { 
+    position: absolute;
+    bottom: 0;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+    h1 {text-shadow: 0 0 4px rgba(0, 0, 0, 1);}
+  }
 }
 
 /* ---------------------------------- */
@@ -285,6 +293,11 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 .nav-tabs {text-align:center;}
 .tab-pane {padding-top: 25px;}
+
+
+.panel-default .panel-heading {
+  background-color: #f5f7f9;
+}
 
 /* ---------------------------------- */
 /* Google Map on top of locations page */
@@ -459,16 +472,14 @@ img.googlemap {
   border-radius: 6px;
 }
 
-.panel {
+.panel-schedule {
   text-align: center;
-}
-.panel-default {
   background-color: $color2-lighter;
   border-color: transparent;
   color: #fff;
   font-weight: 300;
 }
-.panel-default > .panel-heading {
+.panel-schedule > .panel-schedule-heading {
   background-color: $color2;
   border-bottom: none;
   font-size: 1.6em;

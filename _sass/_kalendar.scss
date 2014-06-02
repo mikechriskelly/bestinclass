@@ -35,7 +35,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  color: transparent;
+  //color: transparent;
   cursor: pointer;
 }
 
@@ -87,11 +87,30 @@
   display: inline-block;
   position: relative;
 }
-
-[ewcalendar] .c-grid .c-row .c-day.c-l .date-holder {
-  font-size: 1em;
+@media (max-width: 480px) {
+  [ewcalendar] .c-grid .c-row .c-day .date-holder {
+    font-size: 0.9em;
+  }
+  [ewcalendar] .c-grid .c-row .c-day.c-l .date-holder {
+    font-size: 0.9em;
+  }
+  [ewcalendar] .date-holder .fa {
+    margin: 0 3px 0 0;
+    font-size: 0.8em;
+  }
 }
-
+@media (min-width: 481px) {
+  [ewcalendar] .c-grid .c-row .c-day .date-holder {
+    font-size: 1.3em;
+  }
+  [ewcalendar] .c-grid .c-row .c-day.c-l .date-holder {
+    font-size: 1.3em;
+  }
+  [ewcalendar] .date-holder .fa {
+    margin: 0 8px 0 0;
+    font-size: 1.3em;
+  }
+}
 [ewcalendar] .c-grid .c-row .c-day:last-child {
   margin-right: 0;
 }
@@ -131,7 +150,6 @@
 }
 
 [ewcalendar] .c-grid .c-row .c-day .date-holder {
-  font-size: 1.3em;
   position: absolute;
   right: 5%;
   bottom: 5%;
