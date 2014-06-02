@@ -3,7 +3,6 @@
 @import 'bootstrap';
 @import 'kalendar';
 
-
 /* Playful Font for Headers */
 @font-face {
   font-family: 'bubblegum_sansregular';
@@ -23,7 +22,7 @@ body {
   margin-top: 0px;
   padding-bottom: 20px;
 }
-a:hover { text-decoration: none; }
+a:hover {text-decoration: none;}
 
 .nopadding {
    padding: 0 !important;
@@ -33,14 +32,12 @@ a:hover { text-decoration: none; }
 /* ---------------------------------- */
 /* General Navigation and Heading */
 /* ---------------------------------- */
-.navbar-brand {
-  padding: 10px 10px 0 0;
-}
+.navbar-brand {padding: 10px 10px 0 0;}
+.navbar-nav > li > a {font-size: 18px;}
+
 h1, h2, h3, .navbar-nav > li > a {
   font-family: $header-font;
 }
-.navbar-nav > li > a {font-size: 18px;}
-
 #nearest-location a, #nearest-location-mobile a {
   margin-left: 0px;
   color: $color4;
@@ -215,87 +212,6 @@ h1, h2, h3, .navbar-nav > li > a {
   height: 34px;
   a {color: $color2;}
 }
-//.circle:hover {color: $color2-lighter;}
-
-/* ---------------------------------- */
-/* Table for program comparison chart */
-/* ---------------------------------- */
-.program-list {
-  .details {
-    font-size: $font-size-small;
-  }
-  .program {
-    margin-bottom: 10px;
-    h3 {
-      color: $color1;
-      margin: 0;
-    }
-  }
-  th.details {
-    text-transform: uppercase;
-    color: $gray; 
-    font-size: $font-size-tiny; 
-    font-weight: bold;
-  }
-  td.details {
-    color: $gray-darker; 
-    font-size: $font-size-small; 
-  }
-}
-@media (max-width: 767px) {
-  /* Collapse tables into stackable blocks */
-  .program-list table, thead, tbody, th, td, tr { 
-    display: block;
-  }
-  .program-list {
-    margin-top: 40px;
-    
-    /* Hide table headers */
-    thead tr {display: none;}
-
-    tr {margin-bottom: 30px;}
-
-    td.details { 
-      border: none;
-      position: relative;
-      padding-left: 20%; 
-    }
-    /* Prepend column labels */
-    td.details:before { 
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      width: 15%;
-      white-space: nowrap;
-      text-transform: uppercase;
-      color: $gray; 
-      font-size: $font-size-tiny; 
-      font-weight: bold;
-    }
-    /*  Label the data (excluding title and description) */
-    td.details:nth-of-type(2):before { content: 'GRADES';}
-    td.details:nth-of-type(3):before { content: 'SUBJECTS'; }
-    td.details:nth-of-type(4):before { content: 'SCHEDULE'; }
-    td.details:nth-of-type(5):before { content: 'LOCATIONS'; } 
-  }
-}
-@media (min-width: 768px) {
-  .program-list {
-    margin-top: 60px;
-    border: none;
-    width: 100%; 
-    border-collapse: separate;
-    border-spacing: 0;
-    .program {
-      width: 50%;
-      padding: 0 50px 50px 0;
-    }
-    .details {
-      text-align: center;
-      vertical-align: middle;
-    }
-  }
-}
 
 /* ---------------------------------- */
 /* Page Header */
@@ -344,9 +260,7 @@ h1, h2, h3, .navbar-nav > li > a {
   color: #fff;
   h1, h2 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
 }
-.light-shaded {
-  background-color: #f5f7f9;
-}
+.light-shaded {background-color: #f5f7f9;}
 .full-height {height: 100%;};
 .space-above {margin-top: 50px;}
 .vert-border {border-right: 1px solid #e2e3e6;}
@@ -369,9 +283,7 @@ h1, h2, h3, .navbar-nav > li > a {
   *display:inline; /* ie7 fix */
   zoom:1; /* hasLayout ie7 trigger */
 }
-.nav-tabs {
-  text-align:center;
-}
+.nav-tabs {text-align:center;}
 .tab-pane {padding-top: 25px;}
 
 /* ---------------------------------- */
@@ -408,13 +320,11 @@ h1, h2, h3, .navbar-nav > li > a {
 .storelocator-panel {
   overflow: auto;
 }
-
 .storelocator-panel .store-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 .storelocator-panel .store-list li,
 .storelocator-panel .directions-panel {
   padding: 5px;
@@ -422,25 +332,20 @@ h1, h2, h3, .navbar-nav > li > a {
 .storelocator-panel .directions-panel {
   font-size: 0.8em;
 }
-
 .storelocator-panel .store-list li.highlighted,
 .storelocator-panel .store-list li.highlighted:hover {
   background-color:rgba(0, 0, 0, 0.2);
   color: #fff;
 }
-
 .storelocator-panel .directions {
   display: none;
 }
-
 .storelocator-panel .location-search {
   padding: 5px;
 }
-
 .location-search .input-group {
   padding: 6px;
 }
-
 .location-search p {
   text-align: center;
   font-size: $font-size-tiny;
@@ -449,11 +354,9 @@ h1, h2, h3, .navbar-nav > li > a {
   color: #fff;
   text-decoration: none;
 }
-
 .location-search a:hover {
   text-decoration: none;
 }
-
 .storelocator-panel .location-search h2 {
   font-family: $header-font;
   font-size: $font-size-large;
@@ -461,30 +364,24 @@ h1, h2, h3, .navbar-nav > li > a {
   margin: 10px 0 0 0;
   padding: 0;
 }
-
 .storelocator-panel .store-list .no-stores {
   margin: 0 0 5px 0;
 }
-
 .storelocator-panel .store .features {
   display: none;
 }
-
 .storelocator-panel .feature-filter {
   overflow: hidden;
 }
-
 .storelocator-panel .feature-filter label {
   display: block;
   font-size: 0.8em;
   margin: 0 0.4em;
   float: left;
 }
-
 .store .title {
   font-weight: bold;
 }
-
 .gm-style-iw {
   background-color: #fff;
   color: #000;
@@ -499,30 +396,25 @@ h1, h2, h3, .navbar-nav > li > a {
   margin-bottom: 0.5em;
   display: block;
 }
-
 .store .features {
   overflow: hidden;
-  color: grey;
+  color: $gray;
   margin: 0;
   padding: 0;
   font-size: 70%;
   max-width: 250px;
 }
-
 .store .features li {
   display: inline;
   float: left;
   padding-right: 0.8em;
 }
-
 div.store, form.storelocator-filter {
   padding: 5px 8px;
 }
-
 .store .web a {
   color: green
 }
-
 .store .action {
   font-size: 0.8em;
   padding: 0;
@@ -552,11 +444,21 @@ li.store a.branch-link:hover {
 /* ---------------------------------- */
 /* Centers Pages */
 /* ---------------------------------- */
-
-.center-info {
-  max-width: 375px;
+.text-info-box {
+  max-width: 400px;
+  padding: 0 0 15px 0;
   margin: 0 auto;
 }
+img.googlemap { 
+  margin: 0 auto;
+  border: 5px solid #f5f7f9; 
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
 .panel {
   text-align: center;
 }
@@ -594,20 +496,10 @@ li.store a.branch-link:hover {
 .legend-left {
   margin-right: 25px;
 }
-img.googlemap { 
-  margin: 0 auto;
-  border: 5px solid #f5f7f9; 
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-  border-radius: 6px;
-}
 
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
-
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -679,7 +571,6 @@ footer {
   margin-top: 0px;
   padding: 15px 0px 15px 0px;
 }
-
 footer .col-md-6 {
   padding: 0;
   min-height: 75px; 

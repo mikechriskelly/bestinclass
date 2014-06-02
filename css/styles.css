@@ -8988,17 +8988,18 @@ li.store a.branch-link:hover {
 /* Centers Pages */
 /* ---------------------------------- */
 /* line 556, ../_sass/styles.scss */
-.center-info {
-  max-width: 375px;
+.text-info-box {
+  max-width: 400px;
+  padding: 0 0 15px 0;
   margin: 0 auto;
 }
 
-/* line 560, ../_sass/styles.scss */
+/* line 561, ../_sass/styles.scss */
 .panel {
   text-align: center;
 }
 
-/* line 563, ../_sass/styles.scss */
+/* line 564, ../_sass/styles.scss */
 .panel-default {
   background-color: #00703e;
   border-color: transparent;
@@ -9006,7 +9007,7 @@ li.store a.branch-link:hover {
   font-weight: 300;
 }
 
-/* line 569, ../_sass/styles.scss */
+/* line 570, ../_sass/styles.scss */
 .panel-default > .panel-heading {
   background-color: #006838;
   border-bottom: none;
@@ -9016,12 +9017,12 @@ li.store a.branch-link:hover {
   padding: 0;
 }
 
-/* line 578, ../_sass/styles.scss */
+/* line 579, ../_sass/styles.scss */
 .action-box {
   text-align: center;
 }
 
-/* line 581, ../_sass/styles.scss */
+/* line 582, ../_sass/styles.scss */
 #calendar {
   background-color: #00703e;
   overflow: hidden;
@@ -9030,7 +9031,7 @@ li.store a.branch-link:hover {
   border-radius: 8px 8px;
 }
 
-/* line 588, ../_sass/styles.scss */
+/* line 589, ../_sass/styles.scss */
 .legend {
   text-align: center;
   font-size: 13px;
@@ -9038,12 +9039,12 @@ li.store a.branch-link:hover {
   margin-top: 3px;
 }
 
-/* line 594, ../_sass/styles.scss */
+/* line 595, ../_sass/styles.scss */
 .legend-left {
   margin-right: 25px;
 }
 
-/* line 597, ../_sass/styles.scss */
+/* line 598, ../_sass/styles.scss */
 img.googlemap {
   margin: 0 auto;
   border: 5px solid #f5f7f9;
@@ -9057,7 +9058,7 @@ img.googlemap {
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
-/* line 611, ../_sass/styles.scss */
+/* line 612, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -9067,7 +9068,7 @@ img.googlemap {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 620, ../_sass/styles.scss */
+/* line 621, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
@@ -9076,7 +9077,7 @@ img.googlemap {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 627, ../_sass/styles.scss */
+/* line 628, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -9085,26 +9086,26 @@ button {
   border-radius: 6px;
 }
 
-/* line 634, ../_sass/styles.scss */
+/* line 635, ../_sass/styles.scss */
 .btn-grow {
   -webkit-transform: scale(1);
   -webkit-transition: all .2s ease-in-out;
 }
 
-/* line 638, ../_sass/styles.scss */
+/* line 639, ../_sass/styles.scss */
 .btn-grow:hover {
   -webkit-transform: scale(1.05);
   -webkit-transition: all .2s ease-in-out;
 }
 
-/* line 642, ../_sass/styles.scss */
+/* line 643, ../_sass/styles.scss */
 .btn-dark {
   color: #fff;
   background-color: #006838;
   border-color: transparent;
 }
 
-/* line 650, ../_sass/styles.scss */
+/* line 651, ../_sass/styles.scss */
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active,
@@ -9114,14 +9115,14 @@ button {
   border-color: transparent;
 }
 
-/* line 655, ../_sass/styles.scss */
+/* line 656, ../_sass/styles.scss */
 .btn-light {
   color: #006838;
   background-color: #fff;
   border-color: #006838;
 }
 
-/* line 663, ../_sass/styles.scss */
+/* line 664, ../_sass/styles.scss */
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active,
@@ -9134,7 +9135,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 672, ../_sass/styles.scss */
+/* line 673, ../_sass/styles.scss */
 footer {
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -9146,41 +9147,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 683, ../_sass/styles.scss */
+/* line 684, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 687, ../_sass/styles.scss */
+/* line 688, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 691, ../_sass/styles.scss */
+/* line 692, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 696, ../_sass/styles.scss */
+/* line 697, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 700, ../_sass/styles.scss */
+/* line 701, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 702, ../_sass/styles.scss */
+/* line 703, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 705, ../_sass/styles.scss */
+/* line 706, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
