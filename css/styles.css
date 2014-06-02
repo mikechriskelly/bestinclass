@@ -8448,7 +8448,6 @@ h1, h2, h3, .navbar-nav > li > a {
   background-color: #265ea6;
   background: url("../images/photos/DSC_2105.jpg") no-repeat;
   background-position: center top;
-  background-attachment: fixed;
   background-size: cover;
   height: 80%;
   margin-bottom: 0px;
