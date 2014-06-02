@@ -23,6 +23,7 @@ body {
   margin-top: 0px;
   padding-bottom: 20px;
 }
+a:hover { text-decoration: none; }
 
 .nopadding {
    padding: 0 !important;
@@ -551,16 +552,36 @@ li.store a.branch-link:hover {
 /* ---------------------------------- */
 /* Centers Pages */
 /* ---------------------------------- */
+
+.center-info {
+  max-width: 375px;
+  margin: 0 auto;
+}
 .panel {
   text-align: center;
 }
+.panel-default {
+  background-color: $color2-lighter;
+  border-color: transparent;
+  color: #fff;
+  font-weight: 300;
+}
+.panel-default > .panel-heading {
+  background-color: $color2;
+  border-bottom: none;
+  font-size: 1.6em;
+  font-weight: 300;
+  color: #fff;
+  padding: 0;
+}
+
 .action-box {
   text-align: center;
 }
 #calendar {
   background-color: $color2-lighter;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 10px;
   -webkit-border-radius: 8px 8px;
   border-radius: 8px 8px;
 }
@@ -572,6 +593,15 @@ li.store a.branch-link:hover {
 }
 .legend-left {
   margin-right: 25px;
+}
+img.googlemap { 
+  margin: 0 auto;
+  border: 5px solid #f5f7f9; 
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
 }
 
 /* ---------------------------------- */
@@ -590,12 +620,7 @@ li.store a.branch-link:hover {
 .location-finder {
   margin: 5em 0;
   text-align: center;
-  input {margin: 10px auto;}
 }
-#zipCode {
-  width: 100px;
-}
-
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
