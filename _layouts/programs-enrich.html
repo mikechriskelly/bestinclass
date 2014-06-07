@@ -31,6 +31,21 @@
   (function($) {
       fakewaffle.responsiveTabs(['xs']);
   })(jQuery);
+
+  // Change hash for page-reload
+  $('.nav-tabs a').on('shown.bs.tab', function (e) {
+      window.location.hash = e.target.hash.replace("#", "#" + prefix);
+  });
+
+  $(document).ready(function() {
+    // Javascript to enable link to tab
+    var hash = document.location.hash;
+    var prefix = "enrichment_";
+    if (hash) {
+        $('.nav-tabs a[href='+hash.replace(prefix,"")+']').tab('show');
+    } 
+  });
+
 </script>
 
 {% include testimonials.html %}
