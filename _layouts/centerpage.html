@@ -1,0 +1,116 @@
+{% include header.html %}
+
+<div class="container space-above">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="text-info-box">
+        <h2 id="set-center-title">{{ page.centername }}</h2>
+        <p>{{ page.address-line1 }}<br>{{ page.address-line2 }}</p>
+        <p>
+          <br><i class="fa fa-phone"></i> <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
+          <br><i class="fa fa-envelope"></i> <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <a href="{{ page.googlemaplink }}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={{ page.lat }},{{ page.lon }}&markers=color:green%7Clabel:A%7C{{ page.lat }},{{ page.lon }}&zoom=14&size=500x300&sensor=false" class="img-responsive googlemap" alt="View in Google Maps"></a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid section-shaded action-box">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>New Students</h3>
+      <a href="#" class="btn btn-light btn-lg btn-grow">Get Started</a>
+    </div>
+    <div class="col-sm-6">
+      <h3>Current Students</h3>
+      <a href="#" class="btn btn-light btn-lg btn-grow">Reschedule Class</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  {% if page.programs-offered %}
+    <h3>Programs Offered at Bellevue</h3>
+    <ul>
+      {% for program in page.programs-offered %} 
+        <li>{{ program }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.weekly-schedule %}
+    <h3>Weekly Class Schedule</h3>
+    <div class="row">
+      {% for day in page.weekly-schedule %}
+        <div class="col-sm-3">
+          <div class="panel panel-schedule">
+            <div class="panel-schedule-heading">
+              {{ day.day }}
+            </div>
+            <div class="panel-body">
+              {% for time in day.times %}
+                {{ time }}<br>
+              {% endfor %}
+            </div> 
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.calendarlink %}
+    <h3>School Calendar</h3>
+    <div id="calendar"></div>
+    <p class="legend">
+      <span class="legend-left"><i class="fa fa-times-circle"></i> No class</span>
+      <span><i class="fa fa fa-star"></i> Special Event</span>
+    </p>
+  {% endif %}
+
+</div>
+
+{% if page.manager-name %}
+  <div class="container-fluid section-shaded space-above">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{ page.manager-img }}" class="img-responsive">
+        </div>
+        <div class="col-sm-9">
+          <h3>{{ page.manager-name }}</h3>
+          <p>{{ page.manager-title }}</p>
+          <p>{{ page.manager-bio }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+<div class="container-fluid location-finder">
+  <h3>New Students</h3>
+  <p class="text-info-box">Enrollment is easy. Schedule a free appointment to learn more and get your child started at this center.</p>
+  <p><a href="#" class="btn btn-dark btn-lg btn-grow">Get Started</a></p>
+</div>
+
+{% if page.calendarlink %}
+  <script>
+    var options = {
+      events: [],
+      firstDayOfWeek: "Sunday",
+      showDays: true,
+      color: "green",
+      googleCal: [
+      {
+        calendar: "{{ page.calendarlink }}",
+        apikey: "AIzaSyBHD4G7RLYjTVetS0XD7QrUeVe0HHedxmo"
+      }],
+      onDayClick: function() {}
+    };
+
+    $(calendar).kalendar(options);
+  </script>
+{% endif %}
+
+{% include footer.html %}
