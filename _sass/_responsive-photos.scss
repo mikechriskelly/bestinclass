@@ -1,0 +1,111 @@
+/* Media Queries to serve different image sizes */
+$landing: 'bc-home';
+
+$about: 'aboutus';
+$beginnersinclass: 'beginnersinclass';
+//$careers: 'careers';
+$contact: 'DSC_2030';
+$enrichment: 'enrichment';
+$giftedprep: 'giftedtestprep';
+//$news:
+$privatetutoring: 'privatetutoring';
+$satprep: 'sattestprep';
+$summercamp: 'summercamp';
+$spotlight: 'studentspotlight';
+//$privacy:
+
+
+$max-sm: 480px;
+$min-md: 481px;
+$max-md: 991px; // old: 767px
+$min-lg: 992px; // old: 767px
+
+#home-landing-photo { 
+  background-image: url('../images/landingphoto/' + $landing + '-lg.jpg'); }
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {
+  #home-landing-photo { 
+    background-image: url('../images/landingphoto/' + $landing + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #home-landing-photo  { 
+    background-image: url('../images/landingphoto/' + $landing + '-sm.jpg'); }}
+
+#banner-img-about { 
+  background-image: url('../images/bannerphotos/' + $about + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-about { 
+    background-image: url('../images/bannerphotos/' + $about + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-about  { 
+    background-image: url('../images/bannerphotos/' + $about + '-sm.jpg'); }}
+
+#banner-img-beginnersinclass { 
+  background-image: url('../images/bannerphotos/' + $beginnersinclass + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-beginnersinclass { 
+    background-image: url('../images/bannerphotos/' + $beginnersinclass + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-beginnersinclass  { 
+    background-image: url('../images/bannerphotos/' + $beginnersinclass + '-sm.jpg'); }}
+
+// #banner-img-careers { 
+//   background-image: url('../images/bannerphotos/' + $careers + '-lg.jpg'); } 
+// @media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+//   #banner-img-careers { 
+//     background-image: url('../images/bannerphotos/' + $careers + '-md.jpg'); }}
+// @media only screen and (max-width: $max-sm) { 
+//   #banner-img-careers  { 
+//     background-image: url('../images/bannerphotos/' + $careers + '-sm.jpg'); }}
+
+#banner-img-enrichment { 
+  background-image: url('../images/bannerphotos/' + $enrichment + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-enrichment { 
+    background-image: url('../images/bannerphotos/' + $enrichment + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-enrichment  { 
+    background-image: url('../images/bannerphotos/' + $enrichment + '-sm.jpg'); }}
+
+#banner-img-giftedprep { 
+  background-image: url('../images/bannerphotos/' + $giftedprep + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-giftedprep { 
+    background-image: url('../images/bannerphotos/' + $giftedprep + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-giftedprep  { 
+    background-image: url('../images/bannerphotos/' + $giftedprep + '-sm.jpg'); }}
+
+#banner-img-privatetutoring { 
+  background-image: url('../images/bannerphotos/' + $privatetutoring + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-privatetutoring { 
+    background-image: url('../images/bannerphotos/' + $privatetutoring + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-privatetutoring  { 
+    background-image: url('../images/bannerphotos/' + $privatetutoring + '-sm.jpg'); }}
+
+#banner-img-satprep { 
+  background-image: url('../images/bannerphotos/' + $satprep + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-satprep { 
+    background-image: url('../images/bannerphotos/' + $satprep + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-satprep  { 
+    background-image: url('../images/bannerphotos/' + $satprep + '-sm.jpg'); }}
+
+#banner-img-spotlight { 
+  background-image: url('../images/bannerphotos/' + $spotlight + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-spotlight { 
+    background-image: url('../images/bannerphotos/' + $spotlight + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-spotlight  { 
+    background-image: url('../images/bannerphotos/' + $spotlight + '-sm.jpg'); }}
+
+#banner-img-summercamp { 
+  background-image: url('../images/bannerphotos/' + $summercamp + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-summercamp { 
+    background-image: url('../images/bannerphotos/' + $summercamp + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-summercamp  { 
+    background-image: url('../images/bannerphotos/' + $summercamp + '-sm.jpg'); }}

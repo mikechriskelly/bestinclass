@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'bootstrap';
 @import 'kalendar';
+@import 'responsive-photos'; // Landing page and banner photos set here
 
 /* Playful Font for Headers */
 @font-face {
@@ -152,9 +153,7 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 .jumbotron {
   background-color: $color1-lighter;
-  background: url('../images/photos/DSC_2105.jpg') no-repeat;
   background-position: center top;
-  //background-attachment: fixed;
   background-size: cover;
   height: 80%;
   margin-bottom: 0px;
@@ -231,6 +230,7 @@ h1, h2, h3, .navbar-nav > li > a {
 
 .program-header {
   background-color: #265ea6;
+  background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICB2aWV3Qm94PScwIDAgMTAwIDEwMCc+Cgk8bGluZWFyR3JhZGllbnQgaWQ9J2cxJyB4MT0nMCUnIHkxPScwJScgeDI9JzUwJScgeTI9JzAlJz4KCQk8c3RvcCBvZmZzZXQ9JzUwJScgc3R5bGU9J3N0b3AtY29sb3I6IzAwMGUzMztzdG9wLW9wYWNpdHk6MScgLz4KCQk8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMyNjVlYTY7c3RvcC1vcGFjaXR5OjAnIC8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPGxpbmVhckdyYWRpZW50IGlkPSdnMicgeDE9JzAlJyB5MT0nMCUnIHgyPScwJScgeTI9JzUwJSc+CgkJPHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6IzAwMGUzMztzdG9wLW9wYWNpdHk6MScgLz4KCQk8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMyNjVlYTY7c3RvcC1vcGFjaXR5OjAnIC8+Cgk8L2xpbmVhckdyYWRpZW50PgoJPHJhZGlhbEdyYWRpZW50IGlkPSdnMycgY3g9JzAlJyBjeT0nMCUnIHI9JzEwMCUnPgoJCTxzdG9wIG9mZnNldD0nMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMwMDBlMzM7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMjY1ZWE2O3N0b3Atb3BhY2l0eTowJyAvPgoJPC9yYWRpYWxHcmFkaWVudD4KCTxnIHRyYW5zZm9ybT0ncm90YXRlKDYwKSB0cmFuc2xhdGUoMjEuMiAtNDkuNSknPgoJCTxyZWN0IHg9Jy01MCUnIHk9Jy01MCUnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnIC8+CgkJPHJlY3QgeD0nNTAlJyB5PSctNTAlJyB3aWR0aD0nMCUnIGhlaWdodD0nMTAwJScgZmlsbD0ndXJsKCNnMSknIC8+CgkJPHJlY3QgeD0nLTUwJScgeT0nNTAlJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMiknIC8+Cgk8cmVjdCB4PSc1MCUnIHk9JzUwJScgd2lkdGg9JzAlJyBoZWlnaHQ9JzAlJyBmaWxsPSd1cmwoI2czKScgLz4KCTwvZz4KPC9zdmc+');
   text-align: center;
   position: relative;
   height: 300px;
@@ -244,32 +244,6 @@ h1, h2, h3, .navbar-nav > li > a {
   background-size: cover;
   background-position: center center;
 }
-
-$enrichment: 'enrichment';
-$privatetutoring: 'DSC_2030';
-$beginnersinclass: 'DSC_2030';
-$giftedprep: 'DSC_2030';
-$satprep: 'DSC_2030';
-$spotlight: 'DSC_2030';
-$about: 'DSC_2030';
-$news: 'DSC_2030';
-$careers: 'DSC_2030';
-$privacy: 'DSC_2030';
-$contact: 'DSC_2030';
-
-/* DEFAULT screen, non-retina */
-#banner-img-enrichment { background-image: url('../images/bannerphotos/' + $enrichment + '-lg.jpg'); }
-
-@media only screen and (max-width: 480px) { /* SM, non-retina */
-  #banner-img-enrichment  { background-image: url('../images/bannerphotos/' + $enrichment + '-sm.jpg'); }}
-@media only screen and (min-resolution: 2dppx) and (max-width: 480px) { /* SM, retina */
-  #banner-img-enrichment  { background-image: url('../images/bannerphotos/' + $enrichment + '-sm.jpg'); }}
-@media only screen and (min-width: 481px) and (max-width: 991px) { /* MD, non-retina (old max: 767px) */ 
-  #banner-img-enrichment { background-image: url('../images/bannerphotos/' + $enrichment + '-md.jpg'); }}
-@media only screen and (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 991px) { /* MD, retina (old max: 767px) */
-  #banner-img-enrichment  { background-image: url('../images/bannerphotos/' + $enrichment + '-md@2x.jpg'); }}
-@media only screen and (min-resolution: 2dppx) and (min-width: 992px) { /* LG, retina (old min: 768px) */
-  #banner-img-enrichment  { background-image: url('../images/bannerphotos/' + $enrichment + '-lg@2x.jpg'); }}
 
 /* ---------------------------------- */
 /* Page Header */

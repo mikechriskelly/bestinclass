@@ -67,42 +67,31 @@ module.exports = function(grunt) {
         options: {
           sizes: [{
             name: 'sm',
-            width: 480,
-            quality: 90,
-            aspectRatio: true,
+            width: 640,
+            aspectRatio: false,
           },{
             name: 'md',
             width: 992,
-            height: 350,
-            quality: 90,
-            aspectRatio: false,
-          },{
-            name: 'md',
-            suffix: '@2x',
-            width: 1984,
-            height: 700,
-            quality: 90,
-            aspectRatio: false,
           },{
             name: 'lg',
-            width: 1680,
+            width: 1440,
+          },{
+            name: 'md-x',
+            width: 992,
             height: 300,
-            quality: 90,
             aspectRatio: false,
           },{
-            name: 'lg',
-            suffix: '@2x',
-            width: 3360,
-            height: 600,
-            quality: 90,
+            name: 'lg-x',
+            width: 1440,
+            height: 300,
             aspectRatio: false,
           }]
         },
         files: [{
           expand: true,
-          src: ['**/*.{jpg,gif,png}'],
-          cwd: '_responsive-images/',
-          dest: 'images/'
+          src: ['*.{jpg,gif,png}'],
+          cwd: '_responsive-images/photos-to-process',
+          dest: 'images/bannerphotos'
         }]
       },
     },
