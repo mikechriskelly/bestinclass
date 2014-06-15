@@ -61,6 +61,51 @@ module.exports = function(grunt) {
         }
       }
     },
+    // Generate different sized images for responsive banner photos
+    responsive_images: {
+      dev: {
+        options: {
+          sizes: [{
+            name: 'sm',
+            width: 480,
+            quality: 90,
+            aspectRatio: true,
+          },{
+            name: 'md',
+            width: 992,
+            height: 350,
+            quality: 90,
+            aspectRatio: false,
+          },{
+            name: 'md',
+            suffix: '@2x',
+            width: 1984,
+            height: 700,
+            quality: 90,
+            aspectRatio: false,
+          },{
+            name: 'lg',
+            width: 1680,
+            height: 300,
+            quality: 90,
+            aspectRatio: false,
+          },{
+            name: 'lg',
+            suffix: '@2x',
+            width: 3360,
+            height: 600,
+            quality: 90,
+            aspectRatio: false,
+          }]
+        },
+        files: [{
+          expand: true,
+          src: ['**/*.{jpg,gif,png}'],
+          cwd: '_responsive-images/',
+          dest: 'images/'
+        }]
+      },
+    },
     // The default task we leave running to watch for file changes.
     watch: {
       css: {
@@ -139,10 +184,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-yaml');
   // Register default task to watch for file changes.
   grunt.loadNpmTasks('grunt-concurrent');
+  // Extention for generating images at different resolutions
+  grunt.loadNpmTasks('grunt-responsive-images');
   
   grunt.registerTask('default', ['concurrent:target']);
   //grunt.registerTask('default',['watch']);
   grunt.registerTask('serve',['default']);
   grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
   grunt.registerTask('deploy',['shell:deploy']);
+  grunt.registerTask('bannerpics',['responsive_images']);
 };
