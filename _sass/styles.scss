@@ -498,9 +498,6 @@ img.googlemap {
   padding: 0;
 }
 
-.action-box {
-  text-align: center;
-}
 #calendar {
   background-color: $color2-lighter;
   overflow: hidden;
@@ -516,6 +513,41 @@ img.googlemap {
 }
 .legend-left {
   margin-right: 25px;
+}
+
+.center-section {
+  height: auto;
+  min-height: 100% !important;
+  padding: 2em 0;
+}
+.action-box {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .action-box {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .action-box {
+    position: relative;
+  }
+}
+
+#signup {
+  height: auto;
+  min-height: 100% !important;
+  padding: 2em 0;
+  text-align: center;
+}
+#makeup {
+  height: auto;
+  min-height: 100% !important;
+  padding: 2em 0;
+  text-align: center;
 }
 
 /* ---------------------------------- */

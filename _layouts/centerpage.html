@@ -1,31 +1,38 @@
 {% include header.html %}
-
-<div class="container space-above">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="text-info-box">
-        <h2 id="set-center-title">{{ page.centername }}</h2>
-        <p>{{ page.address-line1 }}<br>{{ page.address-line2 }}</p>
-        <p>
-          <br><i class="fa fa-phone"></i> <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
-          <br><i class="fa fa-envelope"></i> <a href="mailto:{{ page.email }}">{{ page.email }}</a>
-        </p>
+<div class="container-fluid center-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="text-info-box">
+          <h2 id="set-center-title">{{ page.centername }}</h2>
+          <p>{{ page.address-line1 }}<br>{{ page.address-line2 }}</p>
+          <p>
+            <br><i class="fa fa-phone"></i> <a href="tel:{{ page.phone }}">{{ page.phone }}</a>
+            <br><i class="fa fa-envelope"></i> <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <a href="{{ page.googlemaplink }}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={{ page.lat }},{{ page.lon }}&markers=color:green%7Clabel:A%7C{{ page.lat }},{{ page.lon }}&zoom=14&size=500x300&sensor=false" class="img-responsive googlemap" alt="View in Google Maps"></a>
       </div>
     </div>
-    <div class="col-sm-6">
-      <a href="{{ page.googlemaplink }}"><img src="http://maps.googleapis.com/maps/api/staticmap?center={{ page.lat }},{{ page.lon }}&markers=color:green%7Clabel:A%7C{{ page.lat }},{{ page.lon }}&zoom=14&size=500x300&sensor=false" class="img-responsive googlemap" alt="View in Google Maps"></a>
-    </div>
   </div>
-</div>
-<div class="container-fluid section-shaded action-box">
-  <div class="row">
-    <div class="col-sm-6">
-      <h3>New Students</h3>
-      <a href="#" class="btn btn-light btn-lg btn-grow">Get Started</a>
-    </div>
-    <div class="col-sm-6">
-      <h3>Current Students</h3>
-      <a href="#" class="btn btn-light btn-lg btn-grow">Reschedule Class</a>
+  <div class="section-shaded action-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>New Students</h3>
+          <a href="#signup" class="btn btn-light btn-lg btn-grow">Get Started</a>
+        </div>
+        <div class="col-sm-4 hidden-xs">
+          <h3></h3>
+          <a href="#signup" class="btn btn-light btn-lg btn-grow">View Schedule</a>
+        </div>
+        <div class="col-sm-4">
+          <h3>Current Students</h3>
+          <a href="#makeup" class="btn btn-light btn-lg btn-grow">Reschedule a Class</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -88,10 +95,19 @@
   </div>
 {% endif %}
 
-<div class="container-fluid location-finder">
-  <h3>New Students</h3>
-  <p class="text-info-box">Enrollment is easy. Schedule a free appointment to learn more and get your child started at this center.</p>
-  <p><a href="#" class="btn btn-dark btn-lg btn-grow">Get Started</a></p>
+<div class="container-fluid" id="signup">
+  <div class="container">
+    <h3>New Students</h3>
+    <p class="text-info-box">Enrollment is easy. Schedule a free appointment to learn more and get your child started at this center.</p>
+    <p><a href="#" class="btn btn-dark btn-lg btn-grow">Get Started</a></p>
+  </div>
+</div>
+<div class="container-fluid" id="makeup">
+  <div class="container">
+    <h3>Current Students</h3>
+    <p class="text-info-box">Enrollment is easy. Schedule a free appointment to learn more and get your child started at this center.</p>
+    <p><a href="#" class="btn btn-dark btn-lg btn-grow">Get Started</a></p>
+  </div>
 </div>
 
 {% if page.calendarlink %}

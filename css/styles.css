@@ -9124,11 +9124,6 @@ img.googlemap {
 }
 
 /* line 501, ../_sass/styles.scss */
-.action-box {
-  text-align: center;
-}
-
-/* line 504, ../_sass/styles.scss */
 #calendar {
   background-color: #00703e;
   overflow: hidden;
@@ -9137,7 +9132,7 @@ img.googlemap {
   border-radius: 8px 8px;
 }
 
-/* line 511, ../_sass/styles.scss */
+/* line 508, ../_sass/styles.scss */
 .legend {
   text-align: center;
   font-size: 13px;
@@ -9145,15 +9140,58 @@ img.googlemap {
   margin-top: 3px;
 }
 
-/* line 517, ../_sass/styles.scss */
+/* line 514, ../_sass/styles.scss */
 .legend-left {
   margin-right: 25px;
+}
+
+/* line 518, ../_sass/styles.scss */
+.center-section {
+  height: auto;
+  min-height: 100% !important;
+  padding: 2em 0;
+}
+
+/* line 523, ../_sass/styles.scss */
+.action-box {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /* line 529, ../_sass/styles.scss */
+  .action-box {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 535, ../_sass/styles.scss */
+  .action-box {
+    position: relative;
+  }
+}
+/* line 540, ../_sass/styles.scss */
+#signup {
+  height: auto;
+  min-height: 100% !important;
+  padding: 2em 0;
+  text-align: center;
+}
+
+/* line 546, ../_sass/styles.scss */
+#makeup {
+  height: auto;
+  min-height: 100% !important;
+  padding: 2em 0;
+  text-align: center;
 }
 
 /* ---------------------------------- */
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
-/* line 524, ../_sass/styles.scss */
+/* line 556, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   max-width: 600px;
@@ -9163,7 +9201,7 @@ img.googlemap {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 533, ../_sass/styles.scss */
+/* line 565, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
@@ -9172,7 +9210,7 @@ img.googlemap {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 540, ../_sass/styles.scss */
+/* line 572, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -9181,26 +9219,26 @@ button {
   border-radius: 6px;
 }
 
-/* line 547, ../_sass/styles.scss */
+/* line 579, ../_sass/styles.scss */
 .btn-grow {
   -webkit-transform: scale(1);
   -webkit-transition: all .2s ease-in-out;
 }
 
-/* line 551, ../_sass/styles.scss */
+/* line 583, ../_sass/styles.scss */
 .btn-grow:hover {
   -webkit-transform: scale(1.05);
   -webkit-transition: all .2s ease-in-out;
 }
 
-/* line 555, ../_sass/styles.scss */
+/* line 587, ../_sass/styles.scss */
 .btn-dark {
   color: #fff;
   background-color: #006838;
   border-color: transparent;
 }
 
-/* line 563, ../_sass/styles.scss */
+/* line 595, ../_sass/styles.scss */
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active,
@@ -9210,14 +9248,14 @@ button {
   border-color: transparent;
 }
 
-/* line 568, ../_sass/styles.scss */
+/* line 600, ../_sass/styles.scss */
 .btn-light {
   color: #006838;
   background-color: #fff;
   border-color: #006838;
 }
 
-/* line 576, ../_sass/styles.scss */
+/* line 608, ../_sass/styles.scss */
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active,
@@ -9230,7 +9268,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 585, ../_sass/styles.scss */
+/* line 617, ../_sass/styles.scss */
 footer {
   background-size: cover;
   background-repeat: no-repeat;
@@ -9242,41 +9280,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 595, ../_sass/styles.scss */
+/* line 627, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 599, ../_sass/styles.scss */
+/* line 631, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 603, ../_sass/styles.scss */
+/* line 635, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 608, ../_sass/styles.scss */
+/* line 640, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 612, ../_sass/styles.scss */
+/* line 644, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 614, ../_sass/styles.scss */
+/* line 646, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 617, ../_sass/styles.scss */
+/* line 649, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
