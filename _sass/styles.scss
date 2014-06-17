@@ -609,6 +609,11 @@ img.googlemap {
   }
 }
 .form-spacer { margin-top: 40px; }
+p.form-label {
+  // font-size: $font-size-small;
+  // font-weight: bold;
+  padding: 7px 0;
+}
 
 #signup {
   background-color: #f5f7f9;
