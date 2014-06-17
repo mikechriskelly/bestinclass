@@ -111,53 +111,54 @@
         <h3>Join Best in Class!</h3>
         <form role="form">
           <div class="form-group">
-            <input type="text" class="form-control" id="inputName" placeholder="Parent Name">
+            <input type="text" class="form-control" id="signup-name" placeholder="Parent Name">
           </div>
           <div class="row">
             <div class="col-sm-6 left-inline-input">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="email" class="form-control" id="signup-email" placeholder="Email">
             </div>
             <div class="col-sm-6 right-inline-input">
-              <input type="tel" class="form-control" id="inputPhone" placeholder="Phone">
+              <input type="tel" class="form-control" id="signup-phone" placeholder="Phone">
             </div>
           </div>
           <div class="form-group form-spacer">
             <select class="form-control">
               <option value="" disabled selected>What program are you interested in?</option>
               {% for program in page.programs-offered %} 
-                <option>{{ program.name }}</option>
+                <option value="{{ program.name }}">{{ program.name }}</option>
               {% endfor %}
             </select>
           </div>
           <div class="form-group">
             <select class="form-control">
               <option value="" disabled selected>What grade is your child in?</option>
-              <option>PreK</option>
-              <option>Kindergarden</option>
-              <option>1st Grade</option>
-              <option>2nd Grade</option>
-              <option>3rd Grade</option>
-              <option>4th Grade</option>
-              <option>5th Grade</option>
-              <option>6th Grade</option>
-              <option>7th Grade</option>
-              <option>8th Grade</option>
-              <option>9th Grade</option>
-              <option>10th Grade</option>
-              <option>11th Grade</option>
-              <option>12th Grade</option>
+              <option value="PreK">PreK</option>
+              <option value="K">Kindergarden</option>
+              <option value="1">1st Grade</option>
+              <option value="2">2nd Grade</option>
+              <option value="3">3rd Grade</option>
+              <option value="4">4th Grade</option>
+              <option value="5">5th Grade</option>
+              <option value="6">6th Grade</option>
+              <option value="7">7th Grade</option>
+              <option value="8">8th Grade</option>
+              <option value="9">9th Grade</option>
+              <option value="10">10th Grade</option>
+              <option value="11">11th Grade</option>
+              <option value="12">12th Grade</option>
             </select>
           </div>
           <div class="form-group">
             <select class="form-control">
               <option value="" disabled selected>When would you prefer to come in?</option>
               {% for day in page.weekly-schedule %} 
-                <option>{{ day.day }}</option>
+                <option value="{{ day.day }}">{{ day.day }}</option>
               {% endfor %}
+              <option value="other">Other</option>
             </select>
           </div>
           <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="Questions or Comments"></textarea>
+            <textarea id="signup-comments" class="form-control" rows="3" placeholder="Questions or Comments"></textarea>
           </div>
           <button type="submit" class="btn btn-light btn-lg btn-grow">OK!</button>
         </form>
@@ -177,24 +178,24 @@
         <h3>Reschedule a Class</h3>
         <form role="form">
           <div class="form-group">
-            <input type="text" class="form-control" id="inputName" placeholder="Parent Name">
+            <input type="text" class="form-control" id="makeup-parent" placeholder="Parent Name">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="inputName" placeholder="Student Name(s)">
+            <input type="text" class="form-control" id="makeup-student" placeholder="Student Name(s)">
           </div>
           <div class="row">
             <div class="col-sm-6 left-inline-input">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="email" class="form-control" id="makeup-email" placeholder="Email">
             </div>
             <div class="col-sm-6 right-inline-input">
-              <input type="tel" class="form-control" id="inputPhone" placeholder="Phone">
+              <input type="tel" class="form-control" id="makeup-phone" placeholder="Phone">
             </div>
           </div>
           <div class="form-group">
             <select class="form-control">
               <option value="" disabled selected>Which program is you child in?</option>
-              <option>Enrichment</option>
-              <option>Private Tutoring</option>
+              <option value="Enrichment">Enrichment</option>
+              <option value="PT">Private Tutoring</option>
             </select>
           </div>
           <div class="row form-spacer">
@@ -202,23 +203,23 @@
               <select class="form-control">
                 <option value="" disabled selected>Prefered Day</option>
                 {% for day in page.weekly-schedule %} 
-                  <option>{{ day.day }}</option>
+                  <option value="{{ day.day }}">{{ day.day }}</option>
                 {% endfor %}
-                <option>Other</option>
+                <option value="other">Other</option>
               </select>
             </div>
             <div class="col-sm-6 right-inline-input">
               <select class="form-control">
                 <option value="" disabled selected>Prefered Time</option>
                 {% for day in page.weekly-schedule %} 
-                  <option>{{ day.day }}</option>
+                  <option value="{{ day.day }}">{{ day.day }}</option>
                 {% endfor %}
-                <option>Other</option>
+                <option value="other">Other</option>
               </select>
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="Questions or Comments"></textarea>
+            <textarea id="makeup-comments" class="form-control" rows="3" placeholder="Questions or Comments"></textarea>
           </div>
           <button type="submit" class="btn btn-light btn-lg btn-grow">OK!</button>
         </form>
