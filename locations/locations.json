@@ -2,7 +2,7 @@
     {
         "Name": "Bellevue Center",
         "Slug": "bellevue",
-        "Address": "13427 NE 20th St. Ste 150",
+        "Address": "13427 NE 20th St, Ste 150",
         "City": "Bellevue",
         "State": "WA",
         "Zip": 98005,
@@ -74,7 +74,7 @@
     {
         "Name": "Renton Center",
         "Slug": "renton",
-        "Address": "4820 NE 4th St, A107",
+        "Address": "4820 NE 4th St, Ste A107",
         "City": "Renton",
         "State": "WA",
         "Zip": 98059,
@@ -110,7 +110,7 @@
     {
         "Name": "Woodinville Center",
         "Slug": "woodinville",
-        "Address": "13317 NE 175th St. Ste G",
+        "Address": "13317 NE 175th St, Ste G",
         "City": "Woodinville",
         "State": "WA",
         "Zip": 98072,
@@ -120,9 +120,9 @@
         "Phone": "(425) 368-3008"
     },
     {
-        "Name": "Allen center",
-        "Slug": "allen",
-        "Address": "2023 McDermott Dr, Suite 130",
+        "Name": "Allen Plano Center",
+        "Slug": "allen-plano",
+        "Address": "2023 McDermott Dr, Ste 130",
         "City": "Allen",
         "State": "TX",
         "Zip": 75013,
@@ -134,7 +134,7 @@
     {
         "Name": "Katy Center",
         "Slug": "katy",
-        "Address": "3750 S. Mason Rd.",
+        "Address": "3750 S Mason Rd",
         "City": "Katy",
         "State": "TX",
         "Zip": 77450,
@@ -146,7 +146,7 @@
     {
         "Name": "Lake Oswego Center",
         "Slug": "lake-oswego",
-        "Address": "16318 Bryant Rd.",
+        "Address": "16318 Bryant Rd",
         "City": "Lake Oswego",
         "State": "OR",
         "Zip": 97035,
@@ -156,9 +156,9 @@
         "Phone": "(503) 734-7467"
     },
     {
-        "Name": "Portland Central Center",
-        "Slug": "portland-central",
-        "Address": "15188 NW Central Dr, Suite 202",
+        "Name": "Portland NW Bethany Center",
+        "Slug": "portland-bethany",
+        "Address": "15188 NW Central Dr, Ste 202",
         "City": "Portland",
         "State": "OR",
         "Zip": 97229,
@@ -168,9 +168,9 @@
         "Phone": "(503) 734-7467"
     },
     {
-        "Name": "Portland Center",
-        "Slug": "portland-division",
-        "Address": "8733 SE Division St, Suite 209",
+        "Name": "SE Portland Center",
+        "Slug": "portland-se",
+        "Address": "8733 SE Division St, Ste 209",
         "City": "Portland",
         "State": "OR",
         "Zip": 97266,
@@ -182,7 +182,7 @@
     {
         "Name": "Mason Center",
         "Slug": "mason",
-        "Address": "5142 Cedar  Village Dr.",
+        "Address": "5142 Cedar Village Dr",
         "City": "Mason",
         "State": "OH",
         "Zip": 45040,
@@ -192,9 +192,9 @@
         "Phone": "(513) 445-9876"
     },
     {
-        "Name": "Gaithersburg Center",
+        "Name": "Gaithersburg-Kenlands Center",
         "Slug": "gaithersburg",
-        "Address": "364 Main Street, #200",
+        "Address": "364 Main Street, Ste 200",
         "City": "Gaithersburg",
         "State": "MD",
         "Zip": 20878,
@@ -218,7 +218,7 @@
     {
         "Name": "Cupertino Center",
         "Slug": "cupertino",
-        "Address": "20432 Silverado Ave, #215",
+        "Address": "20432 Silverado Ave, Ste 215",
         "City": "Cupertino",
         "State": "CA",
         "Zip": 95014,
@@ -242,7 +242,7 @@
     {
         "Name": "Oakland Center",
         "Slug": "oakland",
-        "Address": "919 Harrison St, Suite B",
+        "Address": "919 Harrison St, Ste B",
         "City": "Oakland",
         "State": "CA",
         "Zip": 94607,
@@ -253,8 +253,8 @@
     },
     {
         "Name": "San Francisco Center",
-        "Slug": "san-fransisco",
-        "Address": "1419 Powell St.",
+        "Slug": "san-fransisco-chinatown",
+        "Address": "1419 Powell St",
         "City": "San Francisco",
         "State": "CA",
         "Zip": 94133,
@@ -266,7 +266,7 @@
     {
         "Name": "San Jose Center",
         "Slug": "san-jose",
-        "Address": "1701 Lundy Ave, Suite 201",
+        "Address": "1701 Lundy Ave, Ste 201",
         "City": "San Jose",
         "State": "CA",
         "Zip": 95131,
@@ -290,7 +290,7 @@
     {
         "Name": "Elk Grove Center",
         "Slug": "elk-grove",
-        "Address": "7811 Laguna Blvd, Suite 165",
+        "Address": "7811 Laguna Blvd, Ste 165",
         "City": "Elk Grove",
         "State": "CA",
         "Zip": 95758,
@@ -302,7 +302,7 @@
     {
         "Name": "Reno Center",
         "Slug": "reno",
-        "Address": "748 S. Meadows Pkwy Suite A3",
+        "Address": "748 S Meadows Pkwy, Ste A3",
         "City": "Reno",
         "State": "NV",
         "Zip": 89521,
