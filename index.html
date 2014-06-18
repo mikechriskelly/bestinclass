@@ -14,17 +14,17 @@ title: Best in Class Education
 <div class="container">
   <div class="row">
     <div class="col-sm-4 promobox promobox1">
-      <h2>Enrichment</h2>
+      <h2><a href="{{ site.baseurl }}/programs/enrichment">Enrichment</a></h2>
       <img src="http://placehold.it/100x100" alt="Math and English" class="img-circle">
       <p>Small group classes catered to students’ individual strengths and areas for improvement in math and English. Program builds a foundation of skills and critical thinking to supplement school curriculum.</p>
     </div>
     <div class="col-sm-4 promobox promobox2">
-      <h2>Private Tutoring</h2>
+      <h2><a href="{{ site.baseurl }}/programs/privatetutoring">Private Tutoring</a></h2>
       <img src="http://placehold.it/100x100" alt="Private Tutoring" class="img-circle">
       <p>Experienced, private tutors work with students one-on-one – or two students can share a session. Students receive tailored assistance to build study skills, confidence and independence. Ideal for high school and middle school students seeking to achieve subject mastery.</p>
    </div>
     <div class="col-sm-4 promobox promobox3">
-      <h2>Gifted Test Prep</h2>
+      <h2><a href="{{ site.baseurl }}/programs/giftedprep">Gifted Test Prep</a></h2>
       <img src="http://placehold.it/100x100" alt="Gifted Test Prep" class="img-circle">
       <p>Courses for kindergarten through fourth grade students, providing test-taking strategy and test preparation for gifted program entrance exams.</p>
     </div>
@@ -34,30 +34,40 @@ title: Best in Class Education
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="{{ site.baseurl }}/images/photos/DSC_2109.jpg" alt="" class="img-responsive">
-      </div>
-      <div class="col-md-6">
-        <h2>Our Approach to Education</h2>
+        <h2 class="header-light"><a href="{{ site.baseurl }}/about/#approach">Our Approach to Education</a></h2>
         <p>Best In Class Education is not just our name, but our motto as well. We believe that individual needs require individual attention, which is why we provide customizable material and tailored teaching to meet each student’s specific needs.</p>
         <p>Our programs are designed to develop students’ knowledge acquisition, critical thinking abilities, and application of skills. We also monitor each student’s progress every step of the way using daily homework exercises and weekly tests to ensure that they are on track.</p>
         <p>Our goal is to motivate and encourage students to learn the basic principles of mathematics and English in a rewarding and enjoyable way. Your children will gain a sense of confidence and excitement towards learning. Get started today and give your children the gift of a lifetime.</p>
       </div>
+      <div class="col-md-6">
+        <img src="{{ site.baseurl }}/images/photos/DSC_2109.jpg" alt="" class="img-responsive">
+      </div>
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container news-clips-section">
   <div class="row">
     <div class="col-md-4">
-      <h2>Announcements</h2>
-      <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Consectetuer adipiscing elit, sed diam nonummy nibh.</li>
-        <li>Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</li>
+      <h2 class="header-dark"><a href="{{ site.baseurl }}/news">Announcements</a></h2>
+      <ul class="news-clips-list">
+        {% for post in site.categories.news | limit 5 %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
       </ul>
     </div>
     <div class="col-md-8">
-      <h2>Student Spotlight</h2>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+      <h2 class="header-dark"><a href="{{ site.baseurl }}/spotlight">Student Spotlight</a></h2>
+      {% for post in site.categories.spotlight | limit 2 %}
+        <div class="news-clips-post">
+          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+          {% if post.content contains '<!--more-->' %}
+            {{ post.content | split:'<!--more-->' | first | strip_html }}
+          {% else %}
+            {{ post.content | truncatewords: 80 | strip_html }}
+          {% endif %}
+          <span class="readmore"><a href="{{ site.baseurl }}{{ post.url }}">Read more <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>

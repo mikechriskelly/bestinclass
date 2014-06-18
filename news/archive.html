@@ -1,0 +1,19 @@
+---
+layout: default
+title: News & Announcements
+permalink: news/archive/index.html
+---
+
+<div class="container-fluid program-header program-photo" id="banner-img-news">
+  <div class="container">
+    <h1>News & Announcements</h1>
+  </div>
+</div>
+<div class="container archives">
+  <h3>The News Archives</h3>
+  <ul class="posts">
+    {% for post in site.categories.news %}
+      <li><span class="postmeta">{{ post.date | date_to_string }}</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

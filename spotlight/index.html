@@ -4,14 +4,24 @@ title: Student Spotlight
 ---
 
 <div class="container-fluid program-header program-photo" id="banner-img-spotlight">
+  <div class="container">
+    <h1>Student Spotlight</h1>
+  </div>
 </div>
-<div class="container" id="home">
-  <h1>Student Spotlight</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-    	{% if post.blog contains 'spotlight' %}
-      	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    	{% endif %}
-    {% endfor %}
-  </ul>
+<div class="container">
+  {% for post in site.categories.spotlight limit:7 %}
+    <div class="post">
+      <h3 class="posttitle">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h3>
+      <span class="postmeta">{{ post.date | date_to_string }}</span>
+      <p>{{ post.content }}</p>
+    </div>
+    <hr>
+  {% endfor %}
+  <div class="legend">
+    <p><a href="{{ site.baseurl }}/spotlight/archive">View Archive Posts</a></p>
+  </div>
 </div>

@@ -21,7 +21,6 @@ $header-font: 'bubblegum_sansregular', Helvetica, Arial, sans-serif;
 html,body {height: 100%;}
 body {
   margin-top: 0px;
-  padding-bottom: 20px;
 }
 a:hover {text-decoration: none;}
 
@@ -42,6 +41,16 @@ h1, h2, h3, .navbar-nav > li > a {
 #nearest-location a, #nearest-location-mobile a {
   margin-left: 0px;
   color: $color4;
+}
+
+.header-light {
+  color: #fff;
+  margin-top: 0;
+  a, a:hover, a:active {text-decoration: none; color: inherit; }
+}
+.header-dark {
+  color: $gray-dark;
+  a, a:hover, a:active {text-decoration: none; color: inherit; }
 }
 
 /* ---------------------------------- */
@@ -206,7 +215,6 @@ h1, h2, h3, .navbar-nav > li > a {
 .promobox4 > h2 {color: $color4;}
 .promobox5 > h2 {color: $color1-lighter;}
 .promobox6 > h2 {color: $color2-lighter;}
-.learnmore {text-align: center;}
 .rowspace {margin-top: 25px;};
 .circle {
   margin: 10px 4px;
@@ -220,8 +228,35 @@ h1, h2, h3, .navbar-nav > li > a {
   a {color: $color2;}
 }
 
+/* ---------------------------------- */
+/* News & Updates on Homepage         */
+/* ---------------------------------- */
+
 .special-programs-list {
   padding: 10px 0 0 50px;
+}
+
+.news-clips-section {
+  padding: 35px 0 50px 0;
+}
+.news-clips-post {
+  margin: 5px 0;
+  h4 {
+    font-size: $font-size-base;
+    font-weight: bold;
+    margin: 0; 
+  }
+}
+.news-clips-list li {
+  font-size: $font-size-base;
+  font-weight: bold; 
+}
+.readmore {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  font-size: $font-size-small;
+  padding-right: 20px;
 }
 
 /* ---------------------------------- */
@@ -267,7 +302,7 @@ h1, h2, h3, .navbar-nav > li > a {
   color: #fff;
   h1, h2 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
   margin: 60px 0 0 0;
-  padding: 20px 10px;
+  padding: 40px 10px;
   img { border: 5px solid #fff;}
 }
 .simple-shaded {
@@ -307,6 +342,45 @@ h1, h2, h3, .navbar-nav > li > a {
 
 .panel-default .panel-heading {
   background-color: #f5f7f9;
+}
+
+/* ---------------------------------- */
+/* Blogs: News and Spotlight          */
+/* ---------------------------------- */
+.post {
+  margin: 25px 0;
+}
+.posttitle {
+  margin: 0;
+  padding: 0;
+}
+.postmeta {
+  margin: 0;
+  padding: 0 10px 15px 0;
+  color: $color2;
+  font-size: $font-size-small;
+  font-style: italic;
+  font-weight: bold; 
+}
+
+.post img {
+  margin: 10px;
+  margin: 0 auto;
+  border: 5px solid #f5f7f9; 
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+@media (min-width: 768px) {
+  .post img.right { float: right; }
+}
+@media (min-width: 768px) {
+  .post img.left { float: left; }
+}
+.archives {
+  padding-bottom: 50px;
 }
 
 /* ---------------------------------- */
@@ -484,7 +558,9 @@ img.googlemap {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-
+.scroll-arrow, a.scroll-arrow, a.scroll-arrow:hover {
+  color: #fff;
+}
 .panel-schedule {
   text-align: center;
   background-color: $color2-lighter;
@@ -513,6 +589,7 @@ img.googlemap {
   font-size: $font-size-small;
   font-weight: bold;
   margin-top: 3px;
+  margin-bottom: 20px;
 }
 .legend-left {
   margin-right: 25px;
@@ -545,12 +622,12 @@ img.googlemap {
     }
   }
   .action-box {
-    min-height: 200px;
+    min-height: 150px;
     position: absolute;
     bottom: 0;
   }
   .class-schedule-col {
-    margin-top: 62px;
+    margin-top: 42px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -566,7 +643,7 @@ img.googlemap {
     }
   }
   .action-box {
-    min-height: 200px;
+    min-height: 150px;
     position: absolute;
     bottom: 0;
   }
@@ -608,15 +685,13 @@ img.googlemap {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); 
   }
 }
-.form-spacer { margin-top: 40px; }
+.form-spacer { margin-top: 35px; }
 p.form-label {
-  // font-size: $font-size-small;
-  // font-weight: bold;
   padding: 7px 0;
 }
 
 #signup {
-  background-color: #f5f7f9;
+  //background-color: #f5f7f9;
   height: auto;
   min-height: 100% !important;
   padding: 4em 0;
@@ -632,8 +707,8 @@ p.form-label {
   }
 }
 #makeup {
-  border-top: 1px solid $gray-lighter;
-  background-color: #F4F7F2;
+  //border-top: 1px solid $gray-lighter;
+  //background-color: #F4F7F2;
   height: auto;
   min-height: 100% !important;
   padding: 4em 0;

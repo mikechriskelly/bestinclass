@@ -1,0 +1,21 @@
+---
+layout: default
+title: Student Spotlight
+permalink: spotlight/archive/index.html
+---
+
+<div class="container-fluid program-header program-photo" id="banner-img-spotlight">
+  <div class="container">
+    <h1>Student Spotlight</h1>
+  </div>
+</div>
+<div class="container archives">
+  <h3>The Student Spotlight Archives</h3>
+  <ul class="posts">
+    {% for post in site.posts %}
+    	{% if post.blog contains 'spotlight' %}
+      	<li><span class="postmeta">{{ post.date | date_to_string }}</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    	{% endif %}
+    {% endfor %}
+  </ul>
+</div>

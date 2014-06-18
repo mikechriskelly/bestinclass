@@ -25,7 +25,7 @@
           <a href="#signup" class="btn btn-light btn-lg btn-grow">Get Started</a>
         </div>
         <div class="col-sm-4 hidden-xs class-schedule-col">
-          <a href="#class-info" class="btn btn-light btn-lg btn-grow">View Class Schedule</a>
+          <a href="#class-info" class="scroll-arrow"><i class="fa fa-caret-down fa-4x btn-grow"></i></a>
         </div>
         <div class="col-sm-4">
           <h3>Current Students</h3>
@@ -166,7 +166,7 @@
     </div>
   </div>
 </div>
-
+<hr>
 <div class="container-fluid" id="makeup">
   <div class="container">
     <div class="row">
@@ -204,7 +204,7 @@
             </div>
             <div class="col-md-4 left-inline-input">
               <select class="form-control" name="mRegDay" onchange="setOptions(document.mForm.mRegDay.options[document.mForm.mRegDay.selectedIndex].value, 'mRegTime');">
-                <option value="" disabled selected>Prefered Day</option>
+                <option value="" disabled selected>Scheduled Day</option>
                 {% for day in page.weekly-schedule %} 
                   <option value="{{ day.day }}">{{ day.day }}</option>
                 {% endfor %}
@@ -213,7 +213,7 @@
             </div>
             <div class="col-md-4 right-inline-input">
               <select class="form-control" name="mRegTime">
-                <option value="" disabled selected>Prefered Time</option>
+                <option value="" disabled selected>Scheduled Time</option>
               </select>
             </div>
           </div>

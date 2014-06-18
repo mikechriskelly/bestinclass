@@ -1,14 +1,15 @@
 {% include header.html %}
 
 <div class="container-fluid program-header program-photo" id="banner-img-spotlight">
+  <div class="container">
+    <h1>Student Spotlight</h1>
+  </div>
 </div>
 <div class="container">
-	<h2>{{ page.title }}</h2>
-	<p class="meta">{{ page.date | date_to_string }}</p>
-
+	<h3 class="posttitle">{{ page.title }}</h3>
+	<span class="postmeta">{{ page.date | date_to_string }}</span>
 	<div class="post">
 	{{ content }}
-	{% contentblock test %}
 	</div>
 </div>
 
