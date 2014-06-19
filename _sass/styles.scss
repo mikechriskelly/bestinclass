@@ -364,8 +364,6 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 
 .post img {
-  margin: 10px;
-  margin: 0 auto;
   border: 5px solid #f5f7f9; 
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -374,10 +372,10 @@ h1, h2, h3, .navbar-nav > li > a {
   border-radius: 6px;
 }
 @media (min-width: 768px) {
-  .post img.right { float: right; }
+  .post img.right { float: right; margin-left: 10px; }
 }
 @media (min-width: 768px) {
-  .post img.left { float: left; }
+  .post img.left { float: left; margin-right: 10px; }
 }
 .archives {
   padding-bottom: 50px;
@@ -462,7 +460,10 @@ h1, h2, h3, .navbar-nav > li > a {
   padding: 0;
 }
 .storelocator-panel .store-list .no-stores {
-  margin: 0 0 5px 0;
+  text-align: center;
+  font-size: $font-size-small;
+  font-weight: bold;
+  margin-bottom: 5px
 }
 .storelocator-panel .store .features {
   display: none;
