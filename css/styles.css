@@ -9554,9 +9554,18 @@ button {
 }
 
 /* ---------------------------------- */
+/* Privacy Policy */
+/* ---------------------------------- */
+/* line 812, ../_sass/styles.scss */
+.contact-info {
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
+/* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 813, ../_sass/styles.scss */
+/* line 820, ../_sass/styles.scss */
 footer {
   background-size: cover;
   background-repeat: no-repeat;
@@ -9568,41 +9577,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 823, ../_sass/styles.scss */
+/* line 830, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 827, ../_sass/styles.scss */
+/* line 834, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 831, ../_sass/styles.scss */
+/* line 838, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 836, ../_sass/styles.scss */
+/* line 843, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 840, ../_sass/styles.scss */
+/* line 847, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 842, ../_sass/styles.scss */
+/* line 849, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 845, ../_sass/styles.scss */
+/* line 852, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;
