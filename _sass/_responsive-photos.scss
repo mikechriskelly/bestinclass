@@ -4,6 +4,7 @@ $landing: 'bc-home';
 $about: 'aboutus';
 $beginnersinclass: 'beginnersinclass';
 //$careers: 'careers';
+$collegeprep: 'collegeprep';
 $contact: 'DSC_2030';
 $enrichment: 'enrichment';
 $giftedprep: 'giftedtestprep';
@@ -55,6 +56,15 @@ $min-lg: 992px; // old: 767px
 // @media only screen and (max-width: $max-sm) { 
 //   #banner-img-careers  { 
 //     background-image: url('../images/bannerphotos/' + $careers + '-sm.jpg'); }}
+
+#banner-img-collegeprep { 
+  background-image: url('../images/bannerphotos/' + $collegeprep + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-collegeprep { 
+    background-image: url('../images/bannerphotos/' + $collegeprep + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-collegeprep  { 
+    background-image: url('../images/bannerphotos/' + $collegeprep + '-sm.jpg'); }}
 
 #banner-img-enrichment { 
   background-image: url('../images/bannerphotos/' + $enrichment + '-lg.jpg'); } 

@@ -63,7 +63,7 @@ module.exports = function(grunt) {
     },
     // Generate different sized images for responsive banner photos
     responsive_images: {
-      dev: {
+      banners: {
         options: {
           sizes: [{
             name: 'sm',
@@ -90,8 +90,24 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           src: ['*.{jpg,gif,png}'],
-          cwd: '_responsive-images/photos-to-process',
+          cwd: '_assets/process-banners',
           dest: 'images/bannerphotos'
+        }]
+      },
+      managers: {
+        options: {
+          sizes: [{
+            width: 300,
+            height: 450,
+            aspectRatio: false,
+            rename: false,
+          }]
+        },
+        files: [{
+          expand: true,
+          src: ['*.{jpg,gif,png}'],
+          cwd: '_assets/process-managers',
+          dest: 'images/managers'
         }]
       },
     },
@@ -181,5 +197,6 @@ module.exports = function(grunt) {
   grunt.registerTask('serve',['default']);
   grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
   grunt.registerTask('deploy',['shell:deploy']);
-  grunt.registerTask('bannerpics',['responsive_images']);
+  grunt.registerTask('bannerpics',['responsive_images:banners']);
+  grunt.registerTask('managerpics',['responsive_images:managers']);
 };
