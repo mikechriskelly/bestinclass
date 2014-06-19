@@ -1,13 +1,18 @@
 <!-- Testimonials -->
 <div class="container-fluid section-shaded">
-	{% for testimonial in page.testimonials %}
-	  <div class="container testimonial-quote">
-	    <div class="media">
-	      <img src="http://placehold.it/100x100" alt="Testimonial" class="media-object img-circle {% cycle 'pull-left', 'pull-right' %}">
-	      <div class="media-body">
-	        <p>{{ testimonial.quote }}</p>
-	      </div>
-	    </div>
-	  </div>
+  {% for testimonial in page.testimonials %}
+    <div class="container testimonial-quote">
+      <div class="col-sm-3 {% cycle 'col-sm-push-9', '' %}">
+        <img src="{{ site.baseurl }}/images/testimonials/{{ testimonial.url }}" alt="Testimonial" class="img-circle img-responsive student-photo">
+      </div>
+      <div class="col-sm-9 {% cycle 'col-sm-pull-3', '' %}">
+        <div class="testimonial-text-outer {% cycle 'pull-right', 'pull-left' %}">
+          <div class="testimonial-text-inner">
+            <p>{{ testimonial.quote }}</p>
+            <p class="testimonial-name">{{ testimonial.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </div>

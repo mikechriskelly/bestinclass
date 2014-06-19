@@ -305,11 +305,6 @@ h1, h2, h3, .navbar-nav > li > a {
   padding: 40px 10px;
   img { 
     border: 5px solid #fff;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-    border-radius: 6px;
   }
 }
 .simple-shaded {
@@ -673,7 +668,7 @@ img.googlemap {
   }
 }
 @media (max-width: 767px) {
-  .manager-photo { margin: 0 auto; }
+  .manager-photo, .student-photo { margin: 0 auto; }
   .center-section {
     padding-top: 20px;
   }
@@ -751,8 +746,44 @@ p.form-label {
 /* ---------------------------------- */
 .testimonial-quote {
   margin: 0 auto;
-  max-width: 600px;
   padding: 20px 0;
+}
+.testimonial-text-outer {
+  padding-top: 10px; 
+}
+@media (min-width: 768px) {
+  .testimonial-text-outer {
+    max-width: 600px;
+    display: table;
+    height: 200px;
+    overflow: hidden;
+    padding-top: 0; 
+  }
+  .testimonial-text-inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .testimonial-text-outer:before { 
+    content: '\201C'; 
+    color: #265ea6;
+    font-size: 500%;
+    font-family: Times New Roman;
+    font-weight: bold; 
+    padding-right: 10px; 
+  } 
+  .testimonial-text-outer:after { 
+    content: '\201D';
+    color: #265ea6; 
+    font-size: 500%;
+    font-weight: bold; 
+    padding-left: 0px;
+    font-family: Times New Roman; 
+  }
+}
+.testimonial-name {
+  font-size: $font-size-small;
+  text-align: right;
+  padding: 0 30px 0 0;
 }
 
 /* ---------------------------------- */
