@@ -9,6 +9,8 @@ function initializeMap() {
   var isDraggable = $(document).width() > 480 ? true : false;
 
   // This fetches an array of 3 values: [latitude, longitude, city name]
+  // var position = [40.802918, -73.953107, 'New York'];
+  // var position = [33.303777, -111.932892, 'Phoenix'];
   var position = getLocationByIP();
 
   if(HAVELOCATION) {
@@ -31,9 +33,14 @@ function initializeMap() {
   var panelDiv = document.getElementById('location-list');
 
   var dataFeed = new BCBranchesDataSource();
-  
+
+  // Use custom Green Marker
+  // IE11 has a bug that prevents it from displaying SVG markers
+  var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./)
+  var bcMarker = isIE11? '../images/map-icon-green.png' : '../images/map-icon-green.svg';
+
   var view = new storeLocator.View(map, dataFeed, {
-    markerIcon: '../images/map-icon-green.svg',
+    markerIcon: bcMarker,
     geolocation: false // Set to true to use HTML5 geolocation (user will see location request in browser)
   });
 

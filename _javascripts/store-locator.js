@@ -296,8 +296,8 @@
       this.b.empty();
       // CUSTOM MODIFICATION
       // Set the display message for when there are no nearby locations
-      // c[E] ? b && !b[v](c[0][f]()) && this.b[J]('<li class="no-stores">The centers closest to you are listed below.</li>') : this.b[J]('<li class="no-stores">There are no BC centers in this area.</li>');
-      c[E] ? b && !b[v](c[0][f]()) && this.b[J]('') : this.b[J]('');
+      c[E] ? b && !b[v](c[0][f]()) && this.b[J]('<li class="no-stores">Sorry, no BC Centers here yet!<br>Nearest centers are listed below.</li>') : this.b[J]('<li class="no-stores">Sorry, no BC Centers here yet!<br>Nearest centers are listed below.</li>');
+      //c[E] ? b && !b[v](c[0][f]()) && this.b[J]('') : this.b[J]('');
       for (var b = function () {
         a[C](this.store, !0)
       }, g = 0, m = e.min(10, c[E]); g < m; g++) {
