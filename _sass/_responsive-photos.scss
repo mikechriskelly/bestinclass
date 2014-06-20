@@ -6,7 +6,7 @@ $about: 'aboutus';
 $beginnersinclass: 'beginnersinclass';
 //$careers: 'careers';
 $collegeprep: 'collegeprep';
-$contact: 'DSC_2030';
+$contact: 'contact';
 $enrichment: 'enrichment';
 $giftedprep: 'giftedtestprep';
 //$news:
@@ -66,6 +66,15 @@ $min-lg: 992px; // old: 767px
 @media only screen and (max-width: $max-sm) { 
   #banner-img-collegeprep  { 
     background-image: url('../images/bannerphotos/' + $collegeprep + '-sm.jpg'); }}
+
+#banner-img-contact { 
+  background-image: url('../images/bannerphotos/' + $contact + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-contact { 
+    background-image: url('../images/bannerphotos/' + $contact + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-contact  { 
+    background-image: url('../images/bannerphotos/' + $contact + '-sm.jpg'); }}
 
 #banner-img-enrichment { 
   background-image: url('../images/bannerphotos/' + $enrichment + '-lg.jpg'); } 

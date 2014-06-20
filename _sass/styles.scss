@@ -41,7 +41,7 @@ h1, h2, h3, .navbar-nav > li > a {
 }
 #nearest-location a, #nearest-location-mobile a {
   margin-left: 0px;
-  color: $color4;
+  color: $color3-lighter;
 }
 
 .header-light {
@@ -231,17 +231,7 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
   height: 34px;
   a {color: $color2;}
 }
-.bc-approach {
-  text-align: center;
-  margin-bottom: 30px;
-  img { padding: 20px; }
-}
-@media (max-width: 767px) {
-  .bc-approach img {
-    display: block;
-    margin: 10px auto;
-  }
-}
+
 /* ---------------------------------- */
 /* News & Updates on Homepage         */
 /* ---------------------------------- */
@@ -318,7 +308,7 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
   background-repeat:no-repeat;
   background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICB2aWV3Qm94PScwIDAgMTAwIDEwMCc+Cgk8bGluZWFyR3JhZGllbnQgaWQ9J2cxJyB4MT0nMCUnIHkxPScwJScgeDI9JzUwJScgeTI9Jzc1JSc+CgkJPHN0b3Agb2Zmc2V0PSc1MCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMwMDBlMzM7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMjY1ZWE2O3N0b3Atb3BhY2l0eTowJyAvPgoJPC9saW5lYXJHcmFkaWVudD4KCTxsaW5lYXJHcmFkaWVudCBpZD0nZzInIHgxPScwJScgeTE9JzAlJyB4Mj0nMCUnIHkyPSc1MCUnPgoJCTxzdG9wIG9mZnNldD0nMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMwMDBlMzM7c3RvcC1vcGFjaXR5OjEnIC8+CgkJPHN0b3Agb2Zmc2V0PScxMDAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMjY1ZWE2O3N0b3Atb3BhY2l0eTowJyAvPgoJPC9saW5lYXJHcmFkaWVudD4KCTxsaW5lYXJHcmFkaWVudCBpZD0nZzIxJyB4MT0nNTAlJyB5MT0nMCUnIHgyPScwJScgeTI9JzAlJz4KCQk8c3RvcCBvZmZzZXQ9JzAlJyBzdHlsZT0nc3RvcC1jb2xvcjojMDAwZTMzO3N0b3Atb3BhY2l0eToxJyAvPgoJCTxzdG9wIG9mZnNldD0nMTAwJScgc3R5bGU9J3N0b3AtY29sb3I6IzI2NWVhNjtzdG9wLW9wYWNpdHk6MCcgLz4KCTwvbGluZWFyR3JhZGllbnQ+Cgk8cmFkaWFsR3JhZGllbnQgaWQ9J2czJyBjeD0nMCUnIGN5PScwJScgcj0nMTAwJSc+CgkJPHN0b3Agb2Zmc2V0PScwJScgc3R5bGU9J3N0b3AtY29sb3I6IzAwMGUzMztzdG9wLW9wYWNpdHk6MScgLz4KCQk8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0eWxlPSdzdG9wLWNvbG9yOiMyNjVlYTY7c3RvcC1vcGFjaXR5OjAnIC8+Cgk8L3JhZGlhbEdyYWRpZW50PgoJPGcgdHJhbnNmb3JtPSdyb3RhdGUoMTMwKSB0cmFuc2xhdGUoMjEuMiAtNDkuNSknPgoJCTxyZWN0IHg9Jy01MCUnIHk9Jy01MCUnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbGw9JyMwMDUyOWMnIC8+CgkJPHJlY3QgeD0nNTAlJyB5PSctNTAlJyB3aWR0aD0nMCUnIGhlaWdodD0nMTAwJScgZmlsbD0ndXJsKCNnMSknIC8+CgkJPHJlY3QgeD0nLTUwJScgeT0nNTAlJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMiknIC8+CgkJPHJlY3QgeD0nLTUwJScgeT0nNTAlJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMjEpJyAvPgoJPHJlY3QgeD0nNTAlJyB5PSc1MCUnIHdpZHRoPScwJScgaGVpZ2h0PScwJScgZmlsbD0ndXJsKCNnMyknIC8+Cgk8L2c+Cjwvc3ZnPg==');
   color: #fff;
-  h1, h2 {
+  h1, h2, h3 {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
@@ -364,7 +354,6 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
 }
 .nav-tabs {text-align:center;}
 .tab-pane {padding-top: 25px;}
-
 
 .panel-default .panel-heading {
   background-color: #f5f7f9;
@@ -732,6 +721,7 @@ img.googlemap {
   padding: 15px;
   text-align: center;
   h1, h2, h3 {
+    color: #fff;
     text-align: center;
     margin: 10px 0; 
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); 
@@ -751,7 +741,7 @@ p.form-label {
   h4 {
     font-size: $font-size-base;
     font-weight: bold;
-    margin: 7px 0 0 0;
+    margin: 25px 0 0 0;
     padding: 0;
   }
 }
@@ -764,7 +754,7 @@ p.form-label {
   h4 {
     font-size: $font-size-base;
     font-weight: bold;
-    margin: 7px 0 0 0;
+    margin: 25px 0 0 0;
     padding: 0;
   }
 }
@@ -866,13 +856,32 @@ button {
   border-color: $color2;
 }
 /* ---------------------------------- */
-/* Privacy Policy */
+/* Other Pages */
 /* ---------------------------------- */
 .contact-info {
   padding-left: 50px;
   padding-bottom: 25px;
 }
-
+.bc-approach {
+  text-align: center;
+  margin-bottom: 30px;
+  img { padding: 20px; }
+}
+@media (max-width: 767px) {
+  .bc-approach img {
+    display: block;
+    margin: 10px auto;
+  }
+}
+@media (min-width: 992px) {
+  .approach-text {
+    margin-top: 60px;
+  }
+}
+.contact-form {
+  padding: 20px 0;
+  text-align: center;
+}
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */

@@ -9,5 +9,48 @@ title: Contact | Best in Class Education
    </div>
 </div>
 <div class="container">
-  <p>At Best in Class, we value constructive communication and we’d love to hear from you. Whether you have a general question, feedback or any type of suggestion that may allow us to improve our teaching materials or our services so that our parents and students have the best possible experience, we welcome your thoughts.</p>
+  <div class="row">
+    <div class="col-sm-5">
+      <h2>Any Questions?</h2>
+      <p>Parents, we love hearing from you. We're always improving our teaching materials and services to build the best afterschool learning programs possible. If you have a question, feedback, or suggestion for us, do share!</p>
+    </div>
+    <div class="col-sm-7 contact-form">
+      <form role="form" name="contact-form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+        </div>
+        <div class="row">
+          <div class="col-sm-6 left-inline-input">
+            <input type="email" class="form-control" id="contact-email" placeholder="Your Email">
+          </div>
+          <div class="col-sm-6 right-inline-input">
+            <input type="tel" class="form-control" id="contact-phone" placeholder="Your Phone">
+          </div>
+        </div>
+        <div class="form-group form-spacer">
+          <select class="form-control">
+            <option value="" disabled selected>You are a...</option>
+            <option value="Parent">Parent</option>
+            <option value="Student">Student</option>
+            <option value="Instructor">Instructor</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control">
+            <option value="" disabled selected>Which center would you like to contact?</option>
+            <option value="None">Headquarters</option>
+            {% for location in site.data.locations %} 
+              <option value="{{ location.Name }}">{{ location.State }} - {{ location.Name }}</option>
+            {% endfor %}
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="contact-comments" class="form-control" rows="5" placeholder="Questions or Comments"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg btn-grow">OK!</button>
+      </form>
+    </div>
+  </div>
 </div>
