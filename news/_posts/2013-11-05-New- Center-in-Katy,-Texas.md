@@ -1,6 +1,6 @@
 ---
 layout: post-news
-blog: spotlight
+blog: news
 published: true
 categories: [press release]
 ---

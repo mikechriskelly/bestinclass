@@ -349,6 +349,13 @@ h1, h2, h3, .navbar-nav > li > a {
 /* ---------------------------------- */
 /* Blogs: News and Spotlight          */
 /* ---------------------------------- */
+.post h1, .post h2, .post h3, .post h4 { 
+  font-family: $header-font;
+  margin-bottom: 0;
+}
+.post h3, .post h4 { 
+  margin-top: 20px;
+}
 .post {
   margin: 25px 0;
 }

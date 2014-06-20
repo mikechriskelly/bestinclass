@@ -1,7 +1,7 @@
 ---
 layout: post-spotlight
 blog: spotlight
-published: true
+published: false
 ---
 
 The filename of these MD files determines the date and title of blog posts. 
