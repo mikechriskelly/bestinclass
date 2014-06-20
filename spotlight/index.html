@@ -10,14 +10,21 @@ title: Student Spotlight
 </div>
 <div class="container">
   {% for post in site.categories.spotlight limit:7 %}
-    <div class="post">
-      <h3 class="posttitle">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h3>
-      <span class="postmeta">{{ post.date | date_to_string }}</span>
-      <p>{{ post.content }}</p>
+    <div class="row">
+      <div class="col-sm-9 post">
+        <h3 class="posttitle">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <span class="postmeta">{{ post.date | date_to_string }}</span>
+        <p>{{ post.content }}</p>
+      </div>
+      <div class="col-sm-3 photo-col">
+      {% for photo in post.photos %}
+        <img class="img-responsive border blog-photo" src="{{ site.baseurl }}{{ photo.src }}" title="{{ photo.title }}" alt="{{ photo.alt }}">
+      {% endfor %}
+      </div>
     </div>
     <hr>
   {% endfor %}

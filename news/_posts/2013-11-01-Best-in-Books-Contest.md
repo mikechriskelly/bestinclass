@@ -3,9 +3,14 @@ layout: post-news
 blog: news
 published: true
 categories: [news]
+
+photos:
+ - src: /news/images/haoandsteve.jpg
+   title: Mr. Lam Reading
+   alt: Mr. Lam Reading a Book
 ---
 
-{% img img-responsive right /news/images/haoandsteve.jpg 'Mr. Lam Reading' 'Mr. Lam Reading a Book' %} We're excited to announce the Best in Books campaign: contest to celebrate books and encourage reading during the upcoming holiday season. 
+We're excited to announce the Best in Books campaign: contest to celebrate books and encourage reading during the upcoming holiday season. 
 
 Readers of all ages are encouraged to share the story of the book that changed their life on the Best in Class Facebook page. Every reader who shares the story attached to his/her life-changing book will be entered for a chance to win an Amazon Kindle FireHDX and Amazon.com gift cards.
 

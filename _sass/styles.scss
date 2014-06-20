@@ -228,7 +228,17 @@ h1, h2, h3, .navbar-nav > li > a {
   height: 34px;
   a {color: $color2;}
 }
-
+.bc-approach {
+  text-align: center;
+  margin-bottom: 30px;
+  img { padding: 20px; }
+}
+@media (max-width: 767px) {
+  .bc-approach img {
+    display: block;
+    margin: 10px auto;
+  }
+}
 /* ---------------------------------- */
 /* News & Updates on Homepage         */
 /* ---------------------------------- */
@@ -381,12 +391,17 @@ h1, h2, h3, .navbar-nav > li > a {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
+
+@media (max-width: 767px) {
+  .manager-photo, .student-photo, .blog-photo { margin: 0 auto; }
+}
 @media (min-width: 768px) {
   .post img.right, img.right { float: right; margin-left: 10px; }
-}
-@media (min-width: 768px) {
   .post img.left, img.left { float: left; margin-right: 10px; }
+  .photo-col { margin-top: 100px; }
+  .blog-photo { margin-bottom: 20px; }
 }
+
 .archives {
   padding-bottom: 50px;
 }
@@ -676,7 +691,6 @@ img.googlemap {
   }
 }
 @media (max-width: 767px) {
-  .manager-photo, .student-photo { margin: 0 auto; }
   .center-section {
     padding-top: 20px;
   }

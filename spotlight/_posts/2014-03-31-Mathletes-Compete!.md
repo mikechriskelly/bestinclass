@@ -2,9 +2,14 @@
 layout: post-spotlight
 blog: spotlight
 published: true
+
+photos:
+ - src: /spotlight/images/2014mathcompwin.jpg
+   title: Math Competition Winner
+   alt: Math competition winner shows his trophy
+
 ---
 
-{% img img-responsive right /spotlight/images/2014mathcompwin.jpg 400 auto 'Math Competition Winner' 'Math competition winner shows his trophy' %}
 The second annual Best in Class Math Competition was as fun-filled and exciting as ever! The competition was filled with surprises as over one hundred students from Best in Class’ Washington state centers competed for first prize. Showing off their hard-earned mathematics skills, students strove to win a Best in Class Math Competition Trophy. Students arrived at the competition eager, excited, and of course, a little nervous to take the written test in the first round. While students vigorously calculated and problem solved, family and friends got the opportunity to meet with local affiliates and sponsors. Our program featured booths by Art Program instructors Haesung Yoon and Karen Yuen, chess lessons from Chess4Life, free photography from Benz Photography, and martial arts demonstrations by Seattle Shaolin Kung Fu Academy.
 
 <!--more-->

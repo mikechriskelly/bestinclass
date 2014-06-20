@@ -3,9 +3,14 @@ layout: post-news
 blog: news
 published: true
 categories: [press release]
+
+photos:
+ - src: /news/images/katyfront.jpg
+   title: Pryia Venket
+   alt: Pryia Venket, owner of Best in Class Katy Center
 ---
 
-{% img img-responsive right /news/images/katyfront.jpg 225 auto 'Pryia Venket' 'Pryia Venket, owner of Best in Class Katy Center' %} Best in Class Education Center announces the opening of its second location in the state of Texas at 2023 West McDermott Drive #130, Allen, TX on November 9, 2013.
+The second Best in Class center in the state of Texas is now open in the city of Allen.
 
 <!--more-->
 

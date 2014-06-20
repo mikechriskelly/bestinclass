@@ -3,9 +3,14 @@ layout: post-news
 blog: news
 published: true
 categories: [news]
+
+photos:
+ - src: /news/images/eduexpo2012.jpg
+   title: 2014 Seattle Education Exposition
+   alt: Best in Class Staff at the 2014 Seattle Education Exposition
 ---
 
-{% img img-responsive right /news/images/eduexpo2012.jpg '2014 Seattle Education Exposition' 'Best in Class Staff at the 2014 Seattle Education Exposition' %} Please join us for the 5th annual Seattle Education Exposition and Guest Speaker Series on October 26th, 2013 at Newport High School in Bellevue.  In a conscious effort to promote higher education access for students, multiple universities and education centers have teamed up with McDonald’s to provide FREE workshops with information, Q & A sessions, presentations, and FREE SAT practice exams! This event is brought to you by McDonald's and is co-sponsored by Rhythm Media Group, Northwest Chinese School, and Best in Class Education Center.
+Please join us for the 5th annual Seattle Education Exposition and Guest Speaker Series on October 26th, 2013 at Newport High School in Bellevue.  In a conscious effort to promote higher education access for students, multiple universities and education centers have teamed up with McDonald’s to provide FREE workshops with information, Q & A sessions, presentations, and FREE SAT practice exams! This event is brought to you by McDonald's and is co-sponsored by Rhythm Media Group, Northwest Chinese School, and Best in Class Education Center.
 
 <!--more-->
 
