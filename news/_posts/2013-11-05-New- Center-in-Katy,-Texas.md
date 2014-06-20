@@ -8,6 +8,9 @@ photos:
  - src: /news/images/katyfront.jpg
    title: Pryia Venket
    alt: Pryia Venket, owner of Best in Class Katy Center
+ - src: /news/images/katyfront.jpg
+   title: Pryia Venket
+   alt: Pryia Venket, owner of Best in Class Katy Center
 ---
 
 The second Best in Class center in the state of Texas is now open in the city of Allen.

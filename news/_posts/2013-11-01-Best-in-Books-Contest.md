@@ -16,7 +16,7 @@ Readers of all ages are encouraged to share the story of the book that changed t
 
 <!--more-->
 
-Everyone has that one special book that really made a difference in his or her life. For Hao Lam, foudner of Best in Class, that book would have to be *Steve Jobs* by Walter Isaacson. He reads this book over and over again, each time learning something new that he can apply to his business. 
+Everyone has that one special book that really made a difference in his or her life. For Hao Lam, founder of Best in Class, that book would have to be *Steve Jobs* by Walter Isaacson. He reads this book over and over again, each time learning something new that he can apply to his business. 
 
 We're excited to find out what books are making an impact in your life. We'd like to create a pathway for you to learn about books you may not have heard of before.
 

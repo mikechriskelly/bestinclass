@@ -7,14 +7,13 @@
 // Variables
 // --------------------------------------------------
 
-//== Colors
-//
-$color1: #00529C; // blue
-$color2: #006838; // green (old green: #49D200;)
+// Website Colors
+$color1: #00529C; // BC Blue
+$color2: #006838; // BC Green (old green: #49D200;)
 $color3: #DF0030; // red
 $color4: #F18D00; // orange
-$color1-lighter: #265EA6; // lighten($color1, 5%);
-$color2-lighter: #00703e; // #2F8C2B; //lighten($color2, 5%);
+$color1-lighter: #265EA6; // lighter blue
+$color2-lighter: #00703e; // lighter green
 $color3-lighter: lighten($color3, 5%);
 $color4-lighter: lighten($color4, 5%);
 $color1-darker: darken($color1, 5%);
@@ -22,8 +21,15 @@ $color2-darker: darken($color2, 5%);
 $color3-darker: darken($color3, 5%);
 $color4-darker: darken($color4, 5%);
 
-//## Gray and brand colors for use across Bootstrap.
+// Program Colors
+$color-enrichment: #F18D00; // orange
+$color-pt: #00703E; 		// green
+$color-beginners: #4A90E2; 	// baby blue
+$color-gifted: #93296F; 	// purple
+$color-sat: #DF0030; 		// red
+$color-others: #00539C; 	// navy blue
 
+//## Gray and brand colors for use across Bootstrap.
 $gray-darker:            lighten(#000, 13.5%); // #222
 $gray-dark:              lighten(#000, 20%);   // #333
 $gray:                   lighten(#000, 33.5%); // #555
