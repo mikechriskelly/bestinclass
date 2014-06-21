@@ -8,16 +8,68 @@ title: Careers | Best in Class Education
     <h1>Careers</h1>
    </div>
 </div>
-
 <div class="container">
-  <p>Passion for education and satisfaction in helping students succeed runs deep in our DNA here at Best in Class Education Center, and we take adding new members to our team very seriously. If you believe you possess knowledge that could be passed on as a gift to others and you’re looking for a fast-paced, thriving environment where new ideas are welcome, where teamwork and collaboration occur daily and would like to work in place where ensuring student success is not an option, but a requirement, then you could become a valued member of the Best in Class family.</p>
-  <h2>Available Positions</h2>
-  <h4>Private Tutors and Instructors</h4>
-  <p>We’re looking for candidates who have at least a four-year degree and two tears of teaching experience. Available positions for subjects and grade level vary by location. Pay is DOE and competitive, and we offer 401(k) and medical benefits for those who are eligible.</p>
-  <p>If you have browsed the different programs we offer and are interested in teaching any of them, please email careers@bestinclasseducation.com to inquire about any Washington location(s), or visit your nearest center’s page for the main contact: http://mikechriskelly.github.io/bestinclass/locations/</p>
-  <h4>Teaching Assistant</h4>
-  <p>Our teaching assistant program is an excellent opportunity for juniors and seniors in high school, as well as for college students that have excelled academically, to learn about the rewards of teaching and making a difference in the lives of younger students.</p>
-  <p>Teaching Assistants handle a variety of responsibilities, including grading student work, maintaining progress records, as well as administrative duties such as answering phones and assisting in tutoring elementary-age students.</p>
-  <p>Teaching Assistants must be at least 16 years of age and be able to demonstrate advanced knowledge of math, proper grammar, spelling and English usage. Pay varies by location.</p>
-  <p>If you are interested in becoming a Teaching Assistant, please fill out the form below.</p>
+  <div class="row">
+    <div class="col-sm-5 career-text">
+      <h2>Love What You Do.</h2>
+      <p>Passion for education and satisfaction in helping students succeed runs deep in our DNA here at Best in Class Education Center. If you share this passion, you could potentially be a great fit for the Best in Class family!</p>
+      <h4>Private Tutors and Instructors</h4>
+      <p>We’re looking for candidates who have at least a four-year degree and two tears of teaching experience to fill Teaching, Teaching Assistant and Management roles. Available positions for subjects and grade level vary by location. Pay is DOE and competitive.</p>
+      <h4>Teaching Assistants</h4>
+      <p>Our teaching assistant program is an excellent opportunity for juniors and seniors in high school, as well as for college students that have excelled academically, to learn about the rewards of teaching and making a difference in the lives of younger students.</p>
+      <p>Teaching Assistants handle a variety of responsibilities, including grading student work, maintaining progress records, as well as administrative duties such as answering phones and assisting in tutoring elementary-age students. </p>
+    </div>
+    <div class="col-sm-7 career-form">
+      <form role="form" name="career-form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="career-name" placeholder="Your Name">
+        </div>
+        <div class="row">
+          <div class="col-sm-6 left-inline-input">
+            <input type="email" class="form-control" id="career-email" placeholder="Your Email">
+          </div>
+          <div class="col-sm-6 right-inline-input">
+            <input type="tel" class="form-control" id="career-phone" placeholder="Your Phone">
+          </div>
+        </div>
+        <div class="form-group form-spacer">
+          <select class="form-control">
+            <option value="" disabled selected>You are a...</option>
+            <option value="Parent">Parent</option>
+            <option value="Student">Student</option>
+            <option value="Instructor">Instructor</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control">
+            <option value="" disabled selected>Which position are you interested in?</option>
+            <option value="Tutor">Tutor</option>
+            <option value="TA">Teaching Assistant</option>
+            <option value="Other">Management/Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control">
+            <option value="" disabled selected>Where would you like to work?</option>
+            <option value="None">Washington Locations</option>
+            {% for location in site.data.locations %}
+            {% if location.State != 'WA' %}
+              <option value="{{ location.Name }}">{{ location.State }} - {{ location.Name }}</option>
+            {% endif %}
+            {% endfor %}
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <label for="career-resume" class="resume-label">Please attach your resume and include a cover letter.</label>
+        <div class="form-group form-spacer">
+          <input type="file" id="career-resume">
+      </div>
+        <div class="form-group">
+          <textarea id="career-comments" class="form-control" rows="5" placeholder="Tell us about yourself!"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg btn-grow">OK!</button>
+      </form>
+    </div>
+  </div>
 </div>
