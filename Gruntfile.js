@@ -153,7 +153,7 @@ module.exports = function(grunt) {
           'news/*.html',
           'news/_posts/*.md',
           'policy/*.html',
-          'programs/*.html',
+          'programs/**/*.html',
           'spotlight/*.html',
           'spotlight/_posts/*.md',
           'css/*.css',

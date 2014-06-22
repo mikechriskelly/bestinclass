@@ -248,7 +248,8 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
 }
 
 .news-clips-section {
-  padding: 35px 0 50px 0;
+  padding-top: 35px;
+  padding-bottom: 50px;
 }
 .news-clips-post {
   margin: 5px 0;
@@ -882,6 +883,12 @@ button {
 .resume-label {
   padding-top: 10px;
   font-weight: normal;
+}
+.table {
+  font-size: $font-size-small;
+}
+.col-label {
+  font-weight: bold;
 }
 /* ---------------------------------- */
 /* Footer */

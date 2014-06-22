@@ -1,0 +1,15 @@
+{% include header.html %}
+
+<div class="container-fluid program-header program-photo" id="banner-img-{{ page.slug }}">
+  <div class="container">
+    <h1>{{ page.program.title }}</h1>
+    <p>{{ page.program.description }}</p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">  
+  {{ content }}
+</div>
+{% include gotocenter.html %}
+{% include footer.html %}
