@@ -13,10 +13,11 @@ function initializeMap() {
   // var position = [33.303777, -111.932892, 'Phoenix'];
   var position = getLocationByIP();
 
+  var initialZoom;
   if(HAVELOCATION) {
-    var initialZoom = 8;
+    initialZoom = 8;
   } else {
-    var initialZoom = $(document).width() > 480 ? 4 : 3;
+    initialZoom = $(document).width() > 480 ? 4 : 3;
   }
 
   // Set position and interaction controls for map
@@ -36,7 +37,7 @@ function initializeMap() {
 
   // Use custom Green Marker
   // IE11 has a bug that prevents it from displaying SVG markers
-  var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./)
+  var isIE11 = !!navigator.userAgent.match(/Trident.*rv[ :]*11\./);
   var bcMarker = isIE11? '../images/map-icon-green.png' : '../images/map-icon-green.svg';
 
   var view = new storeLocator.View(map, dataFeed, {

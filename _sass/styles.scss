@@ -428,6 +428,7 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
 /* ---------------------------------- */
 
 @media (max-width: 767px) { 
+  .sorry-no-stores { display: none; }
   #location-list {
     margin-bottom: 10px;
   }
@@ -437,6 +438,7 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
   }
 }
 @media (min-width: 768px) {
+  .sorry-no-stores { display: block; }
   #location-list {
     margin-bottom: none;
   }
@@ -515,6 +517,7 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
   font-weight: bold;
 }
 .gm-style-iw {
+  font-size: 0.8em;
   background-color: #fff;
   color: #000;
   text-shadow: none;
@@ -550,7 +553,7 @@ div.store, form.storelocator-filter {
 .store .action {
   font-size: 0.8em;
   padding: 0;
-  margin: 0 1em 0 0;
+  margin: 0 4px 0 0;
   text-decoration: none;
   font-weight: bold;
 }

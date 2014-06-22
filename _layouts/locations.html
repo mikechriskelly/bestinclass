@@ -1,5 +1,10 @@
 {% include header.html %}
-{{ content }}
+<!--[if lte IE 9]>
+<script type="text/javascript">
+	window.location = '{{ site.baseurl }}/locations/all-locations';
+</script>
+<![endif]-->
 <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDkle0NnqmA1_SRl0tfj4MOEQbTigNZkdY&sensor=false"></script>
 <script src="{{ site.baseurl }}/js/locationsmap.min.js"></script>
+{{ content }}
 {% include footer.html %}

@@ -67,10 +67,10 @@
 [ewcalendar] .c-grid .c-row {
   width: 100%;
   height: 13.08571%;
-  height: -moz-calc(100%/7);
-  height: -o-calc(100%/7);
-  height: -webkit-calc(100%/7);
-  height: calc(100%/7);
+  height: -moz-calc(100% / 7);
+  height: -o-calc(100% / 7);
+  height: -webkit-calc(100% / 7);
+  height: calc(100% / 7);
 }
 
 [ewcalendar] .c-grid .c-row:last-child {
@@ -78,11 +78,7 @@
 }
 
 [ewcalendar] .c-grid .c-row .c-day {
-  width: 14.28571%;
-  width: -moz-calc(100%/7);
-  width: -o-calc(100%/7);
-  width: -webkit-calc(100%/7);
-  width: calc(100%/7);
+  width: 14.27%;
   height: 100%;
   display: inline-block;
   position: relative;
