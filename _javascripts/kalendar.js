@@ -192,7 +192,8 @@
         $day.on('click', { "day": this.options.eventsParsed[strtime], "self": this, "date": tempDate.getTime(), "strtime": strtime}, this.showDay);
         
         // If the event is titled "No Class" then display an icon
-        if(this.options.eventsParsed[strtime][0].title === 'No Class') {
+        var eventTitle = this.options.eventsParsed[strtime][0].title;
+        if(eventTitle === 'No Class' || eventTitle === 'NO CLASS') {
           var $noSchoolDay = $day.find('div.date-holder');
           $day.addClass('no-school-day');
           $noSchoolDay.prepend('<i class="fa fa-times-circle"></i>');
