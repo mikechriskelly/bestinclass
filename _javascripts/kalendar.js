@@ -192,11 +192,18 @@
         $day.on('click', { "day": this.options.eventsParsed[strtime], "self": this, "date": tempDate.getTime(), "strtime": strtime}, this.showDay);
         
         // If the event is titled "No Class" then display an icon
+        var reNoClass = /no\s?class/i;
+        var reMakeup = /make[-]?up/i;
+
         var eventTitle = this.options.eventsParsed[strtime][0].title;
-        if(eventTitle === 'No Class' || eventTitle === 'NO CLASS') {
+        if(eventTitle.match(reNoClass) && !eventTitle.match(reMakeup)) {
           var $noSchoolDay = $day.find('div.date-holder');
           $day.addClass('no-school-day');
           $noSchoolDay.prepend('<i class="fa fa-times-circle"></i>');
+        } else if(eventTitle.match(reNoClass) && eventTitle.match(reMakeup)) {
+          var $noSchoolDay = $day.find('div.date-holder');
+          $day.addClass('no-school-day');
+          $noSchoolDay.prepend('<i class="fa fa-warning"></i>');
         } else {
           var $eventDay = $day.find('div.date-holder');
           $day.addClass('have-events');
