@@ -132,6 +132,18 @@
         "Phone": "(972) 656-9242"
     },
     {
+        "Name": "Austin Center",
+        "Slug": "austin",
+        "Address": "13376 Research Blvd, Ste 127",
+        "City": "Austin",
+        "State": "TX",
+        "Zip": 78750,
+        "Lat": 30.4438292,
+        "Lon": -97.7872302,
+        "Email": "nwaustin@bicedu.com",
+        "Phone": "(512) 375-3245"
+    },
+    {
         "Name": "Katy Center",
         "Slug": "katy",
         "Address": "3750 S Mason Rd",

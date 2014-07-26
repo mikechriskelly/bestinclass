@@ -10,6 +10,9 @@
             <br><i class="fa fa-phone"></i>&nbsp;&nbsp;<a href="tel:{{ page.phone }}">{{ page.phone }}</a>
             <br><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:{{ page.email }}">{{ page.email }}</a>
           </p>
+          {% if page.centerstatus %}
+            <h4>{{ page.centerstatus }}</h4>
+          {% endif %}
         </div>
       </div>
       <div class="col-sm-6">
