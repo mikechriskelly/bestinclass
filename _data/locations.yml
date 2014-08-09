@@ -176,6 +176,17 @@
     Email: "lakeoswego@bicedu.com"
     Phone: "(503) 734-7467"
   - 
+    Name: "Beaverton Center"
+    Slug: "beaverton"
+    Address: "16165 SW Regatta Ln, Ste 800"
+    City: "Beaverton"
+    State: "OR"
+    Zip: 97006
+    Lat: 45.517693
+    Lon: -122.843454
+    Email: "beaverton@bicedu.com"
+    Phone: "(503) 970-8288"
+  - 
     Name: "Mason Center"
     Slug: "mason"
     Address: "5142 Cedar Village Dr"
