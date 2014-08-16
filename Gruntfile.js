@@ -200,7 +200,7 @@ module.exports = function(grunt) {
   //grunt.registerTask('default',['watch']);
   grunt.registerTask('serve',['default']);
   grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
-  grunt.registerTask('deploy',['shell:deploy']);
+  grunt.registerTask('deploy',['shell:build','shell:deploy']);
   grunt.registerTask('bannerpics',['responsive_images:banners']);
   grunt.registerTask('managerpics',['responsive_images:managers']);
 };
