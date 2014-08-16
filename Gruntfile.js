@@ -4,10 +4,14 @@ module.exports = function(grunt) {
     // Shell commands to send to jekyll
     shell: {
       build: {
+        options: {
+          stdout: true,
+          stderr: true
+        },
         command: 'jekyll build'
       },
       serve: {
-        command: 'jekyll serve --baseurl ""'
+        command: 'jekyll serve --config _config.yml,_config-dev.yml'
       },
       deploy: {
         command: 'bundle exec rake blog:publish'
