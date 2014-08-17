@@ -65,6 +65,27 @@ module.exports = function(grunt) {
         }
       }
     },
+    cacheBust: {
+      options: {
+        encoding: 'utf8',
+        algorithm: 'md5',
+        length: 16
+      },
+      assets: {
+        files: [{
+          src: [
+            '_site/index.html',
+            'about/*.html',
+            'careers/*.html',
+            'contact/*.html',
+            'locations/**/*.html',
+            'programs/**/*.html',
+            'policy/*.html',
+            'css/main.css'
+           ]
+        }]
+      }
+    },
     // Generate different sized images for responsive banner photos
     responsive_images: {
       banners: {
@@ -195,12 +216,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-concurrent');
   // Extention for generating images at different resolutions
   grunt.loadNpmTasks('grunt-responsive-images');
-  
+  // Extension for caching static assets
+  grunt.loadNpmTasks('grunt-cache-bust')
+  ;
   grunt.registerTask('default', ['concurrent:target']);
   //grunt.registerTask('default',['watch']);
   grunt.registerTask('serve',['default']);
-  grunt.registerTask('build',['compass','uglify', 'yaml','shell:build']);
-  grunt.registerTask('deploy',['shell:build','shell:deploy']);
+  grunt.registerTask('build',['compass','uglify', 'yaml','shell:build','cacheBust']);
+  grunt.registerTask('deploy',['build','shell:deploy']);
   grunt.registerTask('bannerpics',['responsive_images:banners']);
   grunt.registerTask('managerpics',['responsive_images:managers']);
 };
