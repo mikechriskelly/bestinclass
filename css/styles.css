@@ -1,4 +1,4 @@
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../../../../.rvm/gems/ruby-2.1.0@bestinclass/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -9520,18 +9520,36 @@ p.form-label {
 /* Testimonial Section on multiple pages */
 /* ---------------------------------- */
 /* line 765, ../_sass/styles.scss */
+.confirmation {
+  height: 75%;
+  padding: 50px 0;
+  text-align: center;
+}
+/* line 769, ../_sass/styles.scss */
+.confirmation h1 {
+  color: #006838;
+}
+/* line 772, ../_sass/styles.scss */
+.confirmation h3 {
+  color: #00529c;
+}
+
+/* ---------------------------------- */
+/* Testimonial Section on multiple pages */
+/* ---------------------------------- */
+/* line 780, ../_sass/styles.scss */
 .testimonial-quote {
   margin: 0 auto;
   padding: 20px 0;
 }
 
-/* line 769, ../_sass/styles.scss */
+/* line 784, ../_sass/styles.scss */
 .testimonial-text-outer {
   padding-top: 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 773, ../_sass/styles.scss */
+  /* line 788, ../_sass/styles.scss */
   .testimonial-text-outer {
     max-width: 600px;
     display: table;
@@ -9540,13 +9558,13 @@ p.form-label {
     padding-top: 0;
   }
 
-  /* line 780, ../_sass/styles.scss */
+  /* line 795, ../_sass/styles.scss */
   .testimonial-text-inner {
     display: table-cell;
     vertical-align: middle;
   }
 
-  /* line 784, ../_sass/styles.scss */
+  /* line 799, ../_sass/styles.scss */
   .testimonial-text-outer:before {
     content: '\201C';
     color: #265ea6;
@@ -9556,7 +9574,7 @@ p.form-label {
     padding-right: 10px;
   }
 
-  /* line 792, ../_sass/styles.scss */
+  /* line 807, ../_sass/styles.scss */
   .testimonial-text-outer:after {
     content: '\201D';
     color: #265ea6;
@@ -9566,7 +9584,7 @@ p.form-label {
     font-family: Times New Roman;
   }
 }
-/* line 801, ../_sass/styles.scss */
+/* line 816, ../_sass/styles.scss */
 .testimonial-name {
   font-size: 13px;
   text-align: right;
@@ -9576,7 +9594,7 @@ p.form-label {
 /* ---------------------------------- */
 /* Find a location section on multiple pages */
 /* ---------------------------------- */
-/* line 810, ../_sass/styles.scss */
+/* line 825, ../_sass/styles.scss */
 .location-finder {
   margin: 5em 0;
   text-align: center;
@@ -9585,7 +9603,7 @@ p.form-label {
 /* ---------------------------------- */
 /* General Button Styling */
 /* ---------------------------------- */
-/* line 817, ../_sass/styles.scss */
+/* line 832, ../_sass/styles.scss */
 button {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -9594,26 +9612,26 @@ button {
   border-radius: 6px;
 }
 
-/* line 824, ../_sass/styles.scss */
+/* line 839, ../_sass/styles.scss */
 .btn-grow {
   -webkit-transform: scale(1);
   -webkit-transition: all .2s ease-in-out;
 }
 
-/* line 828, ../_sass/styles.scss */
+/* line 843, ../_sass/styles.scss */
 .btn-grow:hover {
   -webkit-transform: scale(1.05);
   -webkit-transition: all .2s ease-in-out;
 }
 
-/* line 832, ../_sass/styles.scss */
+/* line 847, ../_sass/styles.scss */
 .btn-dark {
   color: #fff;
   background-color: #006838;
   border-color: transparent;
 }
 
-/* line 840, ../_sass/styles.scss */
+/* line 855, ../_sass/styles.scss */
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active,
@@ -9623,14 +9641,14 @@ button {
   border-color: transparent;
 }
 
-/* line 845, ../_sass/styles.scss */
+/* line 860, ../_sass/styles.scss */
 .btn-light {
   color: #006838;
   background-color: #fff;
   border-color: #006838;
 }
 
-/* line 853, ../_sass/styles.scss */
+/* line 868, ../_sass/styles.scss */
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active,
@@ -9643,58 +9661,58 @@ button {
 /* ---------------------------------- */
 /* Other Pages */
 /* ---------------------------------- */
-/* line 861, ../_sass/styles.scss */
+/* line 876, ../_sass/styles.scss */
 .contact-info {
   padding-left: 50px;
   padding-bottom: 25px;
 }
 
-/* line 865, ../_sass/styles.scss */
+/* line 880, ../_sass/styles.scss */
 .bc-approach {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 868, ../_sass/styles.scss */
+/* line 883, ../_sass/styles.scss */
 .bc-approach img {
   padding: 20px;
 }
 
 @media (max-width: 767px) {
-  /* line 871, ../_sass/styles.scss */
+  /* line 886, ../_sass/styles.scss */
   .bc-approach img {
     display: block;
     margin: 10px auto;
   }
 }
 @media (min-width: 992px) {
-  /* line 877, ../_sass/styles.scss */
+  /* line 892, ../_sass/styles.scss */
   .approach-text {
     margin-top: 60px;
   }
 }
-/* line 881, ../_sass/styles.scss */
+/* line 896, ../_sass/styles.scss */
 .contact-form, .career-form {
   padding: 20px;
   text-align: center;
 }
 
-/* line 885, ../_sass/styles.scss */
+/* line 900, ../_sass/styles.scss */
 .contact-text, .career-text {
   padding-bottom: 20px;
 }
 
-/* line 888, ../_sass/styles.scss */
+/* line 903, ../_sass/styles.scss */
 .resume-label {
   padding-top: 10px;
   font-weight: normal;
 }
 
-/* line 892, ../_sass/styles.scss */
+/* line 907, ../_sass/styles.scss */
 .table {
   font-size: 13px;
 }
 
-/* line 895, ../_sass/styles.scss */
+/* line 910, ../_sass/styles.scss */
 .col-label {
   font-weight: bold;
 }
@@ -9702,7 +9720,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 901, ../_sass/styles.scss */
+/* line 916, ../_sass/styles.scss */
 footer {
   background-size: cover;
   background-repeat: no-repeat;
@@ -9714,41 +9732,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 911, ../_sass/styles.scss */
+/* line 926, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 915, ../_sass/styles.scss */
+/* line 930, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 919, ../_sass/styles.scss */
+/* line 934, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 924, ../_sass/styles.scss */
+/* line 939, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 928, ../_sass/styles.scss */
+/* line 943, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 930, ../_sass/styles.scss */
+/* line 945, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 933, ../_sass/styles.scss */
+/* line 948, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;

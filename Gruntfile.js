@@ -171,6 +171,7 @@ module.exports = function(grunt) {
           'index.html',
           'about/*.html',
           'careers/*.html',
+          'confirmation/**/*.html',
           'contact/*.html',
           'locations/*.html',
           'locations/**/*.html',
