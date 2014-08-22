@@ -11,7 +11,7 @@ title: News | Best in Class Education
 <div class="container">
   {% for post in site.categories.news limit:7 %}
     <div class="row">
-      <div class="col-sm-9 post">
+      <div class="col-sm-8 post">
         <h3 class="posttitle">
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
@@ -20,7 +20,7 @@ title: News | Best in Class Education
         <span class="postmeta">{{ post.date | date_to_string }}</span>
         <p>{{ post.content }}</p>
       </div>
-      <div class="col-sm-3 photo-col">
+      <div class="col-sm-4 photo-col">
       {% for photo in post.photos %}
         <img class="img-responsive border blog-photo" src="{{ site.baseurl }}{{ photo.src }}" title="{{ photo.title }}" alt="{{ photo.alt }}">
       {% endfor %}
