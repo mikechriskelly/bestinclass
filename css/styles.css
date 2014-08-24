@@ -8248,189 +8248,206 @@ button.close {
 }
 
 /* Media Queries to serve different image sizes */
-/* line 25, ../_sass/_responsive-photos.scss */
+/* line 26, ../_sass/_responsive-photos.scss */
 #home-landing-photo {
   background-image: url("../images/landingphoto/bc-home-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 28, ../_sass/_responsive-photos.scss */
+  /* line 29, ../_sass/_responsive-photos.scss */
   #home-landing-photo {
     background-image: url("../images/landingphoto/bc-home-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 31, ../_sass/_responsive-photos.scss */
+  /* line 32, ../_sass/_responsive-photos.scss */
   #home-landing-photo {
     background-image: url("../images/landingphoto/bc-home-sm.jpg");
   }
 }
-/* line 34, ../_sass/_responsive-photos.scss */
+/* line 35, ../_sass/_responsive-photos.scss */
 #banner-img-about {
   background-image: url("../images/bannerphotos/aboutus-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 37, ../_sass/_responsive-photos.scss */
+  /* line 38, ../_sass/_responsive-photos.scss */
   #banner-img-about {
     background-image: url("../images/bannerphotos/aboutus-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 40, ../_sass/_responsive-photos.scss */
+  /* line 41, ../_sass/_responsive-photos.scss */
   #banner-img-about {
     background-image: url("../images/bannerphotos/aboutus-sm.jpg");
   }
 }
-/* line 43, ../_sass/_responsive-photos.scss */
+/* line 44, ../_sass/_responsive-photos.scss */
+#banner-img-afterschoolprogram {
+  background-image: url("../images/bannerphotos/afterschoolprogram-lg.jpg");
+}
+
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+  /* line 47, ../_sass/_responsive-photos.scss */
+  #banner-img-afterschoolprogram {
+    background-image: url("../images/bannerphotos/afterschoolprogram-md.jpg");
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 50, ../_sass/_responsive-photos.scss */
+  #banner-img-afterschoolprogram {
+    background-image: url("../images/bannerphotos/afterschoolprogram-sm.jpg");
+  }
+}
+/* line 53, ../_sass/_responsive-photos.scss */
 #banner-img-beginnersinclass {
   background-image: url("../images/bannerphotos/beginnersinclass-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 46, ../_sass/_responsive-photos.scss */
+  /* line 56, ../_sass/_responsive-photos.scss */
   #banner-img-beginnersinclass {
     background-image: url("../images/bannerphotos/beginnersinclass-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 49, ../_sass/_responsive-photos.scss */
+  /* line 59, ../_sass/_responsive-photos.scss */
   #banner-img-beginnersinclass {
     background-image: url("../images/bannerphotos/beginnersinclass-sm.jpg");
   }
 }
-/* line 61, ../_sass/_responsive-photos.scss */
+/* line 71, ../_sass/_responsive-photos.scss */
 #banner-img-collegeprep {
   background-image: url("../images/bannerphotos/collegeprep-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 64, ../_sass/_responsive-photos.scss */
+  /* line 74, ../_sass/_responsive-photos.scss */
   #banner-img-collegeprep {
     background-image: url("../images/bannerphotos/collegeprep-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 67, ../_sass/_responsive-photos.scss */
+  /* line 77, ../_sass/_responsive-photos.scss */
   #banner-img-collegeprep {
     background-image: url("../images/bannerphotos/collegeprep-sm.jpg");
   }
 }
-/* line 70, ../_sass/_responsive-photos.scss */
+/* line 80, ../_sass/_responsive-photos.scss */
 #banner-img-contact {
   background-image: url("../images/bannerphotos/contact-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 73, ../_sass/_responsive-photos.scss */
+  /* line 83, ../_sass/_responsive-photos.scss */
   #banner-img-contact {
     background-image: url("../images/bannerphotos/contact-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 76, ../_sass/_responsive-photos.scss */
+  /* line 86, ../_sass/_responsive-photos.scss */
   #banner-img-contact {
     background-image: url("../images/bannerphotos/contact-sm.jpg");
   }
 }
-/* line 79, ../_sass/_responsive-photos.scss */
+/* line 89, ../_sass/_responsive-photos.scss */
 #banner-img-enrichment {
   background-image: url("../images/bannerphotos/enrichment-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 82, ../_sass/_responsive-photos.scss */
+  /* line 92, ../_sass/_responsive-photos.scss */
   #banner-img-enrichment {
     background-image: url("../images/bannerphotos/enrichment-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 85, ../_sass/_responsive-photos.scss */
+  /* line 95, ../_sass/_responsive-photos.scss */
   #banner-img-enrichment {
     background-image: url("../images/bannerphotos/enrichment-sm.jpg");
   }
 }
-/* line 88, ../_sass/_responsive-photos.scss */
+/* line 98, ../_sass/_responsive-photos.scss */
 #banner-img-giftedprep {
   background-image: url("../images/bannerphotos/giftedtestprep-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 91, ../_sass/_responsive-photos.scss */
+  /* line 101, ../_sass/_responsive-photos.scss */
   #banner-img-giftedprep {
     background-image: url("../images/bannerphotos/giftedtestprep-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 94, ../_sass/_responsive-photos.scss */
+  /* line 104, ../_sass/_responsive-photos.scss */
   #banner-img-giftedprep {
     background-image: url("../images/bannerphotos/giftedtestprep-sm.jpg");
   }
 }
-/* line 97, ../_sass/_responsive-photos.scss */
+/* line 107, ../_sass/_responsive-photos.scss */
 #banner-img-privatetutoring {
   background-image: url("../images/bannerphotos/privatetutoring-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 100, ../_sass/_responsive-photos.scss */
+  /* line 110, ../_sass/_responsive-photos.scss */
   #banner-img-privatetutoring {
     background-image: url("../images/bannerphotos/privatetutoring-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 103, ../_sass/_responsive-photos.scss */
+  /* line 113, ../_sass/_responsive-photos.scss */
   #banner-img-privatetutoring {
     background-image: url("../images/bannerphotos/privatetutoring-sm.jpg");
   }
 }
-/* line 106, ../_sass/_responsive-photos.scss */
+/* line 116, ../_sass/_responsive-photos.scss */
 #banner-img-satprep {
   background-image: url("../images/bannerphotos/sattestprep-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 109, ../_sass/_responsive-photos.scss */
+  /* line 119, ../_sass/_responsive-photos.scss */
   #banner-img-satprep {
     background-image: url("../images/bannerphotos/sattestprep-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 112, ../_sass/_responsive-photos.scss */
+  /* line 122, ../_sass/_responsive-photos.scss */
   #banner-img-satprep {
     background-image: url("../images/bannerphotos/sattestprep-sm.jpg");
   }
 }
-/* line 115, ../_sass/_responsive-photos.scss */
+/* line 125, ../_sass/_responsive-photos.scss */
 #banner-img-spotlight {
   background-image: url("../images/bannerphotos/studentspotlight-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 118, ../_sass/_responsive-photos.scss */
+  /* line 128, ../_sass/_responsive-photos.scss */
   #banner-img-spotlight {
     background-image: url("../images/bannerphotos/studentspotlight-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 121, ../_sass/_responsive-photos.scss */
+  /* line 131, ../_sass/_responsive-photos.scss */
   #banner-img-spotlight {
     background-image: url("../images/bannerphotos/studentspotlight-sm.jpg");
   }
 }
-/* line 124, ../_sass/_responsive-photos.scss */
+/* line 134, ../_sass/_responsive-photos.scss */
 #banner-img-summercamp {
   background-image: url("../images/bannerphotos/summercamp-lg.jpg");
 }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
-  /* line 127, ../_sass/_responsive-photos.scss */
+  /* line 137, ../_sass/_responsive-photos.scss */
   #banner-img-summercamp {
     background-image: url("../images/bannerphotos/summercamp-md.jpg");
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 130, ../_sass/_responsive-photos.scss */
+  /* line 140, ../_sass/_responsive-photos.scss */
   #banner-img-summercamp {
     background-image: url("../images/bannerphotos/summercamp-sm.jpg");
   }

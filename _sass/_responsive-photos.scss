@@ -3,6 +3,7 @@ $landing: 'bc-home';
 //$landing: 'bc-home-alt';
 
 $about: 'aboutus';
+$afterschoolprogram: 'afterschoolprogram';
 $beginnersinclass: 'beginnersinclass';
 //$careers: 'careers';
 $collegeprep: 'collegeprep';
@@ -39,6 +40,15 @@ $min-lg: 992px; // old: 767px
 @media only screen and (max-width: $max-sm) { 
   #banner-img-about  { 
     background-image: url('../images/bannerphotos/' + $about + '-sm.jpg'); }}
+
+#banner-img-afterschoolprogram { 
+  background-image: url('../images/bannerphotos/' + $afterschoolprogram + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-afterschoolprogram { 
+    background-image: url('../images/bannerphotos/' + $afterschoolprogram + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-afterschoolprogram  { 
+    background-image: url('../images/bannerphotos/' + $afterschoolprogram + '-sm.jpg'); }}
 
 #banner-img-beginnersinclass { 
   background-image: url('../images/bannerphotos/' + $beginnersinclass + '-lg.jpg'); } 
