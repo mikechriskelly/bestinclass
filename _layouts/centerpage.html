@@ -44,7 +44,7 @@
     <h3>Programs Offered at {{ page.centername }}</h3>
     <ul>
       {% for program in page.programs-offered %} 
-        <li><a href="{{{{ site.baseurl }}/programs/{{ program.slug }}">{{ program.name }}</a></li>
+        <li><a href="{{ site.baseurl }}/programs/{{ program.slug }}">{{ program.name }}</a></li>
       {% endfor %}
     </ul>
   {% endif %}
