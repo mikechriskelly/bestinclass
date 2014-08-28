@@ -7,12 +7,12 @@
 </div>
 <div class="container">
     <div class="row">
-      <div class="col-sm-8 post">
+      <div class="col-sm-7 post">
         <h3 class="posttitle">{{ page.title }}</h3>
         <span class="postmeta">{{ page.date | date_to_string }}</span>
         {{ content }}
       </div>
-      <div class="col-sm-4 photo-col">
+      <div class="col-sm-5 photo-col">
       {% for photo in page.photos %}
         <img class="img-responsive border blog-photo" src="{{ site.baseurl }}{{ photo.src }}" title="{{ photo.title }}" alt="{{ photo.alt }}">
       {% endfor %}

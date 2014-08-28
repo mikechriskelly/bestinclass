@@ -9685,51 +9685,76 @@ button {
 }
 
 /* line 880, ../_sass/styles.scss */
+.bc-teachers {
+  margin: 50px 0;
+  padding-left: 0 !important;
+  padding-right: 20px !important;
+}
+
+/* line 885, ../_sass/styles.scss */
 .bc-approach {
   text-align: center;
   margin-bottom: 30px;
 }
-/* line 883, ../_sass/styles.scss */
+/* line 888, ../_sass/styles.scss */
 .bc-approach img {
   padding: 20px;
 }
 
+/* line 890, ../_sass/styles.scss */
+.tilt-l {
+  -ms-transform: rotate(2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(2deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}
+
+/* line 895, ../_sass/styles.scss */
+.tilt-r {
+  -ms-transform: rotate(-2deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-2deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-2deg);
+}
+
 @media (max-width: 767px) {
-  /* line 886, ../_sass/styles.scss */
+  /* line 901, ../_sass/styles.scss */
   .bc-approach img {
     display: block;
     margin: 10px auto;
   }
 }
 @media (min-width: 992px) {
-  /* line 892, ../_sass/styles.scss */
+  /* line 907, ../_sass/styles.scss */
   .approach-text {
     margin-top: 60px;
   }
 }
-/* line 896, ../_sass/styles.scss */
+/* line 911, ../_sass/styles.scss */
 .contact-form, .career-form {
   padding: 20px;
   text-align: center;
 }
 
-/* line 900, ../_sass/styles.scss */
+/* line 915, ../_sass/styles.scss */
 .contact-text, .career-text {
   padding-bottom: 20px;
 }
 
-/* line 903, ../_sass/styles.scss */
+/* line 918, ../_sass/styles.scss */
 .resume-label {
   padding-top: 10px;
   font-weight: normal;
 }
 
-/* line 907, ../_sass/styles.scss */
+/* line 922, ../_sass/styles.scss */
 .table {
   font-size: 13px;
 }
 
-/* line 910, ../_sass/styles.scss */
+/* line 925, ../_sass/styles.scss */
 .col-label {
   font-weight: bold;
 }
@@ -9737,7 +9762,7 @@ button {
 /* ---------------------------------- */
 /* Footer */
 /* ---------------------------------- */
-/* line 916, ../_sass/styles.scss */
+/* line 931, ../_sass/styles.scss */
 footer {
   background-size: cover;
   background-repeat: no-repeat;
@@ -9749,41 +9774,41 @@ footer {
   padding: 15px 0px 15px 0px;
 }
 
-/* line 926, ../_sass/styles.scss */
+/* line 941, ../_sass/styles.scss */
 footer .col-md-6 {
   padding: 0;
   min-height: 75px;
 }
 
-/* line 930, ../_sass/styles.scss */
+/* line 945, ../_sass/styles.scss */
 .footer-legal {
   text-align: center;
   font-size: 9px;
 }
 
-/* line 934, ../_sass/styles.scss */
+/* line 949, ../_sass/styles.scss */
 .footer-links {
   font-size: 16px;
   text-align: center;
   padding: 15px 0 5px 0;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
-/* line 939, ../_sass/styles.scss */
+/* line 954, ../_sass/styles.scss */
 .footer-links a {
   color: #fff;
   padding: 0 8px 0 0;
 }
-/* line 943, ../_sass/styles.scss */
+/* line 958, ../_sass/styles.scss */
 .footer-links a:hover {
   text-decoration: none;
 }
 
-/* line 945, ../_sass/styles.scss */
+/* line 960, ../_sass/styles.scss */
 .footer-buttons {
   margin: auto;
   margin-bottom: 20px;
 }
-/* line 948, ../_sass/styles.scss */
+/* line 963, ../_sass/styles.scss */
 .footer-buttons button:hover {
   border-color: #006838;
   background: #fff;

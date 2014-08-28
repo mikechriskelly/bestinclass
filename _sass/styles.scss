@@ -877,10 +877,25 @@ button {
   padding-left: 50px;
   padding-bottom: 25px;
 }
+.bc-teachers {
+  margin: 50px 0;
+  padding-left: 0 !important;
+  padding-right: 20px !important;
+}
 .bc-approach {
   text-align: center;
   margin-bottom: 30px;
   img { padding: 20px; }
+}
+.tilt-l {
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}
+.tilt-r {
+  -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+  transform: rotate(-2deg);
 }
 @media (max-width: 767px) {
   .bc-approach img {
