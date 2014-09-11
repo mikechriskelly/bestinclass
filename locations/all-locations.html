@@ -14,7 +14,6 @@ permalink: locations/all-locations/index.html
 <div class="container">  
   <ul class="nav nav-tabs responsive" id="about-tabs">
     <li class="active"><a href="#california" data-toggle="tab">California</a></li>
-    <li><a href="#maryland" data-toggle="tab">Maryland</a></li>
     <li><a href="#nevada" data-toggle="tab">Nevada</a></li>
     <li><a href="#oregon" data-toggle="tab">Oregon</a></li>
     <li><a href="#ohio" data-toggle="tab">Ohio</a></li>
@@ -23,47 +22,8 @@ permalink: locations/all-locations/index.html
   <div class="tab-content responsive">
     <div class="tab-pane active" id="california">
       {% assign loopindex = 0 %}
-      {% for location in site.data.locations %}                       
+      {% for location in site.data.locations %}
         {% if location.State contains 'OH' %}
-          {% assign loopindex = loopindex | plus: 1 %}
-          {% assign rowfinder = loopindex | modulo: 4 %}
-          {% if rowfinder == 1 %}
-            <div class="row">
-            <div class="col-md-3">
-              <h3>{{ location.Name }}</h3>
-              <p>{{ location.Address }}
-              <br>{{ location.City }}, {{ location.State }} {{ location.Zip }}
-              <br>{{ location.Phone }}
-              <br><a href="{{ site.baseurl }}/locations/{{ location.Slug }}" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>
-            </div>
-          {% elsif rowfinder == 0 %}
-            <div class="col-md-3">
-              <h3>{{ location.Name }}</h3>
-              <p>{{ location.Address }}
-              <br>{{ location.City }}, {{ location.State }} {{ location.Zip }}
-              <br>{{ location.Phone }}
-              <br><a href="{{ site.baseurl }}/locations/{{ location.Slug }}" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>
-            </div>
-            </div>
-          {% else %}
-            <div class="col-md-3">
-              <h3>{{ location.Name }}</h3>
-              <p>{{ location.Address }}
-              <br>{{ location.City }}, {{ location.State }} {{ location.Zip }}
-              <br>{{ location.Phone }}
-              <br><a href="{{ site.baseurl }}/locations/{{ location.Slug }}" class="branch-link">View Center Details <i class="fa fa-chevron-right"></i></a></p>
-            </div>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      {% if rowfinder != 0 %}
-        </div>
-      {% endif %}
-    </div>
-    <div class="tab-pane" id="maryland">
-      {% assign loopindex = 0 %}
-      {% for location in site.data.locations %}                       
-        {% if location.State contains 'MD' %}
           {% assign loopindex = loopindex | plus: 1 %}
           {% assign rowfinder = loopindex | modulo: 4 %}
           {% if rowfinder == 1 %}
@@ -101,7 +61,7 @@ permalink: locations/all-locations/index.html
     </div>
     <div class="tab-pane" id="nevada">
       {% assign loopindex = 0 %}
-      {% for location in site.data.locations %}                       
+      {% for location in site.data.locations %}
         {% if location.State contains 'NV' %}
           {% assign loopindex = loopindex | plus: 1 %}
           {% assign rowfinder = loopindex | modulo: 4 %}
@@ -140,7 +100,7 @@ permalink: locations/all-locations/index.html
     </div>
     <div class="tab-pane" id="oregon">
       {% assign loopindex = 0 %}
-      {% for location in site.data.locations %}                       
+      {% for location in site.data.locations %}
         {% if location.State contains 'OR' %}
           {% assign loopindex = loopindex | plus: 1 %}
           {% assign rowfinder = loopindex | modulo: 4 %}
@@ -179,7 +139,7 @@ permalink: locations/all-locations/index.html
     </div>
     <div class="tab-pane" id="ohio">
       {% assign loopindex = 0 %}
-      {% for location in site.data.locations %}                       
+      {% for location in site.data.locations %}
         {% if location.State contains 'OH' %}
           {% assign loopindex = loopindex | plus: 1 %}
           {% assign rowfinder = loopindex | modulo: 4 %}
@@ -218,7 +178,7 @@ permalink: locations/all-locations/index.html
     </div>
     <div class="tab-pane" id="washington">
       {% assign loopindex = 0 %}
-      {% for location in site.data.locations %}                       
+      {% for location in site.data.locations %}
         {% if location.State contains 'WA' %}
           {% assign loopindex = loopindex | plus: 1 %}
           {% assign rowfinder = loopindex | modulo: 4 %}

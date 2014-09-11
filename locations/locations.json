@@ -216,18 +216,6 @@
         "Phone": "(513) 445-9876"
     },
     {
-        "Name": "Gaithersburg-Kenlands Center",
-        "Slug": "gaithersburg",
-        "Address": "364 Main Street, Ste 200",
-        "City": "Gaithersburg",
-        "State": "MD",
-        "Zip": 20878,
-        "Lat": 39.121204,
-        "Lon": -77.237258,
-        "Email": "gaithersburg@bicedu.com",
-        "Phone": "(301) 887-7337"
-    },
-    {
         "Name": "Sunnyvale Center",
         "Slug": "sunnyvale",
         "Address": "448 East El Camino Real",
