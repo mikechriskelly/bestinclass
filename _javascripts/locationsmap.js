@@ -1,9 +1,8 @@
 var LOCATIONDATA;
 var HAVELOCATION = false;
+var ISMOBILEDEVICE = navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
 
 function initializeMap() {
-
-  // To Do: Check Browser for SVG compatibility
 
   // Disable panning on mobile
   var isDraggable = $(document).width() > 480 ? true : false;
@@ -42,7 +41,7 @@ function initializeMap() {
 
   var view = new storeLocator.View(map, dataFeed, {
     markerIcon: bcMarker,
-    geolocation: false // Set to true to use HTML5 geolocation (user will see location request in browser)
+    geolocation: ISMOBILEDEVICE // Set to true to use HTML5 geolocation only for mobile users  (user will see location request in browser)
   });
 
   new storeLocator.Panel(panelDiv, {
