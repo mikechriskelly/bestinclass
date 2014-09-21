@@ -2,13 +2,13 @@
   - 
     Name: "Bellevue Center"
     Slug: "bellevue"
-    Address: "13427 NE 20th St, Ste 150"
+    Address: "919 124th Ave NE, Ste 104"
     City: "Bellevue"
     State: "WA"
     Zip: 98005
-    Lat: 47.6265619
-    Lon: -122.1596305
-    Email: "bellevue@bicedu.com"
+    Lat: 47.6188574
+    Lon: -122.1754106
+    Email: "bellevue@bestinclasseducation.com"
     Phone: "(425) 453-9532"
   - 
     Name: "Bothell Center"
@@ -19,7 +19,7 @@
     Zip: 98021
     Lat: 47.80896
     Lon: -122.208892
-    Email: "bothell@bicedu.com"
+    Email: "bothell@bestinclasseducation.com"
     Phone: "(425) 368-3069"
   - 
     Name: "Issaquah Center"
@@ -30,7 +30,7 @@
     Zip: 98027
     Lat: 47.5454534
     Lon: -122.0603349
-    Email: "issaquah@bicedu.com"
+    Email: "issaquah@bestinclasseducation.com"
     Phone: "(425) 272-1328"
   - 
     Name: "Northgate Center"
@@ -41,7 +41,7 @@
     Zip: 98125
     Lat: 47.7095651
     Lon: -122.3227801
-    Email: "northgate@bicedu.com"
+    Email: "northgate@bestinclasseducation.com"
     Phone: "(206) 801-6688"
   - 
     Name: "Redmond Center"
@@ -52,7 +52,7 @@
     Zip: 98052
     Lat: 47.6718933
     Lon: -122.1176708
-    Email: "redmond@bicedu.com"
+    Email: "redmond@bestinclasseducation.com"
     Phone: "(425) 292-1818"
   - 
     Name: "Redmond Ridge Center"
@@ -63,7 +63,7 @@
     Zip: 98053
     Lat: 47.6923414
     Lon: -122.0452864
-    Email: "redridge@bicedu.com"
+    Email: "redridge@bestinclasseducation.com"
     Phone: "(425) 292-1838"
   - 
     Name: "Renton Center"
@@ -74,7 +74,7 @@
     Zip: 98059
     Lat: 47.489416
     Lon: -122.154067
-    Email: "renton@bicedu.com"
+    Email: "renton@bestinclasseducation.com"
     Phone: "(425) 333-7333"
   - 
     Name: "Sammamish Center"
@@ -85,7 +85,7 @@
     Zip: 98074
     Lat: 47.6168198
     Lon: -122.0361982
-    Email: "sammamish@bicedu.com"
+    Email: "sammamish@bestinclasseducation.com"
     Phone: "(425) 880-3788"
   - 
     Name: "Seattle Center"
@@ -96,7 +96,7 @@
     Zip: 98122
     Lat: 47.6035213
     Lon: -122.3050332
-    Email: "seattle@bicedu.com"
+    Email: "seattle@bestinclasseducation.com"
     Phone: "(206) 341-9914"
   - 
     Name: "Woodinville Center"
@@ -107,7 +107,7 @@
     Zip: 98072
     Lat: 47.7542001
     Lon: -122.1612837
-    Email: "woodinville@bicedu.com"
+    Email: "woodinville@bestinclasseducation.com"
     Phone: "(425) 368-3008"
   - 
     Name: "Allen Plano Center"
@@ -118,7 +118,7 @@
     Zip: 75013
     Lat: 33.0999136
     Lon: -96.73093
-    Email: "allen-plano@bicedu.com"
+    Email: "allen-plano@bestinclasseducation.com"
     Phone: "(972) 656-9242"
   - 
     Name: "Austin Center"
@@ -129,7 +129,7 @@
     Zip: 78750
     Lat: 30.4438292
     Lon: -97.7872302
-    Email: "nwaustin@bicedu.com"
+    Email: "nwaustin@bestinclasseducation.com"
     Phone: "(512) 375-3245"
   - 
     Name: "Katy Center"
@@ -140,7 +140,7 @@
     Zip: 77450
     Lat: 29.731986
     Lon: -95.7563209
-    Email: "katy@bicedu.com"
+    Email: "katy@bestinclasseducation.com"
     Phone: "(832) 617-0491"
   - 
     Name: "Lake Oswego Center"
@@ -151,7 +151,7 @@
     Zip: 97035
     Lat: 45.4077367
     Lon: -122.7231019
-    Email: "lakeoswego@bicedu.com"
+    Email: "lakeoswego@bestinclasseducation.com"
     Phone: "(503) 734-7467"
   - 
     Name: "Portland NW Bethany Center"
@@ -162,7 +162,7 @@
     Zip: 97229
     Lat: 45.5542003
     Lon: -122.8331188
-    Email: "lakeoswego@bicedu.com"
+    Email: "lakeoswego@bestinclasseducation.com"
     Phone: "(503) 734-7467"
   - 
     Name: "SE Portland Center"
@@ -173,7 +173,7 @@
     Zip: 97266
     Lat: 45.5049973
     Lon: -122.5729365
-    Email: "lakeoswego@bicedu.com"
+    Email: "lakeoswego@bestinclasseducation.com"
     Phone: "(503) 734-7467"
   - 
     Name: "Beaverton Center"
@@ -184,7 +184,7 @@
     Zip: 97006
     Lat: 45.517693
     Lon: -122.843454
-    Email: "beaverton@bicedu.com"
+    Email: "beaverton@bestinclasseducation.com"
     Phone: "(503) 970-8288"
   - 
     Name: "Mason Center"
@@ -195,7 +195,7 @@
     Zip: 45040
     Lat: 39.3287732
     Lon: -84.3245642
-    Email: "mason@bicedu.com"
+    Email: "mason@bestinclasseducation.com"
     Phone: "(513) 445-9876"
   - 
     Name: "Sunnyvale Center"
@@ -206,7 +206,7 @@
     Zip: 94087
     Lat: 37.3642554
     Lon: -122.0281408
-    Email: "sunnyvale@bicedu.com"
+    Email: "sunnyvale@bestinclasseducation.com"
     Phone: "(408) 768-1335"
   - 
     Name: "Cupertino Center"
@@ -217,7 +217,7 @@
     Zip: 95014
     Lat: 37.3148886
     Lon: -122.0315027
-    Email: "cupertino@bicedu.com"
+    Email: "cupertino@bestinclasseducation.com"
     Phone: "(408) 253-3980"
   - 
     Name: "Fremont Center"
@@ -228,7 +228,7 @@
     Zip: 94539
     Lat: 37.4925468
     Lon: -121.9296307
-    Email: "fremont@bicedu.com"
+    Email: "fremont@bestinclasseducation.com"
     Phone: "(510) 400-8081"
   - 
     Name: "Oakland Center"
@@ -239,7 +239,7 @@
     Zip: 94607
     Lat: 37.7998731
     Lon: -122.2695459
-    Email: "oakland@bicedu.com"
+    Email: "oakland@bestinclasseducation.com"
     Phone: "(510) 899-9668"
   - 
     Name: "San Francisco Center"
@@ -250,7 +250,7 @@
     Zip: 94133
     Lat: 37.7977258
     Lon: -122.4105683
-    Email: "sfchinatown@bicedu.com"
+    Email: "sfchinatown@bestinclasseducation.com"
     Phone: "(415) 398-3266"
   - 
     Name: "San Jose Center"
@@ -261,7 +261,7 @@
     Zip: 95131
     Lat: 37.3872391
     Lon: -121.8876456
-    Email: "sanjose@bicedu.com"
+    Email: "sanjose@bestinclasseducation.com"
     Phone: "(408) 441-8462"
   - 
     Name: "San Ramon Center"
@@ -272,7 +272,7 @@
     Zip: 94583
     Lat: 37.7308674
     Lon: -121.9269479
-    Email: "sanramon@bicedu.com"
+    Email: "sanramon@bestinclasseducation.com"
     Phone: "(925) 302-6188"
   - 
     Name: "Elk Grove Center"
@@ -283,7 +283,7 @@
     Zip: 95758
     Lat: 38.4234266
     Lon: -121.4119315
-    Email: "elkgrove@bicedu.com"
+    Email: "elkgrove@bestinclasseducation.com"
     Phone: "(916) 525-7274"
   - 
     Name: "Reno Center"
@@ -294,5 +294,5 @@
     Zip: 89521
     Lat: 39.4369002
     Lon: -119.7573998
-    Email: "reno@bicedu.com"
+    Email: "reno@bestinclasseducation.com"
     Phone: "(775) 229-8255"
