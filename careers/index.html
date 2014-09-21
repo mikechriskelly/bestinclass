@@ -22,29 +22,22 @@ title: Careers | Best in Class Education
       <p>Teaching Assistants handle a variety of responsibilities, including grading student work, maintaining progress records, assisting in the instruction of elementary-age students, and other administrative duties.</p>
     </div>
     <div class="col-sm-7 career-form">
-      <form role="form" name="career-form">
+      <form role="form" name="career-form" action="/ajax/formsubmit.php" method="post" enctype="multipart/form-data">
+	    <input class="hidden" type="text" name="form-name" value="career-form" />
+		<input class="hidden" type="text" name="answer" value="" />
         <div class="form-group">
-          <input type="text" class="form-control" id="career-name" placeholder="Your Name">
+          <input type="text" class="form-control" id="career-name" name="name" placeholder="Your Name">
         </div>
         <div class="row">
           <div class="col-sm-6 left-inline-input">
-            <input type="email" class="form-control" id="career-email" placeholder="Your Email">
+            <input type="email" class="form-control" id="career-email" name="email" placeholder="Your Email">
           </div>
           <div class="col-sm-6 right-inline-input">
-            <input type="tel" class="form-control" id="career-phone" placeholder="Your Phone">
+            <input type="tel" class="form-control" id="career-phone" name="phone" placeholder="Your Phone">
           </div>
         </div>
-        <div class="form-group form-spacer">
-          <select class="form-control">
-            <option value="" disabled selected>You are a...</option>
-            <option value="Parent">Parent</option>
-            <option value="Student">Student</option>
-            <option value="Instructor">Instructor</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
         <div class="form-group">
-          <select class="form-control">
+          <select class="form-control" name="position">
             <option value="" disabled selected>Which position are you interested in?</option>
             <option value="Tutor">Tutor</option>
             <option value="TA">Teaching Assistant</option>
@@ -52,23 +45,23 @@ title: Careers | Best in Class Education
           </select>
         </div>
         <div class="form-group">
-          <select class="form-control">
+          <select class="form-control" name="center">
             <option value="" disabled selected>Where would you like to work?</option>
-            <option value="None">Washington Locations</option>
+            <option value="hr">Washington Locations</option>
             {% for location in site.data.locations %}
             {% if location.State != 'WA' %}
               <option value="{{ location.Name }}">{{ location.State }} - {{ location.Name }}</option>
             {% endif %}
             {% endfor %}
-            <option value="Other">Other</option>
+            <option value="office">Other</option>
           </select>
         </div>
         <label for="career-resume" class="resume-label">Please attach your resume and include a cover letter.</label>
         <div class="form-group form-spacer">
-          <input type="file" id="career-resume">
+          <input type="file" id="career-resume" name="file">
       </div>
         <div class="form-group">
-          <textarea id="career-comments" class="form-control" rows="5" placeholder="Tell us about yourself!"></textarea>
+          <textarea id="career-comments" name="comments" class="form-control" rows="5" placeholder="Tell us about yourself!"></textarea>
         </div>
         <button type="submit" class="btn btn-dark btn-lg btn-grow">OK!</button>
       </form>

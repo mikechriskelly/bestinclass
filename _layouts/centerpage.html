@@ -112,29 +112,32 @@
         <p>We will review test results with you and discuss learning needs and goals for your child. After selecting a course and schedule, your child will be ready for the next class.</p>
       </div>
       <div class="col-sm-7 form-shaded">
-        <h3>Join Best in Class!</h3>
-        <form role="form" name="signup-form">
+        <form role="form" id="signup-form" name="signup-form" action="/ajax/formsubmit.php" method="post">
+		<h3>Join Best in Class!</h3>
+		  <input class="hidden" type="text" name="form-name" value="signup-form" />
+		  <input class="hidden" type="text" name="center" value="{{ page.email | remove:'@bestinclasseducation.com' }}" />
+		  <input class="hidden" type="text" name="answer" value="" />
           <div class="form-group">
-            <input type="text" class="form-control" id="signup-name" placeholder="Parent Name">
+            <input type="text" class="form-control" id="signup-name" name="parentname" placeholder="Parent Name">
           </div>
           <div class="row">
             <div class="col-sm-6 left-inline-input">
-              <input type="email" class="form-control" id="signup-email" placeholder="Email">
+              <input type="email" class="form-control" id="signup-email" name="email" placeholder="Email">
             </div>
             <div class="col-sm-6 right-inline-input">
-              <input type="tel" class="form-control" id="signup-phone" placeholder="Phone">
+              <input type="tel" class="form-control" id="signup-phone" name="phone" placeholder="Phone">
             </div>
           </div>
           <div class="form-group form-spacer">
             <select class="form-control">
-              <option value="" disabled selected>What program are you interested in?</option>
+              <option value="" disabled selected name="program">What program are you interested in?</option>
               {% for program in page.programs-offered %} 
                 <option value="{{ program.name }}">{{ program.name }}</option>
               {% endfor %}
             </select>
           </div>
           <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" name="grade">
               <option value="" disabled selected>What grade is your child in?</option>
               <option value="PreK">PreK</option>
               <option value="K">Kindergarden</option>
@@ -153,7 +156,7 @@
             </select>
           </div>
           <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" name="day">
               <option value="" disabled selected>When would you prefer to come in?</option>
               {% for day in page.weekly-schedule %} 
                 <option value="{{ day.day }}">{{ day.day }}</option>
@@ -162,10 +165,16 @@
             </select>
           </div>
           <div class="form-group">
-            <textarea id="signup-comments" class="form-control" rows="3" placeholder="Questions or Comments"></textarea>
+            <textarea id="signup-comments" name="comments" class="form-control" rows="3" placeholder="Questions or Comments"></textarea>
           </div>
           <button type="submit" class="btn btn-light btn-lg btn-grow">OK!</button>
         </form>
+		<div id="signup-form-message" class="hidden">
+		  <h3>All Right!</h3>
+		  <p>Thank your for your interest in joining Best in Class.</p>
+		  <p>We will contact you shortly to confirm your consultation. Have a great day!</p>
+		  <h3><a href="{{ site.baseurl }}/"><i class="fa fa-child"></i></a></h3>
+		</div>
       </div>
     </div>
   </div>
@@ -179,24 +188,27 @@
         <p>Miss a day? To schedule a makeup class, fill out the form to the right. If you run into any issues, give your local manager a call.</p>
       </div>
       <div class="col-sm-7 form-shaded">
-        <h3>Reschedule a Class</h3>
-        <form role="form" name="mForm">
+        <form role="form" id="mForm" name="mForm" action="/ajax/formsubmit.php" method="post">
+		<h3>Reschedule a Class</h3>
+		  <input class="hidden" type="text" name="form-name" value="mForm" />
+		  <input class="hidden" type="text" name="center" value="{{ page.email | remove:'@bestinclasseducation.com' }}" />
+		  <input class="hidden" type="text" name="answer" value="" />
           <div class="form-group">
-            <input type="text" class="form-control" id="mParent" placeholder="Parent Name">
+            <input type="text" class="form-control" id="mParent" name="parentname" placeholder="Parent Name">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" id="mStudent" placeholder="Student Name(s)">
+            <input type="text" class="form-control" id="mStudent" name="studentname" placeholder="Student Name(s)">
           </div>
           <div class="row">
             <div class="col-sm-6 left-inline-input">
-              <input type="email" class="form-control" id="mEmail" placeholder="Email">
+              <input type="email" class="form-control" id="mEmail" name="email" placeholder="Email">
             </div>
             <div class="col-sm-6 right-inline-input">
-              <input type="tel" class="form-control" id="mPhone" placeholder="Phone">
+              <input type="tel" class="form-control" id="mPhone" name="phone" placeholder="Phone">
             </div>
           </div>
           <div class="form-group">
-            <select class="form-control" name="mProgram">
+            <select class="form-control" name="mProgram" >
               <option value="" disabled selected>Which program is you child in?</option>
               <option value="Enrichment">Enrichment</option>
               <option value="PT">Private Tutoring</option>
@@ -245,10 +257,20 @@
           </div>
           <button type="submit" class="btn btn-light btn-lg btn-grow">Let's Go!</button>
         </form>
+	    <div id="mForm-message" class="hidden">
+	  	  <h3>Got it!</h3>
+	  	  <p>Your reschedule request has been received.</p>
+	  	  <p>We will contact you shortly to confirm the time for your child's makeup class. Have a great day!</p>
+	  	<h3><a href="{{ site.baseurl }}/"><i class="fa fa-space-shuttle"></i></a></h3>
+	    </div>
       </div>
+	  
     </div>
   </div>
 </div>
+
+<script type="text/javascript" src="/js/formsubmit.js"></script>
+
 <script>
   function setOptions(chosen, formElem) {
     var selbox = document.mForm[formElem];

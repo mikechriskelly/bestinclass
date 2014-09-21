@@ -2,7 +2,6 @@
 layout: default
 title: Contact | Best in Class Education
 ---
-
 <div class="container-fluid program-header program-shaded"  id="banner-img-contact">
   <div class="container">
     <h1>Contact Us</h1>
@@ -15,20 +14,22 @@ title: Contact | Best in Class Education
       <p>Parents, we love hearing from you. We're always improving our teaching materials and services to build the best afterschool learning programs possible. If you have a question, feedback, or suggestion for us, do share!</p>
     </div>
     <div class="col-sm-7 contact-form">
-      <form role="form" name="contact-form">
+      <form role="form" id="contact-form" name="contact-form" action="/ajax/formsubmit.php" method="post">
+		<input class="hidden" type="text" name="form-name" value="contact-form" />
+		<input class="hidden" type="text" name="answer" value="" />
         <div class="form-group">
-          <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+          <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your Name">
         </div>
         <div class="row">
           <div class="col-sm-6 left-inline-input">
-            <input type="email" class="form-control" id="contact-email" placeholder="Your Email">
+            <input type="email" class="form-control" id="contact-email" name="email" placeholder="Your Email">
           </div>
           <div class="col-sm-6 right-inline-input">
-            <input type="tel" class="form-control" id="contact-phone" placeholder="Your Phone">
+            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Your Phone">
           </div>
         </div>
         <div class="form-group form-spacer">
-          <select class="form-control">
+          <select class="form-control" name="person">
             <option value="" disabled selected>You are a...</option>
             <option value="Parent">Parent</option>
             <option value="Student">Student</option>
@@ -37,20 +38,27 @@ title: Contact | Best in Class Education
           </select>
         </div>
         <div class="form-group">
-          <select class="form-control">
+          <select class="form-control" name="center">
             <option value="" disabled selected>Which center would you like to contact?</option>
-            <option value="None">Headquarters</option>
-            {% for location in site.data.locations %} 
-              <option value="{{ location.Name }}">{{ location.State }} - {{ location.Name }}</option>
+            <option value="office">Headquarters</option>
+            {% for location in site.data.locations %}
+            <option value="{{ location.Email | remove:'@bestinclasseducation.com' }}">{{ location.State }} - {{ location.Name }}</option>
             {% endfor %}
             <option value="Other">Other</option>
           </select>
         </div>
         <div class="form-group">
-          <textarea id="contact-comments" class="form-control" rows="5" placeholder="Questions or Comments"></textarea>
+          <textarea id="contact-comments" class="form-control" rows="5" name="comments" placeholder="Questions or Comments"></textarea>
         </div>
-        <button type="submit" class="btn btn-dark btn-lg btn-grow">OK!</button>
+        <button type="submit" class="btn btn-dark btn-lg btn-grow" value="ok" >OK!</button>
       </form>
+	<div id="contact-form-message" class="hidden">
+	  <h2>Message recieved!</h2>
+	  <p>Glad to hear from you.</p>
+	  <p>We will review your message and get back to you shortly. Have a great day!</p>
+	  <h3><a href="{{ site.baseurl }}/"><i class="fa fa-smile-o"></i></a></h3>
+	</div>
+	  <script type="text/javascript" src="/js/formsubmit.js"></script>
     </div>
   </div>
 </div>
