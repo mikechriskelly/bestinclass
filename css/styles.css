@@ -9812,3 +9812,19 @@ footer .col-md-6 {
   border-color: #006838;
   background: #fff;
 }
+
+/* Fixes for form validator icon */
+/* line 969, ../_sass/styles.scss */
+.col-sm-6 > .form-control-feedback {
+  right: 10px;
+}
+
+/* line 972, ../_sass/styles.scss */
+.dropdown > .form-control-feedback {
+  right: 15px;
+}
+
+/* line 975, ../_sass/styles.scss */
+.col-md-4 > .form-control-feedback {
+  right: 25px;
+}

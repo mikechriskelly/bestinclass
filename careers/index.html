@@ -22,21 +22,21 @@ title: Careers | Best in Class Education
       <p>Teaching Assistants handle a variety of responsibilities, including grading student work, maintaining progress records, assisting in the instruction of elementary-age students, and other administrative duties.</p>
     </div>
     <div class="col-sm-7 career-form">
-      <form role="form" name="career-form" action="/ajax/formsubmit.php" method="post" enctype="multipart/form-data">
+      <form role="form" id="career-form" name="career-form" action="/ajax/formsubmit.php" method="post" enctype="multipart/form-data">
 	    <input class="hidden" type="text" name="form-name" value="career-form" />
 		<input class="hidden" type="text" name="answer" value="" />
         <div class="form-group">
           <input type="text" class="form-control" id="career-name" name="name" placeholder="Your Name">
         </div>
         <div class="row">
-          <div class="col-sm-6 left-inline-input">
+          <div class="col-sm-6 left-inline-input form-group">
             <input type="email" class="form-control" id="career-email" name="email" placeholder="Your Email">
           </div>
-          <div class="col-sm-6 right-inline-input">
+          <div class="col-sm-6 right-inline-input form-group">
             <input type="tel" class="form-control" id="career-phone" name="phone" placeholder="Your Phone">
           </div>
         </div>
-        <div class="form-group">
+        <div class="form-group dropdown">
           <select class="form-control" name="position">
             <option value="" disabled selected>Which position are you interested in?</option>
             <option value="Tutor">Tutor</option>
@@ -44,7 +44,7 @@ title: Careers | Best in Class Education
             <option value="Other">Management/Other</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group dropdown">
           <select class="form-control" name="center">
             <option value="" disabled selected>Where would you like to work?</option>
             <option value="hr">Washington Locations</option>
@@ -68,3 +68,77 @@ title: Careers | Best in Class Education
     </div>
   </div>
 </div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#career-form').bootstrapValidator({
+      feedbackIcons: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+      },
+      fields: {
+        name: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Can we get your name?'
+            }
+          }
+        },
+        email: {
+          container: 'tooltip',
+          validators: {
+           notEmpty: {
+             message: 'Don\'t forget to provide your email address.'
+           },
+           emailAddress: {
+            message: 'Oops. This doesn\'t look like a valid email address.'
+           }
+          }
+        },
+        phone: {
+          container: 'tooltip',
+          validators: {
+            phone: {
+              country: 'US',
+              message: 'Don\'t forget to include your area code!'
+            }
+          }
+        },
+        position: {
+          validators: {
+            notEmpty: {}
+          }
+        },
+        center: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Choose a center near you.'
+            }
+          }
+        },
+        file: {
+          container: 'tooltip',
+          validators: {
+            file: {
+              extension: 'doc,pdf,rtf,txt',
+              type: 'application/msword,application/pdf,application/rtf,text/plain',
+              maxSize: 3072 * 1024, // 3 MB
+              message: 'Please use PDF or DOC format. 3MB max.'
+            }
+          }
+        },
+        comments: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Please include your cover letter.'
+            }
+          }
+        }
+      }
+    });
+  });
+</script>

@@ -964,3 +964,14 @@ footer .col-md-6 {
     background: #fff; 
   }
 }
+
+/* Fixes for form validator icon */
+.col-sm-6 > .form-control-feedback {
+  right: 10px;
+}
+.dropdown > .form-control-feedback {
+  right: 15px;
+}
+.col-md-4 > .form-control-feedback {
+  right: 25px;
+}

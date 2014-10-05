@@ -15,20 +15,20 @@ title: Contact | Best in Class Education
     </div>
     <div class="col-sm-7 contact-form">
       <form role="form" id="contact-form" name="contact-form" action="/ajax/formsubmit.php" method="post">
-		<input class="hidden" type="text" name="form-name" value="contact-form" />
-		<input class="hidden" type="text" name="answer" value="" />
+        <input class="hidden" type="text" name="form-name" value="contact-form" />
+        <input class="hidden" type="text" name="answer" value="" />
         <div class="form-group">
           <input type="text" class="form-control" id="contact-name" name="name" placeholder="Your Name">
         </div>
         <div class="row">
-          <div class="col-sm-6 left-inline-input">
+          <div class="col-sm-6 left-inline-input form-group">
             <input type="email" class="form-control" id="contact-email" name="email" placeholder="Your Email">
           </div>
-          <div class="col-sm-6 right-inline-input">
+          <div class="col-sm-6 right-inline-input form-group">
             <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="Your Phone">
           </div>
         </div>
-        <div class="form-group form-spacer">
+        <div class="form-group form-spacer dropdown">
           <select class="form-control" name="person">
             <option value="" disabled selected>You are a...</option>
             <option value="Parent">Parent</option>
@@ -37,7 +37,7 @@ title: Contact | Best in Class Education
             <option value="Other">Other</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-group dropdown">
           <select class="form-control" name="center">
             <option value="" disabled selected>Which center would you like to contact?</option>
             <option value="office">Headquarters</option>
@@ -52,13 +52,78 @@ title: Contact | Best in Class Education
         </div>
         <button type="submit" class="btn btn-dark btn-lg btn-grow" value="ok" >OK!</button>
       </form>
-	<div id="contact-form-message" class="hidden">
-	  <h2>Message recieved!</h2>
-	  <p>Glad to hear from you.</p>
-	  <p>We will review your message and get back to you shortly. Have a great day!</p>
-	  <h3><a href="{{ site.baseurl }}/"><i class="fa fa-smile-o"></i></a></h3>
-	</div>
-	  <script type="text/javascript" src="/js/formsubmit.js"></script>
+    <div id="contact-form-message" class="hidden">
+      <h2>Message recieved!</h2>
+      <p>Glad to hear from you.</p>
+      <p>We will review your message and get back to you shortly. Have a great day!</p>
+    </div>
+    <script type="text/javascript" src="/js/formsubmit.js"></script>
     </div>
   </div>
 </div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#contact-form').bootstrapValidator({
+      feedbackIcons: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+      },
+      fields: {
+        name: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Can we get your name?'
+            }
+          }
+        },
+        email: {
+          container: 'tooltip',
+          validators: {
+           notEmpty: {
+             message: 'Please provide your email address so we can get back to you.'
+           },
+           emailAddress: {
+            message: 'Oops. This doesn\'t look like a valid email address.'
+           }
+          }
+        },
+        phone: {
+          container: 'tooltip',
+          validators: {
+            phone: {
+              country: 'US',
+              message: 'Don\'t forget to include your area code.'
+            }
+          }
+        },
+        person: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Telling us this helps us get your message to the right person!'
+            }
+          }
+        },
+        center: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Which center would you like to contact?'
+            }
+          }
+        },
+        comments: {
+          container: 'tooltip',
+          validators: {
+            notEmpty: {
+              message: 'Please include a brief message.'
+            }
+          }
+        }
+      }
+    });
+  });
+</script>
