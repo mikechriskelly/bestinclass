@@ -1,6 +1,7 @@
 ---
+# Washington
   - 
-    Name: "Bellevue Center"
+    Name: "Bellevue"
     Slug: "bellevue"
     Address: "919 124th Ave NE, Ste 104"
     City: "Bellevue"
@@ -11,7 +12,7 @@
     Email: "bellevue@bestinclasseducation.com"
     Phone: "(425) 453-9532"
   - 
-    Name: "Bothell Center"
+    Name: "Bothell"
     Slug: "bothell"
     Address: "20806 Bothell-Everett Hwy, Ste 101"
     City: "Bothell"
@@ -22,7 +23,7 @@
     Email: "bothell@bestinclasseducation.com"
     Phone: "(425) 368-3069"
   - 
-    Name: "Issaquah Center"
+    Name: "Issaquah"
     Slug: "issaquah"
     Address: "1505 NW Gilman Blvd, Ste 6"
     City: "Issaquah"
@@ -32,8 +33,19 @@
     Lon: -122.0603349
     Email: "issaquah@bestinclasseducation.com"
     Phone: "(425) 272-1328"
-  - 
-    Name: "Northgate Center"
+  -  
+    Name: "Issaquah Highlands"
+    Slug: "issaquah-highlands"
+    Address: "2550 NE Park Dr"
+    City: "Issaquah"
+    State: "WA"
+    Zip: 98029
+    Lat: 47.5480019
+    Lon: -121.996629
+    Email: "issaquah@bestinclasseducation.com"
+    Phone: "(425) 272-1328"
+  -
+    Name: "Northgate"
     Slug: "northgate"
     Address: "11030 5th Ave NE, Ste A"
     City: "Northgate"
@@ -44,7 +56,7 @@
     Email: "northgate@bestinclasseducation.com"
     Phone: "(206) 801-6688"
   - 
-    Name: "Redmond Center"
+    Name: "Redmond"
     Slug: "redmond"
     Address: "16701 Cleveland St. Ste B"
     City: "Redmond"
@@ -55,7 +67,7 @@
     Email: "redmond@bestinclasseducation.com"
     Phone: "(425) 292-1818"
   - 
-    Name: "Redmond Ridge Center"
+    Name: "Redmond Ridge"
     Slug: "redmond-ridge"
     Address: "10735 Cedar Park Crescent NE"
     City: "Redmond"
@@ -66,7 +78,7 @@
     Email: "redridge@bestinclasseducation.com"
     Phone: "(425) 292-1838"
   - 
-    Name: "Renton Center"
+    Name: "Renton"
     Slug: "renton"
     Address: "4820 NE 4th St, Ste A107"
     City: "Renton"
@@ -77,7 +89,7 @@
     Email: "renton@bestinclasseducation.com"
     Phone: "(425) 333-7333"
   - 
-    Name: "Sammamish Center"
+    Name: "Sammamish"
     Slug: "sammamish"
     Address: "825 228th Ave NE"
     City: "Sammamish"
@@ -88,7 +100,7 @@
     Email: "sammamish@bestinclasseducation.com"
     Phone: "(425) 880-3788"
   - 
-    Name: "Seattle Center"
+    Name: "Seattle"
     Slug: "seattle"
     Address: "2100 E Spruce St"
     City: "Seattle"
@@ -99,7 +111,7 @@
     Email: "seattle@bestinclasseducation.com"
     Phone: "(206) 341-9914"
   - 
-    Name: "Woodinville Center"
+    Name: "Woodinville"
     Slug: "woodinville"
     Address: "13317 NE 175th St, Ste G"
     City: "Woodinville"
@@ -109,10 +121,12 @@
     Lon: -122.1612837
     Email: "woodinville@bestinclasseducation.com"
     Phone: "(425) 368-3008"
+
+# Texas
   - 
-    Name: "Allen Plano Center"
+    Name: "Allen/North Plano"
     Slug: "allen-plano"
-    Address: "2023 McDermott Dr, Ste 130"
+    Address: "2023 W McDermott Dr, Ste 130"
     City: "Allen"
     State: "TX"
     Zip: 75013
@@ -121,8 +135,8 @@
     Email: "allen-plano@bestinclasseducation.com"
     Phone: "(972) 656-9242"
   - 
-    Name: "Austin Center"
-    Slug: "austin"
+    Name: "NW Austin"
+    Slug: "nw-austin"
     Address: "13376 Research Blvd, Ste 127"
     City: "Austin"
     State: "TX"
@@ -132,7 +146,7 @@
     Email: "nwaustin@bestinclasseducation.com"
     Phone: "(512) 375-3245"
   - 
-    Name: "Katy Center"
+    Name: "Katy"
     Slug: "katy"
     Address: "3750 S Mason Rd"
     City: "Katy"
@@ -141,9 +155,11 @@
     Lat: 29.731986
     Lon: -95.7563209
     Email: "katy@bestinclasseducation.com"
-    Phone: "(832) 617-0491"
+    Phone: "(832) 437-7934"
+
+# Oregon
   - 
-    Name: "Lake Oswego Center"
+    Name: "Lake Oswego"
     Slug: "lake-oswego"
     Address: "16318 Bryant Rd"
     City: "Lake Oswego"
@@ -154,7 +170,7 @@
     Email: "lakeoswego@bestinclasseducation.com"
     Phone: "(503) 734-7467"
   - 
-    Name: "Portland NW Bethany Center"
+    Name: "Portland NW Bethany"
     Slug: "portland-bethany"
     Address: "15188 NW Central Dr, Ste 202"
     City: "Portland"
@@ -162,10 +178,10 @@
     Zip: 97229
     Lat: 45.5542003
     Lon: -122.8331188
-    Email: "lakeoswego@bestinclasseducation.com"
+    Email: "bethany@bestinclasseducation.com "
     Phone: "(503) 734-7467"
   - 
-    Name: "SE Portland Center"
+    Name: "SE Portland"
     Slug: "portland-se"
     Address: "8733 SE Division St, Ste 209"
     City: "Portland"
@@ -173,10 +189,10 @@
     Zip: 97266
     Lat: 45.5049973
     Lon: -122.5729365
-    Email: "lakeoswego@bestinclasseducation.com"
+    Email: "sepdx@bestinclasseducation.com"
     Phone: "(503) 734-7467"
   - 
-    Name: "Beaverton Center"
+    Name: "Beaverton"
     Slug: "beaverton"
     Address: "16165 SW Regatta Ln, Ste 800"
     City: "Beaverton"
@@ -186,8 +202,10 @@
     Lon: -122.843454
     Email: "beaverton@bestinclasseducation.com"
     Phone: "(503) 970-8288"
+
+# Ohio
   - 
-    Name: "Mason Center"
+    Name: "Mason"
     Slug: "mason"
     Address: "5142 Cedar Village Dr"
     City: "Mason"
@@ -197,19 +215,10 @@
     Lon: -84.3245642
     Email: "mason@bestinclasseducation.com"
     Phone: "(513) 445-9876"
+
+# California
   - 
-    Name: "Sunnyvale Center"
-    Slug: "sunnyvale"
-    Address: "448 East El Camino Real"
-    City: "Sunnyvale"
-    State: "CA"
-    Zip: 94087
-    Lat: 37.3642554
-    Lon: -122.0281408
-    Email: "sunnyvale@bestinclasseducation.com"
-    Phone: "(408) 768-1335"
-  - 
-    Name: "Cupertino Center"
+    Name: "Cupertino"
     Slug: "cupertino"
     Address: "20432 Silverado Ave, Ste 215"
     City: "Cupertino"
@@ -220,7 +229,7 @@
     Email: "cupertino@bestinclasseducation.com"
     Phone: "(408) 253-3980"
   - 
-    Name: "Fremont Center"
+    Name: "Fremont"
     Slug: "fremont"
     Address: "46356 Warm Springs Blvd, Ste 824"
     City: "Fremont"
@@ -229,9 +238,9 @@
     Lat: 37.4925468
     Lon: -121.9296307
     Email: "fremont@bestinclasseducation.com"
-    Phone: "(510) 400-8081"
+    Phone: "(510) 717-1681"
   - 
-    Name: "Oakland Center"
+    Name: "Oakland"
     Slug: "oakland"
     Address: "919 Harrison St, Ste B"
     City: "Oakland"
@@ -240,10 +249,10 @@
     Lat: 37.7998731
     Lon: -122.2695459
     Email: "oakland@bestinclasseducation.com"
-    Phone: "(510) 899-9668"
+    Phone: "(510) 272-9668"
   - 
-    Name: "San Francisco Center"
-    Slug: "san-fransisco-chinatown"
+    Name: "San Francisco - China Town"
+    Slug: "san-francisco-chinatown"
     Address: "1419 Powell St"
     City: "San Francisco"
     State: "CA"
@@ -253,7 +262,7 @@
     Email: "sfchinatown@bestinclasseducation.com"
     Phone: "(415) 398-3266"
   - 
-    Name: "San Jose Center"
+    Name: "San Jose"
     Slug: "san-jose"
     Address: "1701 Lundy Ave, Ste 201"
     City: "San Jose"
@@ -264,7 +273,7 @@
     Email: "sanjose@bestinclasseducation.com"
     Phone: "(408) 441-8462"
   - 
-    Name: "San Ramon Center"
+    Name: "San Ramon"
     Slug: "san-ramon"
     Address: "9260 Alcosta Blvd, Bldg C 15A"
     City: "San Ramon"
@@ -275,7 +284,7 @@
     Email: "sanramon@bestinclasseducation.com"
     Phone: "(925) 302-6188"
   - 
-    Name: "Elk Grove Center"
+    Name: "Elk Grove"
     Slug: "elk-grove"
     Address: "7811 Laguna Blvd, Ste 165"
     City: "Elk Grove"
@@ -286,7 +295,20 @@
     Email: "elkgrove@bestinclasseducation.com"
     Phone: "(916) 525-7274"
   - 
-    Name: "Reno Center"
+    Name: "Sunnyvale"
+    Slug: "sunnyvale"
+    Address: "448 East El Camino Real"
+    City: "Sunnyvale"
+    State: "CA"
+    Zip: 94087
+    Lat: 37.3642554
+    Lon: -122.0281408
+    Email: "sunnyvale@bestinclasseducation.com"
+    Phone: "(408) 768-1335"
+
+# Nevada
+  - 
+    Name: "Reno"
     Slug: "reno"
     Address: "748 S Meadows Pkwy, Ste A3"
     City: "Reno"
