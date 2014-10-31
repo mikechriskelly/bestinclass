@@ -7,12 +7,19 @@
           <h2 id="set-center-title">{{ page.centername }}</h2>
           <p>{{ page.address-line1 }}<br>{{ page.address-line2 }}</p>
           <p>
-            <br><i class="fa fa-phone"></i>&nbsp;&nbsp;<a href="tel:{{ page.phone }}">{{ page.phone }}</a>
-            <br><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:{{ page.email }}">{{ page.email }}</a>
+            <i class="fa fa-phone"></i>&nbsp;&nbsp;<a href="tel:{{ page.phone }}">{{ page.phone }}</a><br>
+            <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:{{ page.email }}">{{ page.email }}</a>
           </p>
           {% if page.centerstatus %}
             <h4>{{ page.centerstatus }}</h4>
           {% endif %}
+					
+					{% if page.office-hours %}
+						<h4>Office Hours</h4>
+						{% for oh in page.office-hours %}
+							<div class="row"><div class="col-md-3">{{oh.day}}</div><div class="col-md-6">{{oh.hours}}</div></div>
+						{% endfor %}
+					{% endif %}
         </div>
       </div>
       <div class="col-sm-6">
@@ -32,7 +39,7 @@
         </div>
         <div class="col-sm-4">
           <h3>Current Students</h3>
-          <a href="#makeup" class="btn btn-light btn-lg btn-grow">Makeup a Class</a>
+          <a href="#makeup" class="btn btn-light btn-lg btn-grow">Make up a Class</a>
         </div>
       </div>
     </div>
@@ -40,15 +47,34 @@
 </div>
 <div class="container" id="class-info">
 
-  {% if page.programs-offered %}
-    <h3>Programs Offered at {{ page.centername }}</h3>
-    <ul>
-      {% for program in page.programs-offered %} 
-        <li><a href="{{ site.baseurl }}/programs/{{ program.slug }}">{{ program.name }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
+	<div class="row">
+		{% if page.programs-offered %}
+		<div class="col-sm-8">
+			<h3>Programs Offered</h3>
+			<p>
+			<ul>
+				{% for program in page.programs-offered %} 
+					<li><a href="{{ site.baseurl }}/programs/{{ program.slug }}">{{ program.name }}</a></li>
+				{% endfor %}
+			</ul>
+			</p>
+		</div>
+		{% endif %}
+		
+		{% if page.files %}
+		<div class="col-sm-6">
+			<h3>Forms and Flyers</h3>
+			<p>
+			<ul>
+				{% for file in page.files %} 
+					<li><a href="{{ file.link }}">{{ file.name }}</a></li>
+				{% endfor %}
+			</ul>
+			</p>
+		</div>
+		{% endif %}
+	</div> 
+	
   {% if page.weekly-schedule %}
     <h3>Weekly Class Schedule</h3>
     <div class="row">
@@ -90,9 +116,11 @@
           <span class="manager-title">{{ page.manager-title }}</span>
           <p class="manager-bio">{{ page.manager-bio }}</p>
         </div>
+				{% if page.manager-img %}
         <div class="col-sm-3 col-sm-pull-9">
           <img src="{{ site.baseurl }}/images/managers/{{ page.manager-img }}" class="img-responsive manager-photo">
         </div>
+				{% endif %}
       </div>
     </div>
   </div>
@@ -141,7 +169,7 @@
             <select class="form-control" name="grade">
               <option value="" disabled selected>What grade is your child in?</option>
               <option value="PreK">PreK</option>
-              <option value="K">Kindergarden</option>
+              <option value="K">Kindergarten</option>
               <option value="1">1st Grade</option>
               <option value="2">2nd Grade</option>
               <option value="3">3rd Grade</option>
@@ -159,7 +187,8 @@
           <div class="form-group dropdown">
             <select class="form-control" name="day">
               <option value="" disabled selected>When would you prefer to come in?</option>
-              {% for day in page.weekly-schedule %} 
+              {% if page.office-hours %} {% assign days = page.office-hours %} {% else %} {% assign days = page.weekly-schedule %} {% endif %}
+              {% for day in days %} 
                 <option value="{{ day.day }}">{{ day.day }}</option>
               {% endfor %}
               <option value="Other">Other</option>
@@ -210,7 +239,7 @@
           </div>
           <div class="form-group dropdown">
             <select class="form-control" name="mProgram" >
-              <option value="" disabled selected>Which program is you child in?</option>
+              <option value="" disabled selected>Which program is your child in?</option>
               <option value="Enrichment">Enrichment</option>
               <option value="PT">Private Tutoring</option>
             </select>
@@ -240,8 +269,8 @@
             </div>
             <div class="col-md-4 left-inline-input form-group">
               <select class="form-control" name="mNewDay" onchange="setOptions(document.mForm.mNewDay.options[document.mForm.mNewDay.selectedIndex].value, 'mNewTime');">
-                <option value="" disabled selected>Prefered Day</option>
-                {% for day in page.weekly-schedule %} 
+                <option value="" disabled selected>Preferred Day</option>
+                {% for day in page.weekly-schedule %}
                   <option value="{{ day.day }}">{{ day.day }}</option>
                 {% endfor %}
                 <option value="Other">Other</option>
@@ -249,7 +278,7 @@
             </div>
             <div class="col-md-4 right-inline-input form-group">
               <select class="form-control" name="mNewTime">
-                <option value="" disabled selected>Prefered Time</option>
+                <option value="" disabled selected>Preferred Time</option>
               </select>
             </div>
           </div>
@@ -270,184 +299,223 @@
   </div>
 </div>
 
-<script type="text/javascript" src="/js/formsubmit.js"></script>
-
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
 <script>
-  $(document).ready(function() {
-    $('#signup-form').bootstrapValidator({
-      feedbackIcons: {
-        valid: 'fa fa-check',
-        invalid: 'fa fa-times',
-        validating: 'fa fa-refresh'
-      },
-      fields: {
-        parentname: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Can we get your name?'
-            }
-          }
-        },
-        email: {
-          container: 'tooltip',
-          validators: {
-           notEmpty: {
-             message: 'Please provide your email address so we can get back to you.'
-           },
-           emailAddress: {
-            message: 'Oops. This doesn\'t look like a valid email address.'
-           }
-          }
-        },
-        phone: {
-          container: 'tooltip',
-          validators: {
-            phone: {
-              country: 'US',
-              message: 'Don\'t forget to include your area code!'
-            }
-          }
-        },
-        program: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Select a program of interest. If you\'re not sure, just say so!'
-            }
-          }
-        },
-        grade: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Let us know your child\'s grade. If you want to enroll more children, you can mention it in the comments.'
-            }
-          }
-        },
-        day: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Our center is open on these days. To request a specific time, put it down in the comment.'
-            }
-          }
-        },
-        comments: {
-          container: 'tooltip',
-          validators: {}
-        }
-      }
-    });
-  $('#mForm').bootstrapValidator({
-      feedbackIcons: {
-        valid: 'fa fa-check',
-        invalid: 'fa fa-times',
-        validating: 'fa fa-refresh'
-      },
-      fields: {
-        parentname: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Can we get your name?'
-            }
-          }
-        },
-        studentname: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'What is your son or daughter\'s name?'
-            }
-          }
-        },
-        email: {
-          container: 'tooltip',
-          validators: {
-           notEmpty: {
-             message: 'Please provide your email address so we can get back to you.'
-           },
-           emailAddress: {
-            message: 'Oops. This doesn\'t look like a valid email address.'
-           }
-          }
-        },
-        phone: {
-          container: 'tooltip',
-          validators: {
-            phone: {
-              country: 'US',
-              message: 'Don\'t forget to include your area code!'
-            }
-          }
-        },
-        mProgram: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Please select a program.'
-            }
-          }
-        },
-        mRegDay: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'What day does your child normally have class?'
-            }
-          }
-        },
-        mRegTime: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'What time does your child normally have class?'
-            }
-          }
-        },
-        mNewDay: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'What day would you like to have the makeup class?'
-            }
-          }
-        },
-        mNewTime: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'What time would you like to have the makeup class?'
-            }
-          }
-        },
-        comments: {}
-      }
-    });
-  });
+$(document).ready(function() {
+	$('#signup-form').bootstrapValidator({
+		feedbackIcons: {
+			valid: 'fa fa-check',
+			invalid: 'fa fa-times',
+			validating: 'fa fa-refresh'
+		},
+		fields: {
+			parentname: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Can we get your name?'
+					}
+				}
+			},
+			email: {
+				container: 'tooltip',
+				validators: {
+				 notEmpty: {
+					 message: 'Please provide your email address so we can get back to you.'
+				 },
+				 emailAddress: {
+					message: 'Oops. This doesn\'t look like a valid email address.'
+				 }
+				}
+			},
+			phone: {
+				container: 'tooltip',
+				validators: {
+					phone: {
+						country: 'US',
+						message: 'Don\'t forget to include your area code!'
+					}
+				}
+			},
+			program: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Select a program of interest. If you\'re not sure, just say so!'
+					}
+				}
+			},
+			grade: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Let us know your child\'s grade. If you want to enroll more children, you can mention it in the comments.'
+					}
+				}
+			},
+			day: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Our center is open on these days. To request a specific time, put it down in the comment.'
+					}
+				}
+			},
+			comments: {
+				container: 'tooltip',
+				validators: {}
+			}
+		}
+	})
+	.on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the BootstrapValidator instance
+		var bv = $form.data('bootstrapValidator');
+
+		// Use Ajax to submit form data
+		var jqxhr = $.post($form.attr('action'), $form.serialize(), function(result) {
+			$form.hide();
+			var formName = $form.attr('id');
+			$("#" + formName + "-message").removeClass("hidden");
+		}, 'json')
+		.fail(function() {
+			alert("Error sending. Please try again.");
+		});
+	});
+	
+	$('#mForm').bootstrapValidator({
+		feedbackIcons: {
+			valid: 'fa fa-check',
+			invalid: 'fa fa-times',
+			validating: 'fa fa-refresh'
+		},
+		fields: {
+			parentname: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Can we get your name?'
+					}
+				}
+			},
+			studentname: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'What is your son or daughter\'s name?'
+					}
+				}
+			},
+			email: {
+				container: 'tooltip',
+				validators: {
+				 notEmpty: {
+					 message: 'Please provide your email address so we can get back to you.'
+				 },
+				 emailAddress: {
+					message: 'Oops. This doesn\'t look like a valid email address.'
+				 }
+				}
+			},
+			phone: {
+				container: 'tooltip',
+				validators: {
+					phone: {
+						country: 'US',
+						message: 'Don\'t forget to include your area code!'
+					}
+				}
+			},
+			mProgram: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Please select a program.'
+					}
+				}
+			},
+			mRegDay: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'What day does your child normally have class?'
+					}
+				}
+			},
+			mRegTime: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'What time does your child normally have class?'
+					}
+				}
+			},
+			mNewDay: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'What day would you like to have the makeup class?'
+					}
+				}
+			},
+			mNewTime: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'What time would you like to have the makeup class?'
+					}
+				}
+			},
+			comments: {}
+		}
+	})
+	.on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the BootstrapValidator instance
+		var bv = $form.data('bootstrapValidator');
+
+		// Use Ajax to submit form data
+		var jqxhr = $.post($form.attr('action'), $form.serialize(), function(result) {
+			$form.hide();
+			var formName = $form.attr('id');
+			$("#" + formName + "-message").removeClass("hidden");
+		}, 'json')
+		.fail(function() {
+			alert("Error sending. Please try again.");
+		});
+	});
+});
 </script>
 
 <script>
-  function setOptions(chosen, formElem) {
-    var selbox = document.mForm[formElem];
+function setOptions(chosen, formElem) {
+	var selbox = document.mForm[formElem];
 
-    selbox.options.length = 1;
+	selbox.options.length = 1;
 
-    {% for day in page.weekly-schedule %} 
-      if (chosen == '{{ day.day }}' ) {
-        {% for time in day.times %}
-          selbox.options[selbox.options.length] = new Option('{{ time }}','{{ time }}');
-        {% endfor %}
-        selbox.options[selbox.options.length] = new Option('Other','Other');
-      } 
-    {% endfor %}
+	{% for day in page.weekly-schedule %} 
+		if (chosen == '{{ day.day }}' ) {
+			{% for time in day.times %}
+				selbox.options[selbox.options.length] = new Option('{{ time }}','{{ time }}');
+			{% endfor %}
+			selbox.options[selbox.options.length] = new Option('Other','Other');
+		} 
+	{% endfor %}
 
-    if (chosen == 'Other' ) {
-      selbox.options[selbox.options.length] = new Option('Other','Other');
-    } 
-  }
+	if (chosen == 'Other' ) {
+		selbox.options[selbox.options.length] = new Option('Other','Other');
+	} 
+}
 </script>
 
 {% if page.calendarlink %}

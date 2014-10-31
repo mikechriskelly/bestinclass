@@ -3,8 +3,8 @@
 if ($_POST['answer'] != "")
 {
 	header('HTTP/1.1 403 Forbidden');
-    header('Content-Type: application/json; charset=UTF-8');
-    die(json_encode(array('message' => 'ERROR', 'code' => 'bot')));
+  header('Content-Type: application/json; charset=UTF-8');
+  die(json_encode(array('message' => 'ERROR', 'code' => 'bot')));
 }
 else // process submit
 {
@@ -17,7 +17,11 @@ else // process submit
 	{
 		$to = $data['center'] . '@bestinclasseducation.com';
 		$subject = 'Feedback from ' . $data['person'];
-		$headers = "From: <noreply@bestinclasseducation.com>\n";
+		$headers = "From: Web <noreply@bestinclasseducation.com>\r\n";
+    $headers .= "Bcc: office@bestinclasseducation.com\r\n";
+		
+		if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) 
+			$headers .= "Reply-To: " . $data['email'];
 		
 		$message = 'Name: ' . $data['name'] .
 		"\nEmail: " . $data['email'] .
@@ -30,7 +34,10 @@ else // process submit
 	{
 		$to = $data['center'] . '@bestinclasseducation.com';
 		$subject = 'Enrollment request from ' . $data['parentname'];
-		$headers = "From: <noreply@bestinclasseducation.com>\n";
+		$headers = "From: Web <noreply@bestinclasseducation.com>\r\n";
+		
+		if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) 
+			$headers .= "Reply-To: " . $data['email'];
 		
 		$message = 'Parent Name: ' . $data['parentname'] .
 		"\nEmail: " . $data['email'] .
@@ -45,7 +52,10 @@ else // process submit
 	{
 		$to = $data['center'] . '@bestinclasseducation.com';
 		$subject = 'Makeup request for ' . $data['studentname'];
-		$headers = "From: <noreply@bestinclasseducation.com>\n";
+		$headers = "From: Web <noreply@bestinclasseducation.com>\r\n";
+		
+		if (filter_var($data['email'], FILTER_VALIDATE_EMAIL)) 
+			$headers .= "Reply-To: " . $data['email'];
 		
 		$message = 'Student: ' . $data['studentname'] .
 		'\nParent: ' . $data['parentname'] .
@@ -66,22 +76,44 @@ else // process submit
 		$mail->addAddress($data['center'] . '@bestinclasseducation.com');
 		$mail->Subject = 'Resume for '. $data['position'] . ' from ' . $data['name'];
 		$mail->From = "noreply@bestinclasseducation.com";
+		$mail->FromName = 'Web';
+    
+		if (filter_var($data['email'], FILTER_VALIDATE_EMAIL))
+			$mail->addReplyTo = $data['email'];
 		
-		$mail->Body = 'Name: ' . $data['name'] .
+		$message = 'Name: ' . $data['name'] .
 		"\nEmail: " . $data['email'] .
 		"\nPhone: " . $data['phone'] . 
 		"\nPosition: " . $data['position'] . 
 		"\nCenter: " . $data['center'] .
 		"\n\nComments: " . $data['comments'] .
-		"\n\n\nLogged from " . $_SERVER['REMOTE_ADDR'];
+		"\n\nLogged from " . $_SERVER['REMOTE_ADDR'];
 	
-		if ($_FILES["file"]["error"] > 0)
+		// add attachment if no errors
+		if ($_FILES['file']["error"] > 0)
 		{
-			$mail->addAttachment($_FILES["file"]["tmp_name"]);
+			// upload error
+			$error = "\n\nError: " . $_FILES["file"]["error"];
+			$message = $message . $error;
+			$mail->Body = $message;
+		}
+		else
+		{
+			// filter attachments
+			$filename = $_FILES['file']['name'];
+			$file_extension = pathinfo($filename, PATHINFO_EXTENSION);
+			$allowed = array('doc','docx','pdf','rtf','txt');
+			
+			if (in_array($file_extension, $allowed))
+				$mail->addAttachment($_FILES["file"]["tmp_name"], $_FILES["file"]["name"]);
+			
+			$mail->Body = $message;
 		}
 		if($mail->send())
 		{
+			header('Content-type: application/json');
 			header("Location: /confirmation/apply");
+			echo json_encode(array('message' => 'success'));
 			exit;
 		}
 		else echo "Error. Please go back and try again.";
@@ -94,7 +126,12 @@ else // process submit
 	}
 	$result = mail($to, $subject, $message, $headers);
 	
-	if ($result == false)
+	if ($result == true)
+	{
+		header('Content-type: application/json');
+		echo json_encode(array('message' => 'success'));
+	}
+	else
 	{
 		header('HTTP/1.1 500 Internal Server Error');
 		header('Content-Type: application/json; charset=UTF-8');
