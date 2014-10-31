@@ -33,14 +33,13 @@ a:hover {text-decoration: none;}
 /* General Navigation and Heading */
 /* ---------------------------------- */
 .navbar-brand {padding: 10px 10px 0 0;}
-.navbar-nav > li > a {font-size: 18px;}
+.navbar-nav > li > a {font-size: $font-size-large;}
 
 h1, h2, h3, .navbar-nav > li > a {
   font-family: $header-font;
   color: $gray;
 }
 h4 {
-  font-size: 18px;
   font-weight: bold;
   color: $gray;
   margin: 25px 0 0 0;
@@ -259,9 +258,13 @@ h1.prog-other, h2.prog-other, h3.prog-other {color: $color-others;}
     margin: 0; 
   }
 }
+
+ul.news-clips-list{
+	padding-left: 1em;
+}
 .news-clips-list li {
   font-size: $font-size-base;
-  font-weight: bold; 
+  /*font-weight: bold; */
 }
 .readmore {
   display: block;
@@ -581,9 +584,10 @@ li.store a.branch-link:hover {
 /* Centers Pages */
 /* ---------------------------------- */
 .text-info-box {
-  max-width: 300px;
+  max-width: 480px;
   padding: 0 0 15px 0;
   margin: 0 auto;
+	margin-right: 0;
   h2 { 
     margin: 15px 0 0 0;
   }
@@ -610,7 +614,7 @@ img.googlemap {
 .panel-schedule > .panel-schedule-heading {
   background-color: $color2;
   border-bottom: none;
-  font-size: 1.6em;
+  font-size: 1.25em;
   font-weight: 300;
   color: #fff;
   padding: 0;
@@ -635,7 +639,7 @@ img.googlemap {
 }
 .center-section {
   height: auto;
-  min-height: 100% !important;
+  /*min-height: 100% !important;*/
   padding: 2em 0;
 }
 
@@ -654,6 +658,9 @@ img.googlemap {
 .action-box {
   width: 100%;
   text-align: center;
+	h3 {
+		margin-top: 10px;
+	}
 }
   .left-inline-input {
     margin-bottom: 15px;
@@ -666,7 +673,7 @@ img.googlemap {
     padding-top: 60px;
   }
   .text-info-box {
-    margin-top: 100px; 
+    margin-top: 10px; 
     margin-bottom: 0;
     p { 
       font-size: $font-size-base;
@@ -675,8 +682,8 @@ img.googlemap {
   }
   .action-box {
     min-height: 150px;
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
   }
   .class-schedule-col {
     margin-top: 42px;
@@ -687,7 +694,7 @@ img.googlemap {
     padding-top: 100px;
   }
   .text-info-box {
-    margin-top: 50px; 
+    margin-top: 30px; 
     margin-bottom: 0;
     p { 
       font-size: $font-size-base;
@@ -974,4 +981,7 @@ footer .col-md-6 {
 }
 .col-md-4 > .form-control-feedback {
   right: 25px;
+}
+.has-feedback .form-control {
+	padding-right: 30px;
 }
