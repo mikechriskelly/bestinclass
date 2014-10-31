@@ -38,7 +38,7 @@ title: Best in Class Education
         <p>That's why we provide tailored lessons to help students build confidence and mastery in their academic work.</p>
         <p>Our programs develop concept acquisition, critical thinking, and application of skills. Our math and English curricula follow Common Core Standards, helping prepare students for academic and standardized tests as well as everyday challenges.</p>
         <p>We motivate and encourage students to learn the principles of mathematics and English in a rewarding way. Our teachers monitor student progress on homework and tests to ensure that they are on track and receving the help they need.</p>
-        <p>At Best in Class, your children will gain a sense of confidence and excitement towards learning.</p>
+        <p>At Best in Class, your children will gain a sense of confidence in and excitement for learning.</p>
       </div>
       <div class="col-md-6">
         <img src="{{ site.baseurl }}/images/photos/bc-teacher-student.jpg" alt="" class="img-responsive">
@@ -48,8 +48,15 @@ title: Best in Class Education
 </div>
 <div class="container news-clips-section">
   <div class="row">
-    <div class="col-md-4">
-      <h2 class="header-dark"><a href="{{ site.baseurl }}/news">Announcements</a></h2>
+		<div class="col-md-4">
+			<h2 class="header-dark">Annoucements</h2>
+			<ul class="news-clips-list">
+				 <li><a href="/locations/beaverton">Beaverton, OR</a> - Coming Soon</li>
+				 <li><a href="/locations/nw-austin">Austin, TX</a> - Now Open</li>
+				 <li><a href="/locations/issaquah-highlands">Issaquah Highlands, WA</a> - Now Open</li>
+				 <li><a href="/locations/reno">Reno, NV</a> - Now Open</li>
+			</ul>
+      <h2 class="header-dark"><a href="{{ site.baseurl }}/news">News</a></h2>
       <ul class="news-clips-list">
         {% for post in site.categories.news | limit 5 %}
           <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>

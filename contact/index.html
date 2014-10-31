@@ -11,7 +11,7 @@ title: Contact | Best in Class Education
   <div class="row">
     <div class="col-sm-5 contact-text">
       <h2>Any Questions?</h2>
-      <p>Parents, we love hearing from you. We're always improving our teaching materials and services to build the best afterschool learning programs possible. If you have a question, feedback, or suggestion for us, do share!</p>
+      <p>We love hearing from you. We're always improving our teaching materials and services to build the best after-school learning programs possible. If you have a question, feedback, or suggestion for us, please share!</p>
     </div>
     <div class="col-sm-7 contact-form">
       <form role="form" id="contact-form" name="contact-form" action="/ajax/formsubmit.php" method="post">
@@ -41,89 +41,113 @@ title: Contact | Best in Class Education
           <select class="form-control" name="center">
             <option value="" disabled selected>Which center would you like to contact?</option>
             <option value="office">Headquarters</option>
-            {% for location in site.data.locations %}
+						{% assign locations = site.data.locations %}
+            {% for location in locations %}
             <option value="{{ location.Email | remove:'@bestinclasseducation.com' }}">{{ location.State }} - {{ location.Name }}</option>
             {% endfor %}
-            <option value="Other">Other</option>
+            <option value="office">Other</option>
           </select>
         </div>
         <div class="form-group">
           <textarea id="contact-comments" class="form-control" rows="5" name="comments" placeholder="Questions or Comments"></textarea>
         </div>
-        <button type="submit" class="btn btn-dark btn-lg btn-grow" value="ok" >OK!</button>
+        <button type="submit" class="btn btn-dark btn-lg btn-grow" value="ok" disabled="disabled">OK!</button>
       </form>
-    <div id="contact-form-message" class="hidden">
-      <h2>Message recieved!</h2>
-      <p>Glad to hear from you.</p>
-      <p>We will review your message and get back to you shortly. Have a great day!</p>
-    </div>
-    <script type="text/javascript" src="/js/formsubmit.js"></script>
+			<div id="contact-form-message" class="hidden">
+				<h2>Message recieved!</h2>
+				<p>Glad to hear from you.</p>
+				<p>We will review your message and get back to you shortly. Have a great day!</p>
+			</div>
     </div>
   </div>
 </div>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
 <script>
-  $(document).ready(function() {
-    $('#contact-form').bootstrapValidator({
-      feedbackIcons: {
-        valid: 'fa fa-check',
-        invalid: 'fa fa-times',
-        validating: 'fa fa-refresh'
-      },
-      fields: {
-        name: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Can we get your name?'
-            }
-          }
-        },
-        email: {
-          container: 'tooltip',
-          validators: {
-           notEmpty: {
-             message: 'Please provide your email address so we can get back to you.'
-           },
-           emailAddress: {
-            message: 'Oops. This doesn\'t look like a valid email address.'
-           }
-          }
-        },
-        phone: {
-          container: 'tooltip',
-          validators: {
-            phone: {
-              country: 'US',
-              message: 'Don\'t forget to include your area code.'
-            }
-          }
-        },
-        person: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Telling us this helps us get your message to the right person!'
-            }
-          }
-        },
-        center: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Which center would you like to contact?'
-            }
-          }
-        },
-        comments: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Please include a brief message.'
-            }
-          }
-        }
-      }
-    });
-  });
+$(document).ready(function() {
+	$('#contact-form').bootstrapValidator({
+		feedbackIcons: {
+			valid: 'fa fa-check',
+			invalid: 'fa fa-times',
+			validating: 'fa fa-refresh'
+		},
+		fields: {
+			name: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Can we get your name?'
+					}
+				}
+			},
+			email: {
+				container: 'tooltip',
+				validators: {
+				 notEmpty: {
+					 message: 'Please provide your email address so we can get back to you.'
+				 },
+				 emailAddress: {
+					message: 'Oops. This doesn\'t look like a valid email address.'
+				 }
+				}
+			},
+			phone: {
+				container: 'tooltip',
+				validators: {
+					phone: {
+						country: 'US',
+						message: 'Don\'t forget to include your area code.'
+					}
+				}
+			},
+			person: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Telling us this helps us get your message to the right person!'
+					}
+				}
+			},
+			center: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Which center would you like to contact?'
+					}
+				}
+			},
+			comments: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Please include a brief message.'
+					},
+					stringLength: {
+						max: 1000,
+						message: 'Questions/comments must be no more than 1000 characters.'
+					}
+				}
+			}
+		}
+	})
+	.on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the BootstrapValidator instance
+		var bv = $form.data('bootstrapValidator');
+
+		// Use Ajax to submit form data
+		var jqxhr = $.post($form.attr('action'), $form.serialize(), function(result) {
+			$form.hide();
+			var formName = $form.attr('id');
+			$("#" + formName + "-message").removeClass("hidden");
+		}, 'json')
+		.fail(function() {
+			alert("Error sending. Please try again.");
+		});
+	});
+});
 </script>

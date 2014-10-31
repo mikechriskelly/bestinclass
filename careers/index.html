@@ -11,13 +11,13 @@ title: Careers | Best in Class Education
 <div class="container">
   <div class="row">
     <div class="col-sm-5 career-text">
-      <h2>Love What You Do.</h2>
+      <h2>Love what you do.</h2>
       <p>Passion for education runs deep in our DNA. If you share this passion, we'd love to hear from you!</p>
-      <h4>Instructors and Tutor</h4>
+      <h3>Instructors and Tutors</h3>
       <p>We are always looking to add enthusiastic educators to our Best in Class family. We seek instructors who have some level of college education in English- or math-related fields.</p>
       <p>Many college students love our flexible part-time hours. We also have private tutoring and management opportunities for more experienced candidates.</p>
       <p>Compensation is competitive and depends on experience.</p>
-      <h4>Teaching Assistants</h4>
+      <h3>Teaching Assistants</h3>
       <p>Our Teaching Assistant program is an excellent opportunity for students age 16 and older, who have excelled academically, to discover the rewards of teaching, gain valuable work experience, and make a difference in the lives of younger students.</p>
       <p>Teaching Assistants handle a variety of responsibilities, including grading student work, maintaining progress records, assisting in the instruction of elementary-age students, and other administrative duties.</p>
     </div>
@@ -61,84 +61,108 @@ title: Careers | Best in Class Education
           <input type="file" id="career-resume" name="file">
       </div>
         <div class="form-group">
-          <textarea id="career-comments" name="comments" class="form-control" rows="5" placeholder="Tell us about yourself!"></textarea>
+          <textarea id="career-comments" name="comments" class="form-control" rows="5" placeholder="Comments or questions?"></textarea>
         </div>
-        <button type="submit" class="btn btn-dark btn-lg btn-grow">OK!</button>
+        <button type="submit" class="btn btn-dark btn-lg btn-grow" disabled="disabled">OK!</button>
       </form>
     </div>
   </div>
 </div>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
 <script>
-  $(document).ready(function() {
-    $('#career-form').bootstrapValidator({
-      feedbackIcons: {
-        valid: 'fa fa-check',
-        invalid: 'fa fa-times',
-        validating: 'fa fa-refresh'
-      },
-      fields: {
-        name: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Can we get your name?'
-            }
-          }
-        },
-        email: {
-          container: 'tooltip',
-          validators: {
-           notEmpty: {
-             message: 'Don\'t forget to provide your email address.'
-           },
-           emailAddress: {
-            message: 'Oops. This doesn\'t look like a valid email address.'
-           }
-          }
-        },
-        phone: {
-          container: 'tooltip',
-          validators: {
-            phone: {
-              country: 'US',
-              message: 'Don\'t forget to include your area code!'
-            }
-          }
-        },
-        position: {
-          validators: {
-            notEmpty: {}
-          }
-        },
-        center: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Choose a center near you.'
-            }
-          }
-        },
-        file: {
-          container: 'tooltip',
-          validators: {
-            file: {
-              extension: 'doc,pdf,rtf,txt',
-              type: 'application/msword,application/pdf,application/rtf,text/plain',
-              maxSize: 3072 * 1024, // 3 MB
-              message: 'Please use PDF or DOC format. 3MB max.'
-            }
-          }
-        },
-        comments: {
-          container: 'tooltip',
-          validators: {
-            notEmpty: {
-              message: 'Please include your cover letter.'
-            }
-          }
-        }
-      }
-    });
-  });
+$(document).ready(function() {
+	$('#career-form').bootstrapValidator({
+		feedbackIcons: {
+			valid: 'fa fa-check',
+			invalid: 'fa fa-times',
+			validating: 'fa fa-refresh'
+		},
+		fields: {
+			name: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Can we get your name?'
+					}
+				}
+			},
+			email: {
+				container: 'tooltip',
+				validators: {
+				 notEmpty: {
+					 message: 'Don\'t forget to provide your email address.'
+				 },
+				 emailAddress: {
+					message: 'Oops. This doesn\'t look like a valid email address.'
+				 }
+				}
+			},
+			phone: {
+				container: 'tooltip',
+				validators: {
+					phone: {
+						country: 'US',
+						message: 'Don\'t forget to include your area code!'
+					}
+				}
+			},
+			position: {
+				validators: {
+					notEmpty: {}
+				}
+			},
+			center: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Choose a center near you.'
+					}
+				}
+			},
+			file: {
+				container: 'tooltip',
+				validators: {
+					file: {
+						extension: 'doc,pdf,rtf,txt',
+						type: 'application/msword,application/pdf,application/rtf,text/plain',
+						maxSize: 3072 * 1024, // 3 MB
+						message: 'Please use PDF or DOC format. 3MB max.'
+					}
+				}
+			},
+			comments: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Please include your cover letter.'
+					},
+					stringLength: {
+						max: 1000,
+						message: 'Questions/comments must be no more than 1000 characters.'
+					}
+				}
+			}
+		}
+	})
+	.on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the BootstrapValidator instance
+		var bv = $form.data('bootstrapValidator');
+
+		// Use Ajax to submit form data
+		var jqxhr = $.post($form.attr('action'), $form.serialize(), function(result) {
+			$form.hide();
+			var formName = $form.attr('id');
+			$("#" + formName + "-message").removeClass("hidden");
+		}, 'json')
+		.fail(function() {
+			alert("Error sending. Please try again.");
+		});
+	});
+});
 </script>
