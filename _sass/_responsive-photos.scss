@@ -15,6 +15,7 @@ $privatetutoring: 'privatetutoring';
 $satprep: 'sattestprep';
 $summercamp: 'summercamp';
 $spotlight: 'studentspotlight';
+//$franchise: 'franchise';
 //$privacy:
 
 
@@ -139,3 +140,14 @@ $min-lg: 992px; // old: 767px
 @media only screen and (max-width: $max-sm) { 
   #banner-img-summercamp  { 
     background-image: url('../images/bannerphotos/' + $summercamp + '-sm.jpg'); }}
+
+/*
+#banner-img-franchise { 
+  background-image: url('../images/bannerphotos/' + $franchise + '-lg.jpg'); } 
+@media only screen and (min-width: $min-md) and (max-width: $max-md) {  
+  #banner-img-franchise { 
+    background-image: url('../images/bannerphotos/' + $franchise + '-md.jpg'); }}
+@media only screen and (max-width: $max-sm) { 
+  #banner-img-franchise  { 
+    background-image: url('../images/bannerphotos/' + $franchise + '-sm.jpg'); }}
+*/

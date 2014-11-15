@@ -2,7 +2,7 @@
 <div class="container-fluid center-section">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-6 col-xs-8">
         <div class="text-info-box">
           <h2 id="set-center-title">{{ page.centername }}</h2>
           <p>{{ page.address-line1 }}<br>{{ page.address-line2 }}</p>
@@ -17,7 +17,7 @@
 					{% if page.office-hours %}
 						<h4>Office Hours</h4>
 						{% for oh in page.office-hours %}
-							<div class="row"><div class="col-md-3">{{oh.day}}</div><div class="col-md-6">{{oh.hours}}</div></div>
+							<div class="row"><div class="col-md-3 col-sm-4 col-xs-4">{{oh.day}}</div><div class="col-md-9 col-sm-7 col-xs-7">{{oh.hours}}</div></div>
 						{% endfor %}
 					{% endif %}
         </div>
@@ -49,28 +49,24 @@
 
 	<div class="row">
 		{% if page.programs-offered %}
-		<div class="col-sm-8">
+		<div class="col-sm-6">
 			<h3>Programs Offered</h3>
-			<p>
 			<ul>
 				{% for program in page.programs-offered %} 
 					<li><a href="{{ site.baseurl }}/programs/{{ program.slug }}">{{ program.name }}</a></li>
 				{% endfor %}
 			</ul>
-			</p>
 		</div>
 		{% endif %}
 		
 		{% if page.files %}
 		<div class="col-sm-6">
 			<h3>Forms and Flyers</h3>
-			<p>
 			<ul>
 				{% for file in page.files %} 
 					<li><a href="{{ file.link }}">{{ file.name }}</a></li>
 				{% endfor %}
 			</ul>
-			</p>
 		</div>
 		{% endif %}
 	</div> 
@@ -141,10 +137,10 @@
       </div>
       <div class="col-sm-7 form-shaded">
         <form role="form" id="signup-form" name="signup-form" action="/ajax/formsubmit.php" method="post">
-		<h3>Join Best in Class!</h3>
-		  <input class="hidden" type="text" name="form-name" value="signup-form" />
-		  <input class="hidden" type="text" name="center" value="{{ page.email | remove:'@bestinclasseducation.com' }}" />
-		  <input class="hidden" type="text" name="answer" value="" />
+        <h3>Join Best in Class!</h3>
+          <input class="hidden" type="text" name="form-name" value="signup-form" />
+          <input class="hidden" type="text" name="center" value="{{ page.email | remove:'@bestinclasseducation.com' }}" />
+          <input class="hidden" type="text" name="answer" value="" />
           <div class="form-group">
             <input type="text" class="form-control" id="signup-name" name="parentname" placeholder="Parent Name">
           </div>
