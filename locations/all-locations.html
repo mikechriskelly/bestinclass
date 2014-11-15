@@ -13,7 +13,7 @@ permalink: locations/all-locations/index.html
 <!-- Tab panes -->
 <div class="container">  
   <ul class="nav nav-tabs responsive" id="about-tabs">
-    <li class="active"><a href="#california" data-toggle="tab">California</a></li>
+    <li><a href="#california" data-toggle="tab">California</a></li>
     <li><a href="#nevada" data-toggle="tab">Nevada</a></li>
     <li><a href="#ohio" data-toggle="tab">Ohio</a></li>
     <li><a href="#oregon" data-toggle="tab">Oregon</a></li>
@@ -21,7 +21,7 @@ permalink: locations/all-locations/index.html
     <li><a href="#washington" data-toggle="tab">Washington</a></li>
   </ul>
   <div class="tab-content responsive small">
-    <div class="tab-pane active" id="california">
+    <div class="tab-pane" id="california">
       {% assign loopindex = 0 %}
       {% for location in site.data.locations %}
         {% if location.State contains 'CA' %}
