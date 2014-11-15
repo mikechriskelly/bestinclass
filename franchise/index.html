@@ -1,0 +1,159 @@
+---
+layout: franchise
+title: Best in Class Franchise
+permalink: franchise/index.html
+slug: franchise
+---
+<div class="container-fluid program-header program-photo franchise-header" id="banner-img-franchise">
+  <div class="container">
+    <h1>Best in Class Education Franchise</h1>
+    <p>Where learning lasts a lifetime</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="franchise-requestinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="prog-pt">Join a Franchise That Makes a Difference</h2>
+        <p>Our promise is to help students achieve their personal best. Our management and instructional teams are comprised of energetic, passionate, and dedicated individuals who share our mission to give students the gift of a lifetime.</p>
+        <p>Best in Class strives to help students improve more than just their grades and test scores. We encourage students to develop critical thinking and analytical skills that will prepare them for a lifetime of learning.</p>
+        <p>Just as we are committed to our students, we are also committed to our partners in education. Over the next few pages you will learn more about who we are, what we do, and why to join this exciting team. </p>
+      </div>
+      <div class="col-sm-6 form-shaded">
+        <form role="form" id="requestinfo-form" name="requestinfo-form" action="/ajax/formsubmit.php" method="post">
+        <h3>Learn More!</h3>
+          <input class="hidden" type="text" name="form-name" value="franchise-requestinfo-form" />
+          <input class="hidden" type="text" name="answer" value="" />
+            <div class="row">
+              <div class="col-sm-6 left-inline-input form-group">
+                <input type="text" class="form-control" id="requestinfo-firstname" name="firstname" placeholder="First Name">
+              </div>
+              <div class="col-sm-6 left-inline-input form-group">
+                <input type="text" class="form-control" id="requestinfo-lastname" name="lastname" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="phone" class="form-control" id="requestinfo-phone" name="phone" placeholder="Phone">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="requestinfo-email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="requestinfo-address" name="address" placeholder="Address">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="requestinfo-zip" name="zip" placeholder="Zip">
+            </div>
+            <div class="form-group form-spacer dropdown">
+              <select class="form-control" name="source">
+                <option value="" disabled selected>How did you hear about Best in Class?</option>
+                <option value="Internet Search">Internet Search</option>
+                <option value="Personal Referral">Personal Referral</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Direct Marketing">Direct Marketing</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <p style="text-align:left;font-style:italic">* Required field</p>
+            <button type="submit" class="btn btn-light btn-lg btn-grow">OK!</button>
+        </form>
+        <div id="requestinfo-form-message" class="hidden">
+          <h3>Message Received!</h3>
+          <p>Thank your for your interest in joining Best in Class.</p>
+          <p>We will contact you shortly to confirm your consultation. Have a great day!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.1/js/bootstrapValidator.min.js"></script>
+<script>
+$(document).ready(function() {
+	$('#requestinfo-form')
+    .on('init.field.bv', function(e, data) {
+    // data.bv      --> The BootstrapValidator instance
+    // data.field   --> The field name
+    // data.element --> The field element
+
+    var $parent    = data.element.parents('.form-group'),
+        $icon      = $parent.find('.form-control-feedback[data-bv-icon-for="' + data.field + '"]'),
+        options    = data.bv.getOptions(),                      // Entire options
+        validators = data.bv.getOptions(data.field).validators; // The field validators
+
+    if (validators.notEmpty && options.feedbackIcons && options.feedbackIcons.required) {
+        // The field uses notEmpty validator
+        // Add required icon
+        $icon.addClass(options.feedbackIcons.required).show();
+    }
+  })
+  .bootstrapValidator({
+		feedbackIcons: {
+			required: 'fa fa-asterisk',
+      valid: 'fa fa-check',
+			invalid: 'fa fa-times',
+			validating: 'fa fa-refresh'
+		},
+		fields: {
+			firstname: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Can we get your first name?'
+					}
+				}
+			},
+      lastname: {
+				container: 'tooltip',
+				validators: {
+					notEmpty: {
+						message: 'Can we get your last name?'
+					}
+				}
+			},
+			email: {
+				container: 'tooltip',
+				validators: {
+				 notEmpty: {
+					 message: 'Please provide your email address so we can get back to you.'
+				 },
+				 emailAddress: {
+					message: 'Oops. This doesn\'t look like a valid email address.'
+				 }
+				}
+			}
+		}
+	})
+  .on('status.field.bv', function(e, data) {
+    // Remove the required icon when the field updates its status
+    var $parent    = data.element.parents('.form-group'),
+        $icon      = $parent.find('.form-control-feedback[data-bv-icon-for="' + data.field + '"]'),
+        options    = data.bv.getOptions(),                      // Entire options
+        validators = data.bv.getOptions(data.field).validators; // The field validators
+
+    if (validators.notEmpty && options.feedbackIcons && options.feedbackIcons.required) {
+        $icon.removeClass(options.feedbackIcons.required).addClass('fa');
+    }
+  })
+	.on('success.form.bv', function(e) {
+		// Prevent form submission
+		e.preventDefault();
+
+		// Get the form instance
+		var $form = $(e.target);
+
+		// Get the BootstrapValidator instance
+		var bv = $form.data('bootstrapValidator');
+
+		// Use Ajax to submit form data
+		var jqxhr = $.post($form.attr('action'), $form.serialize(), function(result) {
+			$form.hide();
+			var formName = $form.attr('id');
+			$("#" + formName + "-message").removeClass("hidden");
+		}, 'json')
+		.fail(function() {
+			alert("Error sending. Please try again.");
+		});
+	});
+});
+</script>
