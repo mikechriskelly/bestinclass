@@ -43,6 +43,9 @@
         {% if site.livereload %}
         <script type="text/javascript" src="http://localhost:4000/livereload.js"></script>
         {% endif %}
+        {% if site.debug != 'true' %}
+          {% include google-analytics.html %}
+        {% endif %}
     </head>
     <body>
       <!-- Mobile Navbar -->
@@ -81,7 +84,7 @@
                   <li><a href="{{ site.baseurl }}/programs/enrichment#enrichment_english">Reading and Writing</a></li>
                   <li><a href="{{ site.baseurl }}/programs/privatetutoring">Private Tutoring</a></li>
                   <li><a href="{{ site.baseurl }}/programs/beginnersinclass">Beginners in Class</a></li>
-                  <li><a href="{{ site.baseurl }}/programs/giftedprep">Gifted Test Prep</a></li>
+                  <li><a href="{{ site.baseurl }}/programs/giftedtestprep">Gifted Test Prep</a></li>
                   <li><a href="{{ site.baseurl }}/programs/satprep">SAT Test Prep</a></li>
                   <li><a href="{{ site.baseurl }}/programs">More Programs</a></li>
                 </ul>
